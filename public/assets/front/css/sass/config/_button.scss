@@ -1,0 +1,30 @@
+.textLink {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .text {
+    position: relative;
+    &:after {
+      display: inline-flex;
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid var(--secondary);
+      transition: all 0.3s linear;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    &:not(.notHover):hover {
+      .text {
+        &:after {
+          width: 0;
+        }
+      }
+    }
+  }
+}

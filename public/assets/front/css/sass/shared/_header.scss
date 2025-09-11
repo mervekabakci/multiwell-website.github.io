@@ -1,9 +1,13 @@
 header{
+    position: relative;
+    z-index: 99;
+    background-color: var(--white);
     .header{
         display: flex;
         align-items: center;
         .navbar{
             flex:1;
+            background-color: var(--white);
         }
     }
 }
