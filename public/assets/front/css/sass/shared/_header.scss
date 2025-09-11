@@ -10,4 +10,18 @@ header{
             background-color: var(--white);
         }
     }
+    .searchOpen{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+        transition: all .3s linear;
+        @media screen and (min-width:992px) {
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
 }

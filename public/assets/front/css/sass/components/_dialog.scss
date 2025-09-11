@@ -42,34 +42,32 @@ dialog {
       transition: all 0.3s linear;
       @media screen and (min-width: 992px) {
         &:hover {
-          background: transparent
-            url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23940'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
-            center/15px auto no-repeat;
+          background:var(--fifth);
         }
       }
     }
   }
   .closeBtn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 30px;
     background: none;
-    background: red;
+    background: var(--fifth);
     opacity: 1;
     color: #ffffff;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 0;
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    border: 1px solid var(--fifth);
+    transition: all .3s linear;
     @media screen and (min-width: 992px) {
       &:hover {
-        color: red;
+        color: var(--fifth);
         background-color: #ffffff;
-        background: none;
       }
     }
   }
@@ -96,6 +94,25 @@ dialog {
     border-bottom-left-radius: calc(0.3rem - 1px);
     .statusButton {
       width: 100%;
+    }
+  }
+  &.fullScreen {
+    max-width: initial;
+    height: 100vh;
+    max-height: initial;
+    background-color: rgba(0, 0, 0, 0.5);
+    .dialogTitle{
+      color: var(--white);
+      font-size: 32px;
+    }
+    .dialogBody {
+      height: 100%;
+      display: flex;
+    }
+    .dialogCenter {
+      place-content: center;
+      margin: 0 auto;
+      min-width: 500px;
     }
   }
 }

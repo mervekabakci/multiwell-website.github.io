@@ -24,6 +24,7 @@
                 </a>
                 <div class="navbar">
                     <div class="navbar-collapse">
+                        <div class="searchOpen" data-dialog="searchDialog"><img width="24" src="public/assets/images/statics/icons/search.svg" alt=""></div>
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <div class="nav-link">
@@ -271,25 +272,52 @@
 
 
 
-    <!--Dialogs-->
+    <!--Ornek Dialogs-->
      <dialog id="exampleDialog" class="dialog">
-            <div class="dialogBody">
-                <button class="closeBtn">X</button>
+        <div class="dialogBody">
+            <button class="closeBtn">X</button>
+            <div class="dialogHead">
+                <div class="dialogTitle">Dialog Title</div>
+            </div>
+            <div class="dialogContent">
+                <p>Dialog Content</p>
+                <br><br><br><br><br>
+                <br><br><br><br><br>
+                <br><br><br><br><br>
+                <br><br><br><br><br>
+            </div>
+            <div class="dialogFooter">
+                <p>Dialog Footer</p>
+            </div>
+        </div>
+    </dialog>
+
+
+    <!--Search Dialogs-->
+     <dialog id="searchDialog" class="dialog fullScreen">
+        <div class="dialogBody">
+            <button class="closeBtn">X</button>
+            <div class="dialogCenter">
                 <div class="dialogHead">
-                    <div class="dialogTitle">Dialog Title</div>
+                    <div class="dialogTitle">Arama</div>
                 </div>
                 <div class="dialogContent">
-                    <p>Dialog Content</p>
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-                    <br><br><br><br><br>
-                </div>
-                <div class="dialogFooter">
-                    <p>Dialog Footer</p>
+                    <div class="searchWrapper">
+                        <div class="searchInputWrapper">
+                            <input type="text" placeholder="Aramak istediğiniz kelimeyi giriniz">
+                            <a href="#" class="searchButton">ARA</a>
+                        </div>
+                        <ul class="searchResult">
+                            <li><a href="#">Anksiyete</a> Nedir?</li>
+                            <li>Tedavi Ol</li>
+                            <li>Anksiyete nedir tam olarak anlamak ister misiniz?</li>
+                            <li><a href="#">Depresyon</a> kelimesi</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </dialog>
+        </div>
+    </dialog>
 
     <script src="public/assets/front/js/app.js" defer></script>
     <script src="public/assets/front/js/dialog.js" defer></script>
