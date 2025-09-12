@@ -7,7 +7,6 @@
     display: flex;
     align-items: stretch;
     height: 100px;
-    overflow: hidden;
 
     input {
       flex: 1;
@@ -20,6 +19,7 @@
       height: 60px;
       transition: all 0.3s linear;
       color: var(--tertiary);
+      box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
       &::placeholder {
         color: var(--gray-300);
       }
@@ -54,7 +54,7 @@
     overflow: hidden;
     overflow-y: auto;
     &::-webkit-scrollbar {
-      background-color: var(--gray-100);
+      background-color: var(--gray-200);
       border-radius: 8px;
       width: 8px;
     }
@@ -64,22 +64,22 @@
       width: 8px;
     }
     &::-webkit-scrollbar-track {
-      background-color: var(--gray-100);
+      background-color: var(--gray-200);
       border-radius: 8px;
       width: 8px;
     }
     .searchBox {
-      .searchGroup{
+      .searchGroup {
         padding-bottom: 30px;
         padding-right: 10px;
-        &:not(:first-child){  
+        &:not(:first-child) {
           padding-top: 30px;
           border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
       }
       .searchBoxTitle {
         font-size: 20px;
-        color: var(--primary);
+        color: var(--tertiary);
         margin-bottom: 10px;
         font-weight: 600;
       }
@@ -94,17 +94,22 @@
           gap: 20px;
           transition: all 0.3s linear;
           background-color: var(--white);
+          box-shadow:9px 0px 19px rgba(0, 0, 0, 0.1);
           border-radius: 6px;
+          color: var(--tertiary);
+          .customIcon{
+            font-size: 20px;
+          }
 
           &:not(:first-child) {
             // border-top: 1px solid rgba(0, 0, 0, 0.05);
           }
-          .icon{
+          .icon {
             max-width: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+            img {
               object-fit: contain;
               max-width: 100%;
               max-height: 100%;
@@ -142,23 +147,24 @@
               color: var(--tertiary);
               font-size: 16px;
               font-weight: 600;
-              transition: all .3s linear;
+              transition: all 0.3s linear;
             }
             .title {
               color: var(--gray-500);
               font-size: 14px;
               font-weight: 400;
-              transition: all .3s linear;
+              transition: all 0.3s linear;
             }
           }
           @media screen and (min-width: 992px) {
             &:hover {
               background-color: var(--soft-orange);
-              .desc{
-                .name{
+              color: var(--white);
+              .desc {
+                .name {
                   color: var(--white);
                 }
-                .title{
+                .title {
                   color: var(--white);
                 }
               }

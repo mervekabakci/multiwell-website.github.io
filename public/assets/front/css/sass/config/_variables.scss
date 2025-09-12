@@ -51,6 +51,7 @@ $colors: (
       color: var(--white) !important;
       border-color: $color !important;
       background: $color !important;
+      border: 1px solid $color !important;
 
       input {
         color: var(--white) !important;
@@ -66,15 +67,26 @@ $colors: (
           }
         }
       }
+      &-outline {
+        background-color: rgba(0, 0, 0, 0) !important;
+        border: 1px solid $color !important;
+        color: $color !important;
+        @media screen and (min-width: 992px) {
+          &:hover {
+            background-color: $color !important;
+            color: var(--white) !important;
+          }
+        }
+      }
     }
   }
 }
 
 @include generate-button-classes($colors);
 
-@mixin generate-bg-classes($colors){
-  @each $name, $color in ($colors){
-    .bg-#{$name}{
+@mixin generate-bg-classes($colors) {
+  @each $name, $color in ($colors) {
+    .bg-#{$name} {
       background-color: $color;
     }
   }

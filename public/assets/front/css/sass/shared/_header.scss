@@ -2,6 +2,7 @@ header{
     position: relative;
     z-index: 99;
     background-color: var(--white);
+    padding-bottom: 20px;
     .header{
         display: flex;
         align-items: center;
@@ -29,9 +30,13 @@ header{
         height: 45px;
         cursor: pointer;
         transition: all .3s linear;
+        .customIcon{
+            font-size: 30px;
+        }
         @media screen and (min-width:992px) {
             &:hover{
                 transform: scale(1.1);
+                color: var(--fifth);
             }
         }
     }
