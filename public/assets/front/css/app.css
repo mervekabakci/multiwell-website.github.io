@@ -380,6 +380,16 @@ header .header {
   align-items: center;
   gap: 30px;
 }
+header .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+header .header .logo span {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--primary);
+}
 header .header .navbar {
   flex: 1;
   background-color: var(--white);

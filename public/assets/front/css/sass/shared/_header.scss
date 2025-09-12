@@ -6,6 +6,16 @@ header{
         display: flex;
         align-items: center;
         gap: 30px;
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            span{
+                font-weight: 500;
+                font-size: 20px;
+                color: var(--primary);
+            }
+        }
         .navbar{
             flex:1;
             background-color: var(--white);
