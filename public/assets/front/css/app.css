@@ -148,6 +148,462 @@ video {
   --gray-500: #5c5757;
 }
 
+.button-white {
+  color: var(--white) !important;
+  border-color: var(--white) !important;
+  background: var(--white) !important;
+}
+.button-white input {
+  color: var(--white) !important;
+  background: var(--white) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-white:hover {
+    color: var(--white) !important;
+    background-color: var(--white) !important;
+  }
+  .button-white:hover input {
+    color: var(--white) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-black {
+  color: var(--white) !important;
+  border-color: var(--black) !important;
+  background: var(--black) !important;
+}
+.button-black input {
+  color: var(--white) !important;
+  background: var(--black) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-black:hover {
+    color: var(--black) !important;
+    background-color: var(--white) !important;
+  }
+  .button-black:hover input {
+    color: var(--black) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-primary {
+  color: var(--white) !important;
+  border-color: var(--primary) !important;
+  background: var(--primary) !important;
+}
+.button-primary input {
+  color: var(--white) !important;
+  background: var(--primary) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-primary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-primary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-secondary {
+  color: var(--white) !important;
+  border-color: var(--secondary) !important;
+  background: var(--secondary) !important;
+}
+.button-secondary input {
+  color: var(--white) !important;
+  background: var(--secondary) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--secondary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--secondary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-tertiary {
+  color: var(--white) !important;
+  border-color: var(--tertiary) !important;
+  background: var(--tertiary) !important;
+}
+.button-tertiary input {
+  color: var(--white) !important;
+  background: var(--tertiary) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-tertiary:hover {
+    color: var(--tertiary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-tertiary:hover input {
+    color: var(--tertiary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-fourth {
+  color: var(--white) !important;
+  border-color: var(--fourth) !important;
+  background: var(--fourth) !important;
+}
+.button-fourth input {
+  color: var(--white) !important;
+  background: var(--fourth) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-fourth:hover {
+    color: var(--fourth) !important;
+    background-color: var(--white) !important;
+  }
+  .button-fourth:hover input {
+    color: var(--fourth) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-fifth {
+  color: var(--white) !important;
+  border-color: var(--fifth) !important;
+  background: var(--fifth) !important;
+}
+.button-fifth input {
+  color: var(--white) !important;
+  background: var(--fifth) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-fifth:hover {
+    color: var(--fifth) !important;
+    background-color: var(--white) !important;
+  }
+  .button-fifth:hover input {
+    color: var(--fifth) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-pink {
+  color: var(--white) !important;
+  border-color: var(--soft-pink) !important;
+  background: var(--soft-pink) !important;
+}
+.button-soft-pink input {
+  color: var(--white) !important;
+  background: var(--soft-pink) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-pink:hover {
+    color: var(--soft-pink) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-pink:hover input {
+    color: var(--soft-pink) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-light-pink {
+  color: var(--white) !important;
+  border-color: var(--soft-light-pink) !important;
+  background: var(--soft-light-pink) !important;
+}
+.button-soft-light-pink input {
+  color: var(--white) !important;
+  background: var(--soft-light-pink) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-light-pink:hover {
+    color: var(--soft-light-pink) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-light-pink:hover input {
+    color: var(--soft-light-pink) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-blue {
+  color: var(--white) !important;
+  border-color: var(--soft-blue) !important;
+  background: var(--soft-blue) !important;
+}
+.button-soft-blue input {
+  color: var(--white) !important;
+  background: var(--soft-blue) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-blue:hover {
+    color: var(--soft-blue) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-blue:hover input {
+    color: var(--soft-blue) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-light-blue {
+  color: var(--white) !important;
+  border-color: var(--soft-light-blue) !important;
+  background: var(--soft-light-blue) !important;
+}
+.button-soft-light-blue input {
+  color: var(--white) !important;
+  background: var(--soft-light-blue) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-light-blue:hover {
+    color: var(--soft-light-blue) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-light-blue:hover input {
+    color: var(--soft-light-blue) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-yellow {
+  color: var(--white) !important;
+  border-color: var(--soft-yellow) !important;
+  background: var(--soft-yellow) !important;
+}
+.button-soft-yellow input {
+  color: var(--white) !important;
+  background: var(--soft-yellow) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-yellow:hover {
+    color: var(--soft-yellow) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-yellow:hover input {
+    color: var(--soft-yellow) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-soft-orange {
+  color: var(--white) !important;
+  border-color: var(--soft-orange) !important;
+  background: var(--soft-orange) !important;
+}
+.button-soft-orange input {
+  color: var(--white) !important;
+  background: var(--soft-orange) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-orange:hover {
+    color: var(--soft-orange) !important;
+    background-color: var(--white) !important;
+  }
+  .button-soft-orange:hover input {
+    color: var(--soft-orange) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray {
+  color: var(--white) !important;
+  border-color: var(--gray) !important;
+  background: var(--gray) !important;
+}
+.button-gray input {
+  color: var(--white) !important;
+  background: var(--gray) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray:hover {
+    color: var(--gray) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray:hover input {
+    color: var(--gray) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray-100 {
+  color: var(--white) !important;
+  border-color: var(--gray-100) !important;
+  background: var(--gray-100) !important;
+}
+.button-gray-100 input {
+  color: var(--white) !important;
+  background: var(--gray-100) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray-100:hover {
+    color: var(--gray-100) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray-100:hover input {
+    color: var(--gray-100) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray-200 {
+  color: var(--white) !important;
+  border-color: var(--gray-200) !important;
+  background: var(--gray-200) !important;
+}
+.button-gray-200 input {
+  color: var(--white) !important;
+  background: var(--gray-200) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray-200:hover {
+    color: var(--gray-200) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray-200:hover input {
+    color: var(--gray-200) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray-300 {
+  color: var(--white) !important;
+  border-color: var(--gray-300) !important;
+  background: var(--gray-300) !important;
+}
+.button-gray-300 input {
+  color: var(--white) !important;
+  background: var(--gray-300) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray-300:hover {
+    color: var(--gray-300) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray-300:hover input {
+    color: var(--gray-300) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray-400 {
+  color: var(--white) !important;
+  border-color: var(--gray-400) !important;
+  background: var(--gray-400) !important;
+}
+.button-gray-400 input {
+  color: var(--white) !important;
+  background: var(--gray-400) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray-400:hover {
+    color: var(--gray-400) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray-400:hover input {
+    color: var(--gray-400) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.button-gray-500 {
+  color: var(--white) !important;
+  border-color: var(--gray-500) !important;
+  background: var(--gray-500) !important;
+}
+.button-gray-500 input {
+  color: var(--white) !important;
+  background: var(--gray-500) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-gray-500:hover {
+    color: var(--gray-500) !important;
+    background-color: var(--white) !important;
+  }
+  .button-gray-500:hover input {
+    color: var(--gray-500) !important;
+    background-color: var(--white) !important;
+  }
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary);
+}
+
+.bg-fourth {
+  background-color: var(--fourth);
+}
+
+.bg-fifth {
+  background-color: var(--fifth);
+}
+
+.bg-soft-pink {
+  background-color: var(--soft-pink);
+}
+
+.bg-soft-light-pink {
+  background-color: var(--soft-light-pink);
+}
+
+.bg-soft-blue {
+  background-color: var(--soft-blue);
+}
+
+.bg-soft-light-blue {
+  background-color: var(--soft-light-blue);
+}
+
+.bg-soft-yellow {
+  background-color: var(--soft-yellow);
+}
+
+.bg-soft-orange {
+  background-color: var(--soft-orange);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--gray-200);
+}
+
+.bg-gray-300 {
+  background-color: var(--gray-300);
+}
+
+.bg-gray-400 {
+  background-color: var(--gray-400);
+}
+
+.bg-gray-500 {
+  background-color: var(--gray-500);
+}
+
 .container {
   max-width: 1750px;
   margin: 0 auto;
@@ -368,6 +824,26 @@ video {
   .textLink:not(.notHover):hover .text:after {
     width: 0;
   }
+}
+
+.fixBtn {
+  padding: 0 24px;
+  position: relative;
+  border-radius: 8px;
+  font-family: "GilroySemibold";
+  font-size: 14px;
+  transition: all 0.3s linear;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fixBtn input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: 0;
+  border: none;
 }
 
 header {
@@ -885,21 +1361,23 @@ dialog.fullScreen .dialogCenter {
   width: 8px;
 }
 .searchWrapper .searchResult .searchBox .searchGroup {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  padding-right: 10px;
 }
 .searchWrapper .searchResult .searchBox .searchGroup:not(:first-child) {
-  padding-top: 20px;
+  padding-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 .searchWrapper .searchResult .searchBox .searchBoxTitle {
-  font-size: 26px;
-  color: var(--tertiary);
+  font-size: 20px;
+  color: var(--primary);
   margin-bottom: 10px;
   font-weight: 600;
 }
 .searchWrapper .searchResult .searchBox .searchList {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 .searchWrapper .searchResult .searchBox .searchList .item {
   display: flex;
@@ -907,9 +1385,8 @@ dialog.fullScreen .dialogCenter {
   padding: 20px;
   gap: 20px;
   transition: all 0.3s linear;
-}
-.searchWrapper .searchResult .searchBox .searchList .item:not(:first-child) {
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background-color: var(--white);
+  border-radius: 6px;
 }
 .searchWrapper .searchResult .searchBox .searchList .item .icon {
   max-width: 30px;
@@ -931,7 +1408,8 @@ dialog.fullScreen .dialogCenter {
   align-items: center;
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 2px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .searchWrapper .searchResult .searchBox .searchList .item .iconImage:after {
   content: "";
@@ -953,20 +1431,23 @@ dialog.fullScreen .dialogCenter {
   color: var(--tertiary);
   font-size: 16px;
   font-weight: 600;
+  transition: all 0.3s linear;
 }
 .searchWrapper .searchResult .searchBox .searchList .item .desc .title {
   color: var(--gray-500);
   font-size: 14px;
   font-weight: 400;
+  transition: all 0.3s linear;
 }
 @media screen and (min-width: 992px) {
   .searchWrapper .searchResult .searchBox .searchList .item:hover {
     background-color: var(--soft-orange);
-    border-radius: 6px;
-    border-color: rgba(0, 0, 0, 0);
   }
-  .searchWrapper .searchResult .searchBox .searchList .item:hover + .item {
-    border-color: rgba(0, 0, 0, 0);
+  .searchWrapper .searchResult .searchBox .searchList .item:hover .desc .name {
+    color: var(--white);
+  }
+  .searchWrapper .searchResult .searchBox .searchList .item:hover .desc .title {
+    color: var(--white);
   }
 }
 .searchWrapper .searchResult li {
@@ -1010,4 +1491,57 @@ dialog.fullScreen .dialogCenter {
   background-color: var(--secondary);
   border-radius: 6px;
   padding: 0 24px;
+}
+
+.homeBanner {
+  height: 700px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 50px;
+}
+.homeBanner .desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10vw;
+  gap: 25px;
+}
+.homeBanner .desc .title {
+  font-family: "GilroyRegular";
+  color: var(--white);
+  font-size: 70px;
+  line-height: 85px;
+}
+.homeBanner .desc .title a {
+  position: relative;
+  color: var(--secondary);
+}
+.homeBanner .desc .title a:after {
+  content: "";
+  border-bottom: 3px solid var(--secondary);
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.homeBanner .desc p {
+  font-family: "GilroyRegular";
+  font-size: 16px;
+  color: var(--white);
+}
+.homeBanner .desc .buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  gap: 30px;
+}
+.homeBanner figure {
+  margin: 0;
+  margin-left: auto;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 6.5/6;
+  max-width: 650px;
 }

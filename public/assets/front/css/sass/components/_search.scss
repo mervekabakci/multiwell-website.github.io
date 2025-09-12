@@ -70,30 +70,34 @@
     }
     .searchBox {
       .searchGroup{
-        padding-bottom: 20px;
-        &:not(:first-child){
-          padding-top: 20px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        &:not(:first-child){  
+          padding-top: 30px;
           border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
       }
       .searchBoxTitle {
-        font-size: 26px;
-        color: var(--tertiary);
+        font-size: 20px;
+        color: var(--primary);
         margin-bottom: 10px;
         font-weight: 600;
       }
       .searchList {
         display: flex;
         flex-direction: column;
+        gap: 10px;
         .item {
           display: flex;
           align-items: center;
           padding: 20px;
           gap: 20px;
           transition: all 0.3s linear;
+          background-color: var(--white);
+          border-radius: 6px;
 
           &:not(:first-child) {
-            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            // border-top: 1px solid rgba(0, 0, 0, 0.05);
           }
           .icon{
             max-width: 30px;
@@ -114,7 +118,8 @@
             align-items: center;
             position: relative;
             border: 1px solid rgba(0, 0, 0, 0.05);
-            border-radius: 2px;
+            border-radius: 4px;
+            overflow: hidden;
             &:after {
               content: "";
               background-image: url("../../images/statics/icons/user-outline.svg");
@@ -137,22 +142,31 @@
               color: var(--tertiary);
               font-size: 16px;
               font-weight: 600;
+              transition: all .3s linear;
             }
             .title {
               color: var(--gray-500);
               font-size: 14px;
               font-weight: 400;
+              transition: all .3s linear;
             }
           }
           @media screen and (min-width: 992px) {
             &:hover {
               background-color: var(--soft-orange);
-              border-radius: 6px;
-              border-color: rgba(0,0,0,0);
-
-              & + .item{
-                border-color: rgba(0,0,0,0);
+              .desc{
+                .name{
+                  color: var(--white);
+                }
+                .title{
+                  color: var(--white);
+                }
               }
+              // border-radius: 6px;
+
+              // & + .item{
+              //   border-color: rgba(0,0,0,0);
+              // }
             }
           }
         }
