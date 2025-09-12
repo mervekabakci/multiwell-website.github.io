@@ -6,15 +6,32 @@
   .searchInputWrapper {
     display: flex;
     align-items: stretch;
-    background-color: var(--white);
-    border-radius: 6px;
-    height: 60px;
+    height: 100px;
     overflow: hidden;
 
     input {
       flex: 1;
       padding-left: 12px;
       padding-right: 12px;
+      font-size: 24px;
+      font-weight: 500;
+      background-color: var(--white);
+      border-radius: 6px;
+      height: 60px;
+      transition: all 0.3s linear;
+      color: var(--tertiary);
+      &::placeholder {
+        color: var(--gray-300);
+      }
+      &::-moz-placeholder {
+        color: var(--gray-300);
+      }
+      &::-webkit-input-placeholder {
+        color: var(--gray-300);
+      }
+      &:focus {
+        height: 100px;
+      }
     }
     .searchButton {
       display: flex;
@@ -28,10 +45,119 @@
       border-radius: 6px 0 0 6px;
     }
   }
+  // .searchInputWrapper:has(input:focus) {
+  //   height: 100px;
+  // }
 
   .searchResult {
-    list-style-type: disc;
-    padding-left: 30px;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      background-color: var(--gray-100);
+      border-radius: 8px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--tertiary);
+      border-radius: 8px;
+      width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: var(--gray-100);
+      border-radius: 8px;
+      width: 8px;
+    }
+    .searchBox {
+      .searchGroup{
+        padding-bottom: 20px;
+        &:not(:first-child){
+          padding-top: 20px;
+          border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+      }
+      .searchBoxTitle {
+        font-size: 26px;
+        color: var(--tertiary);
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+      .searchList {
+        display: flex;
+        flex-direction: column;
+        .item {
+          display: flex;
+          align-items: center;
+          padding: 20px;
+          gap: 20px;
+          transition: all 0.3s linear;
+
+          &:not(:first-child) {
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+          }
+          .icon{
+            max-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+              object-fit: contain;
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+          .iconImage {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            &:after {
+              content: "";
+              background-image: url("../../images/statics/icons/user-outline.svg");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 20px;
+              opacity: 0.2;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .desc {
+            .name {
+              color: var(--tertiary);
+              font-size: 16px;
+              font-weight: 600;
+            }
+            .title {
+              color: var(--gray-500);
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          @media screen and (min-width: 992px) {
+            &:hover {
+              background-color: var(--soft-orange);
+              border-radius: 6px;
+              border-color: rgba(0,0,0,0);
+
+              & + .item{
+                border-color: rgba(0,0,0,0);
+              }
+            }
+          }
+        }
+      }
+    }
     li {
       color: var(--white);
       font-size: 15px;
@@ -45,7 +171,7 @@
       a {
         font-weight: 600;
         position: relative;
-        color: var(--fifth);
+        color: var(--tertiary);
         &:after {
           display: inline-flex;
           content: "";

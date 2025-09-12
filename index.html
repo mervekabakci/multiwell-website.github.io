@@ -24,7 +24,6 @@
                 </a>
                 <div class="navbar">
                     <div class="navbar-collapse">
-                        <div class="searchOpen" data-dialog="searchDialog"><img width="24" src="public/assets/images/statics/icons/search.svg" alt=""></div>
                         <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <div class="nav-link">
@@ -41,7 +40,7 @@
                                         <!-- <button type="button" class="closeBtn d-lg-none">X</button> -->
                                         <div class="dropdown-inner">
                                             <div class="dropdown-body">
-                                                <div class="dropdown-column">
+                                                <div class="dropdown-column med">
                                                     <div class="top-content">
                                                         <div class="dropdown-menu-item">
                                                             <a href="#" class="dropdown-menu-link">
@@ -88,7 +87,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="dropdown-column">
+                                                <div class="dropdown-column med">
                                                     <div class="top-content">
                                                         <div class="dropdown-menu-item">
                                                             <a href="#" class="dropdown-menu-link">
@@ -212,16 +211,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <div class="nav-link-inner">
-                                        <span class="icon">
-                                            <img src="public/assets/images/statics/icons/request.png" alt="">
-                                        </span>
-                                        <span>Uzman Bul</span>
-                                    </div>
-                                </a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <div class="nav-link">
                                     <label for="menuTedavi">
@@ -257,7 +246,27 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">
+                                    <div class="nav-link-inner">
+                                        <span class="icon">
+                                            <img src="public/assets/images/statics/icons/request.png" alt="">
+                                        </span>
+                                        <span>Uzman Bul</span>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
+                        <div class="buttons">
+
+                            <!-- <div class="dropdown">
+                                <div class="dropdown-button">Desteğe mi ihtiyacı var</div>
+                                <div class="dropdown-content" style="display: none;">
+                                    
+                                </div>
+                            </div> -->
+                            <div class="searchOpen" data-dialog="searchDialog"><img width="24" src="public/assets/images/statics/icons/search.svg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,23 +305,145 @@
     <!--Search Dialogs-->
      <dialog id="searchDialog" class="dialog fullScreen">
         <div class="dialogBody">
-            <button class="closeBtn">X</button>
             <div class="dialogCenter">
-                <div class="dialogHead">
+                <div class="dialogHead border-none">
                     <div class="dialogTitle">Arama</div>
+                    <button class="closeBtn">X KAPAT</button>
                 </div>
                 <div class="dialogContent">
                     <div class="searchWrapper">
                         <div class="searchInputWrapper">
                             <input type="text" placeholder="Aramak istediğiniz kelimeyi giriniz">
-                            <a href="#" class="searchButton">ARA</a>
+                            <!-- <a href="#" class="searchButton">ARA</a> -->
                         </div>
-                        <ul class="searchResult">
-                            <li><a href="#">Anksiyete</a> Nedir?</li>
-                            <li>Tedavi Ol</li>
-                            <li>Anksiyete nedir tam olarak anlamak ister misiniz?</li>
-                            <li><a href="#">Depresyon</a> kelimesi</li>
-                        </ul>
+                        <div class="searchResult">
+                            <div class="searchBox">
+                                <div class="searchGroup">
+                                    <div class="searchBoxTitle">
+                                        Uzmanlar
+                                    </div>
+                                    <div class="searchList">
+                                        <a href="#" class="item">
+                                            <div class="iconImage"></div>
+                                            <div class="desc">
+                                                <div class="name">Cem Kaya</div>
+                                                <div class="title">Klinik Psikolog</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="iconImage"></div>
+                                            <div class="desc">
+                                                <div class="name">Şener Cem Irmak</div>
+                                                <div class="title">Uzman Psikolog ve Aile Danışmanı</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="iconImage"></div>
+                                            <div class="desc">
+                                                <div class="name">Cem Kaya</div>
+                                                <div class="title">Klinik Psikolog</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="iconImage"></div>
+                                            <div class="desc">
+                                                <div class="name">Şener Cem Irmak</div>
+                                                <div class="title">Uzman Psikolog ve Aile Danışmanı</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="searchGroup">
+                                    <div class="searchBoxTitle">
+                                        Videolar
+                                    </div>
+                                    <div class="searchList">
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/video.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Cem Kaya</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/video.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Şener Cem Irmak</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/video.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Cem Kaya</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/video.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Şener Cem Irmak</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="searchGroup">
+                                    <div class="searchBoxTitle">
+                                        Makale
+                                    </div>
+                                    <div class="searchList">
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/article.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/article.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Teknoloji Bağımlılığı</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/article.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Kabullenememek: Görmezden Geldikçe Büyüyen Bir Acı</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="icon"><img width="24px" src="public/assets/images/statics/icons/article.svg" alt=""></div>
+                                            <div class="desc">
+                                                <div class="name">Teknoloji Bağımlılığı</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="searchGroup">
+                                    <div class="searchBoxTitle">
+                                        Sorunlar
+                                    </div>
+                                    <div class="searchList">
+                                        <a href="#" class="item">
+                                            <div class="desc">
+                                                <div class="name">Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="desc">
+                                                <div class="name">Teknoloji Bağımlılığı</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="desc">
+                                                <div class="name">Kabullenememek: Görmezden Geldikçe Büyüyen Bir Acı</div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="item">
+                                            <div class="desc">
+                                                <div class="name">Teknoloji Bağımlılığı</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

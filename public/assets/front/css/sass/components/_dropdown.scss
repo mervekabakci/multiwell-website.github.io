@@ -1,0 +1,13 @@
+.dropdown{
+    .dropdown-button{
+        display: flex;
+        align-items: center;
+        font-size: 'GilroyMedium';
+        font-size: 14px;
+        height: 48px;
+        width: 250px;
+        background-color: var(--secondary);
+        border-radius: 6px;
+        padding: 0 24px;
+    }
+}

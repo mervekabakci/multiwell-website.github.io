@@ -17,6 +17,9 @@ dialog {
     border-bottom: 1px solid #dee2e6;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
+    &.border-none{
+      border: none;
+    }
     .dialogTitle {
       font-size: 18px;
       font-style: normal;
@@ -25,24 +28,28 @@ dialog {
 
     .closeBtn {
       box-sizing: content-box;
-      width: 25px;
-      height: 25px;
-      color: #000;
-      background: transparent
-        url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e")
-        center/15px auto no-repeat;
+      width: auto;
+      height: 45px;
+      color: #ffffff;
+      background: var(--tertiary);
+      font-size: 14px;
       border: none;
-      border-radius: 0.25rem;
-      opacity: 0.5;
+      border-radius: 6px;
+      opacity:1;
       margin-left: auto;
-      border: none;
+      border: 1px solid var(--tertiary);
       outline: 0;
-      padding: 0;
+      padding: 0 14px;
       cursor: pointer;
+      position: relative;
       transition: all 0.3s linear;
+      right: 0;
+      top: 0;
+      font-family: 'GilroyMedium';
       @media screen and (min-width: 992px) {
         &:hover {
-          background:var(--fifth);
+          background: var(--white);
+          color: var(--tertiary);
         }
       }
     }
@@ -63,7 +70,7 @@ dialog {
     align-items: center;
     justify-content: center;
     border: 1px solid var(--fifth);
-    transition: all .3s linear;
+    transition: all 0.3s linear;
     @media screen and (min-width: 992px) {
       &:hover {
         color: var(--fifth);
@@ -100,9 +107,10 @@ dialog {
     max-width: initial;
     height: 100vh;
     max-height: initial;
-    background-color: rgba(0, 0, 0, 0.5);
-    .dialogTitle{
-      color: var(--white);
+    // background-color:rgba(234, 244, 117,0.7);
+    background-color: rgba(249, 246, 240, 0.7);
+    .dialogTitle {
+      color: var(--tertiary);
       font-size: 32px;
     }
     .dialogBody {
@@ -112,7 +120,8 @@ dialog {
     .dialogCenter {
       place-content: center;
       margin: 0 auto;
-      min-width: 500px;
+      width: 100%;
+      max-width: 800px;
     }
   }
 }

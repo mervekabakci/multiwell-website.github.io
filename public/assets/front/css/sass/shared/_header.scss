@@ -5,6 +5,7 @@ header{
     .header{
         display: flex;
         align-items: center;
+        gap: 30px;
         .navbar{
             flex:1;
             background-color: var(--white);
