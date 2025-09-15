@@ -1,0 +1,10 @@
+section,
+.section{
+    &:not(:first-child){
+        margin-top: 85px;
+    }
+
+    &.featuredSection{
+        margin-top: 20px;
+    }
+}

@@ -861,6 +861,22 @@ video {
   align-items: center;
   justify-content: center;
 }
+.imageWrapper.fitContain img {
+  min-width: initial;
+  min-height: initial;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.pb-y {
+  padding-block: 35px;
+}
 
 .preloader {
   position: fixed;
@@ -2003,7 +2019,6 @@ dialog.fullScreen .dialogCenter {
   height: 700px;
   display: flex;
   align-items: flex-start;
-  border-radius: 10px;
   padding: 50px;
 }
 .homeBanner .desc {
@@ -2023,6 +2038,8 @@ dialog.fullScreen .dialogCenter {
 .homeBanner .desc .title a {
   position: relative;
   color: var(--secondary);
+  transition: all 0.3s linear;
+  display: inline-block;
 }
 .homeBanner .desc .title a:after {
   content: "";
@@ -2032,6 +2049,15 @@ dialog.fullScreen .dialogCenter {
   bottom: -2px;
   left: 0;
   transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .homeBanner .desc .title a:hover {
+    color: var(--fifth);
+    transform: translateY(-5px);
+  }
+  .homeBanner .desc .title a:hover:after {
+    border-color: var(--fifth);
+  }
 }
 .homeBanner .desc p {
   font-family: "GilroyRegular";
@@ -2052,4 +2078,38 @@ dialog.fullScreen .dialogCenter {
   overflow: hidden;
   aspect-ratio: 6.5/6;
   max-width: 650px;
+}
+
+section:not(:first-child),
+.section:not(:first-child) {
+  margin-top: 85px;
+}
+section.featuredSection,
+.section.featuredSection {
+  margin-top: 20px;
+}
+
+.featuredWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.featuredWrapper .featuredTitle {
+  min-width: 214px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--tertiary);
+  background-color: var(--white);
+  color: var(--tertiary);
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.featuredWrapper .featuredList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

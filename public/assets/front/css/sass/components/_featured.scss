@@ -1,0 +1,25 @@
+.featuredWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    .featuredTitle{
+        min-width: 214px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--tertiary);
+        background-color: var(--white);
+        color: var(--tertiary);
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 6px;
+    }
+    .featuredList{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

@@ -10,4 +10,22 @@
     align-items: center;
     justify-content: center;
   }
+
+  &.fitContain{
+    img{
+      min-width: initial;
+      min-height: initial;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.rounded{
+  border-radius: 10px;
+}
+
+.pb-y{
+  padding-block: 35px;
 }
