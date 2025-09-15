@@ -1,0 +1,108 @@
+footer {
+  .footer {
+    .footerTop {
+      .portalWrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+        .title {
+          font-family: "GilroySemibold";
+          color: var(--white);
+          font-size: 30px;
+          padding-top: 16px;
+        }
+        .portalList {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+      }
+    }
+    .footerMenu {
+      .menuList {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        & > .menu-item {
+          width: calc(16.6666% - 25px);
+        }
+        .menu-item {
+          .title {
+            font-family: "GilroyMedium";
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--white);
+            display: inline-block;
+            margin-bottom: 25px;
+          }
+          .menu-item {
+            padding-block: 10px;
+            .menu-link {
+              font-family: "GilroyRegular";
+              font-size: 15px;
+              color: var(--white);
+              position: relative;
+              transition: all 0.3s linear;
+              display: inline-block;
+              &:before {
+                content: "\e902";
+                font-family: "customFont";
+                color: var(--white);
+                position: relative;
+                top: 0px;
+                opacity: 0;
+                visibility: hidden;
+                overflow: hidden;
+                transform: translateX(-10px);
+                font-size: 0;
+                transition: all 0.3s linear;
+                position: absolute;
+                left: 0;
+              }
+            }
+            @media screen and (min-width: 992px) {
+              @media screen and (min-width: 992px) {
+                &:hover {
+                  .menu-link {
+                    transform: translateX(30px);
+                    &:before {
+                      opacity: 1;
+                      font-size: 24px;
+                      transform: translateX(0);
+                      visibility: visible;
+                      overflow: visible;
+                      left: -30px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerBottom {
+      display: flex;
+      align-items: flex-end;
+      .copyRight {
+        color: var(--white);
+        font-family: "GilroySemibold";
+        font-size: 18px;
+      }
+    }
+    .socialMedia {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      gap: 20px;
+      .title {
+        color: var(--white);
+        font-family: "GilroySemibold";
+        font-size: 18px;
+      }
+      .socialMediaList {
+      }
+    }
+  }
+}

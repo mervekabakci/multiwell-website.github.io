@@ -1788,6 +1788,98 @@ header.fixed .navbar-nav .nav-item .nav-link {
     opacity: 1;
   }
 }
+footer .footer .footerTop .portalWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+footer .footer .footerTop .portalWrapper .title {
+  font-family: "GilroySemibold";
+  color: var(--white);
+  font-size: 30px;
+  padding-top: 16px;
+}
+footer .footer .footerTop .portalWrapper .portalList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .footer .footerMenu .menuList {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+footer .footer .footerMenu .menuList > .menu-item {
+  width: calc(16.6666% - 25px);
+}
+footer .footer .footerMenu .menuList .menu-item .title {
+  font-family: "GilroyMedium";
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+  display: inline-block;
+  margin-bottom: 25px;
+}
+footer .footer .footerMenu .menuList .menu-item .menu-item {
+  padding-block: 10px;
+}
+footer .footer .footerMenu .menuList .menu-item .menu-item .menu-link {
+  font-family: "GilroyRegular";
+  font-size: 15px;
+  color: var(--white);
+  position: relative;
+  transition: all 0.3s linear;
+  display: inline-block;
+}
+footer .footer .footerMenu .menuList .menu-item .menu-item .menu-link:before {
+  content: "\e902";
+  font-family: "customFont";
+  color: var(--white);
+  position: relative;
+  top: 0px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transform: translateX(-10px);
+  font-size: 0;
+  transition: all 0.3s linear;
+  position: absolute;
+  left: 0;
+}
+@media screen and (min-width: 992px) and (min-width: 992px) {
+  footer .footer .footerMenu .menuList .menu-item .menu-item:hover .menu-link {
+    transform: translateX(30px);
+  }
+  footer .footer .footerMenu .menuList .menu-item .menu-item:hover .menu-link:before {
+    opacity: 1;
+    font-size: 24px;
+    transform: translateX(0);
+    visibility: visible;
+    overflow: visible;
+    left: -30px;
+  }
+}
+footer .footer .footerBottom {
+  display: flex;
+  align-items: flex-end;
+}
+footer .footer .footerBottom .copyRight {
+  color: var(--white);
+  font-family: "GilroySemibold";
+  font-size: 18px;
+}
+footer .footer .socialMedia {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 20px;
+}
+footer .footer .socialMedia .title {
+  color: var(--white);
+  font-family: "GilroySemibold";
+  font-size: 18px;
+}
 dialog {
   border: none;
   outline: 0;
