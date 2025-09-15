@@ -1788,6 +1788,10 @@ header.fixed .navbar-nav .nav-item .nav-link {
     opacity: 1;
   }
 }
+footer {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
 footer .footer .footerTop .portalWrapper {
   display: flex;
   align-items: flex-start;
