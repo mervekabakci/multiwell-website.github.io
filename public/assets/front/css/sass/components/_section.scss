@@ -7,4 +7,21 @@ section,
     &.featuredSection{
         margin-top: 20px;
     }
+
+    .sectionHead{
+        display: flex;
+        align-items: flex-start;
+        
+        .sectionText{
+            font-family: 'GilroyMedium';
+            font-size: 22px;
+            color: var(--black);
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        &.center{
+            justify-content: center;
+        }
+    }
 }

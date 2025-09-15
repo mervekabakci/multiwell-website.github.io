@@ -8,6 +8,8 @@
   --fourth: #8db63f;
   --fifth: #f68d6d;
 
+  --black-800: #303030;
+
   --soft-pink: #ffe7e4;
   --soft-light-pink: #f9f6f0;
   --soft-blue: #b9ddff;
@@ -92,6 +94,15 @@ $colors: (
   }
 }
 @include generate-bg-classes($colors);
+
+@for $i from 1 through 12 {
+  .line-clamp-#{$i} {
+    display: -webkit-box;
+    overflow: hidden;
+    -moz-box-orient: vertical;
+    line-clamp: $i;
+  }
+}
 
 .container {
   max-width: 1750px;

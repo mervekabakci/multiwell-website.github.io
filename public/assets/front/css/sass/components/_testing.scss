@@ -1,0 +1,29 @@
+.testingWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  .testingDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    .testingTitle {
+      font-family: "GilroyBold";
+      color: var(--tertiary);
+      font-size: 80px;
+      line-height: 90px;
+    }
+    p {
+      color: var(--black-800);
+      font-size: 22px;
+      line-height: 32px;
+      font-family: "GilroyMedium";
+      max-width: 700px;
+    }
+    .fixBtn {
+      margin-top: 40px;
+    }
+  }
+}

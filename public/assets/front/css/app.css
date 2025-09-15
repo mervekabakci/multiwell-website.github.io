@@ -134,6 +134,7 @@ video {
   --tertiary: #045869;
   --fourth: #8db63f;
   --fifth: #f68d6d;
+  --black-800: #303030;
   --soft-pink: #ffe7e4;
   --soft-light-pink: #f9f6f0;
   --soft-blue: #b9ddff;
@@ -832,6 +833,78 @@ video {
   background-color: var(--gray-500);
 }
 
+.line-clamp-1 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 1;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 2;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 3;
+}
+
+.line-clamp-4 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 4;
+}
+
+.line-clamp-5 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 5;
+}
+
+.line-clamp-6 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 6;
+}
+
+.line-clamp-7 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 7;
+}
+
+.line-clamp-8 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 8;
+}
+
+.line-clamp-9 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 9;
+}
+
+.line-clamp-10 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 10;
+}
+
+.line-clamp-11 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 11;
+}
+
+.line-clamp-12 {
+  display: -webkit-box;
+  overflow: hidden;
+  line-clamp: 12;
+}
+
 .container {
   max-width: 1750px;
   margin: 0 auto;
@@ -874,8 +947,20 @@ video {
   border-radius: 10px;
 }
 
-.pb-y {
+.pb {
   padding-block: 35px;
+}
+
+.pb-2 {
+  padding-block: 60px;
+}
+
+.pi {
+  padding-inline: 70px;
+}
+
+.pi-2 {
+  padding-inline: 100px;
 }
 
 .preloader {
@@ -1081,6 +1166,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .fixBtn input {
   width: 100%;
@@ -1088,6 +1174,13 @@ video {
   padding: 0;
   outline: 0;
   border: none;
+}
+.fixBtn .icon-arrow-long-right {
+  font-size: 30px;
+}
+.fixBtn.type2 {
+  border-radius: 24px;
+  min-width: 350px;
 }
 
 @font-face {
@@ -2102,6 +2195,23 @@ section.featuredSection,
 .section.featuredSection {
   margin-top: 20px;
 }
+section .sectionHead,
+.section .sectionHead {
+  display: flex;
+  align-items: flex-start;
+}
+section .sectionHead .sectionText,
+.section .sectionHead .sectionText {
+  font-family: "GilroyMedium";
+  font-size: 22px;
+  color: var(--black);
+  text-align: center;
+  margin: 0 auto;
+}
+section .sectionHead.center,
+.section .sectionHead.center {
+  justify-content: center;
+}
 
 .featuredWrapper {
   display: flex;
@@ -2125,5 +2235,103 @@ section.featuredSection,
 .featuredWrapper .featuredList {
   display: flex;
   align-items: center;
+  gap: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 60px;
+  margin-block: 50px;
+}
+.cards .card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cards .card-body {
+  background-color: var(--white);
+  padding: 25px;
+  text-align: center;
+}
+.cards .card-title {
+  font-family: "GilroySemibold";
+  font-size: 30px;
+  color: var(--primary);
+  transition: all 0.3s linear;
+}
+.cards .card-text {
+  font-family: "GilroyMedium";
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 25px;
+  color: var(--primary);
+}
+.cards .icon-arrow-long-right {
+  font-size: 32px;
+  color: var(--primary);
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .cards a.card:hover .card-title {
+    color: var(--fifth);
+  }
+  .cards a.card:hover .icon-arrow-long-right {
+    transform: translateX(10px);
+    color: var(--fifth);
+  }
+}
+.cards.quad .card {
+  width: calc(25% - 52px);
+}
+.cards.quad .card .card-image-top {
+  aspect-ratio: 3/2;
+}
+
+.swiper .swiper-pagination {
+  position: relative;
+  top: auto;
+  bottom: auto;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--primary);
+  width: 20px;
+  height: 6px;
+  border-radius: 4px;
+  transition: all 0.3s linear;
+}
+.swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 40px;
+}
+
+.testingWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.testingWrapper .testingDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
+  padding-bottom: 20px;
+}
+.testingWrapper .testingDesc .testingTitle {
+  font-family: "GilroyBold";
+  color: var(--tertiary);
+  font-size: 80px;
+  line-height: 90px;
+}
+.testingWrapper .testingDesc p {
+  color: var(--black-800);
+  font-size: 22px;
+  line-height: 32px;
+  font-family: "GilroyMedium";
+  max-width: 700px;
+}
+.testingWrapper .testingDesc .fixBtn {
+  margin-top: 40px;
 }

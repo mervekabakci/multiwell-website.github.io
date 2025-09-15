@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="public/assets/front/css/app.css">
 </head>
 <body>
@@ -273,6 +274,7 @@
         </div>
     </header>
     <main>
+        <!--home banner section-->
         <section class="homeSection">
             <div class="container">
                 <div class="homeBanner bg-primary rounded">
@@ -294,9 +296,11 @@
                 </div>
             </div>
         </section>
+
+        <!--featured section-->
         <section class="featuredSection">
             <div class="container">
-                <div class="featuredWrapper bg-gray-100 rounded pb-y">
+                <div class="featuredWrapper bg-gray-100 rounded pb">
                     <div class="featuredTitle">FEATURED IN:</div>
                     <div class="featuredList">
                         <div class="item">
@@ -324,6 +328,123 @@
                                 <img src="public/assets/images/media/featured/abc-news.jpg" alt="">
                             </div>
                         </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Terapist section-->
+        <section>
+            <div class="container">
+                <div class="bg-secondary pb-2 pi rounded">
+                    <div class="sectionHead pi-2">
+                        <div class="sectionText">
+                            Depresyon süresinde size destek sağlayacak olan kaynaklar, araçlar, testler ve uzmanlar
+                        </div>
+                    </div>
+                    <div class="sectionContent pi-2">
+                        <div class="cards quad">
+                            <a href="#" class="card">
+                                <div class="card-image-top">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Çocuk
+                                    </div>
+                                    <div class="card-text line-clamp-2">
+                                        Çocukların iç dünyasını keşfedin.
+                                    </div>
+                                    <span class="icon-arrow-long-right"></span>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-top">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Ergen
+                                    </div>
+                                    <div class="card-text line-clamp-2">
+                                        Çocukların iç dünyasını keşfedin.
+                                    </div>
+                                    <span class="icon-arrow-long-right"></span>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-top">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/terapistler/yetiskin.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Yetişkin
+                                    </div>
+                                    <div class="card-text line-clamp-2">
+                                        Çocukların iç dünyasını keşfedin.
+                                    </div>
+                                    <span class="icon-arrow-long-right"></span>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-top">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/terapistler/yasli.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="card-title">
+                                        Yaşlı
+                                    </div>
+                                    <div class="card-text line-clamp-2">
+                                        Çocukların iç dünyasını keşfedin.
+                                    </div>
+                                    <span class="icon-arrow-long-right"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="#" class="fixBtn button-primary"><span>Terapist mi arıyorsunuz</span> <span class="icon-arrow-long-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Depresyonda mıyım?-->
+        <section>
+            <div class="container">
+                <div class="bg-soft-light-pink rounded pb-2">
+                    <div class="sectionHead center">
+                        <img src="public/assets/images/statics/icons/test-icon.png" alt="">
+                    </div>
+                    <div class="sectionContent">
+                        <div class="testingWrapper">
+                            <div class="swiper testingSlider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testingDesc">
+                                            <div class="testingTitle">Depresyonda mıyım?</div>
+                                            <p>Gerçekten depresyonda mısın ? Gelin öncelikle bunu tespit edelim... Hemen depresyonön değerlendirme testine ne dersin ?</p>
+                                            <a href="#" class="fixBtn type2 button-fourth"><span>Test Başla</span> <span class="icon-arrow-long-right"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testingDesc">
+                                            <div class="testingTitle">Depresyonla yaşamak nasıl bir duygu olabilir acaba ?</div>
+                                            <p>Gerçekten depresyonda mısın ? Gelin öncelikle bunu tespit edelim... Hemen depresyonön değerlendirme testine ne dersin ?</p>
+                                            <a href="#" class="fixBtn type2 button-fourth"><span>Test Başla</span> <span class="icon-arrow-long-right"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -508,7 +629,11 @@
         </div>
     </dialog>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="public/assets/front/js/app.js" defer></script>
     <script src="public/assets/front/js/dialog.js" defer></script>
+    <script src="public/assets/front/js/swiper.js" defer></script>
+
 </body>
 </html>

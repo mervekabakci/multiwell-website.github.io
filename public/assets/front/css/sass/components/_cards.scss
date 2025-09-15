@@ -1,0 +1,60 @@
+.cards {
+  display: flex;
+  gap: 60px;
+  margin-block: 50px;
+  .card {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .card-image-top {
+  }
+  .card-body {
+    background-color: var(--white);
+    padding: 25px;
+    text-align: center;
+  }
+  .card-title {
+    font-family: "GilroySemibold";
+    font-size: 30px;
+    color: var(--primary);
+    transition: all .3s linear;
+  }
+  .card-text {
+    font-family: "GilroyMedium";
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+    color: var(--primary);
+  }
+  .icon-arrow-long-right {
+    font-size: 32px;
+    color: var(--primary);
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s linear;
+  }
+  a{
+    &.card{
+        @media screen and (min-width:992px) {
+            &:hover{
+                .card-title{
+                    color: var(--fifth);
+                }
+                .icon-arrow-long-right{
+                    transform: translateX(10px);
+                    color: var(--fifth);
+                }
+            }
+        }
+    }
+  }
+  &.quad {
+    .card {
+      width: calc(25% - 52px);
+      .card-image-top {
+        aspect-ratio: 3/2;
+      }
+    }
+  }
+}
