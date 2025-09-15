@@ -3,6 +3,7 @@ header{
     z-index: 99;
     background-color: var(--white);
     padding-bottom: 20px;
+    transition: all .3s linear;
     .header{
         display: flex;
         align-items: center;
@@ -37,6 +38,23 @@ header{
             &:hover{
                 transform: scale(1.1);
                 color: var(--fifth);
+            }
+        }
+    }
+    &.fixed{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow:0 4px 14px rgba(0,0,0,0.2);
+        padding-bottom: 0;
+
+        .navbar-nav {
+            .nav-item{
+                .nav-link{
+                    padding-bottom: 10px;
+                }
             }
         }
     }
