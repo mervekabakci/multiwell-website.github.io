@@ -1,18 +1,27 @@
-.swiper{
-    .swiper-pagination{
-        position: relative;
-        top: auto;
-        bottom: auto;
-        .swiper-pagination-bullet{
-            background-color: var(--primary);
-            width: 20px;
-            height:6px;
-            border-radius: 4px;
-            transition: all .3s linear;
-            &.swiper-pagination-bullet-active{
-                opacity: 1;
-                width: 40px;
-            }
-        }
+.swiper {
+  .swiper-pagination {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    .swiper-pagination-bullet {
+      background-color: var(--primary);
+      width: 20px;
+      height: 6px;
+      border-radius: 4px;
+      transition: all 0.3s linear;
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        width: 40px;
+      }
     }
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  @media screen and (min-width: 992px) {
+    transition: all .3s linear;
+    &:hover {
+      color: var(--fifth);
+    }
+  }
 }

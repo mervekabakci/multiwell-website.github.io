@@ -1,8 +1,14 @@
 .testingWrapper {
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
+  position: relative;
+  max-width: 1400px;
+  .testingSlider {
+    max-width: 1200px;
+  }
+  .swiper-wrapper {
+  }
   .testingDesc {
     display: flex;
     flex-direction: column;

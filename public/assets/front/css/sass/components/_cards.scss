@@ -11,6 +11,7 @@
     background-color: var(--white);
     padding: 25px;
     text-align: center;
+    transition: all .3s linear;
   }
   .card-title {
     font-family: "GilroySemibold";
@@ -38,14 +39,23 @@
   }
   a {
     &.card {
+      transition: all .3s linear;
       @media screen and (min-width: 992px) {
         &:hover {
+          box-shadow: 0 4px 14px rgba(234, 244, 117,1);
+          transform: scale(1.02);
+          .card-body{
+            background-color: var(--primary);
+          }
           .card-title {
-            color: var(--fifth);
+            color: var(--white);
+          }
+          .card-text{
+            color: var(--white);
           }
           .icon-arrow-long-right {
             transform: translateX(10px);
-            color: var(--fifth);
+            color: var(--white);
           }
         }
       }

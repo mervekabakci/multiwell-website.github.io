@@ -148,6 +148,7 @@ video {
   --gray-300: #c7c7c4;
   --gray-400: #a0a09b;
   --gray-500: #5c5757;
+  --swiper-theme-color:var(--primary);
 }
 
 .button-white {
@@ -179,6 +180,17 @@ video {
   .button-white-outline:hover {
     background-color: var(--white) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -214,6 +226,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-primary {
   color: var(--white) !important;
   border-color: var(--primary) !important;
@@ -243,6 +266,17 @@ video {
   .button-primary-outline:hover {
     background-color: var(--primary) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -278,6 +312,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-tertiary {
   color: var(--white) !important;
   border-color: var(--tertiary) !important;
@@ -307,6 +352,17 @@ video {
   .button-tertiary-outline:hover {
     background-color: var(--tertiary) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -342,6 +398,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-fifth {
   color: var(--white) !important;
   border-color: var(--fifth) !important;
@@ -371,6 +438,17 @@ video {
   .button-fifth-outline:hover {
     background-color: var(--fifth) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -406,6 +484,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-soft-light-pink {
   color: var(--white) !important;
   border-color: var(--soft-light-pink) !important;
@@ -435,6 +524,17 @@ video {
   .button-soft-light-pink-outline:hover {
     background-color: var(--soft-light-pink) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -470,6 +570,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-soft-light-blue {
   color: var(--white) !important;
   border-color: var(--soft-light-blue) !important;
@@ -499,6 +610,17 @@ video {
   .button-soft-light-blue-outline:hover {
     background-color: var(--soft-light-blue) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -534,6 +656,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-soft-orange {
   color: var(--white) !important;
   border-color: var(--soft-orange) !important;
@@ -563,6 +696,17 @@ video {
   .button-soft-orange-outline:hover {
     background-color: var(--soft-orange) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -598,6 +742,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-gray-100 {
   color: var(--white) !important;
   border-color: var(--gray-100) !important;
@@ -627,6 +782,17 @@ video {
   .button-gray-100-outline:hover {
     background-color: var(--gray-100) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -662,6 +828,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-gray-300 {
   color: var(--white) !important;
   border-color: var(--gray-300) !important;
@@ -691,6 +868,17 @@ video {
   .button-gray-300-outline:hover {
     background-color: var(--gray-300) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -726,6 +914,17 @@ video {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+}
+
 .button-gray-500 {
   color: var(--white) !important;
   border-color: var(--gray-500) !important;
@@ -755,6 +954,17 @@ video {
   .button-gray-500-outline:hover {
     background-color: var(--gray-500) !important;
     color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
   }
 }
 
@@ -1161,7 +1371,7 @@ video {
   position: relative;
   border-radius: 8px;
   font-family: "GilroySemibold";
-  font-size: 16px;
+  font-size: 18px;
   transition: all 0.3s linear;
   height: 56px;
   display: flex;
@@ -1817,22 +2027,10 @@ footer {
   margin-top: 30px;
   padding-bottom: 30px;
 }
-footer .footer .footerTop .portalWrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-}
-footer .footer .footerTop .portalWrapper .title {
-  font-family: "GilroySemibold";
-  color: var(--white);
-  font-size: 30px;
-  padding-top: 16px;
-}
-footer .footer .footerTop .portalWrapper .portalList {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+footer .footer .footerTop {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 60px;
+  margin-bottom: 40px;
 }
 footer .footer .footerMenu .menuList {
   display: flex;
@@ -1897,8 +2095,8 @@ footer .footer .footerBottom {
 }
 footer .footer .footerBottom .copyRight {
   color: var(--white);
-  font-family: "GilroySemibold";
-  font-size: 18px;
+  font-family: "GilroyRegular";
+  font-size: 16px;
 }
 
 .socialMedia {
@@ -2397,6 +2595,7 @@ section .sectionHead.center,
   background-color: var(--white);
   padding: 25px;
   text-align: center;
+  transition: all 0.3s linear;
 }
 .cards .card-title {
   font-family: "GilroySemibold";
@@ -2422,13 +2621,26 @@ section .sectionHead.center,
   display: inline-block;
   transition: all 0.3s linear;
 }
+.cards a.card {
+  transition: all 0.3s linear;
+}
 @media screen and (min-width: 992px) {
+  .cards a.card:hover {
+    box-shadow: 0 4px 14px rgb(234, 244, 117);
+    transform: scale(1.02);
+  }
+  .cards a.card:hover .card-body {
+    background-color: var(--primary);
+  }
   .cards a.card:hover .card-title {
-    color: var(--fifth);
+    color: var(--white);
+  }
+  .cards a.card:hover .card-text {
+    color: var(--white);
   }
   .cards a.card:hover .icon-arrow-long-right {
     transform: translateX(10px);
-    color: var(--fifth);
+    color: var(--white);
   }
 }
 .cards:not(.swiper) {
@@ -2460,11 +2672,26 @@ section .sectionHead.center,
   width: 40px;
 }
 
+@media screen and (min-width: 992px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    transition: all 0.3s linear;
+  }
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: var(--fifth);
+  }
+}
+
 .testingWrapper {
-  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
+  position: relative;
+  max-width: 1400px;
+}
+.testingWrapper .testingSlider {
+  max-width: 1200px;
 }
 .testingWrapper .testingDesc {
   display: flex;
@@ -2517,6 +2744,10 @@ section .sectionHead.center,
   }
 }
 
+.commentsWrapper {
+  position: relative;
+}
+
 .commentsSlider {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -2563,4 +2794,22 @@ section .sectionHead.center,
   font-family: "GilroyBold";
   font-size: 18px;
   color: var(--tertiary);
+}
+
+.portalWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.portalWrapper .title {
+  font-family: "GilroySemibold";
+  color: var(--white);
+  font-size: 24px;
+  padding-top: 16px;
+}
+.portalWrapper .portalList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }

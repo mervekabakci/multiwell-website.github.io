@@ -3,23 +3,9 @@ footer {
   padding-bottom: 30px;
   .footer {
     .footerTop {
-      .portalWrapper {
-        display: flex;
-        align-items: flex-start;
-        gap: 40px;
-        .title {
-          font-family: "GilroySemibold";
-          color: var(--white);
-          font-size: 30px;
-          padding-top: 16px;
-        }
-        .portalList {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          gap: 20px;
-        }
-      }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 60px;
+      margin-bottom: 40px;
     }
     .footerMenu {
       .menuList {
@@ -91,8 +77,8 @@ footer {
       align-items: flex-end;
       .copyRight {
         color: var(--white);
-        font-family: "GilroySemibold";
-        font-size: 18px;
+        font-family: "GilroyRegular";
+        font-size: 16px;
       }
     }
   }

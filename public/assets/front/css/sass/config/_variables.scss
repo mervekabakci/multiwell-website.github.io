@@ -23,6 +23,8 @@
   --gray-300: #c7c7c4;
   --gray-400: #a0a09b;
   --gray-500: #5c5757;
+
+  --swiper-theme-color:var(--primary);
 }
 
 $colors: (
@@ -77,6 +79,18 @@ $colors: (
           &:hover {
             background-color: $color !important;
             color: var(--white) !important;
+          }
+        }
+      }
+    }
+    .button-secondary {
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--primary) !important;
+          background-color: var(--white) !important;
+          input {
+            color: var(--primary) !important;
+            background-color: var(--white) !important;
           }
         }
       }
