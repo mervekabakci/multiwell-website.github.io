@@ -1124,73 +1124,73 @@ video {
 .line-clamp-1 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 1;
+  -webkit-line-clamp: 1;
 }
 
 .line-clamp-2 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 2;
+  -webkit-line-clamp: 2;
 }
 
 .line-clamp-3 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 3;
+  -webkit-line-clamp: 3;
 }
 
 .line-clamp-4 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 4;
+  -webkit-line-clamp: 4;
 }
 
 .line-clamp-5 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 5;
+  -webkit-line-clamp: 5;
 }
 
 .line-clamp-6 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 6;
+  -webkit-line-clamp: 6;
 }
 
 .line-clamp-7 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 7;
+  -webkit-line-clamp: 7;
 }
 
 .line-clamp-8 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 8;
+  -webkit-line-clamp: 8;
 }
 
 .line-clamp-9 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 9;
+  -webkit-line-clamp: 9;
 }
 
 .line-clamp-10 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 10;
+  -webkit-line-clamp: 10;
 }
 
 .line-clamp-11 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 11;
+  -webkit-line-clamp: 11;
 }
 
 .line-clamp-12 {
   display: -webkit-box;
   overflow: hidden;
-  line-clamp: 12;
+  -webkit-line-clamp: 12;
 }
 
 .container {
@@ -1282,6 +1282,10 @@ figure {
 
 .pi-2 {
   padding-inline: 100px;
+}
+
+.w-100 {
+  width: 100% !important;
 }
 
 .preloader {
@@ -1470,6 +1474,9 @@ figure {
   left: 0;
   bottom: 0;
 }
+.textLink .icon-arrow-long-right {
+  font-size: 22px;
+}
 @media screen and (min-width: 992px) {
   .textLink:not(.notHover):hover .text:after {
     width: 0;
@@ -1484,7 +1491,7 @@ figure {
   font-size: 18px;
   transition: all 0.3s linear;
   height: 56px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -2771,6 +2778,23 @@ section .sectionContent,
 .cards .card-footer {
   margin-top: auto;
 }
+.cards .card-name {
+  font-family: "GilroySemibold";
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--black-800);
+}
+.cards .card-expert-title {
+  font-family: "GilroyRegular";
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--black-800);
+}
+.cards .experts-comments {
+  color: var(--gray-400);
+  font-family: "GilroyRegular";
+  font-size: 12px;
+}
 .cards .icon-arrow-long-right {
   font-size: 32px;
   color: var(--primary);
@@ -2799,6 +2823,39 @@ section .sectionContent,
   .cards a.card:hover .icon-arrow-long-right {
     transform: translateX(10px);
     color: var(--white);
+  }
+}
+.cards.expertsSlider .card {
+  background-color: var(--white);
+  padding: 30px 30px 25px;
+  min-height: 280px;
+  text-align: center;
+  align-items: center;
+}
+.cards.expertsSlider .card .card-image-top {
+  aspect-ratio: 1/1;
+  max-width: 120px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cards.expertsSlider .card .card-body {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+.cards.expertsSlider .card .card-body .card-name {
+  color: var(--tertiary);
+}
+.cards.expertsSlider .card .experts-comments {
+  color: var(--gray-500);
+}
+@media screen and (min-width: 992px) {
+  .cards.expertsSlider a.card:hover {
+    background-color: var(--secondary);
+  }
+  .cards.expertsSlider a.card:hover .card-body {
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 .cards:not(.swiper) {
@@ -2898,6 +2955,19 @@ section .sectionContent,
 }
 @media screen and (min-width: 992px) {
   .sectionHead .commentText a:hover {
+    color: var(--fifth);
+  }
+}
+.sectionHead .textLink {
+  font-family: "GilroyBold";
+  transition: all 0.3s linear;
+  margin-left: auto;
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--tertiary);
+}
+@media screen and (min-width: 992px) {
+  .sectionHead .textLink:hover {
     color: var(--fifth);
   }
 }

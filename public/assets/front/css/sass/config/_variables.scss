@@ -126,7 +126,7 @@ $colors: (
     display: -webkit-box;
     overflow: hidden;
     -moz-box-orient: vertical;
-    line-clamp: $i;
+    -webkit-line-clamp: $i;
   }
 }
 

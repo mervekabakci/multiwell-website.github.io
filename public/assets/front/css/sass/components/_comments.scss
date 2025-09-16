@@ -1,35 +1,48 @@
-.sectionHead{
-    .commentTitle{
-        font-size: 40px;
-        font-family: 'GilroyMedium';
-        line-height: 50px;
-        color: var(--tertiary);
-        b{
-            display: block;
-            font-family: 'GilroyBold';
-        }
+.sectionHead {
+  .commentTitle {
+    font-size: 40px;
+    font-family: "GilroyMedium";
+    line-height: 50px;
+    color: var(--tertiary);
+    b {
+      display: block;
+      font-family: "GilroyBold";
     }
-    .commentText{
-        margin-left: auto;
-        font-family: 'GilroyMedium';
-        font-size: 15px;
-        line-height: 30px;
-        color: var(--tertiary);
+  }
+  .commentText {
+    margin-left: auto;
+    font-family: "GilroyMedium";
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--tertiary);
 
-        a{
-            font-family: 'GilroyBold';
-            transition: all .3s linear;
-            @media screen and (min-width:992px) {
-                &:hover{
-                    color: var(--fifth);
-                }
-            }
+    a {
+      font-family: "GilroyBold";
+      transition: all 0.3s linear;
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--fifth);
         }
+      }
     }
+  }
+  .textLink {
+    font-family: "GilroyBold";
+    transition: all 0.3s linear;
+    margin-left: auto;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--tertiary);
+    @media screen and (min-width: 992px) {
+      &:hover {
+        color: var(--fifth);
+      }
+    }
+  }
 }
 
-.commentsWrapper{
-    position: relative;
+.commentsWrapper {
+  position: relative;
 }
 .commentsSlider {
   padding-top: 25px;
@@ -56,7 +69,7 @@
         text-align: left;
         color: var(--tertiary);
         padding-top: 0;
-        font-family: 'GilroyMedium';
+        font-family: "GilroyMedium";
         font-size: 17px;
         line-height: 30px;
         &:after,
