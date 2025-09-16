@@ -1206,6 +1206,30 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter-fill:before {
+  content: "\e939";
+}
+
+.icon-linkedin-fill:before {
+  content: "\e934";
+}
+
+.icon-facebook-fill:before {
+  content: "\e935";
+}
+
+.icon-youtube-fill:before {
+  content: "\e938";
+}
+
+.icon-pinterest-fill:before {
+  content: "\e936";
+}
+
+.icon-instagram-fill:before {
+  content: "\e937";
+}
+
 .icon-user-outline:before {
   content: "\e932";
 }
@@ -1854,6 +1878,7 @@ footer .footer .footerMenu .menuList .menu-item .menu-item .menu-link:before {
 @media screen and (min-width: 992px) and (min-width: 992px) {
   footer .footer .footerMenu .menuList .menu-item .menu-item:hover .menu-link {
     transform: translateX(30px);
+    color: var(--secondary);
   }
   footer .footer .footerMenu .menuList .menu-item .menu-item:hover .menu-link:before {
     opacity: 1;
@@ -1861,6 +1886,7 @@ footer .footer .footerMenu .menuList .menu-item .menu-item .menu-link:before {
     transform: translateX(0);
     visibility: visible;
     overflow: visible;
+    color: var(--secondary);
     left: -30px;
   }
 }
@@ -1873,17 +1899,43 @@ footer .footer .footerBottom .copyRight {
   font-family: "GilroySemibold";
   font-size: 18px;
 }
-footer .footer .socialMedia {
+
+.socialMedia {
   display: flex;
   flex-direction: column;
   margin-left: auto;
   gap: 20px;
 }
-footer .footer .socialMedia .title {
+.socialMedia .title {
   color: var(--white);
   font-family: "GilroySemibold";
   font-size: 18px;
 }
+.socialMedia .socialMediaList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socialMedia .socialMediaList .customIcon {
+  color: var(--white);
+  font-size: 31px;
+  transition: all 0.3s linear;
+}
+.socialMedia .socialMediaList .customIcon.icon-facebook-fill {
+  font-size: 27px;
+}
+.socialMedia .socialMediaList > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .socialMedia .socialMediaList > a:hover .customIcon {
+    color: var(--secondary);
+  }
+}
+
 dialog {
   border: none;
   outline: 0;

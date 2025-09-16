@@ -26,7 +26,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-twitter-fill:before {
+  content: "\e939";
+}
+.icon-linkedin-fill:before {
+  content: "\e934";
+}
+.icon-facebook-fill:before {
+  content: "\e935";
+}
+.icon-youtube-fill:before {
+  content: "\e938";
+}
+.icon-pinterest-fill:before {
+  content: "\e936";
+}
+.icon-instagram-fill:before {
+  content: "\e937";
+}
 .icon-user-outline:before {
   content: "\e932";
 }

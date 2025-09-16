@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?dqrr5s');
-  src:  url('fonts/icomoon.eot?dqrr5s#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?dqrr5s') format('truetype'),
-    url('fonts/icomoon.woff?dqrr5s') format('woff'),
-    url('fonts/icomoon.svg?dqrr5s#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?sqwfem');
+  src:  url('fonts/icomoon.eot?sqwfem#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?sqwfem') format('truetype'),
+    url('fonts/icomoon.woff?sqwfem') format('woff'),
+    url('fonts/icomoon.svg?sqwfem#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-twitter-fill:before {
+  content: "\e939";
+}
+.icon-linkedin-fill:before {
+  content: "\e934";
+}
+.icon-facebook-fill:before {
+  content: "\e935";
+}
+.icon-youtube-fill:before {
+  content: "\e938";
+}
+.icon-pinterest-fill:before {
+  content: "\e936";
+}
+.icon-instagram-fill:before {
+  content: "\e937";
+}
 .icon-user-outline:before {
   content: "\e932";
 }

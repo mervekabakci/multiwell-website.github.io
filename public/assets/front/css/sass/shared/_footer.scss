@@ -1,6 +1,6 @@
 footer {
-    margin-top: 30px;
-    padding-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 30px;
   .footer {
     .footerTop {
       .portalWrapper {
@@ -68,12 +68,14 @@ footer {
                 &:hover {
                   .menu-link {
                     transform: translateX(30px);
+                    color: var(--secondary);
                     &:before {
                       opacity: 1;
                       font-size: 24px;
                       transform: translateX(0);
                       visibility: visible;
                       overflow: visible;
+                      color: var(--secondary);
                       left: -30px;
                     }
                   }
@@ -93,17 +95,42 @@ footer {
         font-size: 18px;
       }
     }
-    .socialMedia {
-      display: flex;
-      flex-direction: column;
-      margin-left: auto;
-      gap: 20px;
-      .title {
-        color: var(--white);
-        font-family: "GilroySemibold";
-        font-size: 18px;
+  }
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  gap: 20px;
+  .title {
+    color: var(--white);
+    font-family: "GilroySemibold";
+    font-size: 18px;
+  }
+  .socialMediaList {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .customIcon {
+      color: var(--white);
+      font-size: 31px;
+      transition: all 0.3s linear;
+      &.icon-facebook-fill {
+        font-size: 27px;
       }
-      .socialMediaList {
+    }
+    & > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear;
+      @media screen and (min-width: 992px) {
+        &:hover {
+          .customIcon {
+            color: var(--secondary);
+          }
+        }
       }
     }
   }
