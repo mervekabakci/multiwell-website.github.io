@@ -1230,6 +1230,10 @@ video {
      object-fit: contain;
 }
 
+figure {
+  margin: 0;
+}
+
 .rounded {
   border-radius: 10px;
 }
@@ -1254,7 +1258,7 @@ video {
   transition: all 0.3s linear;
 }
 @media screen and (min-width: 992px) {
-  .noteText a:hover:After {
+  .noteText a:hover:after {
     width: 0;
   }
 }
@@ -2652,6 +2656,41 @@ section .sectionHead,
   display: flex;
   align-items: flex-start;
 }
+section .sectionHead .sectionTitle,
+.section .sectionHead .sectionTitle {
+  font-size: 35px;
+  font-family: "GilroyMedium";
+  line-height: 55px;
+  color: var(--tertiary);
+}
+section .sectionHead p,
+.section .sectionHead p {
+  max-width: 450px;
+  font-family: "GilroyMedium";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--tertiary);
+}
+section .sectionHead p a,
+.section .sectionHead p a {
+  position: relative;
+}
+section .sectionHead p a:after,
+.section .sectionHead p a:after {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  section .sectionHead p a:hover:after,
+  .section .sectionHead p a:hover:after {
+    width: 0;
+  }
+}
 section .sectionHead .sectionText,
 .section .sectionHead .sectionText {
   font-family: "GilroyMedium";
@@ -2731,7 +2770,7 @@ section .sectionHead.center,
 }
 @media screen and (min-width: 992px) {
   .cards a.card:hover {
-    box-shadow: 0 4px 14px rgb(234, 244, 117);
+    box-shadow: 0 4px 14px rgb(255, 255, 255);
     transform: scale(1.02);
   }
   .cards a.card:hover .card-body {
@@ -2917,4 +2956,115 @@ section .sectionHead.center,
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.twiceWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 30px;
+}
+.twiceWrapper figure {
+  width: 40%;
+}
+.twiceWrapper figure:last-child {
+  margin-left: auto;
+}
+.twiceWrapper .twiceContent {
+  width: 47%;
+}
+.twiceWrapper .twiceContent:last-child {
+  margin-left: auto;
+}
+
+.accordion {
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 991.98px) {
+  .accordion {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .accordion {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+.accordion details {
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--gray-300);
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.accordion details summary {
+  display: flex;
+  align-items: flex-start;
+  font-size: 22px;
+  color: var(--primary);
+  padding: 30px 0;
+  transition: all 0.3s linear;
+  font-family: "GilroyMedium";
+  cursor: pointer;
+}
+@media screen and (max-width: 1600px) {
+  .accordion details summary {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 25px 20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .accordion details summary {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .accordion details summary {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 15px 14px;
+  }
+}
+.accordion details summary:after {
+  content: "\e92a";
+  font-family: "customFont" !important;
+  margin-left: auto;
+  font-size: 26px;
+  transition: all 0.3s linear;
+  color: var(--secondary);
+  font-weight: 500;
+}
+@media screen and (max-width: 991.98px) {
+  .accordion details summary:after {
+    font-size: 20px;
+  }
+}
+.accordion details .desc {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 0 50px 30px 0;
+}
+@media screen and (max-width: 991.98px) {
+  .accordion details .desc {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 16px 25px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .accordion details:hover summary {
+    color: var(--secondary);
+  }
+}
+.accordion details[open] summary {
+  color: var(--fifth);
+}
+.accordion details[open] summary:after {
+  transform: rotate(45deg);
+  color: var(--fifth);
 }

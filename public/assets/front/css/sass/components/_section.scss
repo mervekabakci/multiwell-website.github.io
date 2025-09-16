@@ -1,27 +1,59 @@
 section,
-.section{
-    &:not(:first-child){
-        margin-top: 85px;
-    }
+.section {
+  &:not(:first-child) {
+    margin-top: 85px;
+  }
 
-    &.featuredSection{
-        margin-top: 20px;
-    }
+  &.featuredSection {
+    margin-top: 20px;
+  }
 
-    .sectionHead{
-        display: flex;
-        align-items: flex-start;
-        
-        .sectionText{
-            font-family: 'GilroyMedium';
-            font-size: 22px;
-            color: var(--black);
-            text-align: center;
-            margin: 0 auto;
+  .sectionHead {
+    display: flex;
+    align-items: flex-start;
+    .sectionTitle {
+      font-size: 35px;
+      font-family: "GilroyMedium";
+      line-height: 55px;
+      color: var(--tertiary);
+    }
+    p {
+      max-width:450px;
+      font-family: "GilroyMedium";
+      font-size: 15px;
+      line-height: 25px;
+      color: var(--tertiary);
+
+      a {
+        position: relative;
+        &:after {
+          content: "";
+          width: 100%;
+          border-bottom: 1px solid;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+          transition: all 0.3s linear;
         }
-
-        &.center{
-            justify-content: center;
+        @media screen and (min-width: 992px) {
+          &:hover {
+            &:after {
+              width: 0;
+            }
+          }
         }
+      }
     }
+    .sectionText {
+      font-family: "GilroyMedium";
+      font-size: 22px;
+      color: var(--black);
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+  }
 }

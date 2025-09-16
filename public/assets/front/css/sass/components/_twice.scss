@@ -1,0 +1,18 @@
+.twiceWrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 30px;
+  figure {
+    width: 40%;
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+  .twiceContent {
+    width: 47%;
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}

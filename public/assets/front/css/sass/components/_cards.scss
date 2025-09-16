@@ -42,7 +42,7 @@
       transition: all .3s linear;
       @media screen and (min-width: 992px) {
         &:hover {
-          box-shadow: 0 4px 14px rgba(234, 244, 117,1);
+          box-shadow: 0 4px 14px rgba(255, 255, 255,1);
           transform: scale(1.02);
           .card-body{
             background-color: var(--primary);
