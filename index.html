@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="public/assets/plugin/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="public/assets/plugin/nice-select/nice-select.css" />
     <link rel="stylesheet" href="public/assets/front/css/app.css">
 </head>
 <body>
@@ -552,12 +553,17 @@
         <section>
             <div class="container">
                 <div class="pi rounded bg-soft-light-pink">
-                    <div class="sectionHead">
+                    <div class="sectionHead align-end">
                         <div class="chooseTitle">
                             <div class="customSelectWrapper">
-
+                                <select name="countrSelect" id="countrSelect" class="customSelect">
+                                    <option value="">İstanbul</option>
+                                    <option value="">Balıkesir</option>
+                                    <option value="">Ordu</option>
+                                    <option value="">Trabzon</option>
+                                </select>
                             </div>
-                            depresyon uzmanları
+                            <span>depresyon uzmanları</span>
                         </div>
                         <a href="#" class="textLink"><span>İstanbul'daki tüm uzmanlar</span><span class="icon-arrow-long-right"></span></a>
                     </div>
@@ -1159,7 +1165,10 @@
     </dialog>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="public/assets/plugin/jquery.min.js"></script> <!--nice select eklentısı ıcın jquery kullanılıyor-->
+    <script src="public/assets/plugin/swiper/swiper-bundle.min.js"></script>
+    <script src="public/assets/plugin/nice-select/jquery.nice-select.js"></script>
+
     <script src="public/assets/front/js/app.js" defer></script>
     <script src="public/assets/front/js/dialog.js" defer></script>
     <script src="public/assets/front/js/swiper.js" defer></script>

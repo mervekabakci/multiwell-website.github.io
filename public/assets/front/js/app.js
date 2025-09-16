@@ -15,3 +15,7 @@ function handleScroll() {
   }
 }
 window.addEventListener("scroll", handleScroll);
+
+$(document).ready(function(){
+  $('.customSelect').niceSelect();
+})

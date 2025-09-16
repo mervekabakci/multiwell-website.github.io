@@ -1,13 +1,79 @@
-.dropdown{
-    .dropdown-button{
-        display: flex;
-        align-items: center;
-        font-size: 'GilroyMedium';
-        font-size: 14px;
-        height: 48px;
-        width: 250px;
-        background-color: var(--secondary);
-        border-radius: 6px;
-        padding: 0 24px;
+.dropdown {
+  .dropdown-button {
+    display: flex;
+    align-items: center;
+    font-size: "GilroyMedium";
+    font-size: 14px;
+    height: 48px;
+    width: 250px;
+    background-color: var(--secondary);
+    border-radius: 6px;
+    padding: 0 24px;
+  }
+}
+
+.chooseTitle {
+  position: relative;
+  .customSelect {
+    border: none;
+    height: auto;
+    color: var(--fourth);
+    font-size: 30px;
+    font-family: "GilroyBold";
+    position: static;
+  }
+}
+.nice-select {
+  &:after {
+    display: none;
+  }
+  .current {
+    border-bottom: 1px solid var(--fourth);
+    position: relative;
+    &:after {
+      content: "\e912";
+      font-family: "customFont";
+      border: none;
+      font-size: 12px;
+      transform-origin: unset;
+      width: initial;
+      height: initial;
+      transform: translateY(-50%) rotate(90deg);
+      margin-top: 2px;
+      right: -18px;
+      position: absolute;
+      top: 50%;
     }
+  }
+  .list {
+    width: 100%;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+    border: none;
+    .option {
+      font-size: 15px;
+      font-family: "GilroyMedium";
+      padding: 5px 10px;
+      &:not(:first-child){
+        border-top: 1px solid var(--gray-100);
+      }
+      &:hover,
+      &.focus {
+        background-color: var(--fourth)!important;
+        color: var(--white)!important;
+      }
+      &.selected {
+        &.focus {
+          background-color: var(--fourth)!important;
+          color: var(--white)!important;
+        }
+      }
+    }
+  }
+  &.open {
+    .current {
+      &:after {
+        transform: translateY(-50%) rotate(2deg);
+      }
+    }
+  }
 }

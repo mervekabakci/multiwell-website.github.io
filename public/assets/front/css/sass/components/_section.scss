@@ -62,6 +62,21 @@ section,
     &.center {
       justify-content: center;
     }
+    &.align-end{
+        align-items: flex-end;
+    }
+    .chooseTitle{
+      display: flex;
+      align-items: center;
+      background-color: var(--white);
+      border-radius: 0 0 8px 8px;
+      padding: 25px 20px;
+      & > span{
+          font-family: 'GilroyBold';
+          font-size: 30px;
+          color: var(--tertiary);
+      }
+  }
   }
   .sectionContent {
     padding-top: 70px;
