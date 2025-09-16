@@ -136,6 +136,7 @@ video {
   --fourth: #8db63f;
   --fifth: #f68d6d;
   --black-800: #303030;
+  --black-900: #1f1f1f;
   --soft-pink: #ffe7e4;
   --soft-light-pink: #f9f6f0;
   --soft-blue: #b9ddff;
@@ -148,7 +149,7 @@ video {
   --gray-300: #c7c7c4;
   --gray-400: #a0a09b;
   --gray-500: #5c5757;
-  --swiper-theme-color:var(--primary);
+  --swiper-theme-color: var(--primary);
 }
 
 .button-white {
@@ -2659,14 +2660,17 @@ section .sectionHead,
 section .sectionHead .sectionTitle,
 .section .sectionHead .sectionTitle {
   font-size: 35px;
-  font-family: "GilroyMedium";
+  font-family: "GilroyRegular";
   line-height: 55px;
   color: var(--tertiary);
+}
+section .sectionHead .sectionTitle b,
+.section .sectionHead .sectionTitle b {
+  font-family: "GilroyBold";
 }
 section .sectionHead .sectionTitle.medium,
 .section .sectionHead .sectionTitle.medium {
   font-size: 40px;
-  font-family: "GilroyBold";
   line-height: 55px;
 }
 section .sectionHead p,
@@ -3129,4 +3133,42 @@ section .sectionContent,
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.howToWorkList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.howToWorkList .listItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  padding: 16px 30px;
+}
+.howToWorkList .listItem .number {
+  font-family: "GilroySemibold";
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--black-900);
+  width: 70px;
+  min-width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
+.howToWorkList .listItem .desc {
+  color: var(--tertiary);
+}
+.howToWorkList .listItem .desc .title {
+  font-family: "GilroySemibold";
+  font-size: 18px;
+  line-height: 25px;
+}
+.howToWorkList .listItem .desc p {
+  font-family: "GilroyRegular";
+  font-size: 14px;
+  line-height: 28px;
 }

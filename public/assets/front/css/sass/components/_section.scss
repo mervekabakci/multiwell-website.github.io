@@ -13,12 +13,14 @@ section,
     align-items: flex-start;
     .sectionTitle {
       font-size: 35px;
-      font-family: "GilroyMedium";
+      font-family: "GilroyRegular";
       line-height: 55px;
       color: var(--tertiary);
+      b {
+        font-family: "GilroyBold";
+      }
       &.medium {
         font-size: 40px;
-        font-family: "GilroyBold";
         line-height: 55px;
       }
     }
