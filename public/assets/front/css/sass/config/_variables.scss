@@ -49,6 +49,7 @@ $colors: (
   "gray-500": var(--gray-500),
 );
 
+//button generate class name
 @mixin generate-button-classes($colors) {
   @each $name, $color in $colors {
     .button-#{$name} {
@@ -97,9 +98,19 @@ $colors: (
     }
   }
 }
-
 @include generate-button-classes($colors);
 
+//text color generate class name
+@mixin generate-text-clasess($colors){
+  @each $name, $color in $colors{
+    .text-#{$name}{
+      color: $color!important;
+    }
+  }
+}
+@include generate-text-clasess($colors);
+
+//backgorund-color generate class name
 @mixin generate-bg-classes($colors) {
   @each $name, $color in ($colors) {
     .bg-#{$name} {

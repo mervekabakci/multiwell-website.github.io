@@ -25,6 +25,36 @@
 .rounded{
   border-radius: 10px;
 }
+.noteText{
+  font-family: 'GilroySemibold';
+  font-size: 18px;
+  line-height: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  a{
+    position: relative;
+    &:after{
+      content: "";
+      width: 100%;
+      border-bottom:1px solid;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      transition: all .3s linear;
+    }
+    @media screen and (min-width:992px) {
+      &:hover{
+        &:After{
+          width: 0;
+        }
+      }
+    }
+  }
+}
+.text-center{
+  text-align: center;
+}
 
 .pb{
   padding-block: 35px;

@@ -968,6 +968,82 @@ video {
   }
 }
 
+.text-white {
+  color: var(--white) !important;
+}
+
+.text-black {
+  color: var(--black) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-tertiary {
+  color: var(--tertiary) !important;
+}
+
+.text-fourth {
+  color: var(--fourth) !important;
+}
+
+.text-fifth {
+  color: var(--fifth) !important;
+}
+
+.text-soft-pink {
+  color: var(--soft-pink) !important;
+}
+
+.text-soft-light-pink {
+  color: var(--soft-light-pink) !important;
+}
+
+.text-soft-blue {
+  color: var(--soft-blue) !important;
+}
+
+.text-soft-light-blue {
+  color: var(--soft-light-blue) !important;
+}
+
+.text-soft-yellow {
+  color: var(--soft-yellow) !important;
+}
+
+.text-soft-orange {
+  color: var(--soft-orange) !important;
+}
+
+.text-gray {
+  color: var(--gray) !important;
+}
+
+.text-gray-100 {
+  color: var(--gray-100) !important;
+}
+
+.text-gray-200 {
+  color: var(--gray-200) !important;
+}
+
+.text-gray-300 {
+  color: var(--gray-300) !important;
+}
+
+.text-gray-400 {
+  color: var(--gray-400) !important;
+}
+
+.text-gray-500 {
+  color: var(--gray-500) !important;
+}
+
 .bg-white {
   background-color: var(--white);
 }
@@ -1156,6 +1232,35 @@ video {
 
 .rounded {
   border-radius: 10px;
+}
+
+.noteText {
+  font-family: "GilroySemibold";
+  font-size: 18px;
+  line-height: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.noteText a {
+  position: relative;
+}
+.noteText a:after {
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .noteText a:hover:After {
+    width: 0;
+  }
+}
+
+.text-center {
+  text-align: center;
 }
 
 .pb {
