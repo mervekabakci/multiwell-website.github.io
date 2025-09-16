@@ -1,0 +1,80 @@
+.sectionHead{
+    .commentTitle{
+        font-size: 40px;
+        font-family: 'GilroyMedium';
+        line-height: 50px;
+        color: var(--tertiary);
+        b{
+            display: block;
+            font-family: 'GilroyBold';
+        }
+    }
+    .commentText{
+        margin-left: auto;
+        font-family: 'GilroyMedium';
+        font-size: 15px;
+        line-height: 30px;
+        color: var(--tertiary);
+
+        a{
+            font-family: 'GilroyBold';
+            transition: all .3s linear;
+            @media screen and (min-width:992px) {
+                &:hover{
+                    color: var(--fifth);
+                }
+            }
+        }
+    }
+}
+.commentsSlider {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 60px;
+  .swiper-slide {
+    &:nth-child(even) {
+      transform: translateY(-20px);
+    }
+    &:nth-child(odd) {
+      transform: translateY(20px);
+    }
+  }
+  .card {
+    border-radius: 10px;
+    padding: 36px;
+    min-height: 450px;
+    .card-body {
+      background-color: rgba(0, 0, 0, 0);
+      padding: 0;
+
+      .card-text {
+        position: relative;
+        text-align: left;
+        color: var(--tertiary);
+        padding-top: 0;
+        font-family: 'GilroyMedium';
+        font-size: 17px;
+        line-height: 30px;
+        &:after,
+        &:before {
+          content: "“";
+          color: var(--tertiary);
+          text-align: left;
+          font-family: "GilroyMedium";
+          font-size: 35px;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+        }
+        &:after {
+          padding-top: 10px;
+        }
+      }
+    }
+    .commentUserName {
+      font-family: "GilroyBold";
+      font-size: 18px;
+      color: var(--tertiary);
+    }
+  }
+}

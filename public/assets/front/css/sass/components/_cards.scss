@@ -1,10 +1,9 @@
 .cards {
-  display: flex;
-  gap: 60px;
-  margin-block: 50px;
   .card {
     border-radius: 8px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .card-image-top {
   }
@@ -17,7 +16,7 @@
     font-family: "GilroySemibold";
     font-size: 30px;
     color: var(--primary);
-    transition: all .3s linear;
+    transition: all 0.3s linear;
   }
   .card-text {
     font-family: "GilroyMedium";
@@ -26,34 +25,42 @@
     padding-top: 25px;
     color: var(--primary);
   }
+  .card-footer{
+    margin-top: auto;
+  }
   .icon-arrow-long-right {
     font-size: 32px;
     color: var(--primary);
     position: relative;
     margin-top: 20px;
     display: inline-block;
-    transition: all .3s linear;
+    transition: all 0.3s linear;
   }
-  a{
-    &.card{
-        @media screen and (min-width:992px) {
-            &:hover{
-                .card-title{
-                    color: var(--fifth);
-                }
-                .icon-arrow-long-right{
-                    transform: translateX(10px);
-                    color: var(--fifth);
-                }
-            }
+  a {
+    &.card {
+      @media screen and (min-width: 992px) {
+        &:hover {
+          .card-title {
+            color: var(--fifth);
+          }
+          .icon-arrow-long-right {
+            transform: translateX(10px);
+            color: var(--fifth);
+          }
         }
+      }
     }
   }
-  &.quad {
-    .card {
-      width: calc(25% - 52px);
-      .card-image-top {
-        aspect-ratio: 3/2;
+  &:not(.swiper) {
+    display: flex;
+    gap: 60px;
+    margin-block: 50px;
+    &.quad {
+      .card {
+        width: calc(25% - 52px);
+        .card-image-top {
+          aspect-ratio: 3/2;
+        }
       }
     }
   }

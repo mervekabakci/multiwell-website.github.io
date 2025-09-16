@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset CSS */
 /* Box Sizing */
 *,
@@ -2386,14 +2387,11 @@ section .sectionHead.center,
   gap: 30px;
 }
 
-.cards {
-  display: flex;
-  gap: 60px;
-  margin-block: 50px;
-}
 .cards .card {
   border-radius: 8px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .cards .card-body {
   background-color: var(--white);
@@ -2413,6 +2411,9 @@ section .sectionHead.center,
   padding-top: 25px;
   color: var(--primary);
 }
+.cards .card-footer {
+  margin-top: auto;
+}
 .cards .icon-arrow-long-right {
   font-size: 32px;
   color: var(--primary);
@@ -2430,10 +2431,15 @@ section .sectionHead.center,
     color: var(--fifth);
   }
 }
-.cards.quad .card {
+.cards:not(.swiper) {
+  display: flex;
+  gap: 60px;
+  margin-block: 50px;
+}
+.cards:not(.swiper).quad .card {
   width: calc(25% - 52px);
 }
-.cards.quad .card .card-image-top {
+.cards:not(.swiper).quad .card .card-image-top {
   aspect-ratio: 3/2;
 }
 
@@ -2482,4 +2488,79 @@ section .sectionHead.center,
 }
 .testingWrapper .testingDesc .fixBtn {
   margin-top: 40px;
+}
+
+.sectionHead .commentTitle {
+  font-size: 40px;
+  font-family: "GilroyMedium";
+  line-height: 50px;
+  color: var(--tertiary);
+}
+.sectionHead .commentTitle b {
+  display: block;
+  font-family: "GilroyBold";
+}
+.sectionHead .commentText {
+  margin-left: auto;
+  font-family: "GilroyMedium";
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--tertiary);
+}
+.sectionHead .commentText a {
+  font-family: "GilroyBold";
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .sectionHead .commentText a:hover {
+    color: var(--fifth);
+  }
+}
+
+.commentsSlider {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 60px;
+}
+.commentsSlider .swiper-slide:nth-child(even) {
+  transform: translateY(-20px);
+}
+.commentsSlider .swiper-slide:nth-child(odd) {
+  transform: translateY(20px);
+}
+.commentsSlider .card {
+  border-radius: 10px;
+  padding: 36px;
+  min-height: 450px;
+}
+.commentsSlider .card .card-body {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+.commentsSlider .card .card-body .card-text {
+  position: relative;
+  text-align: left;
+  color: var(--tertiary);
+  padding-top: 0;
+  font-family: "GilroyMedium";
+  font-size: 17px;
+  line-height: 30px;
+}
+.commentsSlider .card .card-body .card-text:after, .commentsSlider .card .card-body .card-text:before {
+  content: "“";
+  color: var(--tertiary);
+  text-align: left;
+  font-family: "GilroyMedium";
+  font-size: 35px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+.commentsSlider .card .card-body .card-text:after {
+  padding-top: 10px;
+}
+.commentsSlider .card .commentUserName {
+  font-family: "GilroyBold";
+  font-size: 18px;
+  color: var(--tertiary);
 }
