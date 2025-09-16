@@ -16,9 +16,14 @@ section,
       font-family: "GilroyMedium";
       line-height: 55px;
       color: var(--tertiary);
+      &.medium {
+        font-size: 40px;
+        font-family: "GilroyBold";
+        line-height: 55px;
+      }
     }
     p {
-      max-width:450px;
+      max-width: 450px;
       font-family: "GilroyMedium";
       font-size: 15px;
       line-height: 25px;
@@ -55,5 +60,8 @@ section,
     &.center {
       justify-content: center;
     }
+  }
+  .sectionContent {
+    padding-top: 70px;
   }
 }

@@ -2663,6 +2663,12 @@ section .sectionHead .sectionTitle,
   line-height: 55px;
   color: var(--tertiary);
 }
+section .sectionHead .sectionTitle.medium,
+.section .sectionHead .sectionTitle.medium {
+  font-size: 40px;
+  font-family: "GilroyBold";
+  line-height: 55px;
+}
 section .sectionHead p,
 .section .sectionHead p {
   max-width: 450px;
@@ -2702,6 +2708,10 @@ section .sectionHead .sectionText,
 section .sectionHead.center,
 .section .sectionHead.center {
   justify-content: center;
+}
+section .sectionContent,
+.section .sectionContent {
+  padding-top: 70px;
 }
 
 .featuredWrapper {
@@ -2895,7 +2905,6 @@ section .sectionHead.center,
 .commentsSlider {
   padding-top: 25px;
   padding-bottom: 25px;
-  margin-top: 60px;
 }
 .commentsSlider .swiper-slide:nth-child(even) {
   transform: translateY(-20px);
@@ -3067,6 +3076,31 @@ section .sectionHead.center,
 .accordion details[open] summary:after {
   transform: rotate(45deg);
   color: var(--fifth);
+}
+
+.ourCasesCounter {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.ourCasesCounter .countItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ourCasesCounter .countItem .count {
+  font-family: "GilroySemibold";
+  font-size: 70px;
+  color: var(--tertiary);
+}
+.ourCasesCounter .countItem span {
+  font-family: "GilroyRegular";
+  font-size: 30px;
+  line-height: 55px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .expertWrapper .sectionHead {
