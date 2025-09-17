@@ -53,19 +53,29 @@
       font-size: 15px;
       font-family: "GilroyMedium";
       padding: 5px 10px;
-      &:not(:first-child){
+      &:not(:first-child) {
         border-top: 1px solid var(--gray-100);
       }
       &:hover,
       &.focus {
-        background-color: var(--fourth)!important;
-        color: var(--white)!important;
+        background-color: var(--fourth) !important;
+        color: var(--white) !important;
       }
       &.selected {
         &.focus {
-          background-color: var(--fourth)!important;
-          color: var(--white)!important;
+          background-color: var(--fourth) !important;
+          color: var(--white) !important;
         }
+      }
+    }
+  }
+  &.counterSelect {
+    .list {
+      width: calc(100% - 145px);
+      .option {
+        font-size: 18px;
+        padding: 10px 10px;
+        letter-spacing: 1.5px;
       }
     }
   }
