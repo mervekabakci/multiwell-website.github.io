@@ -2383,6 +2383,10 @@ figure {
   flex-shrink: 1 !important;
 }
 
+.deg180 {
+  transform: rotate(180deg);
+}
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -4533,4 +4537,40 @@ section .sectionContent,
   font-family: "GilroyRegular";
   font-size: 14px;
   line-height: 28px;
+}
+
+.subBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px;
+  height: 250px;
+}
+.subBanner .title,
+.subBanner h1 {
+  font-family: "GilroySemibold";
+  font-size: 40px;
+  color: var(--white);
+  line-height: 50px;
+}
+.subBanner .breadcrumbWrapper {
+  margin-bottom: auto;
+}
+.subBanner .breadcrumbWrapper a {
+  font-family: "GilroyMedium";
+  font-size: 15px;
+  color: var(--white);
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .subBanner .breadcrumbWrapper a:hover {
+    color: var(--secondary);
+  }
+}
+.subBanner .buttons {
+  margin-top: auto;
 }

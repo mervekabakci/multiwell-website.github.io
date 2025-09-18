@@ -214,4 +214,7 @@ $align-self: auto start end center stretch baseline;
   .flex-shrink-#{$i} { flex-shrink: #{$i} !important; }
 }
 
+.deg180{
+  transform: rotate(180deg);
+}
 

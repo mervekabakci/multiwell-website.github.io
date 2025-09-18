@@ -1,0 +1,35 @@
+.subBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 50px;
+  height: 250px;
+  .title,
+  h1{
+    font-family: 'GilroySemibold';
+    font-size: 40px;
+    color: var(--white);
+    line-height: 50px;
+  }
+  .breadcrumbWrapper {
+    margin-bottom: auto;
+    a {
+      font-family: "GilroyMedium";
+      font-size: 15px;
+      color: var(--white);
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: all .3s linear;
+      @media screen and (min-width:992px) {
+        &:hover{
+          color: var(--secondary);
+        }
+      }
+    }
+  }
+  .buttons {
+    margin-top: auto;
+  }
+}
