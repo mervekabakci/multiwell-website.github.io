@@ -208,7 +208,7 @@
                   }
                   @media screen and (min-width: 992px) {
                     &:hover {
-                      background-color: var(--gray-100);
+                      background-color: var(--soft-light-pink);
                       .arrowIcon {
                         transform: translateX(10px);
                       }
@@ -235,7 +235,7 @@
               margin-top: auto;
               display: flex;
               align-items: center;
-              background-color: var(--gray-100);
+              background-color: var(--soft-light-pink);
               border-top: 1px solid var(--gray-200);
               padding: 20px;
               .info {
