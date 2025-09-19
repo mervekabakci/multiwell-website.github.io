@@ -216,5 +216,6 @@ $align-self: auto start end center stretch baseline;
 
 .deg180{
   transform: rotate(180deg);
+  transform-origin: center calc(50% - 1px);
 }
 

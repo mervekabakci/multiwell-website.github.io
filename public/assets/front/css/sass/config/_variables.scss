@@ -8,7 +8,8 @@
   --fourth: #8db63f;
   --fifth: #f68d6d;
 
-  --black-800: #303030;
+  --black-700: #303030;
+  --black-800: #272727;
   --black-900: #1f1f1f;
 
   --soft-pink: #ffe7e4;
@@ -17,6 +18,7 @@
   --soft-light-blue: #e1f0ee;
   --soft-yellow: #eaf475;
   --soft-orange: #f8a58a;
+  --soft-light-orange: #decca7;
 
   --gray: #f5f5f5;
   // --gray-100: #f9f6f0;
@@ -42,6 +44,7 @@ $colors: (
   "soft-light-blue": var(--soft-light-blue),
   "soft-yellow": var(--soft-yellow),
   "soft-orange": var(--soft-orange),
+  "soft-light-orange": var(--soft-light-orange),
   "gray": var(--gray),
   // "gray-100": var(--gray-100),
   "gray-200": var(--gray-200),
@@ -61,7 +64,7 @@ $colors: (
 
       input {
         color: var(--white) !important;
-        background: $color !important;
+        background: rgba(0, 0, 0, 0) !important;
       }
       @media screen and (min-width: 992px) {
         &:hover {
@@ -69,7 +72,7 @@ $colors: (
           background-color: var(--white) !important;
           input {
             color: $color !important;
-            background-color: var(--white) !important;
+            background-color: rgba(0, 0, 0, 0) !important;
           }
         }
       }
@@ -92,7 +95,25 @@ $colors: (
           background-color: var(--white) !important;
           input {
             color: var(--primary) !important;
-            background-color: var(--white) !important;
+            background-color: rgba(0, 0, 0, 0) !important;
+          }
+        }
+      }
+    }
+    .button-soft-light-pink {
+      color: var(--primary) !important;
+      background-color: var(--soft-light-pink) !important;
+      input {
+        color: var(--primary) !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--soft-light-pink) !important;
+          background-color: var(--primary) !important;
+          input {
+            color: var(--soft-light-pink) !important;
+            background-color: var(--primary) !important;
           }
         }
       }

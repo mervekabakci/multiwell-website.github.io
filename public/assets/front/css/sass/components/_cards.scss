@@ -12,6 +12,7 @@
     padding: 25px;
     text-align: center;
     transition: all 0.3s linear;
+    flex: 1;
   }
   .card-title {
     font-family: "GilroySemibold";
@@ -34,14 +35,14 @@
     font-family: "GilroySemibold";
     font-size: 18px;
     line-height: 30px;
-    color: var(--black-800);
+    color: var(--black-700);
     margin-bottom: 5px;
   }
   .card-expert-title {
     font-family: "GilroyRegular";
     font-size: 14px;
     line-height: 20px;
-    color: var(--black-800);
+    color: var(--black-700);
   }
   .experts-comments {
     color: var(--gray-400);
@@ -122,6 +123,7 @@
   }
   &:not(.swiper) {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
     margin-block: 50px;
     &.quad {
@@ -130,6 +132,11 @@
         .card-image-top {
           aspect-ratio: 3/2;
         }
+      }
+    }
+    &.third {
+      .card {
+        width: calc(33.3% - 40px);
       }
     }
   }
@@ -194,7 +201,7 @@
         left: 10px;
         top: 10px;
         z-index: 9;
-        transition: all .3s linear;
+        transition: all 0.3s linear;
       }
       .card-image-start {
         width: 300px;
@@ -218,7 +225,7 @@
       }
       @media screen and (min-width: 992px) {
         &:hover {
-          .icon-play{
+          .icon-play {
             transform: translate(10px, 10px);
           }
           .card-body {
@@ -236,6 +243,15 @@
   }
 }
 
+.pageSection {
+  .pageRow {
+    .cardList {
+      .card {
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
 .cards-button {
   display: flex;
   flex-wrap: wrap;

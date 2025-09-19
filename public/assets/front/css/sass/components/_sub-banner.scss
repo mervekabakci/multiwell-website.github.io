@@ -5,8 +5,8 @@
   padding: 30px 50px;
   height: 250px;
   .title,
-  h1{
-    font-family: 'GilroySemibold';
+  h1 {
+    font-family: "GilroySemibold";
     font-size: 40px;
     color: var(--white);
     line-height: 50px;
@@ -20,10 +20,13 @@
       line-height: 24px;
       display: flex;
       align-items: center;
-      gap: 20px;
-      transition: all .3s linear;
-      @media screen and (min-width:992px) {
-        &:hover{
+      gap: 10px;
+      transition: all 0.3s linear;
+      .icon-arrow-right {
+        font-size: 24px;
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
           color: var(--secondary);
         }
       }

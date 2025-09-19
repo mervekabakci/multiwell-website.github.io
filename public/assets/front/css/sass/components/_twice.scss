@@ -15,4 +15,13 @@
       margin-left: auto;
     }
   }
+  &.pageTwice{
+    padding: 0 50px;
+    .twiceContent{
+      width: 60.5%;
+    }
+    .twiceOtherContent{
+      width: 30%;
+    }
+  }
 }
