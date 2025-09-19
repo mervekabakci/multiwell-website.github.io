@@ -81,3 +81,44 @@
     }
   }
 }
+
+.pageSection {
+  .pageRow {
+    .accordion {
+      details {
+        border: none;
+        position: relative;
+        summary {
+          font-size: 17px;
+          font-family: "GilroyMedium";
+          color: var(--primary);
+          line-height: 24px;
+          width: calc(100% - 50px);
+          border-bottom: 1px solid var(--gray-100);
+          &:after {
+            color: currentColor;
+            position: absolute;
+            right: 0;
+          }
+          @media screen and (min-width:992px) {
+            &:hover{
+              color: var(--fifth);
+            }
+          }
+        }
+        .desc {
+          width: calc(100% - 50px);
+        }
+        &[open] {
+          summary {
+            border-bottom: none;
+            color: var(--fifth);
+          }
+          .desc {
+            border-bottom: 1px solid var(--gray-300);
+          }
+        }
+      }
+    }
+  }
+}

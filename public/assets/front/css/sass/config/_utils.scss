@@ -94,7 +94,7 @@ $breakpoints: (
 }
 
 //padding ve margin ozellikleri
-$directions: t top, r right, bt bottom, l left;
+$directions: t top, e right, bt bottom, s left;
 $step: 4px;
 
 @each $short, $full in $directions {
@@ -116,10 +116,34 @@ $step: 4px;
     padding: $i * $step !important;
   }
 }
+@for $i from 1 through 12 {
+  .py-#{$i} {
+    padding-top: $i * $step !important;
+    padding-bottom: $i * $step !important;
+  }
+}
+@for $i from 1 through 12 {
+  .px-#{$i} {
+    padding-left: $i * $step !important;
+    padding-right: $i * $step !important;
+  }
+}
 
 @for $i from 1 through 12 {
   .m-#{$i} {
     margin: $i * $step !important;
+  }
+}
+@for $i from 1 through 12 {
+  .mx-#{$i} {
+    margin-left: $i * $step !important;
+    margin-right: $i * $step !important;
+  }
+}
+@for $i from 1 through 12 {
+  .my-#{$i} {
+    margin-top: $i * $step !important;
+    margin-bottom: $i * $step !important;
   }
 }
 .mx-auto{

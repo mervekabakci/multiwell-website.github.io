@@ -27,3 +27,26 @@
     align-items: center;
     gap: 30px;
 }
+
+.pageSection{
+    .pageRow{
+        margin-block: 80px;
+        &:first-child{
+            margin-top: 0;
+        }
+        .pageRowHead{
+            .pageRowTitle{
+                font-size: 18px;
+                line-height: 25px;
+                font-family: 'GilroySemibold';
+                color: var(--primary);
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                .logoIcon{
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
