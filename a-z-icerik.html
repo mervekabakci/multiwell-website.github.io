@@ -298,38 +298,44 @@
             <div class="container">
                 <div class="twiceWrapper pageTwice paragraph">
                     <div class="twiceContent">
+                        <!--Kısa metin kalın buyuk-->
                         <div class="shorText">
                             <span>Anksiyete bozukluğu;</span> bireyin günlük hayatını oldukça etkileyen herhangi bir tehdit olmamasına rağmen yoğun korku ve kaygı duyma durumudur. 
                         </div>
+                        <!--tek paragrapflık kısa acıklama-->
                         <div class="shortDesc">
                             Kaygılanma stresli bir olay yaşandığında verilen doğal bir tepkidir. Bu sayede birey tehlikelere karşı alarmda olur, dikkatini oraya yöneltir ve gerekli olan davranışı sergiler. Bu noktalarda kaygılanmak faydalı olabilir. Ancak anksiyete bozukluğunda durum bundan farklıdır. Bu bozukluğa sahip bireyler olması gerekenden çok daha fazlı korku ve endişe duyarlar. Bu korku bireylerin günlük hayattaki işlevselliğini, okul başarısını, iş performansını ve ikili ilişkilerini oldukça etkiler. Birey kaygı duyduğu durum karşısında aşırı tepki verir ve verdiği tepkileri kontrol edemez. Bireyler kaygı durumunda hem fiziksel hem de psikolojik semptomlar yaşarlar. Psikolojik belirtiler arasında sürekli endişe, huzursuzluk ve olumsuz düşünceler yer alırken; fiziksel belirtiler arasında çarpıntı, terleme, kas gerginliği, uyku bozuklukları ve nefes darlığı görülür.
                         </div>
 
+                        <!--Email form-->
                         <div class="emailWrapper">
-                            <div class="title">Depresyon ile ilgili güncel konular mailinize gelsin</div>
-                            <p>Aksiyetemvar.com uzmanlarını hazırladığı video, makale içeriklerinin e-postanıza gelmesini istiyorsanız, <a href="#">KVKK Aydınlatma Metnini</a> okuyun, onaylayın.</p>
+                            <div class="emailDesc">
+                                <div class="title">Depresyon ile ilgili güncel konular mailinize gelsin</div>
+                                <p>Aksiyetemvar.com uzmanlarını hazırladığı video, makale içeriklerinin e-postanıza gelmesini istiyorsanız, <a href="#">KVKK Aydınlatma Metnini</a> okuyun, onaylayın.</p>
+                            </div>
                             <div class="form">
                                 <div class="inputColumn">
-                                    <input type="email" placeholder="E-Posta adresinizi giriniz emailMask">
-                                    <div class="invalid-feedback">Lütfen E-Posta adresinizi giriniz</div>
+                                    <input type="email" class="form-control" placeholder="E-Posta adresinizi giriniz" required>
+                                    <div class="error-message">Lütfen E-Posta adresinizi giriniz</div>
                                 </div>
                                 <label class="containerCheck">
-                                    <input type="checkbox" value="original" name="kvkkmetni">
+                                    <input type="checkbox" value="original" name="kvkkmetni" class="form-control" required>
                                     <span class="checkmark"></span>
                                     <span class="checkText">
                                         <a href="#" target="_blank">KVKK Aydınlatma Metni</a>'ni okudum onaylıyorum
                                     </span>
-                                    <div class="invalid-feedback">
+                                    <div class="error-message">
                                         Lütfen KVKK Metnini onaylayınız
                                     </div>
                                 </label>
-                                <span class="fixBtn button-secondary">
-                                    <input type="button" value="Abone Ol">
+                                <span class="fixBtn button-secondary rounded small">
+                                    <input type="submit" class="formButton" value="Abone Ol">
                                 </span>
 
                             </div>
                         </div>
 
+                        <!--Paragraf metni-->
                         <div class="longText">
                             Anksiyete bozukluğu içerisinde <b>çeşitli bozuklukları</b> barından oldukça geniş bir rahatsızlıktır. Ayrılma kaygısı bozukluğu, özgülfobiler, sosyal fobi, panik bozukluk gibi psikolojik rahatsızlıklar anksiyete bozukluğunun alt başlığıdır. Araştırmalara göre, bu bozukluğun kadınlarda görülme sıklığı erkeklere göre daha fazladır. Anksiyete bozukluğu, genetik, biyolojik, çevresel ve psikolojik etkenlerin bir kombinasyonundan kaynaklanabilir. Genetik yatkınlık, beyindeki kimyasal dengesizlikler, travmatik olaylar ve düşük benlik saygısı gibi faktörler anksiyete riskini artırabilir. Bu etkenlerin bir araya gelmesi, bireyde sürekli kaygı hali yaratabilir.Aynı zamanda, bireylerde yoğun duygusal dalgalanmalar ve davranış değişiklikleri sıkça görülür. Bu belirtiler, kişinin çevresiyle olan ilişkilerini ve yaşam kalitesini <a href="#">büyük ölçüde etkiler</a>.Bu bozukluğa sahip insanların genel olarak gösterdiği davranışlar aşağıda listelenmiştir;
                             <br><br>
@@ -1006,6 +1012,7 @@
     <script src="public/assets/front/js/dialog.js" defer></script>
     <script src="public/assets/front/js/custom-tab.js" defer></script>
     <script src="public/assets/front/js/swiper.js" defer></script>
+    <script src="public/assets/front/js/form.js" defer></script>
 
 </body>
 </html>

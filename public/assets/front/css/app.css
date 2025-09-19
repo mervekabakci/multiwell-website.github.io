@@ -135,6 +135,7 @@ video {
   --tertiary: #045869;
   --fourth: #8db63f;
   --fifth: #f68d6d;
+  --black-600: #3f3f3f;
   --black-700: #303030;
   --black-800: #272727;
   --black-900: #1f1f1f;
@@ -146,10 +147,13 @@ video {
   --soft-orange: #f8a58a;
   --soft-light-orange: #decca7;
   --gray: #f5f5f5;
+  --gray-100: #d9d9d9;
   --gray-200: #e3e3e1;
   --gray-300: #c7c7c4;
   --gray-400: #a0a09b;
   --gray-500: #5c5757;
+  --error:#c70f0f;
+  --success:#11b928;
   --swiper-theme-color: var(--primary);
 }
 
@@ -2967,70 +2971,6 @@ figure {
   font-weight: normal;
   font-style: normal;
 }
-.textLink {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--secondary);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.textLink .text {
-  position: relative;
-}
-.textLink .text:after {
-  display: inline-flex;
-  content: "";
-  position: absolute;
-  width: 100%;
-  border-bottom: 1px solid var(--secondary);
-  transition: all 0.3s linear;
-  left: 0;
-  bottom: 0;
-}
-.textLink .icon-arrow-long-right {
-  font-size: 22px;
-}
-@media screen and (min-width: 992px) {
-  .textLink:not(.notHover):hover .text:after {
-    width: 0;
-  }
-  .textLink:not(.notHover):hover.hover {
-    color: var(--fifth);
-  }
-}
-
-.fixBtn {
-  padding: 0 24px;
-  position: relative;
-  border-radius: 8px;
-  font-family: "GilroySemibold";
-  font-size: 18px;
-  transition: all 0.3s linear;
-  height: 56px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.fixBtn input {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  outline: 0;
-  border: none;
-}
-.fixBtn .icon-arrow-long-right {
-  font-size: 30px;
-}
-.fixBtn.type2 {
-  border-radius: 24px;
-  min-width: 350px;
-}
-.fixBtn.big {
-  height: 70px;
-}
-
 @font-face {
   font-family: "customFont";
   src: url("../../fonts/customFont/customFont.eot?adtuu1");
@@ -4094,101 +4034,6 @@ dialog.fullScreen .dialogCenter {
   }
 }
 
-.dropdown .dropdown-button {
-  display: flex;
-  align-items: center;
-  font-size: "GilroyMedium";
-  font-size: 14px;
-  height: 48px;
-  width: 250px;
-  background-color: var(--secondary);
-  border-radius: 6px;
-  padding: 0 24px;
-}
-
-.chooseTitle {
-  position: relative;
-}
-.chooseTitle .customSelect {
-  border: none;
-  height: auto;
-  color: var(--fourth);
-  font-size: 30px;
-  font-family: "GilroyBold";
-  position: static;
-}
-
-.nice-select:after {
-  display: none;
-}
-.nice-select .current {
-  border-bottom: 1px solid var(--fourth);
-  position: relative;
-}
-.nice-select .current:after {
-  content: "\e912";
-  font-family: "customFont";
-  border: none;
-  font-size: 12px;
-  transform-origin: unset;
-  width: initial;
-  height: initial;
-  transform: translateY(-50%) rotate(90deg);
-  margin-top: 2px;
-  right: -18px;
-  position: absolute;
-  top: 50%;
-}
-.nice-select .list {
-  width: 100%;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
-  border: none;
-  max-height: 200px;
-  overflow-y: auto;
-}
-.nice-select .list::-webkit-scrollbar {
-  background-color: var(--soft-light-pink);
-  width: 6px;
-  border-radius: 4px;
-}
-.nice-select .list::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  width: 6px;
-  border-radius: 4px;
-}
-.nice-select .list::-webkit-scrollbar-track {
-  background-color: var(--soft-light-pink);
-  width: 6px;
-  border-radius: 4px;
-}
-.nice-select .list .option {
-  font-size: 15px;
-  font-family: "GilroyMedium";
-  padding: 5px 10px;
-}
-.nice-select .list .option:not(:first-child) {
-  border-top: 1px solid var(--soft-light-pink);
-}
-.nice-select .list .option:hover, .nice-select .list .option.focus {
-  background-color: var(--fourth) !important;
-  color: var(--white) !important;
-}
-.nice-select .list .option.selected.focus {
-  background-color: var(--fourth) !important;
-  color: var(--white) !important;
-}
-.nice-select.counterSelect .list {
-  width: calc(100% - 145px);
-}
-.nice-select.counterSelect .list .option {
-  font-size: 18px;
-  padding: 10px 10px;
-  letter-spacing: 1.5px;
-}
-.nice-select.open .current:after {
-  transform: translateY(-50%) rotate(2deg);
-}
-
 .homeBanner {
   height: 700px;
   display: flex;
@@ -5089,4 +4934,306 @@ section .sectionContent,
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.emailWrapper {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  margin-block: 40px;
+}
+.emailWrapper .emailDesc {
+  max-width: 690px;
+}
+.emailWrapper .title {
+  font-family: "GilroySemibold";
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--primary);
+}
+.emailWrapper p {
+  font-family: "GilroyMedium";
+  font-size: 15px;
+  line-height: 30px;
+  color: var(--primary);
+  margin-top: 16px;
+}
+.emailWrapper .form {
+  margin-top: 30px;
+  max-width: 450px;
+}
+.emailWrapper .form input[type=email] {
+  height: 56px;
+  width: 100%;
+}
+
+.dropdown .dropdown-button {
+  display: flex;
+  align-items: center;
+  font-size: "GilroyMedium";
+  font-size: 14px;
+  height: 48px;
+  width: 250px;
+  background-color: var(--secondary);
+  border-radius: 6px;
+  padding: 0 24px;
+}
+
+.chooseTitle {
+  position: relative;
+}
+.chooseTitle .customSelect {
+  border: none;
+  height: auto;
+  color: var(--fourth);
+  font-size: 30px;
+  font-family: "GilroyBold";
+  position: static;
+}
+
+.nice-select:after {
+  display: none;
+}
+.nice-select .current {
+  border-bottom: 1px solid var(--fourth);
+  position: relative;
+}
+.nice-select .current:after {
+  content: "\e912";
+  font-family: "customFont";
+  border: none;
+  font-size: 12px;
+  transform-origin: unset;
+  width: initial;
+  height: initial;
+  transform: translateY(-50%) rotate(90deg);
+  margin-top: 2px;
+  right: -18px;
+  position: absolute;
+  top: 50%;
+}
+.nice-select .list {
+  width: 100%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  border: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.nice-select .list::-webkit-scrollbar {
+  background-color: var(--soft-light-pink);
+  width: 6px;
+  border-radius: 4px;
+}
+.nice-select .list::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  width: 6px;
+  border-radius: 4px;
+}
+.nice-select .list::-webkit-scrollbar-track {
+  background-color: var(--soft-light-pink);
+  width: 6px;
+  border-radius: 4px;
+}
+.nice-select .list .option {
+  font-size: 15px;
+  font-family: "GilroyMedium";
+  padding: 5px 10px;
+}
+.nice-select .list .option:not(:first-child) {
+  border-top: 1px solid var(--soft-light-pink);
+}
+.nice-select .list .option:hover, .nice-select .list .option.focus {
+  background-color: var(--fourth) !important;
+  color: var(--white) !important;
+}
+.nice-select .list .option.selected.focus {
+  background-color: var(--fourth) !important;
+  color: var(--white) !important;
+}
+.nice-select.counterSelect .list {
+  width: calc(100% - 145px);
+}
+.nice-select.counterSelect .list .option {
+  font-size: 18px;
+  padding: 10px 10px;
+  letter-spacing: 1.5px;
+}
+.nice-select.open .current:after {
+  transform: translateY(-50%) rotate(2deg);
+}
+
+.textLink {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.textLink .text {
+  position: relative;
+}
+.textLink .text:after {
+  display: inline-flex;
+  content: "";
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid var(--secondary);
+  transition: all 0.3s linear;
+  left: 0;
+  bottom: 0;
+}
+.textLink .icon-arrow-long-right {
+  font-size: 22px;
+}
+@media screen and (min-width: 992px) {
+  .textLink:not(.notHover):hover .text:after {
+    width: 0;
+  }
+  .textLink:not(.notHover):hover.hover {
+    color: var(--fifth);
+  }
+}
+
+.fixBtn {
+  padding: 0 24px;
+  position: relative;
+  border-radius: 8px;
+  font-family: "GilroySemibold";
+  font-size: 18px;
+  transition: all 0.3s linear;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.fixBtn input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+.fixBtn .icon-arrow-long-right {
+  font-size: 30px;
+}
+.fixBtn.type2 {
+  border-radius: 24px;
+  min-width: 350px;
+}
+.fixBtn.small {
+  height: 45px;
+}
+.fixBtn.big {
+  height: 70px;
+}
+.fixBtn.rounded {
+  border-radius: 30px;
+}
+
+.form .form-control.is-invalid {
+  border: 1px solid var(--error);
+}
+.form .form-control.is-invalid ~ .error-message {
+  display: block;
+}
+.form .error-message {
+  display: none;
+  color: var(--error);
+  font-size: 12px;
+  font-family: "GilroySemibold";
+}
+
+.containerCheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+}
+.containerCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.containerCheck .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 1px solid silver;
+}
+.containerCheck:hover input ~ .checkmark {
+  background-color: #ffffff;
+}
+.containerCheck input:checked ~ .checkmark {
+  background-color: #ffffff;
+}
+.containerCheck .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.containerCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+.containerCheck .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid var(--fifth);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.containerCheck input[type=radio] ~ .checkmark {
+  border-radius: 100%;
+}
+.containerCheck input[type=radio]:checked ~ .checkmark:after {
+  border: none;
+  background: #242424;
+  width: 9px;
+  height: 9px;
+  top: 2px;
+  left: 2px;
+  border-radius: 100%;
+}
+.containerCheck .checkText {
+  font-size: 15px;
+  padding-top: 2px;
+  display: inline-block;
+}
+.containerCheck .checkText a {
+  font-weight: 600;
+  color: var(--fifth);
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form .inputColumn {
+  width: 100%;
+  position: relative;
+}
+.form .form-control {
+  border: 1px solid var(--gray-100);
+  font-size: 15px;
+  color: var(--black-600);
+  padding: 0 18px;
 }
