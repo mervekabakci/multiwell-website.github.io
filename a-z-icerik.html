@@ -355,7 +355,8 @@
                             Gündelik hayatı oldukça etkileyen anksiyete bozukluğunun tedavisi mümkündür ve uygun tedavi için bir ruh sağlığı uzmanından destek almak önemlidir.
                         </div>
 
-                        <div class="searchWrapperInline">
+                        <!--inline search alanı-->
+                        <div class="searchWrapperInline bg-soft-light-pink rounded">
                             <div class="searchHead">
                                 <span>Sağlık Bakanlığında ruhsat almış ruh sağlığı uzmanları</span>
                                 <div class="title">Psikolog ve Psikiyatri Bul</div>
@@ -364,51 +365,59 @@
                                 <div class="searchColumn">
                                     <input type="text" placeholder="İl, İlçe veya Uzman Adı ile arama yapabilirsiniz">
                                     <div class="searchResult">
-                                        <div class="list-group">
-                                            <div class="list-group-title">Lokasyon</div>
-                                            <div class="lists">
-                                                <a href="#" class="listItem">
-                                                    <span class="icon-location"></span>
-                                                    <span>İstanbul</span>
-                                                </a>
-                                                <a href="#" class="listItem">
-                                                    <span class="icon-location"></span>
-                                                    <span>Ordu</span>
-                                                </a>
-                                                <a href="#" class="listItem">
-                                                    <span class="icon-location"></span>
-                                                    <span>Trabzon</span>
-                                                </a>
+                                        <div class="searchBox">
+                                            <div class="searchGroup">
+                                                <div class="searchBoxTitle">Lokasyon</div>
+                                                <div class="searchList">
+                                                    <a href="#" class="item">
+                                                        <div class="icon">
+                                                            <span class="icon-location customIcon"></span>
+                                                        </div>
+                                                        <span>İstanbul</span>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="icon">
+                                                            <span class="icon-location customIcon"></span>
+                                                        </div>
+                                                        <span>Ordu</span>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="icon">
+                                                            <span class="icon-location customIcon"></span>
+                                                        </div>
+                                                        <span>Trabzon</span>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="list-group">
-                                            <div class="list-group-title">Uzmanlar</div>
-                                            <div class="lists">
-                                                <a href="#" class="item">
-                                                    <div class="iconImage"><img src="public/assets/images/media/uzmanlar/cem-kaya.jpeg" alt=""></div>
-                                                    <div class="desc">
-                                                        <div class="name">Cem Kaya</div>
-                                                        <div class="title">Klinik Psikolog</div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="item">
-                                                    <div class="iconImage"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
-                                                    <div class="desc">
-                                                        <div class="name">Şener Cem Irmak</div>
-                                                        <div class="title">Uzman Psikolog ve Aile Danışmanı</div>
-                                                    </div>
-                                                </a>
-                                                <a href="#" class="item">
-                                                    <div class="iconImage"></div>
-                                                    <div class="desc">
-                                                        <div class="name">Cem Kaya</div>
-                                                        <div class="title">Klinik Psikolog</div>
-                                                    </div>
-                                                </a>
+                                            <div class="searchGroup">
+                                                <div class="searchBoxTitle">Uzmanlar</div>
+                                                <div class="searchList">
+                                                    <a href="#" class="item">
+                                                        <div class="iconImage"><img src="public/assets/images/media/uzmanlar/cem-kaya.jpeg" alt=""></div>
+                                                        <div class="desc">
+                                                            <div class="name">Cem Kaya</div>
+                                                            <div class="title">Klinik Psikolog</div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="iconImage"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
+                                                        <div class="desc">
+                                                            <div class="name">Şener Cem Irmak</div>
+                                                            <div class="title">Uzman Psikolog ve Aile Danışmanı</div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="item">
+                                                        <div class="iconImage"></div>
+                                                        <div class="desc">
+                                                            <div class="name">Cem Kaya</div>
+                                                            <div class="title">Klinik Psikolog</div>
+                                                        </div>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="resultNotFound">
-                                            "aranan" kelimesi için arama sonucu bulunamadı
+                                            <b>"aranan"</b> kelimesi için arama sonucu bulunamadı
                                         </div>
                                     </div>
                                 </div>
@@ -1013,6 +1022,7 @@
     <script src="public/assets/front/js/custom-tab.js" defer></script>
     <script src="public/assets/front/js/swiper.js" defer></script>
     <script src="public/assets/front/js/form.js" defer></script>
+    <script src="public/assets/front/js/search-inline.js" defer></script>
 
 </body>
 </html>
