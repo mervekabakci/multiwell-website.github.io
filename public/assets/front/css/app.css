@@ -4870,7 +4870,7 @@ section .sectionContent,
   color: var(--black-800);
   padding-bottom: 15px;
 }
-.paragraph .shorText span {
+.paragraph .shorText b {
   color: var(--secondary);
 }
 .paragraph .shortDesc {
@@ -4879,6 +4879,29 @@ section .sectionContent,
   line-height: 35px;
   color: var(--black-800);
   padding-top: 20px;
+}
+.paragraph .shortDesc b {
+  color: var(--secondary);
+}
+.paragraph .longText {
+  font-family: "GilroyRegular";
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--black-800);
+  padding-top: 20px;
+}
+.paragraph .longText b {
+  color: var(--secondary);
+}
+.paragraph ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.paragraph ul li::marker {
+  color: var(--fifth);
+  font-size: 20px;
 }
 .paragraph a:not(.fixBtn) {
   position: relative;

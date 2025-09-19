@@ -1,42 +1,67 @@
-.paragraph{
-    .shorText{
-        font-family: 'GilroyBold';
-        font-size: 22px;
-        line-height: 35px;
-        color: var(--black-800);
-        padding-bottom: 15px;
-        span{
-            color: var(--secondary);
-        }
+.paragraph {
+  .shorText {
+    font-family: "GilroyBold";
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--black-800);
+    padding-bottom: 15px;
+    b {
+      color: var(--secondary);
     }
-    .shortDesc{
-        font-family: 'GilroyRegular';
-        font-size: 18px;
-        line-height: 35px;
-        color: var(--black-800);
-        padding-top: 20px;
+  }
+  .shortDesc {
+    font-family: "GilroyRegular";
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--black-800);
+    padding-top: 20px;
+    b {
+      color: var(--secondary);
     }
-    a{
-        &:not(.fixBtn){
-            position: relative;
-            font-family: 'GilroySemibold';
+  }
+  .longText {
+    font-family: "GilroyRegular";
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--black-800);
+    padding-top: 20px;
+    b {
+      color: var(--secondary);
+    }
+  }
+  ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    li{
+        &::marker{
             color: var(--fifth);
-            &:after{
-                content: "";
-                border-bottom: 1px solid var(--fifth);
-                width: 100%;
-                position: absolute;
-                bottom: -2px;
-                left: 0;
-                transition: all .3s linear;
-            }
-            @media screen and (min-width:992px) {
-                &:hover{
-                    &:after{
-                        width: 0;
-                    }
-                }
-            }
+            font-size: 20px;
         }
     }
+  }
+  a {
+    &:not(.fixBtn) {
+      position: relative;
+      font-family: "GilroySemibold";
+      color: var(--fifth);
+      &:after {
+        content: "";
+        border-bottom: 1px solid var(--fifth);
+        width: 100%;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        transition: all 0.3s linear;
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          &:after {
+            width: 0;
+          }
+        }
+      }
+    }
+  }
 }
