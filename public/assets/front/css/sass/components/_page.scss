@@ -35,6 +35,8 @@
             margin-top: 0;
         }
         .pageRowHead{
+            display: flex;
+            align-items: center;
             .pageRowTitle{
                 font-size: 18px;
                 line-height: 25px;
@@ -46,6 +48,9 @@
                 .logoIcon{
                     margin-top: 2px;
                 }
+            }
+            .textLink{
+                margin-left: auto;
             }
         }
     }

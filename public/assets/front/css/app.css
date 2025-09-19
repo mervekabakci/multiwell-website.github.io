@@ -5118,6 +5118,10 @@ section .sectionContent,
 .pageSection .pageRow:first-child {
   margin-top: 0;
 }
+.pageSection .pageRow .pageRowHead {
+  display: flex;
+  align-items: center;
+}
 .pageSection .pageRow .pageRowHead .pageRowTitle {
   font-size: 18px;
   line-height: 25px;
@@ -5129,6 +5133,9 @@ section .sectionContent,
 }
 .pageSection .pageRow .pageRowHead .pageRowTitle .logoIcon {
   margin-top: 2px;
+}
+.pageSection .pageRow .pageRowHead .textLink {
+  margin-left: auto;
 }
 
 .howToWorkList {
