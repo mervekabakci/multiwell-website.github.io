@@ -139,6 +139,7 @@ video {
   --black-700: #303030;
   --black-800: #272727;
   --black-900: #1f1f1f;
+  --soft-light-green:#005c65;
   --soft-pink: #ffe7e4;
   --soft-light-pink: #f9f6f0;
   --soft-blue: #b9ddff;
@@ -5273,40 +5274,67 @@ section .sectionContent,
   }
 }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.customTabWrapper {
+  /* Style the tab */
 }
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
+.customTabWrapper .tab-nav {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-block: 40px;
+}
+.customTabWrapper .tab-nav button {
+  background-color: var(--white);
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+  font-family: "GilroyMedium";
+  font-size: 16px;
+  color: var(--soft-light-green);
+  border-radius: 15px;
 }
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.customTabWrapper .tab-nav button.active {
+  background-color: var(--soft-light-orange);
+  color: var(--white);
 }
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+@media screen and (min-width: 992px) {
+  .customTabWrapper .tab-nav button:hover {
+    background-color: var(--soft-light-orange);
+    color: var(--white);
+  }
 }
-
-/* Style the tab content */
-.tabContent {
+.customTabWrapper .tab-contents .tabContent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
+}
+.customTabWrapper .tab-contents .tabContent .title {
+  font-family: "GilroyBold";
+  font-size: 18px;
+  color: var(--black-900);
+  margin-bottom: 10px;
+}
+.customTabWrapper .tab-contents .tabContent p {
+  padding-top: 10px;
+  font-size: 16px;
+  font-family: "GilroyRegular";
+  line-height: 32px;
+  color: var(--black-900);
+  padding-bottom: 30px;
+}
+.customTabWrapper .tab-contents .tabContent .otherInfo {
+  display: flex;
+  align-items: center;
+  font-family: "GilroyBold";
+  font-size: 14px;
+  color: var(--tertiary);
+  margin-top: 10px;
+}
+.customTabWrapper .tab-contents .tabContent.active {
+  display: block;
 }
 
 .emailWrapper {

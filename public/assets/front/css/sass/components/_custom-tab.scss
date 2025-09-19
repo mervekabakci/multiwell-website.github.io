@@ -1,35 +1,65 @@
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
+.customTabWrapper {
+  /* Style the tab */
+  .tab-nav {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-block: 40px;
+    button {
+      background-color: var(--white);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-family: "GilroyMedium";
+      font-size: 16px;
+      color: var(--soft-light-green);
+      border-radius: 15px;
+      &.active {
+        background-color: var(--soft-light-orange);
+        color: var(--white);
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          background-color: var(--soft-light-orange);
+          color: var(--white);
+        }
+      }
+    }
+  }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabContent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  .tab-contents {
+    .tabContent {
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+      .title{
+        font-family: 'GilroyBold';
+        font-size:18px;
+        color: var(--black-900);
+        margin-bottom: 10px;
+      }
+      p{
+        padding-top: 10px;
+        font-size: 16px;
+        font-family: 'GilroyRegular';
+        line-height: 32px;
+        color: var(--black-900);
+        padding-bottom: 30px;
+      }
+      .otherInfo{
+        display: flex;
+        align-items: center;
+        font-family: 'GilroyBold';
+        font-size: 14px;
+        color: var(--tertiary);
+        margin-top: 10px;
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
 }
