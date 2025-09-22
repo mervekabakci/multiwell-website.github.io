@@ -9,6 +9,10 @@
     margin: 0 auto;
 
     .nav-item {
+      @media screen and (max-width: 991.98px) {
+        width: 100%;
+        padding: 0 30px;
+      }
       .nav-link {
         display: flex;
         align-items: center;
@@ -17,6 +21,11 @@
         transition: all 0.3s linear;
         font-weight: 500;
         height: 100%;
+        @media screen and (max-width: 991.98px) {
+          border-right: none;
+          border-bottom: 1px solid var(--gray-200);
+          padding:15px 0;
+        }
         // &:before {
         //   content: "";
         //   background-color: #a6a6a6;
@@ -48,13 +57,24 @@
         justify-content: center;
         transition: all 0.3s linear;
         gap: 10px;
+        @media screen and (max-width: 991.98px) {
+          flex-direction: row;
+          justify-content: flex-start;
+          flex: 1;
+        }
       }
       &.dropdown {
+        @media screen and (max-width: 991.98px) {
+          width: 100%;
+        }
         .nav-link {
           & > label {
             position: relative;
             padding-right: 24px;
             cursor: pointer;
+            @media screen and (max-width: 991.98px) {
+              width: 100%;
+            }
             &:after {
               content: "";
               border-width: 2px 2px 0 0;
@@ -181,7 +201,7 @@
                       font-size: 20px;
                       margin-left: auto;
                       top: 5px;
-                      transition: all .3s linear;
+                      transition: all 0.3s linear;
                     }
                     .arrowIcon {
                       margin-left: auto;
@@ -276,16 +296,37 @@
     align-items: center;
     gap: 30px;
     flex: 1;
-    &.collapsed {
+    @media screen and (max-width: 991.98px) {
+      position: fixed;
+      top: 0;
+      // left: 0;
+      width: 100%;
+      height: 100vh;
+      background: var(--white);
+      z-index: 99;
+      display: block;
+      padding-top: 100px;
+      left: 0;
+    }
+    .navbar-nav {
       @media screen and (max-width: 991.98px) {
-        display: none;
+        flex-direction: column;
+        align-items: flex-start;
       }
+    }
+    &.collapsed {
+      // @media screen and (max-width: 991.98px) {
+      //   display: none;
+      // }
     }
     @media screen and (min-width: 992px) {
       // margin-left: auto;
       justify-content: space-between;
     }
     &:not(.collapsed) {
+      @media screen and (max-width:991.98px) {
+        left: 100%;
+      }
     }
     .buttons {
       display: flex;

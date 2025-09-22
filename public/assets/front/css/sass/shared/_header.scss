@@ -4,6 +4,7 @@ header{
     background-color: var(--white);
     padding-bottom: 20px;
     transition: all .3s linear;
+
     .header{
         display: flex;
         align-items: center;
@@ -12,6 +13,10 @@ header{
             display: flex;
             align-items: center;
             gap: 18px;
+            @media screen and (max-width:991.98px) {
+                position: relative;
+                z-index: 99;
+            }
             span{
                 font-weight: 500;
                 font-size: 20px;
@@ -39,6 +44,28 @@ header{
                 transform: scale(1.1);
                 color: var(--fifth);
             }
+        }
+    }
+
+    .nav-toggler-button{
+        position: relative;
+        width: 20px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: auto;
+
+        .line{
+            border-bottom: 1px solid var(--primary);
+            width: 100%;
+        }
+        &:before,
+        &:after{
+            content: "";
+            border-bottom: 1px solid var(--primary);
+            width: 100%;
         }
     }
     &.fixed{
