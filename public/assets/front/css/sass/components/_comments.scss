@@ -33,6 +33,9 @@
     font-size: 15px;
     line-height: 30px;
     color: var(--tertiary);
+    @media screen and (max-width:576px) {
+      margin: 0 auto;
+    }
     @media screen and (min-width: 992px) {
       &:hover {
         color: var(--fifth);

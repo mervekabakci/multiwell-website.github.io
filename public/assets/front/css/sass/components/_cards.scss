@@ -20,6 +20,10 @@
     line-height: 37px;
     color: var(--primary);
     transition: all 0.3s linear;
+    @media screen and (max-width: 576px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
   .card-text {
     font-family: "GilroyMedium";
@@ -27,6 +31,10 @@
     line-height: 32px;
     padding-top: 25px;
     color: var(--primary);
+    @media screen and (max-width: 576px) {
+      font-size: 15px;
+      line-height: 22px;
+    }
   }
   .card-footer {
     margin-top: auto;
@@ -37,6 +45,10 @@
     line-height: 30px;
     color: var(--black-700);
     margin-bottom: 5px;
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
   .card-expert-title {
     font-family: "GilroyRegular";
@@ -126,9 +138,19 @@
     flex-wrap: wrap;
     gap: 60px;
     margin-block: 50px;
+    @media screen and (max-width:991.98px) {
+      gap: 30px;
+      margin-block: 20px;
+    }
     &.quad {
       .card {
         width: calc(25% - 46px);
+        @media screen and (max-width: 991.98px) {
+          width: calc(50% - 30px);
+        }
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
         .card-image-top {
           aspect-ratio: 3/2;
         }
@@ -214,7 +236,7 @@
         font-family: "GilroyMedium";
         color: var(--primary);
         text-align: left;
-        transition: all .3s linear;
+        transition: all 0.3s linear;
       }
       .card-title {
         font-family: "GilroySemibold";
@@ -237,9 +259,9 @@
             .card-expert-title {
               color: var(--secondary);
             }
-            .playButton{
+            .playButton {
               color: var(--secondary);
-              .icon-play{
+              .icon-play {
                 color: var(--secondary);
                 border-color: var(--secondary);
               }
@@ -250,7 +272,6 @@
     }
   }
 }
-
 
 .pageSection {
   .pageRow {
@@ -267,4 +288,17 @@
   gap: 50px;
   margin-bottom: 50px;
   margin-top: 50px;
+  @media screen and (max-width: 576px) {
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .card-link {
+    @media screen and (max-width: 991.98px) {
+      width: calc(50% - 15px);
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
 }

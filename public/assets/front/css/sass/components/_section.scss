@@ -7,13 +7,17 @@ section,
   &.featuredSection {
     margin-top: 20px;
   }
-  &.pageSection{
+  &.pageSection {
     margin-top: 50px;
   }
 
   .sectionHead {
     display: flex;
     align-items: flex-start;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      gap: 20px;
+    }
     .sectionTitle {
       font-size: 35px;
       font-family: "GilroyRegular";
@@ -60,22 +64,53 @@ section,
       color: var(--black);
       text-align: center;
       margin: 0 auto;
+      @media screen and (max-width: 991.98px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
     }
 
-    .chooseTitle{
+    .chooseTitle {
       display: flex;
       align-items: center;
       background-color: var(--white);
       border-radius: 0 0 8px 8px;
       padding: 25px 20px;
-      & > span{
-          font-family: 'GilroyBold';
-          font-size: 30px;
-          color: var(--tertiary);
+      @media screen and (max-width: 991.98px) {
       }
-  }
+      @media screen and (max-width: 576px) {
+        padding: 15px 12px;
+        width: 100%;
+      }
+      & > span {
+        font-family: "GilroyBold";
+        font-size: 30px;
+        color: var(--tertiary);
+        @media screen and (max-width: 576px) {
+          font-size: 16px;
+          margin-left: auto;
+        }
+      }
+      .customSelect {
+        @media screen and (max-width: 576px) {
+          font-size: 16px;
+          padding-left: 0;
+        }
+        .current {
+          @media screen and (max-width: 576px) {
+            &:after {
+              font-size: 7px;
+              right: -13px;
+            }
+          }
+        }
+      }
+    }
   }
   .sectionContent {
-    padding-top:30px;
+    padding-top: 30px;
+    @media screen and (max-width:991.98px) {
+      padding-top: 10px;
+    }
   }
 }

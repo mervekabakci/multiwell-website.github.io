@@ -18,8 +18,8 @@ document.querySelectorAll(".testingWrapper").forEach(function (wrapper) {
 // comments slider(lar)
 document.querySelectorAll(".commentsWrapper").forEach(function (wrapper) {
   new Swiper(wrapper.querySelector(".commentsSlider"), {
-    slidesPerView: 5,
-    spaceBetween: 60,
+    slidesPerView: 1,
+    spaceBetween: 0,
     pagination: {
       el: wrapper.querySelector(".swiper-pagination"),
       clickable: true,
@@ -27,6 +27,24 @@ document.querySelectorAll(".commentsWrapper").forEach(function (wrapper) {
     navigation: {
       nextEl: wrapper.querySelector(".swiper-button-next"),
       prevEl: wrapper.querySelector(".swiper-button-prev"),
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 60,
+      },
     },
   });
 });
@@ -35,8 +53,8 @@ document.querySelectorAll(".commentsWrapper").forEach(function (wrapper) {
 /**Uzmanlar Slider */
 document.querySelectorAll(".expertsWrapper").forEach(function (wrapper) {
   new Swiper(wrapper.querySelector(".expertsSlider"), {
-    slidesPerView: 5,
-    spaceBetween: 60,
+    slidesPerView:1,
+    spaceBetween: 0,
     pagination: {
       el: wrapper.querySelector(".swiper-pagination"),
       clickable: true,
@@ -44,6 +62,24 @@ document.querySelectorAll(".expertsWrapper").forEach(function (wrapper) {
     navigation: {
       nextEl: wrapper.querySelector(".swiper-button-next"),
       prevEl: wrapper.querySelector(".swiper-button-prev"),
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1440: {
+        slidesPerView: 5,
+        spaceBetween: 60,
+      },
     },
   });
 });
