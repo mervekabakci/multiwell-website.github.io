@@ -130,6 +130,7 @@ video {
 :root {
   --white: #ffffff;
   --black: #000000;
+  --transparent:rgba(0,0,0,0);
   --primary: #012f33;
   --secondary: #65cccc;
   --tertiary: #045869;
@@ -248,6 +249,68 @@ video {
 @media screen and (min-width: 992px) {
   .button-black-outline:hover {
     background-color: var(--black) !important;
+    color: var(--white) !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .button-secondary:hover {
+    color: var(--primary) !important;
+    background-color: var(--white) !important;
+  }
+  .button-secondary:hover input {
+    color: var(--primary) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.button-soft-light-pink {
+  color: var(--primary) !important;
+  background-color: var(--soft-light-pink) !important;
+}
+.button-soft-light-pink input {
+  color: var(--primary) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-soft-light-pink:hover {
+    color: var(--soft-light-pink) !important;
+    background-color: var(--primary) !important;
+  }
+  .button-soft-light-pink:hover input {
+    color: var(--soft-light-pink) !important;
+    background-color: var(--primary) !important;
+  }
+}
+
+.button-transparent {
+  color: var(--white) !important;
+  border-color: var(--transparent) !important;
+  background: var(--transparent) !important;
+  border: 1px solid var(--transparent) !important;
+}
+.button-transparent input {
+  color: var(--white) !important;
+  background: rgba(0, 0, 0, 0) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-transparent:hover {
+    color: var(--transparent) !important;
+    background-color: var(--white) !important;
+  }
+  .button-transparent:hover input {
+    color: var(--transparent) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+.button-transparent-outline {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 1px solid var(--transparent) !important;
+  color: var(--transparent) !important;
+}
+@media screen and (min-width: 992px) {
+  .button-transparent-outline:hover {
+    background-color: var(--transparent) !important;
     color: var(--white) !important;
   }
 }
@@ -1344,6 +1407,10 @@ video {
   color: var(--black) !important;
 }
 
+.text-transparent {
+  color: var(--transparent) !important;
+}
+
 .text-primary {
   color: var(--primary) !important;
 }
@@ -1413,79 +1480,83 @@ video {
 }
 
 .bg-white {
-  background-color: var(--white);
+  background-color: var(--white) !important;
 }
 
 .bg-black {
-  background-color: var(--black);
+  background-color: var(--black) !important;
+}
+
+.bg-transparent {
+  background-color: var(--transparent) !important;
 }
 
 .bg-primary {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
 }
 
 .bg-secondary {
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
 }
 
 .bg-tertiary {
-  background-color: var(--tertiary);
+  background-color: var(--tertiary) !important;
 }
 
 .bg-fourth {
-  background-color: var(--fourth);
+  background-color: var(--fourth) !important;
 }
 
 .bg-fifth {
-  background-color: var(--fifth);
+  background-color: var(--fifth) !important;
 }
 
 .bg-soft-pink {
-  background-color: var(--soft-pink);
+  background-color: var(--soft-pink) !important;
 }
 
 .bg-soft-light-pink {
-  background-color: var(--soft-light-pink);
+  background-color: var(--soft-light-pink) !important;
 }
 
 .bg-soft-blue {
-  background-color: var(--soft-blue);
+  background-color: var(--soft-blue) !important;
 }
 
 .bg-soft-light-blue {
-  background-color: var(--soft-light-blue);
+  background-color: var(--soft-light-blue) !important;
 }
 
 .bg-soft-yellow {
-  background-color: var(--soft-yellow);
+  background-color: var(--soft-yellow) !important;
 }
 
 .bg-soft-orange {
-  background-color: var(--soft-orange);
+  background-color: var(--soft-orange) !important;
 }
 
 .bg-soft-light-orange {
-  background-color: var(--soft-light-orange);
+  background-color: var(--soft-light-orange) !important;
 }
 
 .bg-gray {
-  background-color: var(--gray);
+  background-color: var(--gray) !important;
 }
 
 .bg-gray-200 {
-  background-color: var(--gray-200);
+  background-color: var(--gray-200) !important;
 }
 
 .bg-gray-300 {
-  background-color: var(--gray-300);
+  background-color: var(--gray-300) !important;
 }
 
 .bg-gray-400 {
-  background-color: var(--gray-400);
+  background-color: var(--gray-400) !important;
 }
 
 .bg-gray-500 {
-  background-color: var(--gray-500);
+  background-color: var(--gray-500) !important;
 }
 
 .container {
@@ -1524,6 +1595,32 @@ video {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--fifth);
+  gap: 10px;
+  font-family: "GilroyMedium";
+  font-size: 14px;
+  margin-top: auto;
+  padding-top: 20px;
+  position: relative;
+}
+.playButton .icon-play {
+  font-size: 8px;
+  padding-left: 2px;
+  padding-top: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--fifth);
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  position: relative;
 }
 
 figure {
@@ -4133,6 +4230,7 @@ dialog.fullScreen .dialogCenter {
   height: 400px;
   overflow: hidden;
   overflow-y: auto;
+  z-index: 9;
 }
 .searchResult::-webkit-scrollbar {
   background-color: var(--gray-200);
@@ -4551,7 +4649,7 @@ section .sectionContent,
 .cards .experts-comments {
   color: var(--gray-400);
   font-family: "GilroyRegular";
-  font-size: 13px;
+  font-size: 14px;
 }
 .cards .icon-arrow-long-right {
   font-size: 32px;
@@ -4644,7 +4742,7 @@ section .sectionContent,
 }
 .cards.articleCards .card .card-title {
   font-family: "GilroySemibold";
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: var(--tertiary);
   text-align: left;
@@ -4652,13 +4750,15 @@ section .sectionContent,
 }
 .cards.articleCards .card .card-body {
   flex: 1;
-  background-color: var(--soft-light-pink);
   padding: 16px;
   min-height: 160px;
 }
 @media screen and (min-width: 992px) {
+  .cards.articleCards .card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  }
   .cards.articleCards .card:hover .card-body {
-    background-color: var(--gray-300);
+    background-color: var(--white) !important;
   }
   .cards.articleCards .card:hover .card-body .card-title {
     color: var(--primary);
@@ -4669,24 +4769,6 @@ section .sectionContent,
 }
 .cards.cardList .card {
   flex-direction: row;
-}
-.cards.cardList .card .icon-play {
-  position: absolute;
-  color: var(--fifth);
-  width: 25px;
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid var(--fifth);
-  font-size: 10px;
-  border-radius: 100%;
-  padding-top: 2px;
-  padding-left: 2px;
-  left: 10px;
-  top: 10px;
-  z-index: 9;
-  transition: all 0.3s linear;
 }
 .cards.cardList .card .card-image-start {
   width: 300px;
@@ -4699,6 +4781,7 @@ section .sectionContent,
   font-family: "GilroyMedium";
   color: var(--primary);
   text-align: left;
+  transition: all 0.3s linear;
 }
 .cards.cardList .card .card-title {
   font-family: "GilroySemibold";
@@ -4709,17 +4792,21 @@ section .sectionContent,
   margin-top: 20px;
 }
 @media screen and (min-width: 992px) {
-  .cards.cardList .card:hover .icon-play {
-    transform: translate(10px, 10px);
-  }
   .cards.cardList .card:hover .card-body {
-    background-color: var(--gray-300);
+    background-color: var(--white);
   }
   .cards.cardList .card:hover .card-body .card-title {
-    color: var(--primary);
+    color: var(--secondary);
   }
   .cards.cardList .card:hover .card-body .card-expert-title {
-    color: var(--primary);
+    color: var(--secondary);
+  }
+  .cards.cardList .card:hover .card-body .playButton {
+    color: var(--secondary);
+  }
+  .cards.cardList .card:hover .card-body .playButton .icon-play {
+    color: var(--secondary);
+    border-color: var(--secondary);
   }
 }
 
@@ -4993,7 +5080,7 @@ section .sectionContent,
   margin-left: auto;
   font-size: 26px;
   transition: all 0.3s linear;
-  color: var(--secondary);
+  color: currentColor;
   font-weight: 500;
 }
 @media screen and (max-width: 991.98px) {
@@ -5017,7 +5104,7 @@ section .sectionContent,
 }
 @media screen and (min-width: 992px) {
   .accordion details:hover summary {
-    color: var(--secondary);
+    color: var(--fifth);
   }
 }
 .accordion details[open] summary {
@@ -5028,6 +5115,9 @@ section .sectionContent,
   color: var(--fifth);
 }
 
+.pageSection .pageRow .accordion {
+  padding-top: 20px;
+}
 .pageSection .pageRow .accordion details {
   border: none;
   position: relative;
@@ -5216,6 +5306,9 @@ section .sectionContent,
 .subBanner .buttons {
   margin-top: auto;
 }
+.subBanner .textLink {
+  font-size: 16px;
+}
 
 .paragraph .shorText {
   font-family: "GilroyBold";
@@ -5281,6 +5374,26 @@ section .sectionContent,
   .paragraph .shorText a:not(.fixBtn):hover:after {
     width: 0;
   }
+}
+.paragraph .longText h2,
+.paragraph .longText .title,
+.paragraph .shortDesc h2,
+.paragraph .shortDesc .title,
+.paragraph .shorText h2,
+.paragraph .shorText .title {
+  font-size: 23px;
+  color: var(--success);
+  font-family: "GilroySemibold";
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+.paragraph .longText h2:first-child,
+.paragraph .longText .title:first-child,
+.paragraph .shortDesc h2:first-child,
+.paragraph .shortDesc .title:first-child,
+.paragraph .shorText h2:first-child,
+.paragraph .shorText .title:first-child {
+  margin-top: 0;
 }
 
 .customTabWrapper {
@@ -5403,7 +5516,7 @@ section .sectionContent,
   gap: 10px;
 }
 .boxWrapper .boxes .box .cards.cardList .card {
-  padding: 10px 20px;
+  padding: 12px 20px;
 }
 .boxWrapper .boxes .box .cards.cardList .card-body {
   background-color: rgba(0, 0, 0, 0);
@@ -5411,7 +5524,7 @@ section .sectionContent,
   padding: 0;
 }
 .boxWrapper .boxes .box .cards.cardList .card-body .card-title {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "GilroySemibold";
   color: var(--primary);
   margin-top: 0;
@@ -5435,20 +5548,8 @@ section .sectionContent,
   .boxWrapper .boxes .box .cards.cardList .card-body .card-text a {
     position: relative;
   }
-  .boxWrapper .boxes .box .cards.cardList .card-body .card-text a:after {
-    content: "";
-    border-bottom: 1px dotted var(--fifth);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all 0.3s linear;
-    width: 0;
-  }
   .boxWrapper .boxes .box .cards.cardList .card-body .card-text a:hover {
     color: var(--fifth);
-  }
-  .boxWrapper .boxes .box .cards.cardList .card-body .card-text a:hover:after {
-    width: 100%;
   }
 }
 .boxWrapper .boxes .box .cards .cardItem {
@@ -5467,8 +5568,14 @@ section .sectionContent,
   font-family: "GilroyMedium";
 }
 @media screen and (min-width: 992px) {
+  .boxWrapper .boxes .box .cards .cardItem a.card-body:hover {
+    background-color: var(--white);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+  }
   .boxWrapper .boxes .box .cards .cardItem a.card-body:hover .card-title {
-    color: var(--fifth);
+    color: var(--secondary);
   }
 }
 .boxWrapper .boxes .box .linkList {
@@ -5604,7 +5711,7 @@ section .sectionContent,
     width: 0;
   }
   .textLink:not(.notHover):hover.hover {
-    color: var(--fifth);
+    color: var(--white);
   }
 }
 

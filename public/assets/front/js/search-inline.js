@@ -16,10 +16,18 @@ searchInput.addEventListener("input", () => {
 });
 
 searchInput.addEventListener("focus", () => {
-    const value = searchInput.value.trim();
+  const value = searchInput.value.trim();
     if(value.length >=3){
         searchResult.style.display = "flex";
-    }
+  }
+  const elementY = searchWrapper.getBoundingClientRect().top + window.scrollY;
+
+  const targetY = elementY - 110;
+  
+  window.scrollTo({
+    top:targetY,
+    behavior: "smooth",
+  });
 })
 document.addEventListener("click", (e) => {
     if(!searchBody.contains(e.target)){

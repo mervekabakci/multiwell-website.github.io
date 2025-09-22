@@ -1,0 +1,116 @@
+.boxWrapper {
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    .box {
+      .boxHead {
+        margin-bottom: 25px;
+
+        .boxTitle {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          font-family: "GilroySemibold";
+          font-size: 17px;
+          color: var(--primary);
+          .logoIcon {
+            margin-top: 2px;
+            width: 30px;
+          }
+        }
+      }
+      .cards {
+        margin-block: 0;
+        &.cardList {
+          gap: 10px;
+          .card {
+            padding: 12px 20px;
+          }
+          .card-body {
+            background-color: rgba(0, 0, 0, 0);
+            text-align: left;
+            padding: 0;
+            .card-title {
+              font-size: 14px;
+              font-family: "GilroySemibold";
+              color: var(--primary);
+              margin-top: 0;
+            }
+            .card-text {
+              font-size: 15px;
+              font-family: "GilroyRegular";
+              color: var(--black-800);
+              padding-top: 5px;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              a {
+                font-size: 15px;
+                font-family: "GilroyRegular";
+                color: var(--black-800);
+                transition: all 0.3s linear;
+                @media screen and (min-width: 992px) {
+                  position: relative;
+                  // &:after {
+                  //   content: "";
+                  //   border-bottom: 1px dotted var(--fifth);
+                  //   position: absolute;
+                  //   bottom: 0;
+                  //   left: 0;
+                  //   transition: all 0.3s linear;
+                  //   width: 0;
+                  // }
+                  &:hover {
+                    color: var(--fifth);
+                    // &:after {
+                    //   width: 100%;
+                    // }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .cardItem {
+          border-bottom: 1px solid #cccccc;
+          padding-bottom: 10px;
+          .card-body {
+            min-height: 60px;
+            display: inline-flex;
+            width: 100%;
+            align-items: center;
+          }
+          .card-title {
+            font-size: 16px;
+            line-height: 32px;
+            font-family: "GilroyMedium";
+          }
+          a {
+            &.card-body {
+              @media screen and (min-width: 992px) {
+                &:hover {
+                  background-color: var(--white);
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  border-radius: 6px;
+                  .card-title {
+                    color: var(--secondary);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .linkList{
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        .fixBtn{
+            justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
