@@ -30,6 +30,9 @@
     @media screen and (max-width: 991.98px) {
       margin-top: 30px;
     }
+    @media screen and (max-width:576px) {
+        flex-direction: column;
+    }
   }
 }
 

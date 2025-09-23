@@ -4,6 +4,10 @@
     font-family: "GilroyMedium";
     line-height: 50px;
     color: var(--tertiary);
+    @media screen and (max-width: 991.98px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
     b {
       display: block;
       font-family: "GilroyBold";
@@ -15,7 +19,9 @@
     font-size: 15px;
     line-height: 30px;
     color: var(--tertiary);
-
+    @media screen and (max-width: 991.98px) {
+      margin-left: 0;
+    }
     a {
       font-family: "GilroyBold";
       transition: all 0.3s linear;
@@ -33,7 +39,7 @@
     font-size: 15px;
     line-height: 30px;
     color: var(--tertiary);
-    @media screen and (max-width:576px) {
+    @media screen and (max-width: 576px) {
       margin: 0 auto;
     }
     @media screen and (min-width: 992px) {
@@ -48,21 +54,35 @@
   position: relative;
 }
 .commentsSlider {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  @media screen and (min-width: 992px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .swiper-wrapper {
+    @media screen and (max-width: 991.98px) {
+      margin-bottom: 20px;
+    }
+  }
   // margin-top: 60px;
   .swiper-slide {
-    &:nth-child(even) {
-      transform: translateY(-20px);
-    }
-    &:nth-child(odd) {
-      transform: translateY(20px);
+    @media screen and (min-width: 992px) {
+      &:nth-child(even) {
+        transform: translateY(-20px);
+      }
+
+      &:nth-child(odd) {
+        transform: translateY(20px);
+      }
     }
   }
   .card {
     border-radius: 10px;
     padding: 36px;
     min-height: 450px;
+    @media screen and (max-width: 991.98px) {
+      min-height: 280px;
+      padding: 20px 16px;
+    }
     .card-body {
       background-color: rgba(0, 0, 0, 0);
       padding: 0;
@@ -75,6 +95,9 @@
         font-family: "GilroyMedium";
         font-size: 17px;
         line-height: 30px;
+        @media screen and (max-width: 991.98px) {
+          font-size: 14px;
+        }
         &:after,
         &:before {
           content: "“";
@@ -85,6 +108,9 @@
           line-height: 25px;
           display: flex;
           align-items: center;
+          @media screen and (max-width: 991.98px) {
+            font-size: 26px;
+          }
         }
         &:after {
           padding-top: 10px;
@@ -95,6 +121,9 @@
       font-family: "GilroyBold";
       font-size: 18px;
       color: var(--tertiary);
+      @media screen and (max-width: 991.98px) {
+        font-size: 15px;
+      }
     }
   }
 }

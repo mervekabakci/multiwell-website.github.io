@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   @media screen and (max-width: 991.98px) {
     flex-direction: column;
+    padding-top: 20px;
   }
   .countItem {
     flex: 1;

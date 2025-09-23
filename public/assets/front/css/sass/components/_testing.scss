@@ -38,6 +38,9 @@
     }
     .fixBtn {
       margin-top: 40px;
+      @media screen and (max-width:991.98px) {
+        margin-top: 20px;
+      }
     }
   }
 }

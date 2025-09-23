@@ -13,6 +13,9 @@
     text-align: center;
     transition: all 0.3s linear;
     flex: 1;
+    @media screen and (max-width: 991.98px) {
+      padding: 20px 16px;
+    }
   }
   .card-title {
     font-family: "GilroySemibold";
@@ -34,6 +37,7 @@
     @media screen and (max-width: 576px) {
       font-size: 15px;
       line-height: 22px;
+      padding-top: 15px;
     }
   }
   .card-footer {
@@ -68,6 +72,10 @@
     margin-top: 20px;
     display: inline-block;
     transition: all 0.3s linear;
+    @media screen and (max-width: 991.98px) {
+      margin-top: 10px;
+      font-size: 24px;
+    }
   }
   a {
     &.card {
@@ -94,6 +102,11 @@
     }
   }
   &.expertsSlider {
+    .swiper-wrapper{
+      @media screen and (max-width:991.98px) {
+        margin-bottom: 20px;
+      }
+    }
     .card {
       background-color: var(--white);
       padding: 30px 30px 25px;
@@ -138,7 +151,7 @@
     flex-wrap: wrap;
     gap: 60px;
     margin-block: 50px;
-    @media screen and (max-width:991.98px) {
+    @media screen and (max-width: 991.98px) {
       gap: 30px;
       margin-block: 20px;
     }
@@ -147,6 +160,7 @@
         width: calc(25% - 46px);
         @media screen and (max-width: 991.98px) {
           width: calc(50% - 30px);
+          border: 1px solid var(--gray-100);
         }
         @media screen and (max-width: 576px) {
           width: 100%;

@@ -1,3 +1,6 @@
+@use "sass:string";
+@use "sass:list";
+
 .imageWrapper {
   width: 100%;
   height: 100%;
@@ -60,6 +63,10 @@ figure {
   line-height: 35px;
   max-width: 1200px;
   margin: 0 auto;
+  @media screen and (max-width:991.98px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
 
   a {
     position: relative;
@@ -94,7 +101,9 @@ figure {
   }
 }
 
-// Kullanacağımız yüzdelik değerler
+// -----------------------------
+//  VARIABLES
+// -----------------------------
 $sizes: 25, 50, 75, 100;
 $breakpoints: (
   sm: 576px,
@@ -102,208 +111,235 @@ $breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1440px,
-  xxxl: 1600px,
+  xxxl: 1600px
 );
 
-@each $name, $size in $breakpoints {
-  @media (min-width: $size) {
+// Spacing directions (padding/margin)
+$spacing-directions: (t top, e right, bt bottom, s left);
+
+// Display list
+$displays: block inline inline-block flex inline-flex grid inline-grid table table-cell none;
+
+// Flex directions / wrap
+$flex-directions: (row row-reverse column column-reverse);
+$wraps: (nowrap wrap wrap-reverse);
+
+// Mapping for justify/align so CSS değerleri net olsun
+$justify-map: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly
+);
+
+$align-items-map: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline
+);
+
+$align-content-map: (
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  between: space-between,
+  around: space-around,
+  stretch: stretch
+);
+
+$align-self-map: (
+  auto: auto,
+  start: flex-start,
+  end: flex-end,
+  center: center,
+  stretch: stretch,
+  baseline: baseline
+);
+
+
+// -----------------------------
+//  WIDTH/HEIGHT UTILITIES
+//  (global)
+ // -----------------------------
+@each $s in $sizes {
+  .w-#{$s}     { width: string.unquote("#{$s}%") !important; }
+  .min-w-#{$s} { min-width: string.unquote("#{$s}%") !important; }
+  .max-w-#{$s} { max-width: string.unquote("#{$s}%") !important; }
+
+  .h-#{$s}     { height: string.unquote("#{$s}%") !important; }
+  .min-h-#{$s} { min-height: string.unquote("#{$s}%") !important; }
+  .max-h-#{$s} { max-height: string.unquote("#{$s}%") !important; }
+}
+
+// -----------------------------
+//  WIDTH/HEIGHT UTILITIES
+//  (breakpoint'li)
+// -----------------------------
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
     @each $s in $sizes {
-      .w-#{$name}-#{$s} {
-        width: #{"#{$s}%"} !important;
-      }
-      .min-w-#{$name}-#{$s} {
-        min-width: #{"#{$s}%"} !important;
-      }
-      .max-w-#{$name}-#{$s} {
-        max-width: #{"#{$s}%"} !important;
-      }
+      .w-#{$name}-#{$s}     { width: string.unquote("#{$s}%") !important; }
+      .min-w-#{$name}-#{$s} { min-width: string.unquote("#{$s}%") !important; }
+      .max-w-#{$name}-#{$s} { max-width: string.unquote("#{$s}%") !important; }
 
-      .h-#{$name}-#{$s} {
-        height: #{"#{$s}%"} !important;
-      }
-      .min-h-#{$name}-#{$s} {
-        min-height: #{"#{$s}%"} !important;
-      }
-      .max-h-#{$name}-#{$s} {
-        max-height: #{"#{$s}%"} !important;
-      }
+      .h-#{$name}-#{$s}     { height: string.unquote("#{$s}%") !important; }
+      .min-h-#{$name}-#{$s} { min-height: string.unquote("#{$s}%") !important; }
+      .max-h-#{$name}-#{$s} { max-height: string.unquote("#{$s}%") !important; }
     }
   }
 }
 
-//padding ve margin ozellikleri
-$directions: t top, e right, bt bottom, s left;
-$step: 4px;
-
-@each $short, $full in $directions {
-  @for $i from 0 through 12 {
-    .p#{$short}-#{$i} {
-      padding-#{$full}: $i * $step !important;
-    }
-  }
-}
-@each $short, $full in $directions {
-  @for $i from 0 through 12 {
-    .m#{$short}-#{$i} {
-      margin-#{$full}: $i * $step !important;
-    }
-  }
-}
-@for $i from 1 through 12 {
-  .p-#{$i} {
-    padding: $i * $step !important;
-  }
-}
-@for $i from 1 through 12 {
-  .py-#{$i} {
-    padding-top: $i * $step !important;
-    padding-bottom: $i * $step !important;
-  }
-}
-@for $i from 1 through 12 {
-  .px-#{$i} {
-    padding-left: $i * $step !important;
-    padding-right: $i * $step !important;
-  }
-}
-
-@for $i from 1 through 12 {
-  .m-#{$i} {
-    margin: $i * $step !important;
-  }
-}
-@for $i from 1 through 12 {
-  .mx-#{$i} {
-    margin-left: $i * $step !important;
-    margin-right: $i * $step !important;
-  }
-}
-@for $i from 1 through 12 {
-  .my-#{$i} {
-    margin-top: $i * $step !important;
-    margin-bottom: $i * $step !important;
-  }
-}
-.mx-auto {
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-.pb {
-  padding-block: 35px;
-  @media screen and (max-width: 991.98px) {
-    padding-block: 30px;
-  }
-  @media screen and (max-width: 480px) {
-    padding-block: 16px;
-  }
-}
-.pb-2 {
-  padding-block: 60px;
-  @media screen and (max-width: 991.98px) {
-    padding-block: 30px;
-  }
-  @media screen and (max-width: 480px) {
-    padding-block: 16px;
-  }
-}
-.pi {
-  padding-inline: 70px;
-  @media screen and (max-width: 991.98px) {
-    padding-inline: 30px;
-  }
-  @media screen and (max-width: 480px) {
-    padding-inline: 16px;
-  }
-}
-.pi-2 {
-  padding-inline: 100px;
-  @media screen and (max-width: 991.98px) {
-    padding-inline: 30px;
-  }
-  @media screen and (max-width: 480px) {
-    padding-inline: 16px;
-  }
-}
-
-//display ozellikleri
-$displays: block inline inline-block flex inline-flex grid inline-grid table
-  table-cell none;
+// -----------------------------
+//  DISPLAY UTILITIES (global + breakpoints)
+// -----------------------------
 @each $d in $displays {
-  .d-#{$d} {
-    display: #{$d} !important;
+  .d-#{$d} { display: #{$d} !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $d in $displays {
+      .d-#{$name}-#{$d} { display: #{$d} !important; }
+    }
   }
 }
 
-//display:flex ozellıklerı
-$flex-displays: flex inline-flex;
-
-@each $fd in $flex-displays {
-  .d-#{$fd} {
-    display: #{$fd} !important;
+// -----------------------------
+//  FLEX DIRECTION & WRAP (global + breakpoints)
+// -----------------------------
+@each $dir in $flex-directions {
+  .flex-#{$dir} { flex-direction: #{$dir} !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $dir in $flex-directions {
+      .flex-#{$name}-#{$dir} { flex-direction: #{$dir} !important; }
+    }
   }
 }
-$directions: row row-reverse column column-reverse;
-
-@each $dir in $directions {
-  .flex-#{$dir} {
-    flex-direction: #{$dir} !important;
-  }
-}
-/* === Flex wrap === */
-$wraps: nowrap wrap wrap-reverse;
 
 @each $wrap in $wraps {
-  .flex-#{$wrap} {
-    flex-wrap: #{$wrap} !important;
+  .flex-#{$wrap} { flex-wrap: #{$wrap} !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $wrap in $wraps {
+      .flex-#{$name}-#{$wrap} { flex-wrap: #{$wrap} !important; }
+    }
+  }
+}
+// -----------------------------
+//  JUSTIFY / ALIGN ITEMS / ALIGN CONTENT / ALIGN SELF
+//  (maps => doğru CSS değerleri)
+// -----------------------------
+@each $key, $val in $justify-map {
+  .justify-#{$key} { justify-content: $val !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $key, $val in $justify-map {
+      .justify-#{$name}-#{$key} { justify-content: $val !important; }
+    }
   }
 }
 
-/* === Justify content === */
-$justify: start end center between around evenly;
-
-@each $j in $justify {
-  .justify-#{$j} {
-    justify-content: #{$j} !important;
+@each $key, $val in $align-items-map {
+  .items-#{$key} { align-items: $val !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $key, $val in $align-items-map {
+      .items-#{$name}-#{$key} { align-items: $val !important; }
+    }
   }
 }
 
-/* === Align items === */
-$align-items: start end center stretch baseline;
-
-@each $ai in $align-items {
-  .items-#{$ai} {
-    align-items: #{$ai} !important;
+@each $key, $val in $align-content-map {
+  .content-#{$key} { align-content: $val !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $key, $val in $align-content-map {
+      .content-#{$name}-#{$key} { align-content: $val !important; }
+    }
   }
 }
 
-/* === Align content === */
-$align-content: start end center between around stretch;
-
-@each $ac in $align-content {
-  .content-#{$ac} {
-    align-content: #{$ac} !important;
+@each $key, $val in $align-self-map {
+  .self-#{$key} { align-self: $val !important; }
+}
+@each $name, $bp in $breakpoints {
+  @media (min-width: $bp) {
+    @each $key, $val in $align-self-map {
+      .self-#{$name}-#{$key} { align-self: $val !important; }
+    }
   }
 }
 
-/* === Align self (for child elements) === */
-$align-self: auto start end center stretch baseline;
-
-@each $as in $align-self {
-  .self-#{$as} {
-    align-self: #{$as} !important;
-  }
-}
-
-/* === Flex grow & shrink (0 veya 1) === */
+// -----------------------------
+//  FLEX GROW / SHRINK
+// -----------------------------
 @for $i from 0 through 1 {
-  .flex-grow-#{$i} {
-    flex-grow: #{$i} !important;
-  }
-  .flex-shrink-#{$i} {
-    flex-shrink: #{$i} !important;
+  .flex-grow-#{$i}  { flex-grow:  $i !important; }
+  .flex-shrink-#{$i} { flex-shrink: $i !important; }
+}
+
+
+// -----------------------------
+//  SPACING (padding / margin)
+// -----------------------------
+$step: 4px;
+@each $pair in $spacing-directions {
+  $short: list.nth($pair, 1);
+  $full: list.nth($pair, 2);
+  @for $i from 0 through 12 {
+    .p#{$short}-#{$i} { padding-#{$full}: $i * $step !important; }
+    .m#{$short}-#{$i} { margin-#{$full}:  $i * $step !important; }
   }
 }
+
+@for $i from 1 through 12 {
+  .p-#{$i}  { padding: $i * $step !important; }
+  .py-#{$i} { padding-top: $i * $step !important; padding-bottom: $i * $step !important; }
+  .px-#{$i} { padding-left: $i * $step !important; padding-right: $i * $step !important; }
+  .m-#{$i}  { margin: $i * $step !important; }
+  .mx-#{$i} { margin-left: $i * $step !important; margin-right: $i * $step !important; }
+  .my-#{$i} { margin-top: $i * $step !important; margin-bottom: $i * $step !important; }
+}
+
+.mx-auto { margin-left: auto !important; margin-right: auto !important; }
+
+
+// Padding block
+.pb { padding-block: 35px; }
+.pb-2 { padding-block: 60px; }
+
+@media screen and (max-width: 991.98px) {
+  .pb, .pb-2 { padding-block: 30px; }
+}
+
+@media screen and (max-width: 480px) {
+  .pb, .pb-2 { padding-block: 16px; }
+}
+
+// Padding inline
+.pi { padding-inline: 70px; }
+.pi-2 { padding-inline: 100px; }
+
+@media screen and (max-width: 991.98px) {
+  .pi, .pi-2 { padding-inline: 30px; }
+}
+
+@media screen and (max-width: 480px) {
+  .pi, .pi-2 { padding-inline: 16px; }
+}
+
+// Eğer ekstra md/ lg varyant lazım olursa:
+.pi-md { padding-inline: 0; } // örnek, sadece tablet
+.pi-lg { padding-inline: 70px; } // örnek, sadece desktop
 
 .deg180 {
   transform: rotate(180deg);
