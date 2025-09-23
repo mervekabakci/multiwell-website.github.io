@@ -12,6 +12,9 @@ section,
   }
   &.pageSection {
     margin-top: 50px;
+    @media screen and (max-width:991.98px) {
+      margin-top: 30px;
+    }
   }
 
   .sectionHead {

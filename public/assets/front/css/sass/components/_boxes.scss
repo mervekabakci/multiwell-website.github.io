@@ -80,11 +80,18 @@
             display: inline-flex;
             width: 100%;
             align-items: center;
+            @media screen and (max-width: 991.98px) {
+              min-height: 45px;
+            }
           }
           .card-title {
             font-size: 16px;
             line-height: 32px;
             font-family: "GilroyMedium";
+            @media screen and (max-width: 991.98px) {
+              font-size: 14px;
+              line-height: 22px;
+            }
           }
           a {
             &.card-body {
@@ -103,12 +110,15 @@
           }
         }
       }
-      .linkList{
+      .linkList {
         display: flex;
         flex-direction: column;
         gap: 26px;
-        .fixBtn{
-            justify-content: flex-start;
+        @media screen and (max-width:991.98px) {
+          gap: 10px;
+        }
+        .fixBtn {
+          justify-content: flex-start;
         }
       }
     }

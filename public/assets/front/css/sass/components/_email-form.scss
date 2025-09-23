@@ -1,29 +1,47 @@
-.emailWrapper{
-    box-shadow:0 4px 14px rgba(0,0,0,0.5);
-    padding: 50px;
-    margin-block: 40px;
-    .emailDesc{
-        max-width: 690px;
+.emailWrapper {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  padding: 50px;
+  margin-block: 40px;
+  @media screen and (max-width: 991.98px) {
+    padding: 20px 16px;
+    margin-block: 20px;
+  }
+  .emailDesc {
+    max-width: 690px;
+  }
+  .title {
+    font-family: "GilroySemibold";
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--primary);
+    @media screen and (max-width: 991.98px) {
+      font-size: 18px;
+      line-height: 24px;
     }
-    .title{
-        font-family: 'GilroySemibold';
-        font-size: 30px;
-        line-height: 40px;
-        color: var(--primary);
+  }
+  p {
+    font-family: "GilroyMedium";
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--primary);
+    margin-top: 16px;
+    @media screen and (max-width: 991.98px) {
+      font-size: 14px;
+      margin-top: 10px;
     }
-    p{
-        font-family: 'GilroyMedium';
-        font-size: 15px;
-        line-height: 30px;
-        color: var(--primary);
-        margin-top: 16px;
+  }
+  .form {
+    margin-top: 30px;
+    max-width: 450px;
+    @media screen and (max-width: 991.98px) {
+      margin-top: 15px;
     }
-    .form{
-        margin-top: 30px;
-        max-width: 450px;
-        input[type="email"]{
-            height: 56px;
-            width: 100%;
-        }
+    input[type="email"] {
+      height: 56px;
+      width: 100%;
+      @media screen and (max-width: 991.98px) {
+        height: 50px;
+      }
     }
+  }
 }

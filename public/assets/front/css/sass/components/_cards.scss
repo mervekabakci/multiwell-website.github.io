@@ -102,8 +102,8 @@
     }
   }
   &.expertsSlider {
-    .swiper-wrapper{
-      @media screen and (max-width:991.98px) {
+    .swiper-wrapper {
+      @media screen and (max-width: 991.98px) {
         margin-bottom: 20px;
       }
     }
@@ -173,6 +173,13 @@
     &.third {
       .card {
         width: calc(33.3% - 40px);
+        @media screen and (max-width: 991.98px) {
+          width: calc(50% - 30px);
+          border: 1px solid var(--gray-100);
+        }
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -221,6 +228,9 @@
   &.cardList {
     .card {
       flex-direction: row;
+      @media screen and (max-width: 991.98px) {
+        flex-direction: column;
+      }
       // .icon-play {
       //   position: absolute;
       //   color: var(--fifth);

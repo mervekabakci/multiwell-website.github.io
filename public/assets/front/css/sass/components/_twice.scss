@@ -4,7 +4,7 @@
   margin-top: 20px;
   gap: 30px;
   flex-wrap: wrap;
-  @media screen and (max-width:991.98px) {
+  @media screen and (max-width: 991.98px) {
     flex-direction: column;
   }
   figure {
@@ -33,13 +33,23 @@
   }
   &.pageTwice {
     padding: 0 50px;
+    @media screen and (max-width: 991.98px) {
+      padding: 0;
+    }
     .twiceContent {
       width: 60.5%;
+      @media screen and (max-width: 991.98px) {
+        width: 100%;
+      }
     }
     .twiceOtherContent {
       width: 30%;
       padding-left: 2vw;
       margin-left: auto;
+      @media screen and (max-width: 991.98px) {
+        padding-left: 0;
+        width: 100%;
+      }
     }
   }
 }

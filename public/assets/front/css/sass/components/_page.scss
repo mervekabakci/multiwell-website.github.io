@@ -60,6 +60,8 @@
     .pageRowHead {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
       .pageRowTitle {
         font-size: 18px;
         line-height: 25px;

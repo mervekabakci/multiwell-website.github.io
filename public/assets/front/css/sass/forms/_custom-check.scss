@@ -76,6 +76,10 @@
     font-size: 15px;
     padding-top: 2px;
     display: inline-block;
+    @media screen and (max-width:991.98px) {
+      font-size: 14px;
+      padding-top: 0;
+    }
     a {
       font-weight: 600;
       color: var(--fifth);

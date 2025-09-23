@@ -4,15 +4,26 @@
   align-items: flex-start;
   padding: 30px 50px;
   height: 250px;
+  @media screen and (max-width: 991.98px) {
+    padding: 20px 16px;
+    height: 200px;
+  }
   .title,
   h1 {
     font-family: "GilroySemibold";
     font-size: 40px;
     color: var(--white);
     line-height: 50px;
+    @media screen and (max-width: 991.98px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
   .breadcrumbWrapper {
     margin-bottom: auto;
+    @media screen and (max-width: 991.98px) {
+      margin-bottom: 20px;
+    }
     a {
       font-family: "GilroyMedium";
       font-size: 15px;
@@ -22,8 +33,15 @@
       align-items: center;
       gap: 10px;
       transition: all 0.3s linear;
+      @media screen and (max-width: 991.98px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
       .icon-arrow-right {
         font-size: 24px;
+        @media screen and (max-width: 991.98px) {
+          font-size: 20px;
+        }
       }
       @media screen and (min-width: 992px) {
         &:hover {
@@ -35,7 +53,10 @@
   .buttons {
     margin-top: auto;
   }
-  .textLink{
+  .textLink {
     font-size: 16px;
+    @media screen and (max-width: 991.98px) {
+      font-size: 14px;
+    }
   }
 }

@@ -4,6 +4,9 @@ dialog {
   padding: 50px 30px;
   max-width: 600px;
   width: 100%;
+  @media screen and (max-width: 991.98px) {
+    padding: 20px 16px;
+  }
 
   &::backdrop {
     background: rgba(0, 0, 0, 0.7);
@@ -17,7 +20,10 @@ dialog {
     border-bottom: 1px solid #dee2e6;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
-    &.border-none{
+    @media screen and (max-width: 991.98px) {
+      padding: 0;
+    }
+    &.border-none {
       border: none;
     }
     .dialogTitle {
@@ -35,7 +41,7 @@ dialog {
       font-size: 14px;
       border: none;
       border-radius: 6px;
-      opacity:1;
+      opacity: 1;
       margin-left: auto;
       border: 1px solid var(--tertiary);
       outline: 0;
@@ -45,7 +51,7 @@ dialog {
       transition: all 0.3s linear;
       right: 0;
       top: 0;
-      font-family: 'GilroyMedium';
+      font-family: "GilroyMedium";
       @media screen and (min-width: 992px) {
         &:hover {
           background: var(--white);
@@ -82,6 +88,9 @@ dialog {
     flex: 1 1 auto;
     padding: 1rem;
     position: relative;
+    @media screen and (max-width: 991.98px) {
+      padding: 1rem 0;
+    }
     p {
       color: #444;
       font-size: 14px;
@@ -112,16 +121,27 @@ dialog {
     .dialogTitle {
       color: var(--tertiary);
       font-size: 32px;
+      @media screen and (max-width: 991.98px) {
+        font-size: 18px;
+      }
     }
     .dialogBody {
       height: 100%;
       display: flex;
+    }
+    .dialogContent {
+      @media screen and (max-width: 991.98px) {
+        height: calc(100% - 60px);
+      }
     }
     .dialogCenter {
       place-content: center;
       margin: 0 auto;
       width: 100%;
       max-width: 800px;
+      @media screen and (max-width: 991.98px) {
+        place-content: flex-start;
+      }
     }
   }
 }

@@ -51,6 +51,9 @@ header {
     transition: all 0.3s linear;
     .customIcon {
       font-size: 30px;
+      @media screen and (max-width: 991.98px) {
+        font-size: 20px;
+      }
     }
     @media screen and (min-width: 992px) {
       &:hover {
@@ -70,14 +73,14 @@ header {
     justify-content: space-between;
     margin-left: auto;
     z-index: 999;
-    @media screen and (min-width:992px) {
-        display: none;
+    @media screen and (min-width: 992px) {
+      display: none;
     }
 
     .line {
       border-bottom: 1px solid var(--primary);
       width: 100%;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
     }
     &:before,
     &:after {
@@ -85,26 +88,26 @@ header {
       border-bottom: 1px solid var(--primary);
       width: 100%;
       position: relative;
-      transition: all .3s linear;
+      transition: all 0.3s linear;
     }
-    &.active{
-        justify-content: center;
-        .line{
-            opacity: 0;
-            visibility: hidden;
-        }
-        &:before{
-            transform: rotate(45deg);
-            border-color: var(--fifth);
-            top: 2px;
-            border-width: 2px;
-        }
-        &:after{
-            transform: rotate(-45deg);
-            top: -1px;
-            border-color: var(--fifth);
-            border-width: 2px;
-        }
+    &.active {
+      justify-content: center;
+      .line {
+        opacity: 0;
+        visibility: hidden;
+      }
+      &:before {
+        transform: rotate(45deg);
+        border-color: var(--fifth);
+        top: 2px;
+        border-width: 2px;
+      }
+      &:after {
+        transform: rotate(-45deg);
+        top: -1px;
+        border-color: var(--fifth);
+        border-width: 2px;
+      }
     }
   }
   &.fixed {
@@ -115,8 +118,8 @@ header {
     right: 0;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
     padding-bottom: 0;
-    @media screen and (max-width:991.98px) {
-        padding-bottom: 15px;
+    @media screen and (max-width: 991.98px) {
+      padding-bottom: 15px;
     }
 
     .navbar-nav {
