@@ -91,6 +91,9 @@ figure {
 .text-center {
   text-align: center;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 
 @for $i from 1 through 12 {
   .line-clamp-#{$i} {

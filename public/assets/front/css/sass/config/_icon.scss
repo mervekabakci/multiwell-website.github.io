@@ -26,6 +26,19 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-yas-gruplari:before {
+  content: "\e93a";
+}
+.icon-anksiyete:before {
+  content: "\e93b";
+}
+.icon-testing:before {
+  content: "\e93c";
+}
+.icon-quick-menu:before {
+  content: "\e93d";
+}
 .icon-twitter-fill:before {
   content: "\e939";
 }
