@@ -7053,7 +7053,7 @@ footer .footer .footerBottom .copyRight {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
-.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .item {
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .quickItem {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7065,10 +7065,10 @@ footer .footer .footerBottom .copyRight {
   gap: 10px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
 }
-.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .item .customIcon {
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .quickItem .customIcon {
   font-size: 30px;
 }
-.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .item span {
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .quickMenuList .quickItem span {
   font-family: 16px;
   color: var(--white);
   font-family: "GilroySemibold";
@@ -7086,6 +7086,78 @@ footer .footer .footerBottom .copyRight {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .backQuickButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: var(--fifth);
+  font-family: "GilroySemibold";
+  margin-bottom: 30px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .backQuickButton .customIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-180deg);
+  font-size: 14px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s linear;
+  transform: translateX(100%);
+  background-color: var(--white);
+  padding: 30px 16px;
+  z-index: 999;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box {
+  overflow-y: auto;
+  height: calc(100% - 100px);
+  padding-right: 10px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .boxHead {
+  margin-bottom: 10px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .cards.cardList {
+  margin-block: 0;
+  gap: 10px;
+  align-items: flex-start;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .cards.cardList .card-title {
+  text-align: left;
+  font-size: 18px;
+  line-height: 25px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .cards.cardList .card-text {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .cards.cardList .card-body {
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 16px;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent .box .linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.quickMenuWrapper .quickMenuContainer .quickMenuBody .itemContent.opened {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
 }
 .quickMenuWrapper.opened .quickMenuContainer {
   opacity: 1;
@@ -8202,12 +8274,18 @@ section .sectionContent,
     color: var(--primary);
   }
 }
+@media screen and (max-width: 576px) {
+  .cards.cardList {
+    align-items: center;
+  }
+}
 .cards.cardList .card {
   flex-direction: row;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 576px) {
   .cards.cardList .card {
     flex-direction: column;
+    width: 100%;
   }
 }
 .cards.cardList .card .card-image-start {
@@ -8215,6 +8293,18 @@ section .sectionContent,
   min-width: 300px;
   position: relative;
   margin: 0 auto;
+}
+@media screen and (max-width: 991.98px) {
+  .cards.cardList .card .card-image-start {
+    width: 230px;
+    min-width: 230px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards.cardList .card .card-image-start {
+    width: 100%;
+    min-width: initial;
+  }
 }
 .cards.cardList .card .card-expert-title {
   font-size: 14px;
@@ -8232,6 +8322,16 @@ section .sectionContent,
   text-align: left;
   margin-top: 20px;
 }
+@media screen and (max-width: 991.98px) {
+  .cards.cardList .card .card-title {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .cards.cardList .card .card-body {
+    padding: 10px 16px;
+  }
+}
 @media screen and (min-width: 992px) {
   .cards.cardList .card:hover .card-body {
     background-color: var(--white);
@@ -8245,6 +8345,13 @@ section .sectionContent,
   .cards.cardList .card:hover .card-body .playButton {
     color: var(--secondary);
   }
+}
+@media screen and (min-width: 992px) and (max-width: 991.98px) {
+  .cards.cardList .card:hover .card-body .playButton {
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
   .cards.cardList .card:hover .card-body .playButton .icon-play {
     color: var(--secondary);
     border-color: var(--secondary);
