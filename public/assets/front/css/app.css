@@ -1641,7 +1641,7 @@ figure {
 @media screen and (max-width: 991.98px) {
   .noteText {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 22px;
   }
 }
 .noteText a {
@@ -1832,6 +1832,14 @@ figure {
 
 .max-h-100 {
   max-height: 100% !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.w-auto {
+  width: auto !important;
 }
 
 @media (min-width: 576px) {
@@ -6393,16 +6401,26 @@ header.fixed .navbar-nav .nav-item .nav-link {
   transition: all 0.3s linear;
   font-weight: 500;
   height: 100%;
-  font-size: 14px;
+  font-size: 15px;
 }
 @media screen and (max-width: 991.98px) {
   .navbar-nav .nav-item .nav-link {
     border-right: none;
     border-bottom: 1px solid var(--gray-200);
-    padding: 15px 0;
+    padding: 15px 16px;
     flex-direction: column;
     height: auto;
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .navbar-nav .nav-item .nav-link .icon {
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
   }
 }
 .navbar-nav .nav-item .nav-link .customIcon {
@@ -6800,6 +6818,13 @@ header.fixed .navbar-nav .nav-item .nav-link {
   }
 }
 @media (hover: none) {
+  .nav-item.dropdown .nav-link:has(.menuInput:checked) {
+    color: var(--fifth);
+  }
+  .nav-item.dropdown .nav-link:has(.menuInput:checked) > label:after {
+    border-color: var(--fifth);
+    transform: rotate(45deg);
+  }
   .nav-item.dropdown .nav-link:has(.menuInput:checked) .dropdown-content {
     transform: translateX(0);
     visibility: visible;
@@ -6981,6 +7006,12 @@ dialog {
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 991.98px) {
+  dialog .searchResult {
+    height: calc(100% - 100px);
+    max-height: initial;
+  }
 }
 dialog .dialogHead {
   display: flex;
@@ -7203,7 +7234,7 @@ dialog.fullScreen .dialogCenter {
 }
 @media screen and (max-width: 991.98px) {
   .searchResult {
-    height: calc(100% - 100px);
+    max-height: 300px;
   }
 }
 .searchResult::-webkit-scrollbar {
@@ -7440,11 +7471,13 @@ dialog.fullScreen .dialogCenter {
   width: 100%;
   height: 80px;
   padding: 0 20px;
+  font-size: 16px;
 }
 @media screen and (max-width: 991.98px) {
   .searchWrapperInline .searchColumn input {
     height: 60px;
     padding: 0 16px;
+    font-size: 13px;
   }
 }
 .searchWrapperInline .searchColumn .searchResult {
@@ -7497,10 +7530,11 @@ dialog.fullScreen .dialogCenter {
   padding-top: 50px;
   gap: 25px;
 }
-@media screen and (max-width: 991.98pc) {
+@media screen and (max-width: 991.98px) {
   .homeBanner .desc {
     padding-right: 0;
     padding-top: 20px;
+    gap: 15px;
   }
 }
 .homeBanner .desc .title {
@@ -7511,8 +7545,8 @@ dialog.fullScreen .dialogCenter {
 }
 @media screen and (max-width: 991.98px) {
   .homeBanner .desc .title {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 28px;
+    line-height: 36px;
   }
 }
 .homeBanner .desc .title a {
@@ -7563,6 +7597,9 @@ dialog.fullScreen .dialogCenter {
     padding-top: 20px;
     gap: 15px;
   }
+  .homeBanner .desc .buttons .fixBtn {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width: 576px) {
   .homeBanner .desc .buttons {
@@ -7594,12 +7631,18 @@ section:not(:first-child),
 @media screen and (max-width: 991.98px) {
   section:not(:first-child),
   .section:not(:first-child) {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 section.featuredSection,
 .section.featuredSection {
   margin-top: 20px;
+}
+@media screen and (max-width: 991.98px) {
+  section.featuredSection,
+  .section.featuredSection {
+    margin-top: 50px;
+  }
 }
 section.pageSection,
 .section.pageSection {
@@ -7620,7 +7663,7 @@ section .sectionHead,
   section .sectionHead,
   .section .sectionHead {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 }
 section .sectionHead .sectionTitle,
@@ -7696,6 +7739,13 @@ section .sectionHead .sectionText,
     line-height: 22px;
   }
 }
+@media screen and (max-width: 991.98px) {
+  section .sectionHead .sectionText.type2,
+  .section .sectionHead .sectionText.type2 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 section .sectionHead .chooseTitle,
 .section .sectionHead .chooseTitle {
   display: flex;
@@ -7709,6 +7759,8 @@ section .sectionHead .chooseTitle,
   .section .sectionHead .chooseTitle {
     padding: 15px 12px;
     width: 100%;
+    flex-direction: column-reverse;
+    margin-top: 1px;
   }
 }
 section .sectionHead .chooseTitle > span,
@@ -7720,14 +7772,15 @@ section .sectionHead .chooseTitle > span,
 @media screen and (max-width: 576px) {
   section .sectionHead .chooseTitle > span,
   .section .sectionHead .chooseTitle > span {
-    font-size: 16px;
-    margin-left: auto;
+    font-size: 23px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 576px) {
   section .sectionHead .chooseTitle .customSelect,
   .section .sectionHead .chooseTitle .customSelect {
-    font-size: 16px;
+    font-size: 28px;
+    margin-top: 12px;
     padding-left: 0;
   }
 }
@@ -7757,7 +7810,7 @@ section .sectionContent,
 }
 @media screen and (max-width: 991.98px) {
   .featuredWrapper {
-    flex-direction: column;
+    display: block;
     padding: 30px 16px;
     gap: 20px;
   }
@@ -7831,8 +7884,8 @@ section .sectionContent,
 }
 @media screen and (max-width: 576px) {
   .cards .card-title {
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 25px;
+    line-height: 32px;
   }
 }
 .cards .card-text {
@@ -7841,6 +7894,11 @@ section .sectionContent,
   line-height: 32px;
   padding-top: 25px;
   color: var(--primary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 576px) {
   .cards .card-text {
@@ -7924,6 +7982,12 @@ section .sectionContent,
   text-align: center;
   align-items: center;
 }
+@media screen and (max-width: 991.98px) {
+  .cards.expertsSlider .card {
+    padding: 16px 24px 16px;
+    min-height: 200px;
+  }
+}
 .cards.expertsSlider .card .card-image-top {
   aspect-ratio: 1/1;
   max-width: 120px;
@@ -7935,6 +7999,11 @@ section .sectionContent,
   padding: 20px 0;
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
+}
+@media screen and (max-width: 991.98px) {
+  .cards.expertsSlider .card .card-body {
+    padding: 10px 0;
+  }
 }
 .cards.expertsSlider .card .card-body .card-name {
   color: var(--tertiary);
@@ -8043,6 +8112,7 @@ section .sectionContent,
   width: 300px;
   min-width: 300px;
   position: relative;
+  margin: 0 auto;
 }
 .cards.cardList .card .card-expert-title {
   font-size: 14px;
@@ -8086,13 +8156,13 @@ section .sectionContent,
 .cards-button {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   margin-bottom: 50px;
   margin-top: 50px;
 }
 @media screen and (max-width: 576px) {
   .cards-button {
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 30px;
     margin-top: 30px;
   }
@@ -8112,6 +8182,11 @@ section .sectionContent,
   position: relative;
   top: auto;
   bottom: auto;
+}
+@media screen and (max-width: 991.98px) {
+  .swiper .swiper-pagination {
+    margin-top: 20px;
+  }
 }
 .swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: var(--primary);
@@ -8136,12 +8211,51 @@ section .sectionContent,
   }
 }
 
+.featuredSlider {
+  max-width: 890px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media screen and (min-width: 1280px) {
+  .featuredSlider .swiper-wrapper {
+    align-items: center;
+  }
+}
+.featuredSlider .item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 991.98px) {
+  .featuredSlider .item {
+    background-color: var(--white);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    height: 100px;
+  }
+  .featuredSlider .item .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .testingWrapper {
   margin: 0 auto;
   text-align: center;
   padding-top: 50px;
   position: relative;
   max-width: 1400px;
+}
+@media screen and (max-width: 991.98px) {
+  .testingWrapper {
+    padding-top: 0;
+  }
 }
 .testingWrapper .testingSlider {
   max-width: 1200px;
@@ -8152,6 +8266,18 @@ section .sectionContent,
   align-items: center;
   gap: 20px;
   padding-bottom: 20px;
+}
+@media screen and (max-width: 991.98px) {
+  .testingWrapper .testingDesc {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .testingWrapper .testingDesc {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 .testingWrapper .testingDesc .testingTitle {
   font-family: "GilroyBold";
@@ -8340,6 +8466,11 @@ section .sectionContent,
   color: var(--white);
   font-size: 24px;
   padding-top: 16px;
+}
+@media screen and (max-width: 991.98px) {
+  .portalWrapper .title {
+    padding-top: 0;
+  }
 }
 .portalWrapper .portalList {
   display: flex;
@@ -8650,6 +8781,9 @@ section .sectionContent,
   .expertWrapper .buttons {
     flex-direction: column;
   }
+  .expertWrapper .buttons .fixBtn {
+    width: 100%;
+  }
 }
 
 .buttons {
@@ -8873,6 +9007,8 @@ section .sectionContent,
 }
 .paragraph .shortDesc b {
   color: var(--secondary);
+  font-weight: normal;
+  font-family: "GilroySemibold";
 }
 .paragraph .longText {
   font-family: "GilroyRegular";
@@ -8889,6 +9025,8 @@ section .sectionContent,
 }
 .paragraph .longText b {
   color: var(--secondary);
+  font-weight: normal;
+  font-family: "GilroySemibold";
 }
 .paragraph ul {
   list-style-type: disc;
@@ -8907,18 +9045,25 @@ section .sectionContent,
   font-family: "GilroySemibold";
   color: var(--fifth);
 }
-.paragraph .longText a:not(.fixBtn):after,
-.paragraph .shortDesc a:not(.fixBtn):after,
-.paragraph .shorText a:not(.fixBtn):after {
-  content: "";
-  border-bottom: 1px solid var(--fifth);
-  width: 100%;
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  transition: all 0.3s linear;
+@media screen and (max-width: 991.98px) {
+  .paragraph .longText a:not(.fixBtn),
+  .paragraph .shortDesc a:not(.fixBtn),
+  .paragraph .shorText a:not(.fixBtn) {
+    border-bottom: 1px solid var(--fifth);
+  }
 }
 @media screen and (min-width: 992px) {
+  .paragraph .longText a:not(.fixBtn):after,
+  .paragraph .shortDesc a:not(.fixBtn):after,
+  .paragraph .shorText a:not(.fixBtn):after {
+    content: "";
+    border-bottom: 1px solid var(--fifth);
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s linear;
+  }
   .paragraph .longText a:not(.fixBtn):hover:after,
   .paragraph .shortDesc a:not(.fixBtn):hover:after,
   .paragraph .shorText a:not(.fixBtn):hover:after {
@@ -8932,7 +9077,7 @@ section .sectionContent,
 .paragraph .shorText h2,
 .paragraph .shorText .title {
   font-size: 23px;
-  color: var(--success);
+  color: var(--primary);
   font-family: "GilroySemibold";
   margin-bottom: 5px;
   margin-top: 20px;
@@ -9081,6 +9226,7 @@ section .sectionContent,
   .emailWrapper p {
     font-size: 14px;
     margin-top: 10px;
+    line-height: 20px;
   }
 }
 .emailWrapper .form {
@@ -9099,6 +9245,12 @@ section .sectionContent,
 @media screen and (max-width: 991.98px) {
   .emailWrapper .form input[type=email] {
     height: 50px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .emailWrapper .form .containerCheck .checkText {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 

@@ -270,7 +270,7 @@
                             <div class="searchOpen" data-dialog="searchDialog"><span class="icon-search customIcon"></span></div>
                         </div>
                     </div>
-                    <div class="buttons d-lg-none ">
+                    <div class="buttons d-lg-none ms-auto">
                         <div class="searchOpen" data-dialog="searchDialog"><span class="icon-search customIcon"></span></div>
                         <a href="#" class="nav-toggler-button">
                             <span class="line"></span>
@@ -295,7 +295,7 @@
                             <a href="#" class="fixBtn button-secondary-outline">Uzman Bul</a>
                         </div>
                     </div>
-                    <figure class="figure">
+                    <figure class="figure d-none d-lg-flex">
                         <div class="imageWrapper">
                             <img src="public/assets/images/media/homeBanner.jpg" alt="">
                         </div>
@@ -308,8 +308,51 @@
         <section class="featuredSection">
             <div class="container">
                 <div class="featuredWrapper bg-soft-light-pink rounded pb">
-                    <div class="featuredTitle">FEATURED IN:</div>
-                    <div class="featuredList">
+                    <div class="featuredTitle d-none d-lg-flex">FEATURED IN:</div>
+                    <div class="swiper featuredSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="imageWrapper fitContain">
+                                        <img src="public/assets/images/media/featured/washington-post.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="imageWrapper fitContain">
+                                        <img src="public/assets/images/media/featured/forbes.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="imageWrapper fitContain">
+                                        <img src="public/assets/images/media/featured/new-times.jpg" alt="">
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="swiper-slide">                                             
+                                <div class="item">
+                                    <div class="imageWrapper fitContain">
+                                        <img src="public/assets/images/media/featured/npr.jpg" alt="">
+                                    </div>
+                                </div> 
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="imageWrapper fitContain">
+                                        <img src="public/assets/images/media/featured/abc-news.jpg" alt="">
+                                    </div>
+                                </div>     
+                            </div>   
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next d-none d-lg-flex"></div>
+                    <div class="swiper-button-prev d-none d-lg-flex"></div>
+                    
+                    <!-- <div class="featuredList">
                         <div class="item">
                             <div class="imageWrapper fitContain">
                                 <img src="public/assets/images/media/featured/washington-post.jpg" alt="">
@@ -335,7 +378,8 @@
                                 <img src="public/assets/images/media/featured/abc-news.jpg" alt="">
                             </div>
                         </div>                        
-                    </div>
+                    </div> -->
+
                 </div>
             </div>
         </section>
@@ -345,87 +389,105 @@
             <div class="container">
                 <div class="bg-secondary pb-2 pi rounded">
                     <div class="sectionHead pi-2-md">
-                        <div class="sectionText">
+                        <div class="sectionText type2">
                             Depresyon süresinde size destek sağlayacak olan kaynaklar, araçlar, testler ve uzmanlar
                         </div>
                     </div>
-                    <div class="sectionContent pi-2-md">
-                        <div class="cards quad">
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
-                                    </div>
+                    <div class="sectionContent mt-5 mt-lg-0 pi-2-md quadWrapper">
+                        <div class="swiper quadSlider cards py-4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                Çocuk
+                                            </div>
+                                            <div class="card-text">
+                                                <span class="line-clamp-2">
+                                                    Çocukların iç dünyasını keşfedin.
+                                                </span>
+                                            </div>
+                                            <span class="icon-arrow-long-right"></span>
+                                        </div>
+                                    </a>
+                                </div>    
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                Ergen
+                                            </div>
+                                            <div class="card-text">
+                                                <span class="line-clamp-2">
+                                                    Çocukların iç dünyasını keşfedin.
+                                                </span>
+                                            </div>
+                                            <span class="icon-arrow-long-right"></span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Çocuk
-                                    </div>
-                                    <div class="card-text line-clamp-2">
-                                        Çocukların iç dünyasını keşfedin.
-                                    </div>
-                                    <span class="icon-arrow-long-right"></span>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/yetiskin.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                Yetişkin
+                                            </div>
+                                            <div class="card-text">
+                                                <span class="line-clamp-2">
+                                                    Çocukların iç dünyasını keşfedin.
+                                                </span>
+                                            </div>
+                                            <span class="icon-arrow-long-right"></span>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/yasli.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                Yaşlı
+                                            </div>
+                                            <div class="card-text">
+                                                <span class="line-clamp-2">
+                                                    Çocukların iç dünyasını keşfedin.
+                                                </span>
+                                            </div>
+                                            <span class="icon-arrow-long-right"></span>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Ergen
-                                    </div>
-                                    <div class="card-text line-clamp-2">
-                                        Çocukların iç dünyasını keşfedin.
-                                    </div>
-                                    <span class="icon-arrow-long-right"></span>
-                                </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/yetiskin.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        Yetişkin
-                                    </div>
-                                    <div class="card-text line-clamp-2">
-                                        Çocukların iç dünyasını keşfedin.
-                                    </div>
-                                    <span class="icon-arrow-long-right"></span>
-                                </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/yasli.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-
-                                    <div class="card-title">
-                                        Yaşlı
-                                    </div>
-                                    <div class="card-text line-clamp-2">
-                                        Çocukların iç dünyasını keşfedin.
-                                    </div>
-                                    <span class="icon-arrow-long-right"></span>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="swiper-pagination d-lg-none"></div>
                         </div>
                         <div class="cards-button rounded">
-                            <a href="#" class="card-link fixBtn big"><span>Hamilelik Depresyonu</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-yellow big"><span>Sınav Depresyonu</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Anksiyete Belirtileri Nelerdir</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Anksiyete Nedenleri</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Hamilelik Depresyonu</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Anksiyete Nedenleri</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Sınav Depresyonu</span><span class="icon-arrow-long-right"></span></a>
-                            <a href="#" class="card-link fixBtn button-soft-light-pink big"><span>Anksiyete Belirtileri Nelerdir</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Hamilelik Depresyonu</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Sınav Depresyonu</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Anksiyete Belirtileri Nelerdir</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Anksiyete Nedenleri</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Hamilelik Depresyonu</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Anksiyete Nedenleri</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Sınav Depresyonu</span><span class="icon-arrow-long-right"></span></a>
+                            <a href="#" class="card-link fixBtn"><span>Anksiyete Belirtileri Nelerdir</span><span class="icon-arrow-long-right"></span></a>
                         </div>
                         <a href="#" class="fixBtn button-primary w-100"><span>Terapist mi arıyorsunuz</span> <span class="icon-arrow-long-right"></span></a>
                     </div>
@@ -437,7 +499,7 @@
         <section>
             <div class="container">
                 <div class="bg-soft-light-pink rounded pb-2">
-                    <div class="sectionHead justify-center">
+                    <div class="sectionHead justify-center d-none d-lg-flex">
                         <img class="mx-auto max-w-100" src="public/assets/images/statics/icons/test-icon.png" alt="">
                     </div>
                     <div class="sectionContent">
@@ -479,7 +541,7 @@
                         </div>
                         <div class="commentText">
                             <p>İnsanlar neden Depresyondayım.com’u seviyor okuyun</p>
-                            <a href="#">Tüm yorumları gör</a>
+                            <a href="#" class="d-none d-lg-flex">Tüm yorumları gör</a>
                         </div>
                     </div>
                     <div class="sectionContent">
@@ -560,6 +622,9 @@
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
+                        <div class="d-flex items-center justify-center pt-5 d-lg-none">
+                            <a href="#" class="textLink">Tüm yorumları gör</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -585,7 +650,7 @@
                     </div>
                     <div class="sectionContent pb-2">
                         <div class="expertsWrapper">
-                            <div class="swiper cards expertsSlider pb">
+                            <div class="swiper cards expertsSlider pb-md-0">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <a href="#" class="card">
@@ -691,7 +756,7 @@
                                 <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <a href="#" class="fixBtn type2 button-secondary"><span>Uzman Bul</span> <span class="icon-arrow-long-right"></span></a>
+                        <a href="#" class="fixBtn type2 button-secondary mt-4 mt-lg-0"><span>Uzman Bul</span> <span class="icon-arrow-long-right"></span></a>
                     </div>
                 </div>
             </div>
@@ -700,7 +765,7 @@
         <!--Depresyondayım nasıl çalışıyor-->
         <section class="howToWorkSection">
             <div class="container">
-                <div class="howToWorkWrapper pb-2 pi-2 rounded">
+                <div class="howToWorkWrapper pb-lg-2 pi-lg-2 rounded">
                     <div class="sectionHead justify-center">
                         <div class="sectionTitle medium text-tertiary">
                             <b>Depresyondayım</b> nasıl çalışıyor
@@ -746,10 +811,10 @@
                                             <p>Depresyonda isen veya yaşadığın sorunların ne olduğuna emin değilsen öncelikle Depresyon Ön Değerlendirme Testine katılabilirsin.</p>
                                         </div>
                                     </div>
-                                    <a href="#" class="fixBtn button-secondary">Online Randevu Sistemi / Çok yakında hizmetinizde olacaktır.</a>
+                                    <a href="#" class="fixBtn button-secondary py-2 py-lg-4 h-auto">Online Randevu Sistemi / Çok yakında hizmetinizde olacaktır.</a>
                                 </div>
                             </div>
-                            <figure>
+                            <figure class="d-none d-lg-flex">
                                 <div class="imageWrapper fitContain">
                                     <img src="public/assets/images/media/nasil-calisir.png" alt="">
                                 </div>
@@ -770,60 +835,71 @@
                         </div>
                         <a href="#" class="textLink me-0"><span>Tüm Makaleler</span><span class="icon-arrow-long-right"></span></a>
                     </div>
-                    <div class="sectionContent pt-0">
-                        <div class="cards quad articleCards">
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                    </div>
+                    <div class="sectionContent quadWrapper">
+                        <div class="swiper quadSlider cards articleCards pbt-5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body bg-transparent">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body bg-transparent">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body bg-transparent">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/cocuk.jpg" alt="">
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/yetiskin.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body bg-transparent">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body bg-transparent">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-top">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/terapistler/yasli.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body bg-transparent">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/yetiskin.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body bg-transparent">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-top">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/terapistler/yasli.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body bg-transparent">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="swiper-pagination d-lg-none"></div>
                         </div>
                     </div>
                 </div>
@@ -835,84 +911,93 @@
         <section>
             <div class="container">
                 <div class="bg-soft-light-blue pi pb rounded">
-                    <div class="sectionHead align-center justify-center">
-                        <div class="d-flex flex-column items-center">
-                            <div class="sectionTitle medium justify-center">
-                                <b>Videolar</b>
-                            </div>
-                            <a href="#" class="textLink mt-3 justify-center ms-0"><span>Tüm Videolar</span><span class="icon-arrow-long-right"></span></a>
+                    <div class="sectionHead align-center flex-row items-center">
+                        <div class="sectionTitle medium justify-center">
+                            <b>Videolar</b>
                         </div>
+                        <a href="#" class="textLink ms-auto me-0"><span>Tüm Videolar</span><span class="icon-arrow-long-right"></span></a>
                     </div>
-                    <div class="sectionContent pt-0">
-                        <div class="cards quad articleCards">
-                            <a href="#" class="card">
-                                <div class="card-image-start">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                    </div>
+                    <div class="sectionContent quadWrapper">
+                        <div class="swiper quadSlider cards articleCards pbt-5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-start">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                            <div class="playButton">
+                                                <span class="icon-play"></span>
+                                                <span>Video İzle</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body d-flex flex-column">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                    <div class="playButton">
-                                        <span class="icon-play"></span>
-                                        <span>Video İzle</span>
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-start">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                            <div class="playButton">
+                                                <span class="icon-play"></span>
+                                                <span>Video İzle</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                             <a href="#" class="card">
-                                <div class="card-image-start">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-start">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                            <div class="playButton">
+                                                <span class="icon-play"></span>
+                                                <span>Video İzle</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="card-body d-flex flex-column">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                    <div class="playButton">
-                                        <span class="icon-play"></span>
-                                        <span>Video İzle</span>
-                                    </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="card">
+                                        <div class="card-image-start">
+                                            <div class="imageWrapper">
+                                                <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                            <div class="card-title">
+                                                Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                            </div>
+                                            <div class="playButton">
+                                                <span class="icon-play"></span>
+                                                <span>Video İzle</span>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-start">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                    <div class="playButton">
-                                        <span class="icon-play"></span>
-                                        <span>Video İzle</span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="card">
-                                <div class="card-image-start">
-                                    <div class="imageWrapper">
-                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                    <div class="card-title">
-                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                    </div>
-                                    <div class="playButton">
-                                        <span class="icon-play"></span>
-                                        <span>Video İzle</span>
-                                    </div>
-                                </div>
-                            </a>
+                            </div>
+                            <div class="swiper-pagination d-lg-none"></div>
                         </div>
                     </div>
                 </div>
@@ -990,7 +1075,7 @@
                     </div>
                     <div class="sectionContent pi-md pt-0">
                         <div class="twiceWrapper">
-                            <figure>
+                            <figure class="d-none d-lg-flex">
                                 <div class="imageWrapper">
                                     <img src="public/assets/images/media/sss.png" alt="">
                                 </div>

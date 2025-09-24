@@ -24,8 +24,8 @@
     color: var(--primary);
     transition: all 0.3s linear;
     @media screen and (max-width: 576px) {
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 25px;
+      line-height: 32px;
     }
   }
   .card-text {
@@ -34,6 +34,11 @@
     line-height: 32px;
     padding-top: 25px;
     color: var(--primary);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media screen and (max-width: 576px) {
       font-size: 15px;
       line-height: 22px;
@@ -113,6 +118,10 @@
       min-height: 280px;
       text-align: center;
       align-items: center;
+      @media screen and (max-width: 991.98px) {
+        padding: 16px 24px 16px;
+        min-height: 200px;
+      }
       .card-image-top {
         aspect-ratio: 1/1;
         max-width: 120px;
@@ -124,6 +133,9 @@
         padding: 20px 0;
         background-color: rgba(0, 0, 0, 0);
         text-align: center;
+        @media screen and (max-width: 991.98px) {
+          padding: 10px 0;
+        }
 
         .card-name {
           color: var(--tertiary);
@@ -253,6 +265,9 @@
         width: 300px;
         min-width: 300px;
         position: relative;
+        margin: 0 auto;
+        @media screen and (max-width:991.98px) {
+        }
       }
       .card-expert-title {
         font-size: 14px;
@@ -309,11 +324,11 @@
 .cards-button {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
   margin-bottom: 50px;
   margin-top: 50px;
   @media screen and (max-width: 576px) {
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 30px;
     margin-top: 30px;
   }

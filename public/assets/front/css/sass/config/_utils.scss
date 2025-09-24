@@ -65,7 +65,7 @@ figure {
   margin: 0 auto;
   @media screen and (max-width:991.98px) {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 22px;
   }
 
   a {
@@ -174,7 +174,12 @@ $align-self-map: (
   .min-h-#{$s} { min-height: string.unquote("#{$s}%") !important; }
   .max-h-#{$s} { max-height: string.unquote("#{$s}%") !important; }
 }
-
+.h-auto{
+  height: auto!important;
+}
+.w-auto{
+  width: auto!important;
+}
 // -----------------------------
 //  WIDTH/HEIGHT UTILITIES
 //  (breakpoint'li)

@@ -24,11 +24,11 @@
         transition: all 0.3s linear;
         font-weight: 500;
         height: 100%;
-        font-size: 14px;
+        font-size: 15px;
         @media screen and (max-width: 991.98px) {
           border-right: none;
           border-bottom: 1px solid var(--gray-200);
-          padding: 15px 0;
+          padding: 15px 16px;
           flex-direction: column;
           height: auto;
           align-items: flex-start;
@@ -42,6 +42,16 @@
         //   left: -15px;
         //   top: 0;
         // }
+        .icon{
+          @media screen and (max-width:991.98px) {
+            width: 30px;
+            min-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+          }
+        }
         .customIcon {
           font-size: 24px;
           &.icon-books {
@@ -433,6 +443,15 @@
       }
     }
     &.dropdown {
+      .nav-link:has(.menuInput:checked) {
+        color: var(--fifth);
+        & > label{
+          &:after{
+            border-color: var(--fifth);
+            transform: rotate(45deg);
+          }
+        }
+      }
       .nav-link:has(.menuInput:checked) .dropdown-content {
         transform: translateX(0);
         visibility: visible;

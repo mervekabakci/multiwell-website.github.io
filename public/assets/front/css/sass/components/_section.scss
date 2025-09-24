@@ -3,16 +3,19 @@ section,
   &:not(:first-child) {
     margin-top: 85px;
     @media screen and (max-width: 991.98px) {
-      margin-top: 30px;
+      margin-top: 50px;
     }
   }
 
   &.featuredSection {
     margin-top: 20px;
+    @media screen and (max-width: 991.98px) {
+      margin-top: 50px;
+    }
   }
   &.pageSection {
     margin-top: 50px;
-    @media screen and (max-width:991.98px) {
+    @media screen and (max-width: 991.98px) {
       margin-top: 30px;
     }
   }
@@ -22,7 +25,7 @@ section,
     align-items: flex-start;
     @media screen and (max-width: 576px) {
       flex-direction: column;
-      gap: 20px;
+      gap: 10px;
     }
     .sectionTitle {
       font-size: 35px;
@@ -82,6 +85,12 @@ section,
         font-size: 16px;
         line-height: 22px;
       }
+      &.type2 {
+        @media screen and (max-width: 991.98px) {
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
     }
 
     .chooseTitle {
@@ -95,19 +104,22 @@ section,
       @media screen and (max-width: 576px) {
         padding: 15px 12px;
         width: 100%;
+        flex-direction: column-reverse;
+        margin-top: 1px;
       }
       & > span {
         font-family: "GilroyBold";
         font-size: 30px;
         color: var(--tertiary);
         @media screen and (max-width: 576px) {
-          font-size: 16px;
-          margin-left: auto;
+          font-size: 23px;
+          text-align: center;
         }
       }
       .customSelect {
         @media screen and (max-width: 576px) {
-          font-size: 16px;
+          font-size: 28px;
+          margin-top: 12px;
           padding-left: 0;
         }
         .current {

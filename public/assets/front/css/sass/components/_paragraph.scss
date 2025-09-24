@@ -26,6 +26,8 @@
     }
     b {
       color: var(--secondary);
+      font-weight: normal;
+      font-family: "GilroySemibold";
     }
   }
   .longText {
@@ -40,6 +42,8 @@
     }
     b {
       color: var(--secondary);
+      font-weight: normal;
+      font-family: "GilroySemibold";
     }
   }
   ul {
@@ -62,16 +66,19 @@
         position: relative;
         font-family: "GilroySemibold";
         color: var(--fifth);
-        &:after {
-          content: "";
+        @media screen and (max-width: 991.98px) {
           border-bottom: 1px solid var(--fifth);
-          width: 100%;
-          position: absolute;
-          bottom: -2px;
-          left: 0;
-          transition: all 0.3s linear;
         }
         @media screen and (min-width: 992px) {
+          &:after {
+            content: "";
+            border-bottom: 1px solid var(--fifth);
+            width: 100%;
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            transition: all 0.3s linear;
+          }
           &:hover {
             &:after {
               width: 0;
@@ -83,7 +90,7 @@
     h2,
     .title {
       font-size: 23px;
-      color: var(--success);
+      color: var(--primary);
       font-family: "GilroySemibold";
       margin-bottom: 5px;
       margin-top: 20px;

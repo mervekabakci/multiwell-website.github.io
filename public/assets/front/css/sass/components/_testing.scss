@@ -4,6 +4,9 @@
   padding-top: 50px;
   position: relative;
   max-width: 1400px;
+  @media screen and (max-width:991.98px) {
+    padding-top: 0;
+  }
   .testingSlider {
     max-width: 1200px;
   }
@@ -15,6 +18,14 @@
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
+    @media screen and (max-width: 991.98px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media screen and (max-width: 576px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     .testingTitle {
       font-family: "GilroyBold";
       color: var(--tertiary);
@@ -38,7 +49,7 @@
     }
     .fixBtn {
       margin-top: 40px;
-      @media screen and (max-width:991.98px) {
+      @media screen and (max-width: 991.98px) {
         margin-top: 20px;
       }
     }
