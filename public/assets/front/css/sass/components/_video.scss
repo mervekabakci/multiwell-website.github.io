@@ -1,9 +1,13 @@
-.videoWrapper{
-    .inlineVideoContainer{
-        margin-top: 30px;
-        margin-bottom: 40px;
-        video{
-            width: 100%;
-        }
+.videoWrapper {
+  .inlineVideoContainer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 576px) {
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
+    video {
+      width: 100%;
+    }
+  }
 }

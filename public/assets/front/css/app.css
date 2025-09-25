@@ -7455,6 +7455,11 @@ dialog.fullScreen .dialogCenter {
   position: relative;
   height: 70px;
 }
+@media screen and (max-width: 576px) {
+  .searchWrapper.type2 .searchInputWrapper {
+    height: 50px;
+  }
+}
 .searchWrapper.type2 .searchInputWrapper:before {
   content: "\e90e";
   font-family: "customFont";
@@ -7464,13 +7469,28 @@ dialog.fullScreen .dialogCenter {
   left: 10px;
   top: 25px;
 }
+@media screen and (max-width: 576px) {
+  .searchWrapper.type2 .searchInputWrapper:before {
+    top: 15px;
+  }
+}
 .searchWrapper.type2 .searchInputWrapper input {
   font-size: 16px;
   padding-left: 40px;
   height: 70px;
 }
+@media screen and (max-width: 576px) {
+  .searchWrapper.type2 .searchInputWrapper input {
+    height: 50px;
+  }
+}
 .searchWrapper.type2 .searchInputWrapper input:focus {
   height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .searchWrapper.type2 .searchInputWrapper input:focus {
+    height: 50px;
+  }
 }
 
 .searchResult {
@@ -9294,6 +9314,12 @@ section .sectionContent,
   margin-top: 30px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 576px) {
+  .paragraph .imageColumn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .paragraph .shorText {
   font-family: "GilroyBold";
   font-size: 24px;
@@ -9340,6 +9366,11 @@ section .sectionContent,
   .paragraph .longText {
     font-size: 14px;
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .paragraph .longText {
+    padding-top: 10px;
   }
 }
 .paragraph .longText a:not(.fixBtn),
@@ -9725,6 +9756,12 @@ section .sectionContent,
   margin-top: 30px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 576px) {
+  .videoWrapper .inlineVideoContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 .videoWrapper .inlineVideoContainer video {
   width: 100%;
 }
@@ -9839,9 +9876,24 @@ section .sectionContent,
   align-items: center;
   gap: 30px;
 }
+@media screen and (max-width: 576px) {
+  .filterWrapper {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 992px) {
   .filterWrapper {
     margin-left: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .filterWrapper .filterColumn {
+    width: 100%;
+  }
+  .filterWrapper .filterColumn .customSelect {
+    width: 100%;
   }
 }
 .filterWrapper .nice-select.customSelect {
@@ -9849,6 +9901,11 @@ section .sectionContent,
   box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
   min-width: 250px;
   height: 70px;
+}
+@media screen and (max-width: 576px) {
+  .filterWrapper .nice-select.customSelect {
+    height: 50px;
+  }
 }
 .filterWrapper .nice-select.customSelect .current {
   border-bottom: none;
@@ -9859,6 +9916,11 @@ section .sectionContent,
   height: 70px;
   width: 100%;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .filterWrapper .nice-select.customSelect .current {
+    height: 50px;
+  }
 }
 .filterWrapper .nice-select.customSelect .current:after {
   content: "";
