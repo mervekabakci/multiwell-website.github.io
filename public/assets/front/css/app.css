@@ -7422,6 +7422,37 @@ dialog.fullScreen .dialogCenter {
   width: 80px;
   border-radius: 6px 0 0 6px;
 }
+.searchWrapper.type2 {
+  width: auto;
+  min-width: 400px;
+  height: 50px;
+}
+@media screen and (max-width: 991.98px) {
+  .searchWrapper.type2 {
+    min-width: initial;
+  }
+}
+.searchWrapper.type2 .searchInputWrapper {
+  position: relative;
+  height: 50px;
+}
+.searchWrapper.type2 .searchInputWrapper:before {
+  content: "\e90e";
+  font-family: "customFont";
+  font-size: 24px;
+  color: var(--primary);
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+.searchWrapper.type2 .searchInputWrapper input {
+  font-size: 14px;
+  padding-left: 40px;
+  height: 50px;
+}
+.searchWrapper.type2 .searchInputWrapper input:focus {
+  height: 50px;
+}
 
 .searchResult {
   height: 400px;
@@ -7703,6 +7734,33 @@ dialog.fullScreen .dialogCenter {
   font-family: "GilroyRegular";
 }
 .searchWrapperInline .searchColumn .resultNotFound b {
+  font-family: "GilroySemibold";
+}
+
+.resultWrapper {
+  text-align: center;
+  background-color: var(--soft-light-pink);
+  padding: 50px;
+  border-radius: 8px;
+}
+.resultWrapper p {
+  font-size: 18px;
+  font-family: "GilroyMedium";
+}
+.resultWrapper p b {
+  font-family: "GilroySemibold";
+  color: var(--fifth);
+  font-size: 24px;
+}
+
+.resultCount {
+  font-size: 16px;
+  font-family: "GilroyMedium";
+}
+.resultCount b,
+.resultCount .count {
+  font-size: 20px;
+  color: var(--fifth);
   font-family: "GilroySemibold";
 }
 
@@ -9711,6 +9769,43 @@ section .sectionContent,
 }
 .nice-select.open .current:after {
   transform: translateY(-50%) rotate(2deg);
+}
+
+.filterWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 992px) {
+  .filterWrapper {
+    margin-left: auto;
+  }
+}
+.filterWrapper .nice-select {
+  border: none;
+  box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
+  min-width: 200px;
+}
+.filterWrapper .nice-select .current {
+  border-bottom: none;
+  font-size: 16px;
+  font-family: "GilroySemibold";
+  color: var(--primary);
+  display: flex;
+  width: 100%;
+}
+.filterWrapper .nice-select .current:after {
+  content: "";
+  border-width: 2px 2px 0 0;
+  border-color: #000000;
+  border-style: solid;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  transform: rotate(134deg);
+  transition: all 0.3s linear;
+  right: -20px;
+  transform-origin: top;
 }
 
 .textLink {
