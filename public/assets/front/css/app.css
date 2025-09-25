@@ -7182,6 +7182,11 @@ footer .footer .footerBottom .copyRight {
     transform: translateX(0);
   }
 }
+@media screen and (min-width: 992px) {
+  .quickMenuWrapper {
+    display: none;
+  }
+}
 
 dialog {
   border: none;
@@ -9154,7 +9159,7 @@ section .sectionContent,
   }
 }
 .subBanner .breadcrumbWrapper {
-  margin-bottom: auto;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 991.98px) {
   .subBanner .breadcrumbWrapper {
@@ -9593,6 +9598,14 @@ section .sectionContent,
 }
 .boxWrapper .boxes .box .linkList .fixBtn {
   justify-content: flex-start;
+}
+
+.videoWrapper .inlineVideoContainer {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.videoWrapper .inlineVideoContainer video {
+  width: 100%;
 }
 
 .dropdown .dropdown-button {
