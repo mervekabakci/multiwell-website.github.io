@@ -137,7 +137,7 @@ dialog {
     }
     .dialogContent {
       @media screen and (max-width: 991.98px) {
-        height: calc(100% - 60px);
+        height: calc(100% - 100px);
       }
     }
     .dialogCenter {
@@ -146,7 +146,8 @@ dialog {
       width: 100%;
       max-width: 800px;
       @media screen and (max-width: 991.98px) {
-        place-content: flex-start;
+        padding-top: 50px;
+        place-content: unset;
       }
     }
   }
