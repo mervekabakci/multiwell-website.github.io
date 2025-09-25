@@ -9313,21 +9313,6 @@ section .sectionContent,
     line-height: 25px;
   }
 }
-.paragraph .longText b {
-  color: var(--secondary);
-  font-weight: normal;
-  font-family: "GilroySemibold";
-}
-.paragraph ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.paragraph ul li::marker {
-  color: var(--fifth);
-  font-size: 20px;
-}
 .paragraph .longText a:not(.fixBtn),
 .paragraph .shortDesc a:not(.fixBtn),
 .paragraph .shorText a:not(.fixBtn) {
@@ -9360,6 +9345,13 @@ section .sectionContent,
     width: 0;
   }
 }
+.paragraph .longText b,
+.paragraph .shortDesc b,
+.paragraph .shorText b {
+  color: var(--secondary);
+  font-weight: normal;
+  font-family: "GilroySemibold";
+}
 .paragraph .longText h2,
 .paragraph .longText .title,
 .paragraph .shortDesc h2,
@@ -9390,6 +9382,46 @@ section .sectionContent,
 .paragraph .shorText h2:first-child,
 .paragraph .shorText .title:first-child {
   margin-top: 0;
+}
+.paragraph .longText strong,
+.paragraph .shortDesc strong,
+.paragraph .shorText strong {
+  font-weight: 600;
+  display: block;
+}
+.paragraph .longText ul, .paragraph .longText ol,
+.paragraph .shortDesc ul,
+.paragraph .shortDesc ol,
+.paragraph .shorText ul,
+.paragraph .shorText ol {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.paragraph .longText ul li::marker, .paragraph .longText ol li::marker,
+.paragraph .shortDesc ul li::marker,
+.paragraph .shortDesc ol li::marker,
+.paragraph .shorText ul li::marker,
+.paragraph .shorText ol li::marker {
+  color: var(--fifth);
+  font-size: 20px;
+}
+.paragraph .longText ol,
+.paragraph .shortDesc ol,
+.paragraph .shorText ol {
+  list-style-type: decimal;
+  padding-left: 30px;
+}
+.paragraph .longText ol li,
+.paragraph .shortDesc ol li,
+.paragraph .shorText ol li {
+  padding-block: 10px;
+}
+.paragraph .longText ol li::marker,
+.paragraph .shortDesc ol li::marker,
+.paragraph .shorText ol li::marker {
+  font-family: "GilroySemibold";
 }
 
 .customTabWrapper {
