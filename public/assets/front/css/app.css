@@ -1603,8 +1603,8 @@ video {
   justify-content: flex-start;
   color: var(--fifth);
   gap: 10px;
-  font-family: "GilroyMedium";
-  font-size: 14px;
+  font-family: "GilroySemibold";
+  font-size: 15px;
   margin-top: auto;
   padding-top: 20px;
   position: relative;
@@ -1612,13 +1612,14 @@ video {
 .playButton .icon-play {
   font-size: 8px;
   padding-left: 2px;
-  padding-top: 1px;
+  padding-top: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid var(--fifth);
   border-radius: 100%;
   width: 24px;
+  min-width: 24px;
   height: 24px;
   position: relative;
 }
@@ -1673,72 +1674,84 @@ figure {
 .line-clamp-1 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
 }
 
 .line-clamp-2 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
 
 .line-clamp-3 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
 
 .line-clamp-4 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
 }
 
 .line-clamp-5 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
 }
 
 .line-clamp-6 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
 }
 
 .line-clamp-7 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
 }
 
 .line-clamp-8 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 8;
 }
 
 .line-clamp-9 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 9;
 }
 
 .line-clamp-10 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 10;
 }
 
 .line-clamp-11 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 11;
 }
 
 .line-clamp-12 {
   display: -webkit-box;
   overflow: hidden;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 12;
 }
 
@@ -6005,6 +6018,10 @@ figure {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-podcast:before {
+  content: "\e93e";
+}
+
 .icon-yas-gruplari:before {
   content: "\e93a";
 }
@@ -7425,7 +7442,9 @@ dialog.fullScreen .dialogCenter {
 .searchWrapper.type2 {
   width: auto;
   min-width: 400px;
-  height: 50px;
+  height: 70px;
+  max-width: 600px;
+  width: 100%;
 }
 @media screen and (max-width: 991.98px) {
   .searchWrapper.type2 {
@@ -7434,7 +7453,7 @@ dialog.fullScreen .dialogCenter {
 }
 .searchWrapper.type2 .searchInputWrapper {
   position: relative;
-  height: 50px;
+  height: 70px;
 }
 .searchWrapper.type2 .searchInputWrapper:before {
   content: "\e90e";
@@ -7443,15 +7462,15 @@ dialog.fullScreen .dialogCenter {
   color: var(--primary);
   position: absolute;
   left: 10px;
-  top: 15px;
+  top: 25px;
 }
 .searchWrapper.type2 .searchInputWrapper input {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 40px;
-  height: 50px;
+  height: 70px;
 }
 .searchWrapper.type2 .searchInputWrapper input:focus {
-  height: 50px;
+  height: 70px;
 }
 
 .searchResult {
@@ -7754,8 +7773,9 @@ dialog.fullScreen .dialogCenter {
 }
 
 .resultCount {
-  font-size: 16px;
+  font-size: 15px;
   font-family: "GilroyMedium";
+  color: var(--gray-400);
 }
 .resultCount b,
 .resultCount .count {
@@ -8330,8 +8350,8 @@ section .sectionContent,
 }
 .cards.articleCards .card .card-title {
   font-family: "GilroySemibold";
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 25px;
   color: var(--tertiary);
   text-align: left;
   margin-top: 20px;
@@ -8804,10 +8824,12 @@ section .sectionContent,
 }
 .twiceWrapper .twiceContent {
   width: 47%;
+  padding-right: 3vw;
 }
 @media screen and (max-width: 991.98px) {
   .twiceWrapper .twiceContent {
     width: 100%;
+    padding-right: 0;
   }
 }
 .twiceWrapper .twiceContent:last-child {
@@ -9253,6 +9275,9 @@ section .sectionContent,
     color: var(--secondary);
   }
 }
+.subBanner .desc {
+  padding-left: 34px;
+}
 .subBanner .buttons {
   margin-top: auto;
 }
@@ -9265,10 +9290,14 @@ section .sectionContent,
   }
 }
 
+.paragraph .imageColumn {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 .paragraph .shorText {
   font-family: "GilroyBold";
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 37px;
   color: var(--black-800);
   padding-bottom: 15px;
 }
@@ -9389,7 +9418,8 @@ section .sectionContent,
   font-weight: 600;
   display: block;
 }
-.paragraph .longText ul, .paragraph .longText ol,
+.paragraph .longText ul,
+.paragraph .longText ol,
 .paragraph .shortDesc ul,
 .paragraph .shortDesc ol,
 .paragraph .shorText ul,
@@ -9399,7 +9429,8 @@ section .sectionContent,
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.paragraph .longText ul li::marker, .paragraph .longText ol li::marker,
+.paragraph .longText ul li::marker,
+.paragraph .longText ol li::marker,
 .paragraph .shortDesc ul li::marker,
 .paragraph .shortDesc ol li::marker,
 .paragraph .shorText ul li::marker,
@@ -9691,8 +9722,8 @@ section .sectionContent,
 }
 
 .videoWrapper .inlineVideoContainer {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .videoWrapper .inlineVideoContainer video {
   width: 100%;
@@ -9806,27 +9837,30 @@ section .sectionContent,
 .filterWrapper {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 @media screen and (min-width: 992px) {
   .filterWrapper {
     margin-left: auto;
   }
 }
-.filterWrapper .nice-select {
+.filterWrapper .nice-select.customSelect {
   border: none;
   box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
-  min-width: 200px;
+  min-width: 250px;
+  height: 70px;
 }
-.filterWrapper .nice-select .current {
+.filterWrapper .nice-select.customSelect .current {
   border-bottom: none;
   font-size: 16px;
-  font-family: "GilroySemibold";
+  font-family: "GilroyMedium";
   color: var(--primary);
   display: flex;
+  height: 70px;
   width: 100%;
+  align-items: center;
 }
-.filterWrapper .nice-select .current:after {
+.filterWrapper .nice-select.customSelect .current:after {
   content: "";
   border-width: 2px 2px 0 0;
   border-color: #000000;

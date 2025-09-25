@@ -114,33 +114,38 @@
 .filterWrapper {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   @media screen and (min-width: 992px) {
     margin-left: auto;
   }
   .nice-select {
-    border: none;
-    box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
-    min-width:200px;
-    .current {
-      border-bottom: none;
-      font-size: 16px;
-      font-family: "GilroySemibold";
-      color: var(--primary);
-      display: flex;
-      width: 100%;
-      &:after {
-        content: "";
-        border-width: 2px 2px 0 0;
-        border-color: #000000;
-        border-style: solid;
-        width: 8px;
-        height: 8px;
-        position: absolute;
-        transform: rotate(134deg);
-        transition: all 0.3s linear;
-        right: -20px;
-        transform-origin: top;
+    &.customSelect{
+      border: none;
+      box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
+      min-width:250px;
+      height: 70px;
+      .current {
+        border-bottom: none;
+        font-size: 16px;
+        font-family: "GilroyMedium";
+        color: var(--primary);
+        display: flex;
+        height: 70px;
+        width: 100%;
+        align-items: center;
+        &:after {
+          content: "";
+          border-width: 2px 2px 0 0;
+          border-color: #000000;
+          border-style: solid;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          transform: rotate(134deg);
+          transition: all 0.3s linear;
+          right: -20px;
+          transform-origin: top;
+        }
       }
     }
   }

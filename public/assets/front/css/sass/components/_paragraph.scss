@@ -1,8 +1,12 @@
 .paragraph {
+  .imageColumn {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
   .shorText {
     font-family: "GilroyBold";
-    font-size: 22px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 37px;
     color: var(--black-800);
     padding-bottom: 15px;
     @media screen and (max-width: 991.98px) {
@@ -94,7 +98,8 @@
       font-weight: 600;
       display: block;
     }
-    ul,ol {
+    ul,
+    ol {
       list-style-type: disc;
       padding-left: 20px;
       margin-top: 20px;
@@ -106,13 +111,13 @@
         }
       }
     }
-    ol{
+    ol {
       list-style-type: decimal;
       padding-left: 30px;
-      li{
+      li {
         padding-block: 10px;
-        &::marker{
-          font-family:'GilroySemibold';
+        &::marker {
+          font-family: "GilroySemibold";
         }
       }
     }

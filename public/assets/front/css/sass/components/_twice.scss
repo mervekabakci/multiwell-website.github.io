@@ -21,8 +21,11 @@
   }
   .twiceContent {
     width: 47%;
+    padding-right: 3vw;
+
     @media screen and (max-width: 991.98px) {
       width: 100%;
+      padding-right: 0;
     }
     &:last-child {
       margin-left: auto;

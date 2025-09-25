@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?xketgl');
-  src:  url('fonts/icomoon.eot?xketgl#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?xketgl') format('truetype'),
-    url('fonts/icomoon.woff?xketgl') format('woff'),
-    url('fonts/icomoon.svg?xketgl#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tybgf0');
+  src:  url('fonts/icomoon.eot?tybgf0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tybgf0') format('truetype'),
+    url('fonts/icomoon.woff?tybgf0') format('woff'),
+    url('fonts/icomoon.svg?tybgf0#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-podcast:before {
+  content: "\e93e";
+}
 .icon-yas-gruplari:before {
   content: "\e93a";
 }
