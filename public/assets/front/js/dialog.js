@@ -15,7 +15,10 @@ allDialogs.forEach((dialog) => {
   });
   const closeBtn = dialog.querySelector(".closeBtn");
   if (closeBtn) {
-    closeBtn.addEventListener("click", () => dialog.close());
+    closeBtn.addEventListener("click", () => {
+      dialog.close();
+      document.querySelector("body").style.overflow = "unset";
+    });
   }
 });
 
@@ -27,6 +30,7 @@ document.querySelectorAll("[data-dialog]").forEach((btn) => {
     const dialog = document.getElementById(dialogId);
     if (dialog) {
       dialog.showModal();
+      document.querySelector("body").style.overflow = "hidden";
     }
   });
 });

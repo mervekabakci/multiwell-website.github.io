@@ -8,6 +8,7 @@
   img {
     min-width: 100%;
     max-width: 100%;
+    min-height: 100%;
     object-fit: cover;
     display: flex;
     align-items: center;
@@ -329,6 +330,13 @@ $step: 4px;
       .m-#{$name}-#{$i}  { margin: $i * $step !important; }
       .mx-#{$name}-#{$i} { margin-left: $i * $step !important; margin-right: $i * $step !important; }
       .my-#{$name}-#{$i} { margin-top: $i * $step !important; margin-bottom: $i * $step !important; }
+
+      @each $pair in $spacing-directions {
+        $short: list.nth($pair, 1);
+        $full: list.nth($pair, 2);
+        .p#{$short}-#{$name}-#{$i} { padding-#{$full}: $i * $step !important; }
+        .m#{$short}-#{$name}-#{$i} { margin-#{$full}:  $i * $step !important; }
+      }
     }
   }
 }
@@ -355,7 +363,11 @@ $step: 4px;
 .pi { padding-inline: 70px; }
 .pi-2 { padding-inline: 100px; }
 
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1600px) {
+  .pi, .pi-2 { padding-inline: 50px; }
+}
+
+@media screen and (max-width: 1280px) {
   .pi, .pi-2 { padding-inline: 30px; }
 }
 

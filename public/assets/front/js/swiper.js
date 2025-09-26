@@ -20,9 +20,9 @@ document.querySelectorAll(".featuredWrapper").forEach(function (wrapper) {
         slidesPerView: 3,
         spaceBetween: 15,
       },
-      1200: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+      1100: {
+        slidesPerView: 5,
+        spaceBetween: 15,
       },
       1440: {
         slidesPerView: 5,
@@ -54,7 +54,11 @@ document.querySelectorAll(".quadWrapper").forEach(function (wrapper) {
         slidesPerView: 3,
         spaceBetween: 15,
       },
-      1200: {
+      1100: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1300: {
         slidesPerView: 4,
         spaceBetween: 60,
       },
@@ -98,14 +102,18 @@ document.querySelectorAll(".commentsWrapper").forEach(function (wrapper) {
         spaceBetween: 15,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 15,
       },
       1200: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 30,
       },
       1440: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+      },
+      1700: {
         slidesPerView: 5,
         spaceBetween: 60,
       },
@@ -133,7 +141,7 @@ document.querySelectorAll(".expertsWrapper").forEach(function (wrapper) {
         spaceBetween: 15,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 15,
       },
       1200: {

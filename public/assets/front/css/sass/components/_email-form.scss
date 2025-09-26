@@ -2,6 +2,14 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
   padding: 50px;
   margin-block: 40px;
+  @media screen and (max-width: 1600px) {
+    padding-block: 40px;
+    margin-block: 30px;
+  }
+  @media screen and (max-width: 1440px) {
+    padding-block: 30px;
+    margin-block: 25px;
+  }
   @media screen and (max-width: 991.98px) {
     padding: 20px 16px;
     margin-block: 20px;
@@ -14,6 +22,14 @@
     font-size: 30px;
     line-height: 40px;
     color: var(--primary);
+    @media screen and (max-width: 1600px) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+    @media screen and (max-width: 1440px) {
+      font-size: 22px;
+      line-height: 32px;
+    }
     @media screen and (max-width: 991.98px) {
       font-size: 18px;
       line-height: 24px;
@@ -25,6 +41,9 @@
     line-height: 30px;
     color: var(--primary);
     margin-top: 16px;
+    @media screen and (max-width: 1600px) {
+      line-height: 24px;
+    }
     @media screen and (max-width: 991.98px) {
       font-size: 14px;
       margin-top: 10px;
@@ -34,6 +53,12 @@
   .form {
     margin-top: 30px;
     max-width: 450px;
+    @media screen and (max-width: 1600px) {
+      margin-top: 25px;
+    }
+    @media screen and (max-width: 1440px) {
+      margin-top: 20px;
+    }
     @media screen and (max-width: 991.98px) {
       margin-top: 15px;
     }

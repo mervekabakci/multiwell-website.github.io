@@ -15,6 +15,9 @@ footer {
         gap: 30px;
         & > .menu-item {
           width: calc(16.6666% - 25px);
+          @media screen and (max-width: 1280px) {
+            width: calc(25% - 23px);
+          }
           @media screen and (max-width: 991.98px) {
             width: calc(50% - 15px);
           }
@@ -30,12 +33,26 @@ footer {
             color: var(--white);
             display: inline-block;
             margin-bottom: 25px;
+            @media screen and (max-width: 1600px) {
+              font-size: 17px;
+            }
+            @media screen and (max-width: 1440px) {
+              font-size: 16px;
+            }
+            @media screen and (max-width: 1280px) {
+              font-size: 15px;
+              margin-bottom: 5px;
+            }
             @media screen and (max-width: 991.98px) {
               margin-bottom: 10px;
+              font-size: 14px;
             }
           }
           .menu-item {
             padding-block: 10px;
+            @media screen and (max-width: 1280px) {
+              padding-block: 5px;
+            }
             @media screen and (max-width: 991.98px) {
               padding-block: 7px;
             }
@@ -46,7 +63,7 @@ footer {
               position: relative;
               transition: all 0.3s linear;
               display: inline-block;
-              @media screen and (max-width: 991.98px) {
+              @media screen and (max-width: 1280px) {
                 font-size: 14px;
               }
               &:before {
@@ -107,6 +124,12 @@ footer {
         color: var(--white);
         font-family: "GilroyRegular";
         font-size: 16px;
+        @media screen and (max-width: 1440px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 1280px) {
+          font-size: 12px;
+        }
       }
     }
   }

@@ -12,10 +12,16 @@ header {
     display: flex;
     align-items: center;
     gap: 30px;
+    @media screen and (max-width: 1124px) {
+      gap: 20px;
+    }
     .logo {
       display: flex;
       align-items: center;
       gap: 18px;
+      @media screen and (max-width: 1124px) {
+        gap: 10px;
+      }
       @media screen and (max-width: 991.98px) {
         position: relative;
         z-index: 999;
@@ -23,6 +29,9 @@ header {
       }
       img {
         width: 40px;
+        @media screen and (max-width: 1124px) {
+          width: 30px;
+        }
         @media screen and (max-width: 991.98px) {
           width: 26px;
         }
@@ -31,8 +40,12 @@ header {
         font-weight: 500;
         font-size: 20px;
         color: var(--primary);
-        @media screen and (max-width: 991.98px) {
+        @media screen and (max-width: 1600px) {
           font-size: 16px;
+          padding-top: 6px;
+        }
+        @media screen and (max-width: 1124px) {
+          font-size: 15px;
         }
       }
     }
@@ -51,6 +64,10 @@ header {
     transition: all 0.3s linear;
     .customIcon {
       font-size: 30px;
+      @media screen and (max-width: 1600px) {
+        font-size: 24px;
+        margin-top: 10px;
+      }
       @media screen and (max-width: 991.98px) {
         font-size: 20px;
       }

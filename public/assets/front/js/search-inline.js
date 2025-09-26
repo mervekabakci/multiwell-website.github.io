@@ -23,7 +23,7 @@ if (searchWrapper) {
     }
     const elementY = searchWrapper.getBoundingClientRect().top + window.scrollY;
 
-    const targetY = elementY - 110;
+    const targetY = elementY - 50;
 
     window.scrollTo({
       top: targetY,
