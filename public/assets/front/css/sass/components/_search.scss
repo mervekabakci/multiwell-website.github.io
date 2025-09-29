@@ -14,6 +14,10 @@
     display: flex;
     align-items: stretch;
     height: 100px;
+    @media screen and (max-width: 1440px) {
+      height: 70px;
+    }
+
     @media screen and (max-width: 991.98px) {
       height: 60px;
     }
@@ -33,6 +37,11 @@
       @media screen and (max-width: 1600px) {
         font-size: 20px;
       }
+      @media screen and (max-width: 1440px) {
+        font-size: 18px;
+        height: 50px;
+      }
+
       @media screen and (max-width: 991.98px) {
         height: 45px;
         font-size: 16px;
@@ -49,6 +58,9 @@
       }
       &:focus {
         height: 100px;
+        @media screen and (max-width: 1440px) {
+          height: 70px;
+        }
         @media screen and (max-width: 991.98px) {
           height: 60px;
         }
@@ -76,11 +88,14 @@
     height: 70px;
     max-width: 600px;
     width: 100%;
-    @media screen and (max-width:1600px) {
+    @media screen and (max-width: 1600px) {
     }
     @media screen and (max-width: 991.98px) {
       min-width: 100%;
       width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+      height: 50px;
     }
     .searchInputWrapper {
       position: relative;
@@ -125,10 +140,16 @@
   @media screen and (max-height: 800px) {
     max-height: 300px;
   }
-  @media screen and (max-width: 991.98px) {
-    // height: calc(100% - 100px);
-    max-height: 300px;
+  @media screen and (max-width: 1440px) {
+    @media screen and (max-height: 800px) {
+      max-height: 220px;
+    }
   }
+  @media screen and (max-width: 1124px) {
+    // height: calc(100% - 100px);
+    max-height: 220px;
+  }
+
   &::-webkit-scrollbar {
     background-color: var(--gray-200);
     border-radius: 8px;
@@ -148,9 +169,15 @@
     .searchGroup {
       padding-bottom: 30px;
       padding-right: 10px;
+      @media screen and (max-width: 1124px) {
+        padding-bottom: 15px;
+      }
       &:not(:first-child) {
         padding-top: 30px;
         border-top: 1px solid rgba(0, 0, 0, 0.05);
+        @media screen and (max-width: 1124px) {
+          padding-top: 15px;
+        }
       }
     }
     .searchBoxTitle {
@@ -158,7 +185,7 @@
       color: var(--tertiary);
       margin-bottom: 10px;
       font-weight: 600;
-      @media screen and (max-width: 991.98px) {
+      @media screen and (max-width: 1124px) {
         font-size: 16px;
       }
     }
@@ -176,12 +203,13 @@
         box-shadow: 9px 0px 19px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
         color: var(--tertiary);
-        @media screen and (max-width: 991.98px) {
-          padding: 16px;
+        @media screen and (max-width: 1124px) {
+          padding: 10px 16px;
+          gap: 10px;
         }
         .customIcon {
           font-size: 20px;
-          @media screen and (max-width: 991.98px) {
+          @media screen and (max-width: 1124px) {
             font-size: 16px;
           }
         }
@@ -194,7 +222,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          @media screen and (max-width: 991.98px) {
+          @media screen and (max-width: 1124px) {
             max-width: 25px;
           }
           img {
@@ -213,7 +241,7 @@
           border: 1px solid rgba(0, 0, 0, 0.05);
           border-radius: 4px;
           overflow: hidden;
-          @media screen and (max-width: 991.98px) {
+          @media screen and (max-width: 1124px) {
             width: 40px;
             min-width: 40px;
             height: 40px;
@@ -241,7 +269,7 @@
             font-size: 16px;
             font-weight: 600;
             transition: all 0.3s linear;
-            @media screen and (max-width: 991.98px) {
+            @media screen and (max-width: 1124px) {
               font-size: 15px;
             }
           }
@@ -250,7 +278,7 @@
             font-size: 14px;
             font-weight: 400;
             transition: all 0.3s linear;
-            @media screen and (max-width: 991.98px) {
+            @media screen and (max-width: 1124px) {
               font-size: 13px;
             }
           }
@@ -398,7 +426,7 @@
       width: 100%;
       padding: 30px;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
-      @media screen and (max-width: 991.98px) {
+      @media screen and (max-width: 1124px) {
         padding: 20px 16px;
       }
       .item {

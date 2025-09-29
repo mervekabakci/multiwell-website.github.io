@@ -9306,6 +9306,11 @@ dialog .dialogHead {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
+@media screen and (max-width: 1440px) {
+  dialog .dialogHead {
+    padding: 0 0 10px;
+  }
+}
 @media screen and (max-width: 991.98px) {
   dialog .dialogHead {
     padding: 0;
@@ -9363,6 +9368,7 @@ dialog .closeBtn {
   justify-content: center;
   border: 1px solid var(--fifth);
   transition: all 0.3s linear;
+  box-sizing: border-box;
 }
 @media screen and (min-width: 992px) {
   dialog .closeBtn:hover {
@@ -9375,9 +9381,9 @@ dialog .dialogContent {
   padding: 1rem;
   position: relative;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1440px) {
   dialog .dialogContent {
-    padding: 1rem 0;
+    padding: 10px 0;
   }
 }
 dialog .dialogContent p {
@@ -9411,7 +9417,7 @@ dialog.fullScreen .dialogTitle {
   color: var(--tertiary);
   font-size: 32px;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   dialog.fullScreen .dialogTitle {
     font-size: 18px;
   }
@@ -9460,6 +9466,11 @@ dialog.fullScreen .dialogCenter {
   align-items: stretch;
   height: 100px;
 }
+@media screen and (max-width: 1440px) {
+  .searchWrapper .searchInputWrapper {
+    height: 70px;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .searchWrapper .searchInputWrapper {
     height: 60px;
@@ -9483,6 +9494,12 @@ dialog.fullScreen .dialogCenter {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 1440px) {
+  .searchWrapper .searchInputWrapper input {
+    font-size: 18px;
+    height: 50px;
+  }
+}
 @media screen and (max-width: 991.98px) {
   .searchWrapper .searchInputWrapper input {
     height: 45px;
@@ -9503,6 +9520,11 @@ dialog.fullScreen .dialogCenter {
 }
 .searchWrapper .searchInputWrapper input:focus {
   height: 100px;
+}
+@media screen and (max-width: 1440px) {
+  .searchWrapper .searchInputWrapper input:focus {
+    height: 70px;
+  }
 }
 @media screen and (max-width: 991.98px) {
   .searchWrapper .searchInputWrapper input:focus {
@@ -9531,6 +9553,11 @@ dialog.fullScreen .dialogCenter {
   .searchWrapper.type2 {
     min-width: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .searchWrapper.type2 {
+    height: 50px;
   }
 }
 .searchWrapper.type2 .searchInputWrapper {
@@ -9586,9 +9613,14 @@ dialog.fullScreen .dialogCenter {
     max-height: 300px;
   }
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1440px) and (max-height: 800px) {
   .searchResult {
-    max-height: 300px;
+    max-height: 220px;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .searchResult {
+    max-height: 220px;
   }
 }
 .searchResult::-webkit-scrollbar {
@@ -9610,9 +9642,19 @@ dialog.fullScreen .dialogCenter {
   padding-bottom: 30px;
   padding-right: 10px;
 }
+@media screen and (max-width: 1124px) {
+  .searchResult .searchBox .searchGroup {
+    padding-bottom: 15px;
+  }
+}
 .searchResult .searchBox .searchGroup:not(:first-child) {
   padding-top: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+@media screen and (max-width: 1124px) {
+  .searchResult .searchBox .searchGroup:not(:first-child) {
+    padding-top: 15px;
+  }
 }
 .searchResult .searchBox .searchBoxTitle {
   font-size: 20px;
@@ -9620,7 +9662,7 @@ dialog.fullScreen .dialogCenter {
   margin-bottom: 10px;
   font-weight: 600;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchBoxTitle {
     font-size: 16px;
   }
@@ -9641,15 +9683,16 @@ dialog.fullScreen .dialogCenter {
   border-radius: 6px;
   color: var(--tertiary);
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item {
-    padding: 16px;
+    padding: 10px 16px;
+    gap: 10px;
   }
 }
 .searchResult .searchBox .searchList .item .customIcon {
   font-size: 20px;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item .customIcon {
     font-size: 16px;
   }
@@ -9660,7 +9703,7 @@ dialog.fullScreen .dialogCenter {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item .icon {
     max-width: 25px;
   }
@@ -9682,7 +9725,7 @@ dialog.fullScreen .dialogCenter {
   border-radius: 4px;
   overflow: hidden;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item .iconImage {
     width: 40px;
     min-width: 40px;
@@ -9711,7 +9754,7 @@ dialog.fullScreen .dialogCenter {
   font-weight: 600;
   transition: all 0.3s linear;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item .desc .name {
     font-size: 15px;
   }
@@ -9722,7 +9765,7 @@ dialog.fullScreen .dialogCenter {
   font-weight: 400;
   transition: all 0.3s linear;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchResult .searchBox .searchList .item .desc .title {
     font-size: 13px;
   }
@@ -9884,7 +9927,7 @@ dialog.fullScreen .dialogCenter {
   padding: 30px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1124px) {
   .searchWrapperInline .searchColumn .searchResult {
     padding: 20px 16px;
   }
@@ -10587,7 +10630,7 @@ section .sectionContent,
 }
 @media screen and (max-width: 991.98px) {
   .cards:not(.swiper).quad .card {
-    width: calc(50% - 30px);
+    width: calc(50% - 16px);
     border: 1px solid var(--gray-100);
   }
 }
@@ -10604,7 +10647,7 @@ section .sectionContent,
 }
 @media screen and (max-width: 1600px) {
   .cards:not(.swiper).third .card {
-    width: calc(33.3% - 22px);
+    width: calc(33.3% - 34px);
   }
 }
 @media screen and (max-width: 1440px) {
@@ -11761,6 +11804,7 @@ section .sectionContent,
 }
 .subBanner .textLink {
   font-size: 16px;
+  padding-left: 33px;
 }
 @media screen and (max-width: 991.98px) {
   .subBanner .textLink {
@@ -11962,6 +12006,17 @@ section .sectionContent,
 .paragraph .shorText ol li::marker {
   color: var(--fifth);
   font-size: 20px;
+}
+@media screen and (max-width: 991.98px) {
+  .paragraph .longText ul li::marker,
+  .paragraph .longText ol li::marker,
+  .paragraph .shortDesc ul li::marker,
+  .paragraph .shortDesc ol li::marker,
+  .paragraph .shorText ul li::marker,
+  .paragraph .shorText ol li::marker {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 .paragraph .longText ol,
 .paragraph .shortDesc ol,
