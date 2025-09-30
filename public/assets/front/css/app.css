@@ -15145,6 +15145,12 @@ dialog.fullScreen .dialogCenter {
     gap: 15px;
   }
 }
+.homeBanner .desc .category {
+  font-size: 15px;
+  color: var(--gray);
+  opacity: 0.7;
+  font-family: "GilroySemibold";
+}
 .homeBanner .desc .title {
   font-family: "GilroyRegular";
   color: var(--white);
@@ -17528,6 +17534,10 @@ section .sectionContent,
   .boxWrapper .boxes .box .cards.cardList .cardItem a.card-body:hover .card-title {
     color: var(--secondary);
   }
+}
+.boxWrapper .boxes .box .cards.cardList.type2 .card .card-image-start {
+  width: 30%;
+  min-width: 30%;
 }
 .boxWrapper .boxes .box .linkList {
   display: flex;

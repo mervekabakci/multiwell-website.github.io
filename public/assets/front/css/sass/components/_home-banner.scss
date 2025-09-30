@@ -34,7 +34,12 @@
       padding-top: 20px;
       gap: 15px;
     }
-
+    .category {
+      font-size: 15px;
+      color: var(--gray);
+      opacity: 0.7;
+      font-family: "GilroySemibold";
+    }
     .title {
       font-family: "GilroyRegular";
       color: var(--white);
