@@ -71,38 +71,38 @@
               }
             }
           }
-        }
-        .cardItem {
-          border-bottom: 1px solid #cccccc;
-          padding-bottom: 10px;
-          .card-body {
-            min-height: 60px;
-            display: inline-flex;
-            width: 100%;
-            align-items: center;
-            @media screen and (max-width: 991.98px) {
-              min-height: 45px;
+          .cardItem {
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 10px;
+            .card-body {
+              min-height: 60px;
+              display: inline-flex;
+              width: 100%;
+              align-items: center;
+              @media screen and (max-width: 991.98px) {
+                min-height: 45px;
+              }
+              .card-title {
+                font-size: 16px;
+                line-height: 32px;
+                font-family: "GilroyMedium";
+                @media screen and (max-width: 991.98px) {
+                  font-size: 14px;
+                  line-height: 22px;
+                }
+              }
             }
-          }
-          .card-title {
-            font-size: 16px;
-            line-height: 32px;
-            font-family: "GilroyMedium";
-            @media screen and (max-width: 991.98px) {
-              font-size: 14px;
-              line-height: 22px;
-            }
-          }
-          a {
-            &.card-body {
-              @media screen and (min-width: 992px) {
-                &:hover {
-                  background-color: var(--white);
-                  padding-left: 10px;
-                  padding-right: 10px;
-                  border-radius: 6px;
-                  .card-title {
-                    color: var(--secondary);
+            a {
+              &.card-body {
+                @media screen and (min-width: 992px) {
+                  &:hover {
+                    background-color: var(--white);
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 6px;
+                    .card-title {
+                      color: var(--secondary);
+                    }
                   }
                 }
               }
@@ -114,7 +114,7 @@
         display: flex;
         flex-direction: column;
         gap: 26px;
-        @media screen and (max-width:991.98px) {
+        @media screen and (max-width: 991.98px) {
           gap: 10px;
         }
         .fixBtn {

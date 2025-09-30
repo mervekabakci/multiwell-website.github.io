@@ -1,0 +1,112 @@
+.quizFormWrapper {
+  .progressbar {
+    & > span {
+      display: inline-flex;
+      padding: 5px 20px;
+      align-items: center;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 30px;
+      letter-spacing: 1px;
+    }
+  }
+  .formStep {
+    display: none;
+    padding-top: 40px;
+    .question {
+      font-family: "GilroyBold";
+      font-size: 24px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    &.active {
+      display: block;
+    }
+    &.answered {
+      opacity: 0.7;
+    }
+    .answers {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 20px;
+      .option {
+        border: 1px solid var(--secondary);
+        background-color: var(--secondary);
+        padding: 4px 24px;
+        height: 50px;
+        display: flex;
+        color: var(--black);
+        align-items: center;
+        font-family: "GilroyMedium";
+        cursor: pointer;
+        transition: all 0.3s linear;
+        border-radius: 6px;
+        & > input {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &:has(input:checked) {
+          background-color: var(--red);
+        }
+        @media screen and (min-width: 992px) {
+          &:hover {
+            background-color: var(--white);
+          }
+        }
+        &.selected {
+          background: #d0f0ff;
+        }
+      }
+    }
+    .resultStep {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+      .resultTitle {
+        font-size: 25px;
+        line-height: 37px;
+        color: var(--tertiary);
+        font-family: "GilroySemibold";
+      }
+      .resultText {
+        font-size: 18px;
+        line-height: 25px;
+        color: var(--black-900);
+        font-family: "GilroyRegular";
+      }
+    }
+  }
+
+  .quizResult {
+    padding: 20px 0;
+    background: #f5f5f5;
+
+    .title {
+      font-size: 24px;
+      color: var(--primary);
+      font-family: "GilroySemibold";
+    }
+    .resultContent {
+      padding-top: 50px;
+    }
+    .resultText {
+      font-family: "GilroyBold";
+      font-size: 26px;
+      color: var(--tertiary);
+      line-height: 37px;
+      .longText{
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .imageColumn {
+        margin-block: 50px;
+      }
+    }
+  }
+}
+.getTestButton {
+  cursor: pointer;
+}

@@ -306,13 +306,13 @@ $step: 4px;
 @each $pair in $spacing-directions {
   $short: list.nth($pair, 1);
   $full: list.nth($pair, 2);
-  @for $i from 0 through 12 {
+  @for $i from 0 through 24 {
     .p#{$short}-#{$i} { padding-#{$full}: $i * $step !important; }
     .m#{$short}-#{$i} { margin-#{$full}:  $i * $step !important; }
   }
 }
 
-@for $i from 1 through 12 {
+@for $i from 1 through 24 {
   .p-#{$i}  { padding: $i * $step !important; }
   .py-#{$i} { padding-top: $i * $step !important; padding-bottom: $i * $step !important; }
   .px-#{$i} { padding-left: $i * $step !important; padding-right: $i * $step !important; }
@@ -323,7 +323,7 @@ $step: 4px;
 
 @each $name, $bp in $breakpoints {
   @media (min-width: $bp) {
-    @for $i from 0 through 12 {
+    @for $i from 0 through 24 {
       .p-#{$name}-#{$i}  { padding: $i * $step !important; }
       .px-#{$name}-#{$i} { padding-left: $i * $step !important; padding-right: $i * $step !important; }
       .py-#{$name}-#{$i} { padding-top: $i * $step !important; padding-bottom: $i * $step !important; }
@@ -345,6 +345,8 @@ $step: 4px;
 .my-auto { margin-top: auto !important; margin-bottom: auto !important;}
 .ms-auto { margin-left: auto !important;}
 .me-auto { margin-right: auto !important;}
+.mt-auto { margin-top: auto !important;}
+.mbt-auto { margin-bottom: auto !important;}
 
 
 // Padding block

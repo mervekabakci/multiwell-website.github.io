@@ -30,6 +30,12 @@
       line-height: 32px;
     }
   }
+  .category {
+    font-size: 13px;
+    color: var(--gray-400);
+    font-family: "GilroySemibold";
+    text-align: left;
+  }
   .card-text {
     font-family: "GilroyMedium";
     font-size: 18px;
@@ -185,8 +191,11 @@
       margin-block: 20px;
     }
     &.quad {
+      gap: 80px 60px;
+
       .card {
         width: calc(25% - 46px);
+        border: 1px solid var(--gray);
         @media screen and (max-width: 1600px) {
           width: calc(25% - 38px);
         }
@@ -329,7 +338,7 @@
       }
       .card-title {
         font-family: "GilroySemibold";
-        font-size: 15px;
+        font-size: 18px;
         line-height: 22px;
         color: var(--tertiary);
         text-align: left;
@@ -342,6 +351,9 @@
         @media screen and (max-width: 991.98px) {
           padding: 10px 16px;
         }
+      }
+      .card-text {
+        transition: all 0.3s linear;
       }
       @media screen and (min-width: 992px) {
         &:hover {
@@ -365,6 +377,46 @@
                 color: var(--secondary);
                 border-color: var(--secondary);
               }
+            }
+          }
+        }
+      }
+    }
+    &.type2 {
+      .card {
+        .card-image-start {
+          width: 400px;
+          min-width: 400px;
+          @media screen and (max-width: 1124px) {
+            width: 230px;
+            min-width: 230px;
+          }
+          @media screen and (max-width: 576px) {
+            width: 100%;
+            min-width: initial;
+          }
+        }
+        .card-title {
+          font-size: 24px;
+          line-height: 32px;
+          margin-top: 0;
+        }
+        .card-text {
+          text-align: left;
+          padding-top: 10px;
+          font-size: 15px;
+          line-height: 25px;
+          color: var(--black-700);
+        }
+        @media screen and (min-width: 992px) {
+          &:hover {
+            .card-text {
+              color: var(--secondary);
+            }
+            .fixBtn {
+              background-color: var(--secondary) !important;
+              color: var(--white) !important;
+              border-color: var(--secondary) !important;
             }
           }
         }

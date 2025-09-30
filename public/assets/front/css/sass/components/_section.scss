@@ -18,8 +18,10 @@ section,
   }
   &.pageSection {
     margin-top: 50px;
+    padding-bottom: 100px;
     @media screen and (max-width: 1440px) {
       margin-top: 30px;
+      padding-bottom: 50px;
     }
   }
 
@@ -27,7 +29,7 @@ section,
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap:30px;
+    gap: 30px;
     @media screen and (max-width: 576px) {
       flex-direction: column;
       gap: 10px;
