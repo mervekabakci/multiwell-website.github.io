@@ -347,7 +347,9 @@ $step: 4px;
 .me-auto { margin-right: auto !important;}
 .mt-auto { margin-top: auto !important;}
 .mbt-auto { margin-bottom: auto !important;}
-
+.mb-0{
+  margin-block: 0!important;
+}
 
 // Padding block
 .pb { padding-block: 35px; }

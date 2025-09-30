@@ -140,11 +140,11 @@ document.querySelectorAll(".expertsWrapper").forEach(function (wrapper) {
         slidesPerView: 2,
         spaceBetween: 15,
       },
-      768: {
-        slidesPerView: 4,
+      800: {
+        slidesPerView: 3,
         spaceBetween: 15,
       },
-      1200: {
+      1100: {
         slidesPerView: 4,
         spaceBetween: 30,
       },

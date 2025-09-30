@@ -235,6 +235,11 @@
         }
       }
     }
+    &.half {
+      .card {
+        width: calc(50% - 31px);
+      }
+    }
   }
   &.articleCards {
     .card {

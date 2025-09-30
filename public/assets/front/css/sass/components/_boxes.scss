@@ -50,6 +50,9 @@
                 font-family: "GilroyRegular";
                 color: var(--black-800);
                 transition: all 0.3s linear;
+                &.active {
+                  color: var(--fifth);
+                }
                 @media screen and (min-width: 992px) {
                   position: relative;
                   // &:after {
@@ -108,9 +111,9 @@
               }
             }
           }
-          &.type2{
-            .card{
-              .card-image-start{
+          &.type2 {
+            .card {
+              .card-image-start {
                 width: 30%;
                 min-width: 30%;
               }
