@@ -15017,11 +15017,28 @@ dialog.fullScreen .dialogCenter {
     margin-bottom: 15px;
   }
 }
+.searchWrapperInline .searchColumn:before {
+  content: "\e90e";
+  font-family: "customFont" !important;
+  font-family: "customFont" !important;
+  position: absolute;
+  color: var(--gray-400);
+  top: 27px;
+  left: 16px;
+  font-size: 22px;
+}
+@media screen and (max-width: 991.98px) {
+  .searchWrapperInline .searchColumn:before {
+    top: 20px;
+    left: 16px;
+    font-size: 22px;
+  }
+}
 .searchWrapperInline .searchColumn input {
   background-color: var(--white);
   width: 100%;
   height: 80px;
-  padding: 0 20px;
+  padding: 0 20px 0 50px;
   font-size: 16px;
 }
 @media screen and (max-width: 1600px) {
@@ -15038,7 +15055,7 @@ dialog.fullScreen .dialogCenter {
 @media screen and (max-width: 991.98px) {
   .searchWrapperInline .searchColumn input {
     height: 60px;
-    padding: 0 16px;
+    padding: 0 16px 0 45px;
     font-size: 13px;
   }
 }
@@ -15389,6 +15406,10 @@ section .sectionHead p a:after,
   transition: all 0.3s linear;
 }
 @media screen and (min-width: 992px) {
+  section .sectionHead p a:hover,
+  .section .sectionHead p a:hover {
+    color: var(--fifth);
+  }
   section .sectionHead p a:hover:after,
   .section .sectionHead p a:hover:after {
     width: 0;
@@ -15840,12 +15861,18 @@ section .sectionContent,
   color: var(--tertiary);
   text-align: left;
   margin-top: 20px;
+  min-height: 115px;
 }
 @media screen and (max-width: 1600px) {
   .cards.articleCards .card .card-title {
     margin-top: 10px;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .cards.articleCards .card .card-title {
+    min-height: 75px;
   }
 }
 .cards.articleCards .card .card-body {
@@ -16016,7 +16043,7 @@ section .sectionContent,
   }
 }
 .cards-button .card-link {
-  justify-content: flex-start;
+  color: var(--black-600);
 }
 @media screen and (max-width: 991.98px) {
   .cards-button .card-link {
@@ -16026,6 +16053,11 @@ section .sectionContent,
 @media screen and (max-width: 576px) {
   .cards-button .card-link {
     width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cards-button .card-link:hover {
+    color: var(--black-900);
   }
 }
 
@@ -16101,6 +16133,17 @@ section .sectionContent,
   .quadSlider {
     padding-left: 30px;
     padding-right: 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+.quadSlider.cards .card-text {
+  min-height: 90px;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 576px) {
+  .quadSlider.cards .card-text {
+    min-height: 60px;
   }
 }
 
@@ -16384,7 +16427,7 @@ section .sectionContent,
 }
 .portalWrapper .title {
   font-family: "GilroySemibold";
-  color: var(--white);
+  color: var(--primary);
   font-size: 24px;
   padding-top: 16px;
 }
@@ -17464,6 +17507,7 @@ section .sectionContent,
 .emailWrapper .form input[type=email] {
   height: 56px;
   width: 100%;
+  background-color: var(--gray);
 }
 @media screen and (max-width: 991.98px) {
   .emailWrapper .form input[type=email] {
@@ -17534,6 +17578,7 @@ section .sectionContent,
 }
 .boxWrapper .boxes .box .cards.cardList .card-body .card-text a.active {
   color: var(--fifth);
+  font-family: "GilroySemibold";
 }
 @media screen and (min-width: 992px) {
   .boxWrapper .boxes .box .cards.cardList .card-body .card-text a {
@@ -17670,7 +17715,7 @@ section .sectionContent,
   border-radius: 4px;
 }
 .nice-select .list::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: var(--gray-400);
   width: 6px;
   border-radius: 4px;
 }
@@ -17695,22 +17740,18 @@ section .sectionContent,
   background-color: var(--fourth) !important;
   color: var(--white) !important;
 }
-.nice-select.counterSelect .list {
-  width: calc(100% - 145px);
-}
-@media screen and (max-width: 991.98px) {
-  .nice-select.counterSelect .list {
-    width: 100%;
-  }
-}
 .nice-select.counterSelect .list .option {
   font-size: 18px;
   padding: 10px 10px;
   letter-spacing: 1.5px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 @media screen and (max-width: 991.98px) {
   .nice-select.counterSelect .list .option {
     font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 .nice-select.open .current:after {
@@ -17801,6 +17842,7 @@ section .sectionContent,
 }
 .textLink .text {
   position: relative;
+  transition: all 0.3s linear;
 }
 .textLink .text:after {
   display: inline-flex;
@@ -17816,6 +17858,12 @@ section .sectionContent,
   font-size: 22px;
 }
 @media screen and (min-width: 992px) {
+  .textLink:not(.notHover):hover {
+    color: var(--fifth);
+  }
+  .textLink:not(.notHover):hover .text {
+    color: var(--fifth);
+  }
   .textLink:not(.notHover):hover .text:after {
     width: 0;
   }
@@ -18084,7 +18132,6 @@ section .sectionContent,
 }
 .quizFormWrapper .quizResult {
   padding: 20px 0;
-  background: #f5f5f5;
 }
 .quizFormWrapper .quizResult .title {
   font-size: 24px;

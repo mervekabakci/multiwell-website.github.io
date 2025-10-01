@@ -83,6 +83,7 @@ section,
         }
         @media screen and (min-width: 992px) {
           &:hover {
+            color: var(--fifth);
             &:after {
               width: 0;
             }

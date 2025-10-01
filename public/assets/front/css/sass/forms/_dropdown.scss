@@ -57,7 +57,7 @@
       border-radius: 4px;
     }
     &::-webkit-scrollbar-thumb {
-      background-color: var(--primary);
+      background-color: var(--gray-400);
       width: 6px;
       border-radius: 4px;
     }
@@ -88,16 +88,20 @@
   }
   &.counterSelect {
     .list {
-      width: calc(100% - 145px);
-      @media screen and (max-width: 991.98px) {
-        width: 100%;
-      }
+      // width: calc(100% - 145px);
+      // @media screen and (max-width: 991.98px) {
+      //   width: 100%;
+      // }
       .option {
         font-size: 18px;
         padding: 10px 10px;
         letter-spacing: 1.5px;
+        padding-left: 40px;
+        padding-right: 40px;
         @media screen and (max-width: 991.98px) {
           font-size: 14px;
+          padding-left: 20px;
+          padding-right: 20px;
         }
       }
     }
