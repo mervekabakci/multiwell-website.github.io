@@ -15758,17 +15758,17 @@ section .sectionContent,
 }
 @media screen and (max-width: 1600px) {
   .cards:not(.swiper).quad .card {
-    width: calc(25% - 38px);
+    width: calc(25% - 46px);
   }
 }
 @media screen and (max-width: 1440px) {
   .cards:not(.swiper).quad .card {
-    width: calc(25% - 23px);
+    width: calc(25% - 46px);
   }
 }
 @media screen and (max-width: 1280px) {
   .cards:not(.swiper).quad .card {
-    width: calc(33.3% - 20px);
+    width: calc(33.3% - 40px);
   }
 }
 @media screen and (max-width: 991.98px) {
@@ -16959,8 +16959,8 @@ section .sectionContent,
 @media screen and (max-width: 991.98px) {
   .subBanner .title,
   .subBanner h1 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 .subBanner .breadcrumbWrapper {
@@ -16968,7 +16968,7 @@ section .sectionContent,
 }
 @media screen and (max-width: 991.98px) {
   .subBanner .breadcrumbWrapper {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 .subBanner .breadcrumbWrapper a {
@@ -17013,16 +17013,39 @@ section .sectionContent,
   color: var(--gray);
   font-family: "GilroyMedium";
 }
+@media screen and (max-width: 991.98px) {
+  .subBanner .bottom {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+}
 .subBanner .bottom a {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 991.98px) {
+  .subBanner .bottom a {
+    gap: 5px;
+  }
 }
 .subBanner .bottom b {
   font-family: "GilroySemibold";
   font-weight: normal;
   color: var(--gray-200);
   opacity: 0.7;
+}
+@media screen and (max-width: 991.98px) {
+  .subBanner .bottom b {
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+  }
+  .subBanner .bottom b span {
+    margin-left: auto;
+  }
 }
 .subBanner .bottom span {
   color: var(--white);
