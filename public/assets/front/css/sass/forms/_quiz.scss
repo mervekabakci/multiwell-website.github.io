@@ -70,12 +70,20 @@
         line-height: 37px;
         color: var(--tertiary);
         font-family: "GilroySemibold";
+        @media screen and (max-width: 991.98px) {
+          font-size: 20px;
+          line-height: 27px;
+        }
       }
       .resultText {
         font-size: 18px;
         line-height: 25px;
         color: var(--black-900);
         font-family: "GilroyRegular";
+        @media screen and (max-width: 991.98px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
   }
@@ -91,13 +99,20 @@
     }
     .resultContent {
       padding-top: 50px;
+      @media screen and (max-width:991.98px) {
+        padding-top: 30px;
+      }
     }
     .resultText {
       font-family: "GilroyBold";
       font-size: 26px;
       color: var(--tertiary);
       line-height: 37px;
-      .longText{
+      @media screen and (max-width: 991.98px) {
+        font-size: 20px;
+        line-height: 27px;
+      }
+      .longText {
         font-size: 14px;
         line-height: 22px;
       }

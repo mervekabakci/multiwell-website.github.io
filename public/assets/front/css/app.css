@@ -15812,6 +15812,16 @@ section .sectionContent,
 .cards:not(.swiper).half .card {
   width: calc(50% - 31px);
 }
+@media screen and (max-width: 576px) {
+  .cards:not(.swiper).half .card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cards.articleCards .card {
+    border: 1px solid var(--gray-100);
+  }
+}
 .cards.articleCards .card .card-image-top {
   aspect-ratio: 3/2;
   overflow: hidden;
@@ -18031,11 +18041,23 @@ section .sectionContent,
   color: var(--tertiary);
   font-family: "GilroySemibold";
 }
+@media screen and (max-width: 991.98px) {
+  .quizFormWrapper .formStep .resultStep .resultTitle {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
 .quizFormWrapper .formStep .resultStep .resultText {
   font-size: 18px;
   line-height: 25px;
   color: var(--black-900);
   font-family: "GilroyRegular";
+}
+@media screen and (max-width: 991.98px) {
+  .quizFormWrapper .formStep .resultStep .resultText {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .quizFormWrapper .quizResult {
   padding: 20px 0;
@@ -18049,11 +18071,22 @@ section .sectionContent,
 .quizFormWrapper .quizResult .resultContent {
   padding-top: 50px;
 }
+@media screen and (max-width: 991.98px) {
+  .quizFormWrapper .quizResult .resultContent {
+    padding-top: 30px;
+  }
+}
 .quizFormWrapper .quizResult .resultText {
   font-family: "GilroyBold";
   font-size: 26px;
   color: var(--tertiary);
   line-height: 37px;
+}
+@media screen and (max-width: 991.98px) {
+  .quizFormWrapper .quizResult .resultText {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 .quizFormWrapper .quizResult .resultText .longText {
   font-size: 14px;

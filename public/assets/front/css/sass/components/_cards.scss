@@ -238,11 +238,17 @@
     &.half {
       .card {
         width: calc(50% - 31px);
+        @media screen and (max-width: 576px) {
+          width: 100%;
+        }
       }
     }
   }
   &.articleCards {
     .card {
+      @media screen and (max-width:576px) {
+        border: 1px solid var(--gray-100);
+      }
       .card-image-top {
         aspect-ratio: 3/2;
         overflow: hidden;
