@@ -1,0 +1,93 @@
+.textFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .item {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    .icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      border: 1px solid var(--gray-400);
+      color: var(--gray-400);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s linear;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .name {
+        font-size: 15px;
+        color: var(--gray-500);
+        font-family: "GilroyMedium";
+        transition: all 0.3s linear;
+      }
+      .title {
+        font-size: 13px;
+        font-family: "GilroyRegular";
+        color: var(--gray-400);
+        transition: all 0.3s linear;
+        &:before {
+          content: "/";
+          color: var(--gray-100);
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+    @media screen and (min-width: 992px) {
+      &:hover {
+        .icon {
+          color: var(--fifth);
+          border-color: var(--fifth);
+        }
+        .name {
+          color: var(--fifth);
+        }
+        .title {
+          color: var(--fifth);
+        }
+      }
+    }
+  }
+  &.cards {
+    flex-direction: column;
+    gap: 0;
+    .item {
+      padding-bottom: 20px;
+      &:not(:first-child) {
+        border-top: 1px solid var(--gray);
+        padding-top: 20px;
+      }
+      .info {
+        align-items: flex-start;
+      }
+      .title{
+        &:before{
+            display: none;
+        }
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          .icon {
+            color: var(--secondary);
+            border-color: var(--secondary);
+          }
+          .name {
+            color: var(--secondary);
+          }
+          .title {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}

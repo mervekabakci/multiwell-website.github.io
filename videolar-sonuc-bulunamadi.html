@@ -300,253 +300,255 @@
 
         <section class="pageSection">
             <div class="container">
-                <div class="sectionHead">
-                    <div class="searchWrapper type2">
-                        <div class="searchInputWrapper">
-                            <input type="text" placeholder="Aramak istediğiniz kelimeyi giriniz">
+                <div class="twiceWrapper pageTwice">
+                    <div class="sectionHead w-100 bg-soft-light-pink rounded p-lg-10 p-4">
+                        <div class="searchWrapper type2">
+                            <div class="searchInputWrapper">
+                                <input type="text" placeholder="Aramak istediğiniz kelimeyi giriniz">
+                            </div>
+                        </div>
+                        <div class="filterWrapper">
+                            <div class="filterColumn">
+                                <select name="ageFilter" id="ageFilter" class="ageFilter customSelect">
+                                    <option value="" disabled selected>Yaş Grupları</option>
+                                    <option value="cocuk">Çocuk</option>
+                                    <option value="ergen">Ergen</option>
+                                    <option value="yetiskin">Yetişkin</option>
+                                    <option value="yasli">Yaşlı</option>
+                                </select>
+                            </div>
+                            <div class="filterColumn">
+                                <select name="categoryFilter" id="categoryFilter" class="categoryFilter customSelect">
+                                    <option value="" disabled selected>Terapiler</option>
+                                    <option value="anksiyete">Anksiyete</option>
+                                    <option value="emdr">EMDR Tedavisi</option>
+                                    <option value="kabul">Kabul ve Kararlılık Terapisi</option>
+                                </select>
+                            </div>
+                            <div class="filterColumn">
+                                <select name="sortFilter" id="sortFilter" class="sortFilter customSelect">
+                                    <option value="" disabled selected>Sıralama</option>
+                                    <option value="anksiyete">En Eski</option>
+                                    <option value="emdr">En Yeni</option>
+                                    <option value="kabul">En Çok Beğeni Alan</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="filterWrapper">
-                        <div class="filterColumn">
-                            <select name="ageFilter" id="ageFilter" class="ageFilter customSelect">
-                                <option value="" disabled selected>Yaş Grupları</option>
-                                <option value="cocuk">Çocuk</option>
-                                <option value="ergen">Ergen</option>
-                                <option value="yetiskin">Yetişkin</option>
-                                <option value="yasli">Yaşlı</option>
-                            </select>
+                    <div class="sectionContent w-100">
+                        <div class="resultWrapper">
+                            <p> "<b>emdr</b>" kelimesi ile ilgili "<b>0</b>" sonuç bulundu</p>
                         </div>
-                        <div class="filterColumn">
-                            <select name="categoryFilter" id="categoryFilter" class="categoryFilter customSelect">
-                                <option value="" disabled selected>Terapiler</option>
-                                <option value="anksiyete">Anksiyete</option>
-                                <option value="emdr">EMDR Tedavisi</option>
-                                <option value="kabul">Kabul ve Kararlılık Terapisi</option>
-                            </select>
-                        </div>
-                        <div class="filterColumn">
-                            <select name="sortFilter" id="sortFilter" class="sortFilter customSelect">
-                                <option value="" disabled selected>Sıralama</option>
-                                <option value="anksiyete">En Eski</option>
-                                <option value="emdr">En Yeni</option>
-                                <option value="kabul">En Çok Beğeni Alan</option>
-                            </select>
-                        </div>
+                        <!-- <div class="resultCount">
+                            (<span class="count">18</span>) Video Gösteriliyor
+                        </div> -->
+                        <!-- <div class="cards quad articleCards">
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="card">
+                                <div class="card-image-start">
+                                    <div class="imageWrapper">
+                                        <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
+                                    <div class="card-title">
+                                        Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
+                                    </div>
+                                    <div class="playButton">
+                                        <span class="icon-play"></span>
+                                        <span>Video İzle</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
                     </div>
-                </div>
-                <div class="sectionContent">
-                    <div class="resultWrapper">
-                        <p> "<b>emdr</b>" kelimesi ile ilgili "<b>0</b>" sonuç bulundu</p>
-                    </div>
-                    <!-- <div class="resultCount">
-                        (<span class="count">18</span>) Video Gösteriliyor
-                    </div> -->
-                    <!-- <div class="cards quad articleCards">
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="card">
-                            <div class="card-image-start">
-                                <div class="imageWrapper">
-                                    <img src="public/assets/images/media/makaleler/yas-sureci.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-expert-title">Klinik Psikolog  Cem Kaya</div>
-                                <div class="card-title">
-                                    Yas Süreci: Kaybın Ardından İyileşmeye Giden Yol
-                                </div>
-                                <div class="playButton">
-                                    <span class="icon-play"></span>
-                                    <span>Video İzle</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
                 </div>
             </div>
         </section>

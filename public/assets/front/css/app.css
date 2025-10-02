@@ -14669,7 +14669,7 @@ dialog.fullScreen .dialogCenter {
 .searchWrapper.type2 {
   width: auto;
   min-width: 400px;
-  height: 70px;
+  height: 60px;
   max-width: 600px;
   width: 100%;
 }
@@ -14686,7 +14686,7 @@ dialog.fullScreen .dialogCenter {
 }
 .searchWrapper.type2 .searchInputWrapper {
   position: relative;
-  height: 70px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .searchWrapper.type2 .searchInputWrapper {
@@ -14697,10 +14697,10 @@ dialog.fullScreen .dialogCenter {
   content: "\e90e";
   font-family: "customFont";
   font-size: 24px;
-  color: var(--primary);
+  color: var(--gray-400);
   position: absolute;
-  left: 10px;
-  top: 25px;
+  left: 20px;
+  top: 20px;
 }
 @media screen and (max-width: 576px) {
   .searchWrapper.type2 .searchInputWrapper:before {
@@ -14709,20 +14709,20 @@ dialog.fullScreen .dialogCenter {
 }
 .searchWrapper.type2 .searchInputWrapper input {
   font-size: 16px;
-  padding-left: 40px;
-  height: 70px;
+  padding-left: 50px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .searchWrapper.type2 .searchInputWrapper input {
-    height: 50px;
+    height: 60px;
   }
 }
 .searchWrapper.type2 .searchInputWrapper input:focus {
-  height: 70px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .searchWrapper.type2 .searchInputWrapper input:focus {
-    height: 50px;
+    height: 60px;
   }
 }
 
@@ -15089,20 +15089,20 @@ dialog.fullScreen .dialogCenter {
 }
 
 .resultWrapper {
-  text-align: center;
+  text-align: left;
   background-color: var(--soft-light-pink);
   padding: 50px;
   border-radius: 8px;
   min-height: 400px;
 }
 .resultWrapper p {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "GilroyMedium";
 }
 .resultWrapper p b {
   font-family: "GilroySemibold";
   color: var(--fifth);
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .resultCount {
@@ -17253,8 +17253,8 @@ section .sectionContent,
   font-size: 23px;
   color: var(--primary);
   font-family: "GilroySemibold";
-  margin-bottom: 5px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 @media screen and (max-width: 991.98px) {
   .paragraph .longText h2,
@@ -17274,6 +17274,16 @@ section .sectionContent,
 .paragraph .shorText h2:first-child,
 .paragraph .shorText .title:first-child {
   margin-top: 0;
+}
+.paragraph .longText h3,
+.paragraph .shortDesc h3,
+.paragraph .shorText h3 {
+  font-size: 20px;
+  color: var(--secondary);
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: "GilroySemibold";
 }
 .paragraph .longText strong,
 .paragraph .shortDesc strong,
@@ -17657,6 +17667,92 @@ section .sectionContent,
   width: 100%;
 }
 
+.textFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.textFeatures .item {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.textFeatures .item .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid var(--gray-400);
+  color: var(--gray-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+.textFeatures .item .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.textFeatures .item .info .name {
+  font-size: 15px;
+  color: var(--gray-500);
+  font-family: "GilroyMedium";
+  transition: all 0.3s linear;
+}
+.textFeatures .item .info .title {
+  font-size: 13px;
+  font-family: "GilroyRegular";
+  color: var(--gray-400);
+  transition: all 0.3s linear;
+}
+.textFeatures .item .info .title:before {
+  content: "/";
+  color: var(--gray-100);
+  font-size: 15px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 992px) {
+  .textFeatures .item:hover .icon {
+    color: var(--fifth);
+    border-color: var(--fifth);
+  }
+  .textFeatures .item:hover .name {
+    color: var(--fifth);
+  }
+  .textFeatures .item:hover .title {
+    color: var(--fifth);
+  }
+}
+.textFeatures.cards {
+  flex-direction: column;
+  gap: 0;
+}
+.textFeatures.cards .item {
+  padding-bottom: 20px;
+}
+.textFeatures.cards .item:not(:first-child) {
+  border-top: 1px solid var(--gray);
+  padding-top: 20px;
+}
+.textFeatures.cards .item .info {
+  align-items: flex-start;
+}
+.textFeatures.cards .item .title:before {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .textFeatures.cards .item:hover .icon {
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  .textFeatures.cards .item:hover .name {
+    color: var(--secondary);
+  }
+  .textFeatures.cards .item:hover .title {
+    color: var(--secondary);
+  }
+}
+
 .dropdown .dropdown-button {
   display: flex;
   align-items: center;
@@ -17796,20 +17892,20 @@ section .sectionContent,
   border: none;
   box-shadow: 0 0px 14px rgba(0, 0, 0, 0.3);
   min-width: 250px;
-  height: 70px;
+  height: 60px;
 }
 @media screen and (max-width: 576px) {
   .filterWrapper .nice-select.customSelect {
-    height: 50px;
+    height: 60px;
   }
 }
 .filterWrapper .nice-select.customSelect .current {
   border-bottom: none;
-  font-size: 16px;
+  font-size: 15px;
   font-family: "GilroyMedium";
   color: var(--gray-500);
   display: flex;
-  height: 70px;
+  height: 60px;
   width: 100%;
   align-items: center;
 }
@@ -18103,8 +18199,10 @@ section .sectionContent,
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  min-height: 250px;
+  padding-top: 30px;
 }
 .quizFormWrapper .formStep .resultStep .resultTitle {
   font-size: 25px;
@@ -18159,8 +18257,8 @@ section .sectionContent,
   }
 }
 .quizFormWrapper .quizResult .resultText .longText {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 15px;
+  line-height: 26px;
 }
 .quizFormWrapper .quizResult .resultText .imageColumn {
   margin-block: 50px;
