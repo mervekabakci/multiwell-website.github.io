@@ -2,11 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
+  @media screen and (max-width: 991.98px) {
+    gap: 0;
+  }
 
   .item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    @media screen and (max-width: 991.98px) {
+      padding-bottom: 5px;
+      &:not(:first-child) {
+        border-top: 1px solid var(--gray-200);
+        padding-top: 5px;
+        transition: all 0.3s linear;
+      }
+    }
     .icon {
       width: 24px;
       height: 24px;
@@ -25,14 +36,14 @@
 
       .name {
         font-size: 15px;
-        color: var(--gray-500);
+        color: var(--primary);
         font-family: "GilroyMedium";
         transition: all 0.3s linear;
       }
       .title {
         font-size: 13px;
         font-family: "GilroyRegular";
-        color: var(--gray-400);
+        color: var(--gray-500);
         transition: all 0.3s linear;
         &:before {
           content: "/";
@@ -65,26 +76,30 @@
       &:not(:first-child) {
         border-top: 1px solid var(--gray);
         padding-top: 20px;
+        transition: all 0.3s linear;
       }
       .info {
         align-items: flex-start;
       }
-      .title{
-        &:before{
-            display: none;
+      .title {
+        &:before {
+          display: none;
         }
       }
       @media screen and (min-width: 992px) {
         &:hover {
           .icon {
-            color: var(--secondary);
-            border-color: var(--secondary);
+            color: var(--fourth);
+            border-color: var(--fourth);
           }
           .name {
-            color: var(--secondary);
+            color: var(--fourth);
           }
           .title {
-            color: var(--secondary);
+            color: var(--fourth);
+          }
+          & + .item {
+            border-top-color: var(--gray-400);
           }
         }
       }

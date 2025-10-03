@@ -17672,10 +17672,25 @@ section .sectionContent,
   flex-wrap: wrap;
   gap: 50px;
 }
+@media screen and (max-width: 991.98px) {
+  .textFeatures {
+    gap: 0;
+  }
+}
 .textFeatures .item {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 991.98px) {
+  .textFeatures .item {
+    padding-bottom: 5px;
+  }
+  .textFeatures .item:not(:first-child) {
+    border-top: 1px solid var(--gray-200);
+    padding-top: 5px;
+    transition: all 0.3s linear;
+  }
 }
 .textFeatures .item .icon {
   width: 24px;
@@ -17695,14 +17710,14 @@ section .sectionContent,
 }
 .textFeatures .item .info .name {
   font-size: 15px;
-  color: var(--gray-500);
+  color: var(--primary);
   font-family: "GilroyMedium";
   transition: all 0.3s linear;
 }
 .textFeatures .item .info .title {
   font-size: 13px;
   font-family: "GilroyRegular";
-  color: var(--gray-400);
+  color: var(--gray-500);
   transition: all 0.3s linear;
 }
 .textFeatures .item .info .title:before {
@@ -17733,6 +17748,7 @@ section .sectionContent,
 .textFeatures.cards .item:not(:first-child) {
   border-top: 1px solid var(--gray);
   padding-top: 20px;
+  transition: all 0.3s linear;
 }
 .textFeatures.cards .item .info {
   align-items: flex-start;
@@ -17742,14 +17758,17 @@ section .sectionContent,
 }
 @media screen and (min-width: 992px) {
   .textFeatures.cards .item:hover .icon {
-    color: var(--secondary);
-    border-color: var(--secondary);
+    color: var(--fourth);
+    border-color: var(--fourth);
   }
   .textFeatures.cards .item:hover .name {
-    color: var(--secondary);
+    color: var(--fourth);
   }
   .textFeatures.cards .item:hover .title {
-    color: var(--secondary);
+    color: var(--fourth);
+  }
+  .textFeatures.cards .item:hover + .item {
+    border-top-color: var(--gray-400);
   }
 }
 
