@@ -300,216 +300,256 @@
 
         <section class="pageSection">
             <div class="container">
-                <div class="twiceWrapper pageTwice">
-                    <div class="sectionHead w-100 bg-soft-light-pink rounded p-lg-10 p-4">
-                        <div class="searchWrapper type2">
-                            <div class="searchInputWrapper">
-                                <input type="text" placeholder="Aramak istediğiniz kelimeyi giriniz">
+                <div class="twiceWrapperRevert">
+                    <div class="twiceLeftContent">
+                        <div class="expertFilterWrapper bg-soft-light-blue rounded p-lg-8 p-4">
+                            <div class="title">Uzmanları Filtrele</div>
+                            <div class="filterGroup">
+                                <div class="filterTitle">Arama</div>
+                                <div class="searchWrapper type2">
+                                    <div class="searchInputWrapper">
+                                        <input type="text" placeholder="Uzman Adı">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="filterWrapper">
-                            <div class="filterColumn">
-                                <select name="ageFilter" id="ageFilter" class="ageFilter customSelect">
-                                    <option value="" disabled selected>Yaş Grupları</option>
-                                    <option value="cocuk">Çocuk</option>
-                                    <option value="ergen">Ergen</option>
-                                    <option value="yetiskin">Yetişkin</option>
-                                    <option value="yasli">Yaşlı</option>
-                                </select>
+                            <div class="filterGroup">
+                                <div class="filterTitle">
+                                    Yaş Grupları
+                                </div>
+                                <div class="filterColumn">
+                                    <select name="ageFilter" id="ageFilter" class="ageFilter customSelect">
+                                        <option value="" disabled selected>Yaş Grupları</option>
+                                        <option value="cocuk">Çocuk</option>
+                                        <option value="ergen">Ergen</option>
+                                        <option value="yetiskin">Yetişkin</option>
+                                        <option value="yasli">Yaşlı</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="filterColumn">
-                                <select name="categoryFilter" id="categoryFilter" class="categoryFilter customSelect">
-                                    <option value="" disabled selected>Terapiler</option>
-                                    <option value="anksiyete">Anksiyete</option>
-                                    <option value="emdr">EMDR Tedavisi</option>
-                                    <option value="kabul">Kabul ve Kararlılık Terapisi</option>
-                                </select>
+                            <div class="filterGroup">
+                                <div class="filterTitle">
+                                    Lokasyon
+                                </div>
+                                <div class="filterColumn">
+                                    <select name="countyFilter" id="countyFilter" class="countyFilter customSelect">
+                                        <option value="" disabled selected>İl Seçiniz</option>
+                                        <option value="istanbul">İstanbul</option>
+                                        <option value="bursa">Bursa</option>
+                                        <option value="ankara">Ankara</option>
+                                        <option value="tekirdag">Tekirdağ</option>
+                                        <option value="istanbul">İstanbul</option>
+                                        <option value="bursa">Bursa</option>
+                                        <option value="ankara">Ankara</option>
+                                        <option value="tekirdag">Tekirdağ</option>
+                                        <option value="istanbul">İstanbul</option>
+                                        <option value="bursa">Bursa</option>
+                                        <option value="ankara">Ankara</option>
+                                        <option value="tekirdag">Tekirdağ</option>
+                                    </select>
+                                </div>
+                                <div class="filterColumn">
+                                    <select name="districtFilter" id="districtFilter" class="districtFilter customSelect">
+                                        <option value="" disabled selected>İlçe Seçiniz</option>
+                                        <option value="sariyer">Sarıyer</option>
+                                        <option value="besitas">Beşiktaş</option>
+                                        <option value="uskudar">Üsküdar</option>
+                                        <option value="maltepe">Maltepe</option>
+                                        <option value="cekmekoy">Çekmeköy</option>
+                                        <option value="sultanbeyligi">Sultanbeyliği</option>
+                                        <option value="buyukcekmece">Büyükçekmece</option>
+                                        <option value="sisli">Şişli</option>
+                                        <option value="kagithane">Kağıthane</option>
+                                        <option value="sariyer">Sarıyer</option>
+                                        <option value="besitas">Beşiktaş</option>
+                                        <option value="uskudar">Üsküdar</option>
+                                        <option value="maltepe">Maltepe</option>
+                                        <option value="cekmekoy">Çekmeköy</option>
+                                        <option value="sultanbeyligi">Sultanbeyliği</option>
+                                        <option value="buyukcekmece">Büyükçekmece</option>
+                                        <option value="sisli">Şişli</option>
+                                        <option value="kagithane">Kağıthane</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="filterColumn">
-                                <select name="sortFilter" id="sortFilter" class="sortFilter customSelect">
-                                    <option value="" disabled selected>Sıralama</option>
-                                    <option value="anksiyete">En Eski</option>
-                                    <option value="emdr">En Yeni</option>
-                                    <option value="kabul">En Çok Beğeni Alan</option>
-                                </select>
+                            <div class="filterGroup">
+                                <div class="filterTitle">
+                                    Cinsiyet
+                                </div>
+                                <div class="filterColumn">
+                                    <select name="ageFilter" id="ageFilter" class="ageFilter customSelect">
+                                        <option value="" disabled selected>Cinsiyet</option>
+                                        <option value="cocuk">Kadın</option>
+                                        <option value="ergen">Erkek</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sectionContent w-100">
-                        <div class="twiceWrapperRevert">
-                            <div class="twiceLeftContent">
-
-                            </div>
-                            <div class="twiceRightContent">
-                                <div class="resultWrapper d-none">
-                                    <p> "<b>emdr</b>" kelimesi ile ilgili "<b>0</b>" sonuç bulundu</p>
+                    <div class="twiceRightContent">
+                        <div class="resultCount">
+                            <span class="count">1 - 10 </span> arası sonuç gösteriliyor.
+                        </div>
+                        <div class="textFeatures cards w-100">
+                            <a href="#" class="item card">
+                                <div class="icon-profile">
+                                    <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-kaya.jpeg" alt=""></div>
                                 </div>
-                                <div class="resultCount">
-                                    ( <span class="count">18</span> ) Video Gösteriliyor
+                                <div class="desc">
+                                    <div class="card-body">
+                                        <div>
+                                            <div>
+                                                <span class="name">Cem Kaya</span>
+                                                <div class="title">Klinik Psikolog</div>
+                                            </div>
+                                            <div class="loc">
+                                                <div class="title">Lokasyon</div>
+                                                <div class="d-flex items-center">
+                                                    <span class="icon-location"></span>
+                                                    <span>İstanbul / Sarıyer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categories">
+                                            <div class="category bg-soft-light-blue">Online Görüşme</div>
+                                            <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
+                                        </div>
+                                        <span class="icon-arrow-long-right"></span>
+                                    </div>
+
                                 </div>
-                                <div class="textFeatures cards w-100">
-                                    <a href="#" class="item card">
-                                        <div class="icon-profile">
-                                            <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-kaya.jpeg" alt=""></div>
+                                <div class="card-footer">
+                                    <div class="textPreview">
+                                        <span class="title">Yayınlar</span>
+                                        <div class="textPreviewList">
+                                            <div>Makaleler (<b>1</b>)</div>
+                                            <div>Yazılar (<b>3</b>)</div>
+                                            <div>Videolar (<b>4</b>)</div>
+                                            <div>Podcastler (<b>4</b>)</div>
                                         </div>
-                                        <div class="desc">
-                                            <div class="card-body">
-                                                <div>
-                                                    <div>
-                                                        <span class="name">Cem Kaya</span>
-                                                        <div class="title">Klinik Psikolog</div>
-                                                    </div>
-                                                    <div class="loc">
-                                                        <div class="title">Lokasyon</div>
-                                                        <div class="d-flex items-center">
-                                                            <span class="icon-location"></span>
-                                                            <span>İstanbul / Sarıyer</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="categories">
-                                                    <div class="category bg-soft-light-blue">Online Görüşme</div>
-                                                    <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
-                                                </div>
-                                                <span class="icon-arrow-long-right"></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-footer">
-                                            <div class="textPreview">
-                                                <span class="title">Yayınlar</span>
-                                                <div class="textPreviewList">
-                                                    <div>Makaleler (<b>1</b>)</div>
-                                                    <div>Yazılar (<b>3</b>)</div>
-                                                    <div>Videolar (<b>4</b>)</div>
-                                                    <div>Podcastler (<b>4</b>)</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="item card">
-                                        <div class="icon-profile">
-                                            <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
-                                        </div>
-                                        <div class="desc">
-                                            <div class="card-body">
-                                                <div>
-                                                    <div>
-                                                        <span class="name">Cem Irmak</span>
-                                                        <div class="title">Psikolog</div>
-                                                    </div>
-                                                    <div class="loc">
-                                                        <div class="title">Lokasyon</div>
-                                                        <div class="d-flex items-center">
-                                                            <span class="icon-location"></span>
-                                                            <span>İstanbul / Sarıyer</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="categories">
-                                                    <div class="category bg-soft-light-blue">Online Görüşme</div>
-                                                    <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
-                                                </div>
-                                                <span class="icon-arrow-long-right"></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-footer">
-                                            <div class="textPreview">
-                                                <span class="title">Yayınlar</span>
-                                                <div class="textPreviewList">
-                                                    <div>Makaleler (<b>1</b>)</div>
-                                                    <div>Yazılar (<b>3</b>)</div>
-                                                    <div>Videolar (<b>4</b>)</div>
-                                                    <div>Podcastler (<b>4</b>)</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="item card">
-                                        <div class="icon-profile">
-                                            <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
-                                        </div>
-                                        <div class="desc">
-                                            <div class="card-body">
-                                                <div>
-                                                    <div>
-                                                        <span class="name">Cem Irmak</span>
-                                                        <div class="title">Psikolog</div>
-                                                    </div>
-                                                    <div class="loc">
-                                                        <div class="title">Lokasyon</div>
-                                                        <div class="d-flex items-center">
-                                                            <span class="icon-location"></span>
-                                                            <span>İstanbul / Sarıyer</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="categories">
-                                                    <div class="category bg-soft-light-blue">Online Görüşme</div>
-                                                    <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
-                                                </div>
-                                                <span class="icon-arrow-long-right"></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-footer">
-                                            <div class="textPreview">
-                                                <span class="title">Yayınlar</span>
-                                                <div class="textPreviewList">
-                                                    <div>Makaleler (<b>1</b>)</div>
-                                                    <div>Yazılar (<b>3</b>)</div>
-                                                    <div>Videolar (<b>4</b>)</div>
-                                                    <div>Podcastler (<b>4</b>)</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href="#" class="item card">
-                                        <div class="icon-profile">
-                                            <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
-                                        </div>
-                                        <div class="desc">
-                                            <div class="card-body">
-                                                <div>
-                                                    <div>
-                                                        <span class="name">Cem Irmak</span>
-                                                        <div class="title">Psikolog</div>
-                                                    </div>
-                                                    <div class="loc">
-                                                        <div class="title">Lokasyon</div>
-                                                        <div class="d-flex items-center">
-                                                            <span class="icon-location"></span>
-                                                            <span>İstanbul / Sarıyer</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="categories">
-                                                    <div class="category bg-soft-light-blue">Online Görüşme</div>
-                                                    <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
-                                                </div>
-                                                <span class="icon-arrow-long-right"></span>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-footer">
-                                            <div class="textPreview">
-                                                <span class="title">Yayınlar</span>
-                                                <div class="textPreviewList">
-                                                    <div>Makaleler (<b>1</b>)</div>
-                                                    <div>Yazılar (<b>3</b>)</div>
-                                                    <div>Videolar (<b>4</b>)</div>
-                                                    <div>Podcastler (<b>4</b>)</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    
+                                    </div>
                                 </div>
-                                <div class="d-flex items-center">
-                                    <a href="#" class="fixBtn button-secondary big px-lg-12 mx-auto">Daha Fazla Göster</a>
+                            </a>
+                            <a href="#" class="item card">
+                                <div class="icon-profile">
+                                    <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
                                 </div>
-                            </div>
+                                <div class="desc">
+                                    <div class="card-body">
+                                        <div>
+                                            <div>
+                                                <span class="name">Cem Irmak</span>
+                                                <div class="title">Psikolog</div>
+                                            </div>
+                                            <div class="loc">
+                                                <div class="title">Lokasyon</div>
+                                                <div class="d-flex items-center">
+                                                    <span class="icon-location"></span>
+                                                    <span>İstanbul / Sarıyer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categories">
+                                            <div class="category bg-soft-light-blue">Online Görüşme</div>
+                                            <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
+                                        </div>
+                                        <span class="icon-arrow-long-right"></span>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="textPreview">
+                                        <span class="title">Yayınlar</span>
+                                        <div class="textPreviewList">
+                                            <div>Makaleler (<b>1</b>)</div>
+                                            <div>Yazılar (<b>3</b>)</div>
+                                            <div>Videolar (<b>4</b>)</div>
+                                            <div>Podcastler (<b>4</b>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item card">
+                                <div class="icon-profile">
+                                    <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="card-body">
+                                        <div>
+                                            <div>
+                                                <span class="name">Cem Irmak</span>
+                                                <div class="title">Psikolog</div>
+                                            </div>
+                                            <div class="loc">
+                                                <div class="title">Lokasyon</div>
+                                                <div class="d-flex items-center">
+                                                    <span class="icon-location"></span>
+                                                    <span>İstanbul / Sarıyer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categories">
+                                            <div class="category bg-soft-light-blue">Online Görüşme</div>
+                                            <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
+                                        </div>
+                                        <span class="icon-arrow-long-right"></span>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="textPreview">
+                                        <span class="title">Yayınlar</span>
+                                        <div class="textPreviewList">
+                                            <div>Makaleler (<b>1</b>)</div>
+                                            <div>Yazılar (<b>3</b>)</div>
+                                            <div>Videolar (<b>4</b>)</div>
+                                            <div>Podcastler (<b>4</b>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="item card">
+                                <div class="icon-profile">
+                                    <div class="imageWrapper"><img src="public/assets/images/media/uzmanlar/cem-irmak.jpg" alt=""></div>
+                                </div>
+                                <div class="desc">
+                                    <div class="card-body">
+                                        <div>
+                                            <div>
+                                                <span class="name">Cem Irmak</span>
+                                                <div class="title">Psikolog</div>
+                                            </div>
+                                            <div class="loc">
+                                                <div class="title">Lokasyon</div>
+                                                <div class="d-flex items-center">
+                                                    <span class="icon-location"></span>
+                                                    <span>İstanbul / Sarıyer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="categories">
+                                            <div class="category bg-soft-light-blue">Online Görüşme</div>
+                                            <div class="category bg-soft-light-orange">Yüzyüze Görüşme</div>
+                                        </div>
+                                        <span class="icon-arrow-long-right"></span>
+                                    </div>
+
+                                </div>
+                                <div class="card-footer">
+                                    <div class="textPreview">
+                                        <span class="title">Yayınlar</span>
+                                        <div class="textPreviewList">
+                                            <div>Makaleler (<b>1</b>)</div>
+                                            <div>Yazılar (<b>3</b>)</div>
+                                            <div>Videolar (<b>4</b>)</div>
+                                            <div>Podcastler (<b>4</b>)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <div class="d-flex items-center">
+                            <a href="#" class="fixBtn button-secondary big px-lg-12 mx-auto">Daha Fazla Göster</a>
                         </div>
                     </div>
                 </div>

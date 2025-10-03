@@ -16544,6 +16544,12 @@ section .sectionContent,
 .twiceWrapperRevert {
   display: flex;
   align-items: flex-start;
+  padding: 0 50px;
+}
+@media screen and (max-width: 1280px) {
+  .twiceWrapperRevert {
+    padding: 0;
+  }
 }
 .twiceWrapperRevert .twiceLeftContent {
   width: 300px;
@@ -16551,6 +16557,31 @@ section .sectionContent,
 .twiceWrapperRevert .twiceRightContent {
   width: calc(100% - 300px);
   padding-left: 3vw;
+}
+.twiceWrapperRevert .searchWrapper {
+  gap: 0;
+}
+.twiceWrapperRevert .searchWrapper .searchInputWrapper {
+  height: 50px;
+}
+.twiceWrapperRevert .searchWrapper .searchInputWrapper:before {
+  left: 8px;
+  top: 13px;
+  font-size: 16px;
+}
+.twiceWrapperRevert .searchWrapper.type2 {
+  min-width: initial;
+  width: 100%;
+  height: initial;
+}
+.twiceWrapperRevert .searchWrapper.type2 input {
+  width: 100%;
+  height: 50px;
+  padding-left: 30px;
+  font-size: 14px;
+}
+.twiceWrapperRevert .searchWrapper.type2 input:focus {
+  height: initial;
 }
 
 .accordion {
@@ -17892,6 +17923,40 @@ section .sectionContent,
   .textFeatures.cards .card:hover .card-body .name {
     color: var(--fifth);
   }
+}
+
+.expertFilterWrapper .title {
+  font-size: 18px;
+  color: var(--primary);
+  font-weight: 700;
+}
+.expertFilterWrapper .filterTitle {
+  margin-bottom: 10px;
+  color: var(--black-800);
+  font-size: 14px;
+  font-weight: 600;
+}
+.expertFilterWrapper .filterGroup {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.expertFilterWrapper .filterGroup .filterColumn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.expertFilterWrapper .filterGroup .filterColumn:last-child {
+  margin-bottom: 0;
+}
+.expertFilterWrapper .filterGroup .filterColumn .customSelect {
+  width: 100%;
+  height: 50px;
+}
+.expertFilterWrapper .filterGroup .filterColumn .customSelect .current {
+  border: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown .dropdown-button {
