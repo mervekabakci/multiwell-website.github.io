@@ -68,3 +68,15 @@
     }
   }
 }
+.twiceWrapperRevert{
+  display: flex;
+  align-items: flex-start;
+
+  .twiceLeftContent{
+    width: 300px;
+  }
+  .twiceRightContent{
+    width: calc(100% - 300px);
+    padding-left: 3vw;
+  }
+} 
