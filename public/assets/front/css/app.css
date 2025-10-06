@@ -17303,7 +17303,7 @@ section .sectionContent,
 .paragraph .longText b,
 .paragraph .shortDesc b,
 .paragraph .shorText b {
-  color: var(--secondary);
+  color: var(--black-800);
   font-weight: normal;
   font-family: "GilroySemibold";
 }
@@ -17361,7 +17361,7 @@ section .sectionContent,
 .paragraph .shorText ul,
 .paragraph .shorText ol {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 40px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
