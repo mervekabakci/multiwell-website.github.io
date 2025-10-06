@@ -72,16 +72,31 @@
   display: flex;
   align-items: flex-start;
   padding: 0 50px;
+  position: relative;
   @media screen and (max-width: 1280px) {
     padding: 0;
   }
 
   .twiceLeftContent {
-    width: 300px;
+    width: 400px;
+    &.fixed {
+      position: fixed;
+      width: 400px; /* kendi genişliğini ayarla */
+    }
+
+    &.absolute {
+      position: absolute;
+      width: 400px; /* aynı genişlik burada da gerekli */
+      bottom: 0;
+    }
   }
   .twiceRightContent {
-    width: calc(100% - 300px);
-    padding-left: 3vw;
+    width: calc(100% - 400px);
+    padding-left: 5vw;
+    margin-left: auto;
+    .textFeatures {
+      margin-block: 25px;
+    }
   }
 
   .searchWrapper {

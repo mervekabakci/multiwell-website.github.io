@@ -1,13 +1,13 @@
 const forms = document.querySelectorAll(".form");
 
 forms.forEach((form) => {
-    const submitButton = form.querySelector(".formButton");
+const submitButtons = form.querySelectorAll(".formButton");
 
-    submitButton.addEventListener("click", function(e){
-        e.preventDefault();
-        console.log(e);
-
-        validateForm(form);
+    submitButtons.forEach((submitButton) => {
+        submitButton.addEventListener("click", function(e){
+            e.preventDefault();
+            validateForm(form);
+        });
     });
 
      // Inputlar için anlık kontrol

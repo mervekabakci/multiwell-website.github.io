@@ -59,37 +59,66 @@
         }
       }
     }
-    .resultStep {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      align-items: flex-start;
-      text-align: left;
-      min-height: 250px;
-      padding-top: 30px;
-      .resultTitle {
-        font-size: 25px;
-        line-height: 37px;
-        color: var(--tertiary);
-        font-family: "GilroySemibold";
-        @media screen and (max-width: 991.98px) {
-          font-size: 20px;
-          line-height: 27px;
-        }
+  }
+  .resultAnswer,
+  .resultEPosta {
+    display: none;
+  }
+  .resultStep {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 250px;
+    .resultTitle {
+      font-size: 28px;
+      line-height: 37px;
+      color: var(--tertiary);
+      font-family: "GilroySemibold";
+      margin-block: 30px;
+      @media screen and (max-width: 991.98px) {
+        font-size: 20px;
+        line-height: 27px;
+        margin-block: 15px;
       }
-      .resultText {
-        font-size: 18px;
-        line-height: 25px;
-        color: var(--black-900);
-        font-family: "GilroyRegular";
-        @media screen and (max-width: 991.98px) {
-          font-size: 16px;
-          line-height: 22px;
+    }
+    .resultButtons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 30px;
+      .formButton {
+        &.active {
+          background-color: var(--fifth) !important;
+          border-color: var(--fifth) !important;
+          @media screen and (min-width: 992px) {
+            &:hover {
+              color: var(--white) !important;
+              background-color: var(--tertiary) !important;
+              border-color: var(--tertiary) !important;
+              input {
+                color: var(--white) !important;
+              }
+            }
+          }
         }
       }
     }
+    .resultText {
+      font-size: 18px;
+      line-height: 25px;
+      color: var(--black-900);
+      font-family: "GilroyRegular";
+      @media screen and (max-width: 991.98px) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    &.disabled {
+      display: none;
+    }
   }
-
   .quizResult {
     padding: 20px 0;
 
@@ -99,10 +128,10 @@
       font-family: "GilroySemibold";
     }
     .resultContent {
-      padding-top: 50px;
-      @media screen and (max-width: 991.98px) {
-        padding-top: 30px;
-      }
+      // padding-top: 50px;
+      // @media screen and (max-width: 991.98px) {
+      //   padding-top: 30px;
+      // }
     }
     .resultText {
       font-family: "GilroyBold";
@@ -120,6 +149,50 @@
       .imageColumn {
         margin-block: 50px;
       }
+    }
+    .answersList {
+      display: block;
+      list-style-type: decimal;
+      padding-left: 20px;
+      .userAnswerItem {
+        display: list-item;
+        min-height: 45px;
+        padding: 10px 20px;
+        &::marker {
+          font-weight: 600;
+          color: var(--fifth);
+        }
+        .desc {
+          display: flex;
+          align-items: flex-start;
+          width: 100%;
+        }
+        .question {
+          width: 60%;
+          min-width: 60%;
+          padding-right: 10px;
+          font-size: 15px;
+          line-height: 24px;
+        }
+        .answer {
+          font-weight: 600;
+          width: 40%;
+          min-width: 40%;
+          padding-left: 10px;
+          font-size: 15px;
+          line-height: 24px;
+          text-transform: uppercase;
+        }
+        &:not(:first-child) {
+          border-top: 1px solid var(--soft-light-pink);
+        }
+      }
+    }
+  }
+
+  .resultEPosta{
+    .emailWrapper{
+      box-shadow: none;
     }
   }
 }

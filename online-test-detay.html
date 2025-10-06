@@ -403,52 +403,77 @@
                                                 </label>
                                             </div>
                                         </div>
-                                        <!--Step 4 -->
-                                        <div class="formStep pt-0">
-                                            <div class="resultStep">
-                                                <div class="resultTitle">
-                                                    Katıldığınız için teşekkürler
-                                                </div>
-                                                <div class="resultText">
-                                                    Hani içten gelen, huzurla sarmalanan, kimsenin görmesine gerek olmayan bir “iyiyim” hâli?
-                                                    Yoksa senin de mutluluk anıların, ekran görüntüsü alınabilir formatta mı?  
-                                                </div>
-                                                <span class="fixBtn button-primary formButton">
-                                                    <input type="submit" value="Test Sonucunu göster" />
-                                                </span>
-                                            </div>
+                                    </div>
+                                    <div class="resultStep disabled">
+                                        <a href="#" class="fixBtn button-secondary rounded againButton">Tekrar Başla</a>
+                                        <div class="resultTitle">
+                                            Katıldığınız için teşekkürler
+                                        </div>
+                                        <div class="resultText">
+                                            Hani içten gelen, huzurla sarmalanan, kimsenin görmesine gerek olmayan bir “iyiyim” hâli?
+                                            Yoksa senin de mutluluk anıların, ekran görüntüsü alınabilir formatta mı?  
+                                        </div>
+                                        <div class="resultButtons">
+                                            <span class="fixBtn button-primary formButton testResultButton">
+                                                <input type="submit" value="Test Sonucunu göster" />
+                                            </span>
+                                            <span class="fixBtn button-primary formButton showAnswersButton">
+                                                <input type="submit" value="Cevaplarımı Göster" />
+                                            </span>
+                                            <span class="fixBtn button-primary formButton sendEmailButton">
+                                                <input type="submit" value="Sonuç E-Posta ile Gönder" />
+                                            </span>
                                         </div>
                                     </div>
-
                                     <!-- Sonuç ekranı -->
-                                    <div class="quizResult" style="display:none;">
-                                        <a href="#" class="fixBtn button-primary rounded againButton">Tekrar Başla</a>
+                                    <div class="quizResult disabled" style="display:none;">
                                         <div class="resultContent">
+                                            <div class="resultAnswer">
+                                                <div class="bg-white rounded px-lg-10 py-lg-15 p-4 mbt-lg-10 mt-lg-5 my-5">
+
+                                                </div>
+                                            </div>
+                                            <div class="resultEPosta">
+                                                <div class="emailWrapper bg-white rounded px-lg-10 py-lg-15 p-4 mbt-lg-10 mt-lg-5 my-5">
+                                                    <div class="emailDesc">
+                                                        <div class="title">Test Sonucunu E-Posta ile Gönder</div>
+                                                    </div>
+                                                    <div class="form">
+                                                        <div class="inputColumn">
+                                                            <input type="email" class="form-control" placeholder="E-Posta adresinizi giriniz" required>
+                                                            <div class="error-message">Lütfen E-Posta adresinizi giriniz</div>
+                                                        </div>
+                                                        <span class="fixBtn button-secondary rounded small">
+                                                            <input type="submit" class="formButton" value="Sonucu Gönder">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="resultText">
                                                 <div class="bg-white rounded px-lg-10 py-lg-15 p-4 mbt-lg-10 mt-lg-5 my-5">
                                                     Test sonucunuza göre, son dönemlerde ruh hâlinizde bazı değişiklikler gözlemliyorsunuz. Bu, düşük enerji, ilgi kaybı veya üzüntü hissi gibi belirtileri içerebilir
-                                                </div>
                                                 
-                                                <!--Paragraf metni-->
-                                                <div class="longText">
-                                                    <h2>Nefes alıp vermede güçlük</h2>
-                                                    Anksiyete bozukluğu içerisinde <b>çeşitli bozuklukları</b> barından oldukça geniş bir rahatsızlıktır. Ayrılma kaygısı bozukluğu, özgülfobiler, sosyal fobi, panik bozukluk gibi psikolojik rahatsızlıklar anksiyete bozukluğunun alt başlığıdır. Araştırmalara göre, bu bozukluğun kadınlarda görülme sıklığı erkeklere göre daha fazladır. Anksiyete bozukluğu, genetik, biyolojik, çevresel ve psikolojik etkenlerin bir kombinasyonundan kaynaklanabilir. Genetik yatkınlık, beyindeki kimyasal dengesizlikler, travmatik olaylar ve düşük benlik saygısı gibi faktörler anksiyete riskini artırabilir. Bu etkenlerin bir araya gelmesi, bireyde sürekli kaygı hali yaratabilir.Aynı zamanda, bireylerde yoğun duygusal dalgalanmalar ve davranış değişiklikleri sıkça görülür. Bu belirtiler, kişinin çevresiyle olan ilişkilerini ve yaşam kalitesini <a href="#">büyük ölçüde etkiler</a>.Bu bozukluğa sahip insanların genel olarak gösterdiği davranışlar aşağıda listelenmiştir;
-                                                    <br><br>
-                                                    <h3>Bu bozukluğa sahip davranışlar</h3>
-                                                    <ul>
-                                                        <li>Nefes alıp vermede güçlük</li>
-                                                        <li>Kalp ritminde değişiklik</li>
-                                                        <li>Terleme</li>
-                                                        <li>Titreme  </li>
-                                                        <li>Göğüs sıkışması</li>
-                                                        <li>Donuk bir şekilde kalma   </li>
-                                                        <li>Ağız kuruluğu</li>
-                                                        <li>Gerginlik</li>
-                                                        <li>Endişe</li>
-                                                        <li>Huzursuzluk</li>
-                                                    </ul>
-                                                    <h3>Gündelik hayatı nasıl etkiler</h3>
-                                                    Gündelik hayatı oldukça etkileyen anksiyete bozukluğunun tedavisi mümkündür ve uygun tedavi için bir ruh sağlığı uzmanından destek almak önemlidir.
+                                                    <!--Paragraf metni-->
+                                                    <div class="longText mt-lg-10 mt-5">
+                                                        <h2>Nefes alıp vermede güçlük</h2>
+                                                        Anksiyete bozukluğu içerisinde <b>çeşitli bozuklukları</b> barından oldukça geniş bir rahatsızlıktır. Ayrılma kaygısı bozukluğu, özgülfobiler, sosyal fobi, panik bozukluk gibi psikolojik rahatsızlıklar anksiyete bozukluğunun alt başlığıdır. Araştırmalara göre, bu bozukluğun kadınlarda görülme sıklığı erkeklere göre daha fazladır. Anksiyete bozukluğu, genetik, biyolojik, çevresel ve psikolojik etkenlerin bir kombinasyonundan kaynaklanabilir. Genetik yatkınlık, beyindeki kimyasal dengesizlikler, travmatik olaylar ve düşük benlik saygısı gibi faktörler anksiyete riskini artırabilir. Bu etkenlerin bir araya gelmesi, bireyde sürekli kaygı hali yaratabilir.Aynı zamanda, bireylerde yoğun duygusal dalgalanmalar ve davranış değişiklikleri sıkça görülür. Bu belirtiler, kişinin çevresiyle olan ilişkilerini ve yaşam kalitesini <a href="#">büyük ölçüde etkiler</a>.Bu bozukluğa sahip insanların genel olarak gösterdiği davranışlar aşağıda listelenmiştir;
+                                                        <br><br>
+                                                        <h3>Bu bozukluğa sahip davranışlar</h3>
+                                                        <ul>
+                                                            <li>Nefes alıp vermede güçlük</li>
+                                                            <li>Kalp ritminde değişiklik</li>
+                                                            <li>Terleme</li>
+                                                            <li>Titreme  </li>
+                                                            <li>Göğüs sıkışması</li>
+                                                            <li>Donuk bir şekilde kalma   </li>
+                                                            <li>Ağız kuruluğu</li>
+                                                            <li>Gerginlik</li>
+                                                            <li>Endişe</li>
+                                                            <li>Huzursuzluk</li>
+                                                        </ul>
+                                                        <h3>Gündelik hayatı nasıl etkiler</h3>
+                                                        Gündelik hayatı oldukça etkileyen anksiyete bozukluğunun tedavisi mümkündür ve uygun tedavi için bir ruh sağlığı uzmanından destek almak önemlidir.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -457,7 +482,7 @@
                             </div>
                         </div>
 
-                         <div class="longText">
+                        <div class="longText">
                             <h2>Nefes alıp vermede güçlük</h2>
                             Anksiyete bozukluğu içerisinde <b>çeşitli bozuklukları</b> barından oldukça geniş bir rahatsızlıktır. Ayrılma kaygısı bozukluğu, özgülfobiler, sosyal fobi, panik bozukluk gibi psikolojik rahatsızlıklar anksiyete bozukluğunun alt başlığıdır. Araştırmalara göre, bu bozukluğun kadınlarda görülme sıklığı erkeklere göre daha fazladır. Anksiyete bozukluğu, genetik, biyolojik, çevresel ve psikolojik etkenlerin bir kombinasyonundan kaynaklanabilir. Genetik yatkınlık, beyindeki kimyasal dengesizlikler, travmatik olaylar ve düşük benlik saygısı gibi faktörler anksiyete riskini artırabilir. Bu etkenlerin bir araya gelmesi, bireyde sürekli kaygı hali yaratabilir.Aynı zamanda, bireylerde yoğun duygusal dalgalanmalar ve davranış değişiklikleri sıkça görülür. Bu belirtiler, kişinin çevresiyle olan ilişkilerini ve yaşam kalitesini <a href="#">büyük ölçüde etkiler</a>.Bu bozukluğa sahip insanların genel olarak gösterdiği davranışlar aşağıda listelenmiştir;
                             <br><br>
@@ -476,56 +501,82 @@
 
                             Gündelik hayatı oldukça etkileyen anksiyete bozukluğunun tedavisi mümkündür ve uygun tedavi için bir ruh sağlığı uzmanından destek almak önemlidir.
                         </div>
-                        <!--Diğer Online Testler-->
-                        <div class="pageRow p-lg-10 p-4 border-soft-light-pink-3 rounded">
+
+                        <!--Sıkca Sorulan Sorular-->
+                        <div class="pageRow py-lg-10 py-5">
                             <div class="pageRowHead align-center">
                                 <div class="pageRowTitle">
                                     <img class="logoIcon" src="public/assets/images/statics/logo.png" alt="page title Logo">
-                                    <b>Diğer Testler</b>
+                                    <b>DİĞER LİNKLER</b>
                                 </div>
+                                <!-- <a href="#" class="textLink text-primary d-none d-lg-flex"><span class="text">Tüm Sorular Gör</span></a> -->
                             </div>
-                            <div class="pageRowBody my-lg-12 mt-10">
-                                <div class="boxWrapper">
-                                    <div class="boxes">
-                                        <!--online Testler-->
-                                        <div class="box">
-                                            <div class="boxBody">
-                                                <div class="linkList">
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
-                                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
-                                                            <span class="icon-arrow-long-right"></span>
-                                                    </a>
+                            <div class="pageRowBody">
+                               <div class="linkList">
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
+                                    </a>
+                                    <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
+                                    </a>
+                                </div>
 
-                                                </div>
-                                            </div>
-                                        </div>                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="twiceOtherContent">
+                        <!--Sag alan ıcerıklerı buraya gelecek-->
+                        <div class="boxWrapper">
+                            <div class="boxes">
+                                <div class="box">
+                                    <div class="boxHead">
+                                        <div class="boxTitle">
+                                            <img class="logoIcon" src="public/assets/images/statics/logo.png" alt="page title Logo">
+                                            <b>DİĞER TESTLER</b>
+                                        </div>
+                                    </div>
+                                    <div class="boxBody">
+                                        <div class="linkList">
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Duygusal Tepkisellik Ölçeği</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Borderline Kişilk Bozukluğu Testi</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Saygı Testi</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                            <a target="_blank" href="index.html" class="fixBtn button-soft-light-pink py-5 h-auto"><span>Öz Anlayış Ölçeği</span>
+                                                    <span class="icon-arrow-long-right"></span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="twiceOtherContent d-none">
-                        <!--Sag alan ıcerıklerı buraya gelecek-->
                     </div>
                 </div>
             </div>

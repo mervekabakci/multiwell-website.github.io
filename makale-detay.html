@@ -302,38 +302,37 @@
             <div class="container">
                 <div class="twiceWrapper pageTwice paragraph">
                     <div class="twiceContent">
-                        <!--Kısa metin kalın buyuk-->
-                        <div class="shorText">
-                            <b>Anksiyete bozukluğu;</b> bireyin günlük hayatını oldukça etkileyen herhangi bir tehdit olmamasına rağmen yoğun korku ve kaygı duyma durumudur. 
-                        </div>
-                        <div class="textFeatures">
-                            <a href="#" class="item">
-                                <div class="icon">
-                                    <span class="icon-user-outline"></span>
+                        <div class="d-flex items-center justify-between">
+                            <div class="textFeatures">
+                                <a href="#" class="item">
+                                    <div class="icon">
+                                        <span class="icon-user-outline"></span>
+                                    </div>
+                                    <div class="info">
+                                        <!-- <b>Yazar <span>:</span> </b> -->
+                                        <span class="name">Cem Kaya</span>
+                                        <div class="title">Klinik Psikolog</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="socialShareWrapper">
+                                <div class="title">Paylaş</div>
+                                <div class="socialShare">
+                                    <button class="button socialShareButton" data-sharer="facebook" data-hashtag="hashtag" data-url="https://ellisonleao.github.io/sharer.js/"><span class="icon-facebook-fill"></span></button>
+                                    <button class="button socialShareButton" data-sharer="linkedin" data-url="https://ellisonleao.github.io/sharer.js/"><span class="icon-linkedin-fill"></span></button>
+                                    <button class="button socialShareButton" data-sharer="twitter" data-title="Checkout Sharer.js!" data-hashtags="awesome, sharer.js" data-url="https://ellisonleao.github.io/sharer.js/"><span class="icon-twitter-fill"></span></button>
                                 </div>
-                                <div class="info">
-                                    <!-- <b>Yazar <span>:</span> </b> -->
-                                    <span class="name">Cem Kaya</span>
-                                    <div class="title">Klinik Psikolog</div>
-                                </div>
-                            </a>
-                            <a href="#" class="item">
-                                <div class="icon">
-                                    <span class="icon-user-outline"></span>
-                                </div>
-                                <div class="info">
-                                    <!-- <b>Yayınlayan <span>:</span> </b> -->
-                                    <span class="name">İlknur Çelik</span>
-                                    <div class="title">Klinik Psikolog</div>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="imageColumn">
                             <div class="imageWrapper">
                                 <img src="public/assets/images/media/makaleler/kabullenmemek.jpg" alt="">
                             </div>
                         </div>
-
+                        <!--Kısa metin kalın buyuk-->
+                        <div class="shorText">
+                            <b>Anksiyete bozukluğu;</b> bireyin günlük hayatını oldukça etkileyen herhangi bir tehdit olmamasına rağmen yoğun korku ve kaygı duyma durumudur. 
+                        </div>
                         <!--Paragraf metni-->
                         <div class="longText">
                             <h2>Nefes alıp vermede güçlük</h2>
@@ -415,41 +414,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="twiceOtherContent">
+                    <div class="twiceOtherContent d-none">
                         <!--Sag alan ıcerıklerı buraya gelecek-->
 
-                        <div class="boxWrapper">
-                            <div class="boxes">
-                                <div class="box bg-soft-light-blue p-lg-10 p-4 rounded">
-                                    <div class="textFeatures cards">
-                                        <a href="#" class="item">
-                                            <div class="icon">
-                                                <span class="icon-user-outline"></span>
-                                            </div>
-                                            <div class="info">
-                                                <!-- <b>Yazar <span>:</span> </b> -->
-                                                <div>
-                                                    <span class="name">Cem Kaya</span>
-                                                    <div class="title">Klinik Psikolog</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="item">
-                                            <div class="icon">
-                                                <span class="icon-user-outline"></span>
-                                            </div>
-                                            <div class="info">
-                                                <!-- <b>Yayınlayan <span>:</span> </b> -->
-                                                <div>
-                                                    <span class="name">İlknur Çelik</span>
-                                                    <div class="title">Klinik Psikolog</div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -756,7 +724,7 @@
 
 
     <!--Ornek Dialogs-->
-     <dialog id="exampleDialog" class="dialog">
+    <dialog id="exampleDialog" class="dialog">
         <div class="dialogBody">
             <button class="closeBtn">X</button>
             <div class="dialogHead">
@@ -777,7 +745,7 @@
 
 
     <!--Search Dialogs-->
-     <dialog id="searchDialog" class="dialog fullScreen">
+    <dialog id="searchDialog" class="dialog fullScreen">
         <div class="dialogBody">
             <div class="dialogCenter">
                 <div class="dialogHead border-none">
@@ -928,6 +896,7 @@
     <script src="public/assets/plugin/jquery.min.js"></script> <!--nice select eklentısı ıcın jquery kullanılıyor-->
     <script src="public/assets/plugin/swiper/swiper-bundle.min.js"></script>
     <script src="public/assets/plugin/nice-select/jquery.nice-select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.2/sharer.min.js"></script>
 
     <script src="public/assets/front/js/app.js" defer></script>
     <script src="public/assets/front/js/dialog.js" defer></script>

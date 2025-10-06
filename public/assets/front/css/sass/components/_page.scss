@@ -46,7 +46,7 @@
       margin-top: 40px;
     }
     @media screen and (max-width: 1280px) {
-      margin-top:30px;
+      margin-top: 30px;
     }
     @media screen and (max-width: 991.98px) {
     }
@@ -104,6 +104,12 @@
       .textLink {
         margin-left: auto;
       }
+    }
+    .linkList {
+      margin-top: 40px;
+      gap: 30px;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
