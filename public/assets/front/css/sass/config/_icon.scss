@@ -27,6 +27,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-share-sc:before {
+  content: "\e940";
+}
+.icon-datetime:before {
+  content: "\e93f";
+}
 .icon-podcast:before {
   content: "\e93e";
 }

@@ -13510,6 +13510,14 @@ figure {
   transform-origin: center calc(50% - 1px);
 }
 
+.icon-datetime {
+  font-size: 24px;
+}
+
+.icon-email {
+  font-size: 24px;
+}
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -13698,6 +13706,14 @@ figure {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-share-sc:before {
+  content: "\e940";
+}
+
+.icon-datetime:before {
+  content: "\e93f";
 }
 
 .icon-podcast:before {
@@ -18029,6 +18045,9 @@ section .sectionContent,
 .subBanner .buttons {
   margin-top: auto;
 }
+.subBanner .buttons .textLink:first-child {
+  padding-left: 0;
+}
 .subBanner .textLink {
   font-size: 16px;
   padding-left: 33px;
@@ -19123,6 +19142,7 @@ section .sectionContent,
   display: inline-flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.3s linear;
 }
 .textLink .text {
   position: relative;

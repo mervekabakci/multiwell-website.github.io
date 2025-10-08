@@ -86,10 +86,10 @@
       color: var(--gray-200);
       opacity: 0.7;
       @media screen and (max-width: 991.98px) {
-        min-width:80px;
+        min-width: 80px;
         display: flex;
         align-items: center;
-        span{
+        span {
           margin-left: auto;
         }
       }
@@ -100,6 +100,11 @@
   }
   .buttons {
     margin-top: auto;
+    .textLink {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
   }
   .textLink {
     font-size: 16px;
