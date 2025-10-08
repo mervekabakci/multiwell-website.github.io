@@ -104,6 +104,26 @@ $colors: (
         }
       }
     }
+    .button-light {
+      color: var(--primary) !important;
+      background-color: var(--white) !important;
+      input {
+        color: var(--primary) !important;
+        background: rgba(0, 0, 0, 0) !important;
+      }
+      @media screen and (min-width: 992px) {
+        &:not(.notHover) {
+          &:hover {
+            color: var(--white) !important;
+            background-color: var(--primary) !important;
+            input {
+              color: var(--white) !important;
+              background-color: var(--primary) !important;
+            }
+          }
+        }
+      }
+    }
     .button-secondary {
       @media screen and (min-width: 992px) {
         &:not(.notHover) {

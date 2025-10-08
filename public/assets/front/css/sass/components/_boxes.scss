@@ -52,7 +52,7 @@
                 transition: all 0.3s linear;
                 &.active {
                   color: var(--fifth);
-                  font-family: 'GilroySemibold';
+                  font-family: "GilroySemibold";
                 }
                 @media screen and (min-width: 992px) {
                   position: relative;
@@ -134,5 +134,71 @@
         }
       }
     }
+  }
+}
+
+.socialMediaBox {
+  .title {
+    font-family: "GilroySemibold";
+    font-size: 17px;
+    color: var(--primary);
+  }
+  p {
+    font-family: "GilroyLight";
+    font-size: 13px;
+    color: var(--primary);
+    margin-top: 5px;
+  }
+  .socialMediaList {
+    margin-top: 30px;
+    a {
+      .customIcon {
+        color: var(--primary);
+      }
+    }
+  }
+}
+
+.youtubeBox {
+  .title {
+    font-family: "GilroySemibold";
+    font-size: 17px;
+    color: var(--primary);
+  }
+  p {
+    font-family: "GilroyLight";
+    font-size: 13px;
+    color: var(--primary);
+    margin-top: 5px;
+  }
+  .youtubeBoxBody {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+
+.takeTestBox{
+  .title{
+    font-family: 'GilroyBold';
+    font-size: 23px;
+    color: var(--primary);
+  }
+  p{
+    font-family: 'GilroyRegular';
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--primary);
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .fixBtn{
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'GilroyBold';
   }
 }
