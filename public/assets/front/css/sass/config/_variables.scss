@@ -8,6 +8,7 @@
   --tertiary: #045869;
   --fourth: #8db63f;
   --fifth: #f68d6d;
+  --sixth: #d5281b;
 
   --black-600: #3f3f3f;
   --black-700: #303030;
@@ -20,6 +21,7 @@
   --soft-blue: #b9ddff;
   --soft-light-blue: #e1f0ee;
   --soft-yellow: #eaf475;
+  --soft-light-yellow: #fffab5;
   --soft-orange: #f8a58a;
   --soft-light-orange: #decca7;
 
@@ -45,11 +47,13 @@ $colors: (
   "tertiary": var(--tertiary),
   "fourth": var(--fourth),
   "fifth": var(--fifth),
+  "sixth": var(--sixth),
   "soft-pink": var(--soft-pink),
   "soft-light-pink": var(--soft-light-pink),
   "soft-blue": var(--soft-blue),
   "soft-light-blue": var(--soft-light-blue),
   "soft-yellow": var(--soft-yellow),
+  "soft-light-yellow": var(--soft-light-yellow),
   "soft-orange": var(--soft-orange),
   "soft-light-orange": var(--soft-light-orange),
   "soft-light-green": var(--soft-light-green),
@@ -158,16 +162,14 @@ $colors: (
 }
 @include generate-bg-classes($colors);
 
-
 //border generaner class name
-@mixin generate-border-classes($colors){
-  @each $name, $color in ($colors){
+@mixin generate-border-classes($colors) {
+  @each $name, $color in ($colors) {
     @for $i from 1 through 12 {
       .border-#{$name}-#{$i} {
         border: #{$i}px solid $color;
       }
     }
-
   }
 }
 @include generate-border-classes($colors);

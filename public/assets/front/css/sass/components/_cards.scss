@@ -246,7 +246,7 @@
   }
   &.articleCards {
     .card {
-      @media screen and (max-width:576px) {
+      @media screen and (max-width: 576px) {
         border: 1px solid var(--gray-100);
       }
       .card-image-top {
@@ -273,7 +273,7 @@
           font-size: 16px;
           line-height: 22px;
         }
-        @media screen and (max-width:991.98px) {
+        @media screen and (max-width: 991.98px) {
           min-height: 75px;
         }
       }
@@ -469,9 +469,212 @@
     @media screen and (max-width: 576px) {
       width: 100%;
     }
-    @media screen and (min-width:992px) {
-      &:hover{
+    @media screen and (min-width: 992px) {
+      &:hover {
         color: var(--black-900);
+      }
+    }
+  }
+}
+
+//infocards
+.infoCardList {
+  .infoCard {
+    &:not(:first-child) {
+      margin-top: 56px;
+    }
+    .inforCardHead {
+      min-height: 120px;
+      padding: 30px 50px;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50px;
+        width: 23px;
+        height: 23px;
+        background-color: currentColor;
+        border-radius: 3px;
+        transform: rotate(45deg);
+      }
+      .infoCardTitle {
+        font-family: "GilroyMedium";
+        font-size: 23px;
+        color: var(--white);
+        max-width: 560px;
+      }
+    }
+    .infoCardBody {
+      padding: 30px 50px 70px;
+      background-color: #f9f6f0;
+      .paragraph {
+        font-size: 18px;
+        color: currentColor;
+        font-family: "GilroyRegular";
+        line-height: 35px;
+        max-width: 680px;
+        a {
+          color: currentColor;
+          font-family: "GilroyMedium";
+          position: relative;
+          @media screen and (max-width: 991.98px) {
+            border-bottom: 1px solid currentColor;
+          }
+          @media screen and (min-width: 992px) {
+            &:after {
+              content: "";
+              width: 100%;
+              border-bottom: 1px solid currentColor;
+              position: absolute;
+              bottom: -1px;
+              left: 0;
+              transition: all 0.3s linear;
+            }
+            &:hover {
+              &:after {
+                width: 0;
+              }
+            }
+          }
+        }
+        ul {
+          list-style-type: disc;
+          padding-left: 28px;
+          padding-bottom: 35px;
+          padding-top: 20px;
+          li {
+            padding: 10px 0 10px 10px;
+            font-family: "GilroyRegular";
+            font-size: 18px;
+            color: currentColor;
+            &::marker {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//adviceCards
+.adviceCards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+
+  .adviceCard {
+    background-color: var(--soft-light-pink);
+    border-radius: 10px;
+    @media screen and (max-width: 991.98px) {
+      padding: 20px;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 16px;
+    }
+    @media screen and (min-width: 992px) {
+      padding: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 48px;
+    }
+    .adviceCardHead {
+      position: relative;
+      transform: translateY(15px);
+      .adviceCardTitle {
+        color: currentColor;
+        padding: 10px 30px;
+        font-family: "GilroyMedium";
+        font-size: 18px;
+        border-radius: 6px 6px 6px 0;
+      }
+    }
+    .adviceCardBody {
+      padding: 50px 16px 30px 30px;
+      background-color: var(--white);
+      border: 1px solid var(--gray-100);
+      max-width: 680px;
+      border-radius: 8px;
+      font-size: 15px;
+      color: var(--black);
+      font-family: "GilroyRegular";
+      line-height: 22px;
+      a {
+        color: var(--sixth);
+        font-family: "GilroyMedium";
+        position: relative;
+        @media screen and (max-width: 991.98px) {
+          border-bottom: 1px solid var(--sixth);
+        }
+        @media screen and (min-width: 992px) {
+          &:after {
+            content: "";
+            width: 100%;
+            border-bottom: 1px solid var(--sixth);
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            transition: all 0.3s linear;
+          }
+          &:hover {
+            &:after {
+              width: 0;
+            }
+          }
+        }
+      }
+    }
+    ul {
+      font-size: 15px;
+      color: var(--black);
+      font-family: "GilroyRegular";
+      line-height: 22px;
+      margin-bottom: 30px;
+      margin-top: 15px;
+      li {
+        position: relative;
+        padding: 10px 15px 10px 30px;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 10px;
+          font-family: "customFont";
+          font-weight: 800;
+          font-size: 20px;
+        }
+      }
+      &.standart {
+        padding-left: 20px;
+        li {
+          list-style-type: disc;
+          padding-left: 0;
+        }
+      }
+    }
+    &.adviceCardDo {
+      ul {
+        li {
+          &:before {
+            content: "\e91f";
+            color: var(--success);
+          }
+        }
+      }
+    }
+    &.adviceCardDont {
+      ul {
+        li {
+          &:before {
+            content: "\e920";
+            color: var(--error);
+          }
+        }
+      }
+    }
+    &.adviceCardWarning {
+      .adviceCardBody {
+        background-color: var(--soft-light-yellow);
       }
     }
   }
