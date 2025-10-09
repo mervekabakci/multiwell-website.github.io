@@ -23,6 +23,11 @@
       line-height: 25px;
     }
   }
+  .category{
+    font-family: 'GilroyRegular';
+    font-size: 15px;
+    color: var(--white);
+  }
   .breadcrumbWrapper {
     margin-bottom: 30px;
     @media screen and (max-width: 991.98px) {
@@ -94,9 +99,9 @@
         }
       }
     }
-    span {
-      color: var(--white);
-    }
+    // span {
+    //   color: var(--white);
+    // }
   }
   .buttons {
     margin-top: auto;

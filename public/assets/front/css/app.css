@@ -17955,6 +17955,11 @@ section .sectionContent,
     line-height: 25px;
   }
 }
+.subBanner .category {
+  font-family: "GilroyRegular";
+  font-size: 15px;
+  color: var(--white);
+}
 .subBanner .breadcrumbWrapper {
   margin-bottom: 30px;
 }
@@ -18038,9 +18043,6 @@ section .sectionContent,
   .subBanner .bottom b span {
     margin-left: auto;
   }
-}
-.subBanner .bottom span {
-  color: var(--white);
 }
 .subBanner .buttons {
   margin-top: auto;
@@ -18938,6 +18940,21 @@ section .sectionContent,
   color: var(--gray-500);
   font-weight: 500;
 }
+.socialShareWrapper .socialTitle {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  font-family: "GilroySemibold";
+  cursor: pointer;
+}
+.socialShareWrapper .socialTitle .icon-share-sc {
+  color: currentColor;
+}
+.socialShareWrapper .socialTitle span {
+  color: currentColor;
+}
 .socialShareWrapper .socialShare {
   display: flex;
   align-items: center;
@@ -18958,6 +18975,257 @@ section .sectionContent,
   .socialShareWrapper .socialShare .socialShareButton:hover {
     color: var(--fifth);
   }
+}
+.socialShareWrapper.type2 {
+  position: relative;
+}
+.socialShareWrapper.type2 .socialShare {
+  position: absolute;
+  background-color: var(--tertiary);
+  padding: 10px 30px;
+  border-radius: 6px;
+  right: 0;
+  top: auto;
+  bottom: calc(100% + 10px);
+  transition: all 0.3s linear;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.socialShareWrapper.type2 .socialShare .socialShareButton {
+  width: 36px;
+  height: 36px;
+  background: var(--white);
+  border-radius: 100%;
+}
+.socialShareWrapper.type2 .socialShare .socialShareButton span {
+  color: var(--primary);
+}
+@media screen and (min-width: 992px) {
+  .socialShareWrapper.type2 .socialShare .socialShareButton:hover {
+    background-color: var(--secondary);
+    transform: scale(1.1);
+  }
+  .socialShareWrapper.type2 .socialShare .socialShareButton:hover span {
+    color: var(--white);
+  }
+}
+.socialShareWrapper.type2 .socialShare.opened {
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+}
+.socialShareWrapper.type2 .socialTitle {
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .socialShareWrapper.type2 .socialTitle:hover {
+    color: var(--fifth);
+  }
+}
+
+.icon-share-sc {
+  font-size: 30px;
+}
+
+.expertHead {
+  padding: 20px 0;
+}
+.expertHead .headContainer {
+  max-width: 1750px;
+  margin: 0 auto;
+}
+.expertHead .top {
+  padding-bottom: 15px;
+}
+.expertHead .top .title {
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--primary);
+}
+.expertHead .top .category {
+  font-family: "GilroyRegular";
+  font-size: 15px;
+  color: var(--gray-400);
+}
+.expertHead .expertMenu {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.expertHead .expertMenu .menu-item {
+  height: 50px;
+  border: 1px solid var(--gray-100);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "GilroyMedium";
+  color: var(--primary);
+  transition: all 0.3s linear;
+  padding: 0 24px;
+}
+.expertHead .expertMenu .menu-item.active {
+  color: var(--white);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+@media screen and (min-width: 992px) {
+  .expertHead .expertMenu .menu-item:hover {
+    color: var(--white);
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+}
+.expertHead.fixed {
+  position: fixed;
+  top: 86px;
+  width: 100%;
+  left: 0;
+  background-color: var(--white);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.expertHead.fixed .headContainer {
+  padding: 0 50px;
+}
+@media screen and (max-width: 1800px) {
+  .expertHead.fixed .headContainer {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .expertHead.fixed .headContainer {
+    padding: 0 16px;
+  }
+}
+
+.expertPage {
+  padding: 0 50px;
+}
+@media screen and (max-width: 1280px) {
+  .expertPage {
+    padding: 0;
+  }
+}
+.expertPage .expertAbout {
+  display: flex;
+  align-items: flex-start;
+}
+.expertPage .expertAbout figure {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.expertPage .expertAbout figure img {
+  width: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+}
+.expertPage .expertAbout .expertInfo {
+  padding-left: 90px;
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+.expertPage .expertAbout .expertInfo .items {
+  width: 33.3%;
+}
+.expertPage .expertAbout .expertInfo .items:not(:first-child) {
+  padding-left: 30px;
+}
+.expertPage .expertAbout .expertInfo .items .item {
+  padding-bottom: 45px;
+}
+.expertPage .expertAbout .expertInfo .items .item .title {
+  font-family: "GilroyBold";
+  color: var(--black);
+  font-size: 16px;
+}
+.expertPage .expertAbout .expertInfo .items .item .desc {
+  font-size: 15px;
+  color: var(--black);
+  font-family: "GilroyRegular";
+}
+.expertPage .aboutDesc .paragraph {
+  font-family: "GilroyMedium";
+  font-size: 18px;
+  line-height: 35px;
+  color: var(--black-800);
+}
+.expertPage .aboutDesc .paragraph a:not(.fixBtn) {
+  position: relative;
+  font-family: "GilroySemibold";
+  color: var(--fifth);
+}
+@media screen and (max-width: 991.98px) {
+  .expertPage .aboutDesc .paragraph a:not(.fixBtn) {
+    border-bottom: 1px solid var(--fifth);
+  }
+}
+@media screen and (min-width: 992px) {
+  .expertPage .aboutDesc .paragraph a:not(.fixBtn):after {
+    content: "";
+    border-bottom: 1px solid var(--fifth);
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+  .expertPage .aboutDesc .paragraph a:not(.fixBtn):hover:after {
+    width: 0;
+  }
+}
+.expertPage .paragraph .standartList li {
+  font-family: "GilroyMedium";
+  font-size: 18px;
+  color: var(--black-800);
+  padding: 10px 0;
+}
+.expertPage .paragraph .standartList li a:not(.fixBtn) {
+  position: relative;
+  font-family: "GilroySemibold";
+  color: var(--sixth);
+}
+@media screen and (max-width: 991.98px) {
+  .expertPage .paragraph .standartList li a:not(.fixBtn) {
+    border-bottom: 1px solid var(--sixth);
+  }
+}
+@media screen and (min-width: 992px) {
+  .expertPage .paragraph .standartList li a:not(.fixBtn):after {
+    content: "";
+    border-bottom: 1px solid var(--sixth);
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+  .expertPage .paragraph .standartList li a:not(.fixBtn):hover:after {
+    width: 0;
+  }
+}
+.expertPage .scrollSection {
+  margin-block: 0;
+  padding-block: 80px;
+}
+.expertPage .scrollSection:not(:first-child) {
+  border-top: 1px solid var(--gray-100);
+}
+.expertPage .scrollSection .pageRowHead {
+  padding-bottom: 30px;
+}
+.expertPage .scrollSection .pageRowHead .pageRowTitle {
+  font-size: 30px;
+  font-family: "GilroyBold";
+  color: var(--black-800);
 }
 
 .dropdown .dropdown-button {

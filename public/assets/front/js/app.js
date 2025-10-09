@@ -65,7 +65,14 @@ if(quickMenu){
       }
     });
   });
+
+  //Banner sosyal medıa paylasım
+  document.querySelector(".socialShareWrapper .socialTitle").addEventListener("click", function() {
+    this.nextElementSibling.classList.toggle("opened");
+  });
 }
+
+
 
 //customselect
 $(document).ready(function () {
