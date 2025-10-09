@@ -31,12 +31,10 @@ anchorLinks.forEach((anchorLink) => {
       sections.forEach((section) => section.classList.remove("active"));
       targetElem.classList.add("active");
 
-      // 🔹 Header ve menü yüksekliğini al
       const expertHeadHeight = expertHead ? expertHead.offsetHeight : 0;
       const expertMenuHeight = expertMenu ? expertMenu.offsetHeight : 0;
       const totalOffset = expertHeadHeight + expertMenuHeight;
 
-      // 🔹 Smooth scroll + offset uygulama
       const targetPosition =
         targetElem.getBoundingClientRect().top + window.scrollY - totalOffset;
 
