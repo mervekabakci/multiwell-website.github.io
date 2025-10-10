@@ -27,6 +27,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-double-down:before {
+  content: "\e941";
+}
 .icon-share-sc:before {
   content: "\e940";
 }

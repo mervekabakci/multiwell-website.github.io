@@ -13708,6 +13708,10 @@ figure {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-double-down:before {
+  content: "\e941";
+}
+
 .icon-share-sc:before {
   content: "\e940";
 }
@@ -16757,6 +16761,10 @@ section .sectionContent,
   }
 }
 
+.infoCardList .infoCard {
+  border-radius: 10px;
+  overflow: hidden;
+}
 .infoCardList .infoCard:not(:first-child) {
   margin-top: 56px;
 }
@@ -17207,10 +17215,6 @@ section .sectionContent,
   }
 }
 
-.commentsWrapper {
-  position: relative;
-}
-
 @media screen and (min-width: 992px) {
   .commentsSlider {
     padding-top: 25px;
@@ -17298,6 +17302,49 @@ section .sectionContent,
   .commentsSlider .card .commentUserName {
     font-size: 15px;
   }
+}
+
+.commentsWrapper {
+  position: relative;
+}
+.commentsWrapper .cards.cardList {
+  gap: 30px;
+}
+.commentsWrapper .cards.cardList .card {
+  box-shadow: none;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+  padding: 30px;
+}
+.commentsWrapper .cards.cardList .card .card-body {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+.commentsWrapper .cards.cardList .card .card-body .card-text {
+  text-align: left;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 0;
+}
+.commentsWrapper .cards.cardList .card .card-body .card-text:after, .commentsWrapper .cards.cardList .card .card-body .card-text:before {
+  content: "“";
+  color: var(--tertiary);
+  text-align: left;
+  font-family: "GilroyMedium";
+  font-size: 35px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 991.98px) {
+  .commentsWrapper .cards.cardList .card .card-body .card-text:after, .commentsWrapper .cards.cardList .card .card-body .card-text:before {
+    font-size: 26px;
+  }
+}
+.commentsWrapper .cards.cardList .card .card-footer {
+  padding-top: 20px;
 }
 
 .portalWrapper {
@@ -17465,7 +17512,7 @@ section .sectionContent,
   height: 50px;
 }
 .twiceWrapperRevert .searchWrapper .searchInputWrapper:before {
-  left: 8px;
+  left: 19px;
   top: 13px;
   font-size: 16px;
 }
@@ -17477,7 +17524,7 @@ section .sectionContent,
 .twiceWrapperRevert .searchWrapper.type2 input {
   width: 100%;
   height: 50px;
-  padding-left: 30px;
+  padding-left: 45px;
   font-size: 14px;
 }
 .twiceWrapperRevert .searchWrapper.type2 input:focus {
@@ -18578,6 +18625,15 @@ section .sectionContent,
     line-height: 22px;
   }
 }
+.boxWrapper .boxes .box .cards.cardList .cardItem a.card-body.active {
+  background-color: var(--white);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 6px;
+}
+.boxWrapper .boxes .box .cards.cardList .cardItem a.card-body.active .card-title {
+  color: var(--secondary);
+}
 @media screen and (min-width: 992px) {
   .boxWrapper .boxes .box .cards.cardList .cardItem a.card-body:hover {
     background-color: var(--white);
@@ -19029,23 +19085,38 @@ section .sectionContent,
 }
 
 .expertHead {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .expertHead .headContainer {
   max-width: 1750px;
   margin: 0 auto;
 }
+.expertHead .headContainer .icon {
+  width: 45px;
+  margin-left: 30px;
+}
+.expertHead .headContainer .icon img {
+  width: 100%;
+  min-width: 100%;
+}
 .expertHead .top {
-  padding-bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 .expertHead .top .title {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   color: var(--primary);
 }
 .expertHead .top .category {
   font-family: "GilroyRegular";
-  font-size: 15px;
+  font-size: 14px;
   color: var(--gray-400);
 }
 .expertHead .expertMenu {
@@ -19053,11 +19124,58 @@ section .sectionContent,
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  height: 70px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--gray-100);
+  padding-right: 90px;
+  transition: all 0.3s linear;
+}
+.expertHead .expertMenu .allExpertMenu {
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 10px 20px;
+  background: var(--white);
+  font-family: "GilroySemibold";
+  color: var(--tertiary);
+  transition: all 0.3s linear;
+}
+.expertHead .expertMenu .allExpertMenu:after {
+  content: "\e941";
+  font-family: "customFont";
+  font-size: 24px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+.expertHead .expertMenu .allExpertMenu.active {
+  color: var(--sixth);
+}
+.expertHead .expertMenu .allExpertMenu.active:after {
+  transform: rotate(180deg);
+}
+@media screen and (min-width: 992px) {
+  .expertHead .expertMenu .allExpertMenu:hover {
+    color: var(--sixth);
+  }
+  .expertHead .expertMenu .allExpertMenu:hover:after {
+    transform: rotate(180deg);
+  }
 }
 .expertHead .expertMenu .menu-item {
   height: 50px;
   border: 1px solid var(--gray-100);
   border-radius: 10px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -19078,14 +19196,39 @@ section .sectionContent,
     border-color: var(--primary);
   }
 }
+.expertHead .expertMenu.opened {
+  height: auto;
+  overflow: visible;
+}
 .expertHead.fixed {
   position: fixed;
-  top: 86px;
+  top: 0;
   width: 100%;
   left: 0;
   background-color: var(--white);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
   z-index: 99;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.expertHead.fixed .top {
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  padding-bottom: 10px;
+}
+.expertHead.fixed .expertMenu {
+  gap: 10px;
+  height: 50px;
+}
+.expertHead.fixed .expertMenu .menu-item {
+  height: 40px;
+  font-size: 14px;
+  padding: 0 14px;
+}
+.expertHead.fixed .expertMenu.opened {
+  height: auto;
 }
 .expertHead.fixed .headContainer {
   padding: 0 50px;
@@ -19146,11 +19289,16 @@ section .sectionContent,
   font-family: "GilroyBold";
   color: var(--black);
   font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
 }
 .expertPage .expertAbout .expertInfo .items .item .desc {
   font-size: 15px;
   color: var(--black);
   font-family: "GilroyRegular";
+}
+.expertPage .expertAbout .expertInfo .items .item .desc ul li {
+  padding: 5px 0;
 }
 .expertPage .aboutDesc .paragraph {
   font-family: "GilroyMedium";
@@ -19182,9 +19330,23 @@ section .sectionContent,
     width: 0;
   }
 }
+.expertPage .aboutDesc .moreAbout {
+  font-size: 16px;
+  color: var(--secondary);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "GilroyMedium";
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .expertPage .aboutDesc .moreAbout:hover {
+    color: var(--sixth);
+  }
+}
 .expertPage .paragraph .standartList li {
   font-family: "GilroyMedium";
-  font-size: 18px;
+  font-size: 16px;
   color: var(--black-800);
   padding: 10px 0;
 }
@@ -19195,13 +19357,13 @@ section .sectionContent,
 }
 @media screen and (max-width: 991.98px) {
   .expertPage .paragraph .standartList li a:not(.fixBtn) {
-    border-bottom: 1px solid var(--sixth);
+    border-bottom: 1px dotted var(--sixth);
   }
 }
 @media screen and (min-width: 992px) {
   .expertPage .paragraph .standartList li a:not(.fixBtn):after {
     content: "";
-    border-bottom: 1px solid var(--sixth);
+    border-bottom: 1px dotted var(--sixth);
     width: 100%;
     position: absolute;
     bottom: -2px;
@@ -19211,6 +19373,31 @@ section .sectionContent,
   .expertPage .paragraph .standartList li a:not(.fixBtn):hover:after {
     width: 0;
   }
+}
+.expertPage .adressInfo {
+  margin-bottom: 40px;
+}
+.expertPage .adressInfo .adressName {
+  font-family: "GilroyBold";
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--black-800);
+}
+.expertPage .adressInfo .adressLocation {
+  font-family: "GilroyMedium";
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--black-800);
+  margin-top: 5px;
+}
+.expertPage .info {
+  display: flex;
+  align-items: center;
+  color: var(--soft-orange);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "GilroySemibold";
+  gap: 15px;
 }
 .expertPage .scrollSection {
   margin-block: 0;

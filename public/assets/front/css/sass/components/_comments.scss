@@ -57,10 +57,6 @@
     }
   }
 }
-
-.commentsWrapper {
-  position: relative;
-}
 .commentsSlider {
   @media screen and (min-width: 992px) {
     padding-top: 25px;
@@ -89,7 +85,7 @@
     min-height: 450px;
     @media screen and (max-width: 1280px) {
       padding: 20px 16px;
-      min-height:250px;
+      min-height: 250px;
     }
     @media screen and (max-width: 991.98px) {
       min-height: 280px;
@@ -139,6 +135,50 @@
       color: var(--tertiary);
       @media screen and (max-width: 991.98px) {
         font-size: 15px;
+      }
+    }
+  }
+}
+
+.commentsWrapper {
+  position: relative;
+  .cards {
+    &.cardList {
+      gap: 30px;
+      .card {
+        box-shadow: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+        padding: 30px;
+        .card-body {
+          background-color: rgba(0, 0, 0, 0);
+          padding: 0;
+          .card-text {
+            text-align: left;
+            position: relative;
+            align-items: flex-start;
+            padding-top: 0;
+            &:after,
+            &:before {
+              content: "“";
+              color: var(--tertiary);
+              text-align: left;
+              font-family: "GilroyMedium";
+              font-size: 35px;
+              line-height: 25px;
+              display: flex;
+              align-items: center;
+              @media screen and (max-width: 991.98px) {
+                font-size: 26px;
+              }
+            }
+          }
+        }
+        .card-footer{
+          padding-top: 20px;
+        }
       }
     }
   }

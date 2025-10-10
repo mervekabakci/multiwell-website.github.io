@@ -31,7 +31,7 @@ navButton.addEventListener("click", function () {
 
 //quick menu button
 const quickMenu = document.querySelector(".quickMenuButton");
-if(quickMenu){
+if (quickMenu) {
   const quickMenuWrapper = document.querySelector(".quickMenuWrapper");
   const quickMenuCloseButton = quickMenuWrapper.querySelector(".closeButton");
   const quickMenuItems = quickMenuWrapper.querySelectorAll(".quickItem");
@@ -67,13 +67,46 @@ if(quickMenu){
   });
 
   //Banner sosyal medıa paylasım
-  document.querySelector(".socialShareWrapper .socialTitle").addEventListener("click", function() {
-    this.nextElementSibling.classList.toggle("opened");
+  const socialTitle = document.querySelector(
+    ".socialShareWrapper .socialTitle"
+  );
+  if (socialTitle) {
+    socialTitle.addEventListener("click", function () {
+      this.nextElementSibling.classList.toggle("opened");
+    });
+  }
+}
+
+const moreAboutButton = document.querySelector(".moreAbout");
+if (moreAboutButton) {
+  moreAboutButton.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const paragraph = this.previousElementSibling;
+    const isOpened = paragraph.classList.toggle("opened");
+
+    if (isOpened) {
+      paragraph.classList.remove("line-clamp-10");
+      this.textContent = "Daha Az Gör";
+    } else {
+      paragraph.classList.add("line-clamp-10");
+      this.textContent = "Daha Fazla Gör";
+    }
   });
 }
 
+//uzman detay menu button
 
+const allExpertMenu = document.querySelector(".allExpertMenu");
+if (allExpertMenu) {
+  allExpertMenu.addEventListener("click", function (e) {
+    e.preventDefault();
+    this.classList.toggle("active");
+    this.parentElement.classList.toggle("opened");
 
+    this.textContent = this.classList.contains("active") ? "Gizle" : "Tümü";
+  });
+}
 //customselect
 $(document).ready(function () {
   $(".customSelect").niceSelect();

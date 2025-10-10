@@ -39,7 +39,7 @@ anchorLinks.forEach((anchorLink) => {
         targetElem.getBoundingClientRect().top + window.scrollY - totalOffset;
 
       window.scrollTo({
-        top: targetPosition,
+        top: targetPosition + 100,
         behavior: "smooth",
       });
     }
@@ -48,8 +48,8 @@ anchorLinks.forEach((anchorLink) => {
 
 const options = {
   root: null,
-  threshold: 0.4,
-  rootMargin: `-${expertHeadHeight + expertMenuHeight}px 0px 0px 0px`,
+  threshold: 0.3,
+  rootMargin: "-100px",
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {

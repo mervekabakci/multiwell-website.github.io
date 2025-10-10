@@ -25,23 +25,31 @@
       display: flex;
       align-items: flex-start;
       flex: 1;
-      .items{
-        width:33.3%;
-        &:not(:first-child){
-            padding-left: 30px;
+      .items {
+        width: 33.3%;
+        &:not(:first-child) {
+          padding-left: 30px;
         }
-        .item{
-            padding-bottom: 45px;
-            .title{
-                font-family: 'GilroyBold';
-                color: var(--black);
-                font-size: 16px;
+        .item {
+          padding-bottom: 45px;
+          .title {
+            font-family: "GilroyBold";
+            color: var(--black);
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 4px;
+          }
+          .desc {
+            font-size: 15px;
+            color: var(--black);
+            font-family: "GilroyRegular";
+
+            ul{
+              li{
+                padding:5px 0;
+              }
             }
-            .desc{
-                font-size: 15px;
-                color: var(--black);
-                font-family: 'GilroyRegular';
-            }
+          }
         }
       }
     }
@@ -80,12 +88,26 @@
         }
       }
     }
+    .moreAbout {
+      font-size: 16px;
+      color: var(--secondary);
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      font-family: "GilroyMedium";
+      transition: all 0.3s linear;
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--sixth);
+        }
+      }
+    }
   }
   .paragraph {
     .standartList {
       li {
         font-family: "GilroyMedium";
-        font-size: 18px;
+        font-size: 16px;
         color: var(--black-800);
         padding: 10px 0;
         a {
@@ -94,12 +116,12 @@
             font-family: "GilroySemibold";
             color: var(--sixth);
             @media screen and (max-width: 991.98px) {
-              border-bottom: 1px solid var(--sixth);
+              border-bottom: 1px dotted var(--sixth);
             }
             @media screen and (min-width: 992px) {
               &:after {
                 content: "";
-                border-bottom: 1px solid var(--sixth);
+                border-bottom: 1px dotted var(--sixth);
                 width: 100%;
                 position: absolute;
                 bottom: -2px;
@@ -116,6 +138,31 @@
         }
       }
     }
+  }
+  .adressInfo {
+    margin-bottom: 40px;
+    .adressName {
+      font-family: "GilroyBold";
+      font-size: 18px;
+      line-height: 25px;
+      color: var(--black-800);
+    }
+    .adressLocation {
+      font-family: "GilroyMedium";
+      font-size: 18px;
+      line-height: 30px;
+      color: var(--black-800);
+      margin-top: 5px;
+    }
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    color: var(--soft-orange);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "GilroySemibold";
+    gap: 15px;
   }
   .scrollSection {
     margin-block: 0;

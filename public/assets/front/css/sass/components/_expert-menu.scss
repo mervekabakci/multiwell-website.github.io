@@ -1,19 +1,35 @@
 .expertHead {
-  padding: 20px 0;
+  padding: 10px 0;
   .headContainer {
     max-width: 1750px;
     margin: 0 auto;
+
+    .icon {
+      width: 45px;
+      margin-left: 30px;
+      img {
+        width: 100%;
+        min-width: 100%;
+      }
+    }
   }
   .top {
-    padding-bottom: 15px;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.3s linear;
+    display: flex;
+    align-items: center;
+    gap: 30px;
     .title {
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 24px;
+      line-height: 32px;
       color: var(--primary);
     }
     .category {
       font-family: "GilroyRegular";
-      font-size: 15px;
+      font-size: 14px;
       color: var(--gray-400);
     }
   }
@@ -22,10 +38,57 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+    height: 70px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid var(--gray-100);
+    padding-right: 90px;
+    transition: all 0.3s linear;
+    .allExpertMenu {
+      font-size: 14px;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0 10px 20px;
+      background: var(--white);
+      font-family: "GilroySemibold";
+      color: var(--tertiary);
+      transition: all 0.3s linear;
+      &:after {
+        content: "\e941";
+        font-family: "customFont";
+        font-size: 24px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s linear;
+      }
+      &.active {
+        color: var(--sixth);
+        &:after {
+          transform: rotate(180deg);
+        }
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          color: var(--sixth);
+          &:after {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
     .menu-item {
       height: 50px;
       border: 1px solid var(--gray-100);
       border-radius: 10px;
+      font-size: 15px;
       display: flex;
       align-items: center;
       gap: 10px;
@@ -46,16 +109,41 @@
         }
       }
     }
+    &.opened {
+      height: auto;
+      overflow: visible;
+    }
   }
   &.fixed {
     position: fixed;
     // bottom: 0;
-    top: 86px;
+    top: 0;
     width: 100%;
     left: 0;
     background-color: var(--white);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
     z-index: 99;
+    border-bottom: none;
+    padding-bottom: 0;
+    .top {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      overflow: visible;
+      padding-bottom: 10px;
+    }
+    .expertMenu {
+      gap: 10px;
+      height: 50px;
+      .menu-item {
+        height: 40px;
+        font-size: 14px;
+        padding: 0 14px;
+      }
+      &.opened{
+        height: auto;
+      }
+    }
     .headContainer {
       padding: 0 50px;
       @media screen and (max-width: 1800px) {
