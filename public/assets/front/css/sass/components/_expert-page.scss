@@ -167,6 +167,7 @@
   .scrollSection {
     margin-block: 0;
     padding-block: 80px;
+    min-height: 600px;
     &:not(:first-child) {
       border-top: 1px solid var(--gray-100);
     }

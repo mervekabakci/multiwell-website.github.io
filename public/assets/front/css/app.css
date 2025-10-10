@@ -3509,6 +3509,58 @@ figure {
   -webkit-line-clamp: 12;
 }
 
+.border-1 {
+  border: 1px solid 1;
+}
+
+.border-2 {
+  border: 1px solid 2;
+}
+
+.border-3 {
+  border: 1px solid 3;
+}
+
+.border-4 {
+  border: 1px solid 4;
+}
+
+.border-5 {
+  border: 1px solid 5;
+}
+
+.border-6 {
+  border: 1px solid 6;
+}
+
+.border-7 {
+  border: 1px solid 7;
+}
+
+.border-8 {
+  border: 1px solid 8;
+}
+
+.border-9 {
+  border: 1px solid 9;
+}
+
+.border-10 {
+  border: 1px solid 10;
+}
+
+.border-11 {
+  border: 1px solid 11;
+}
+
+.border-12 {
+  border: 1px solid 12;
+}
+
+.border-none {
+  border: none !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -17317,6 +17369,10 @@ section .sectionContent,
   align-items: flex-start;
   text-align: left;
   padding: 30px;
+  border-radius: 0;
+}
+.commentsWrapper .cards.cardList .card:not(:first-child) {
+  border-top: 1px solid var(--gray-100);
 }
 .commentsWrapper .cards.cardList .card .card-body {
   background-color: rgba(0, 0, 0, 0);
@@ -17327,6 +17383,10 @@ section .sectionContent,
   position: relative;
   align-items: flex-start;
   padding-top: 0;
+  gap: 15px;
+}
+.commentsWrapper .cards.cardList .card .card-body .card-text span {
+  color: var(--black-800);
 }
 .commentsWrapper .cards.cardList .card .card-body .card-text:after, .commentsWrapper .cards.cardList .card .card-body .card-text:before {
   content: "“";
@@ -17342,6 +17402,9 @@ section .sectionContent,
   .commentsWrapper .cards.cardList .card .card-body .card-text:after, .commentsWrapper .cards.cardList .card .card-body .card-text:before {
     font-size: 26px;
   }
+}
+.commentsWrapper .cards.cardList .card .card-body .card-text:before {
+  transform: translateY(15px);
 }
 .commentsWrapper .cards.cardList .card .card-footer {
   padding-top: 20px;
@@ -17894,6 +17957,39 @@ section .sectionContent,
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
+}
+.pageSection .pageRow .standartList {
+  padding-top: 30px;
+}
+.pageSection .pageRow .standartList li {
+  font-family: "GilroyMedium";
+  font-size: 16px;
+  color: var(--black-800);
+  padding: 10px 0;
+}
+.pageSection .pageRow .standartList li a:not(.fixBtn) {
+  position: relative;
+  font-family: "GilroySemibold";
+  color: var(--sixth);
+}
+@media screen and (max-width: 991.98px) {
+  .pageSection .pageRow .standartList li a:not(.fixBtn) {
+    border-bottom: 1px dotted var(--sixth);
+  }
+}
+@media screen and (min-width: 992px) {
+  .pageSection .pageRow .standartList li a:not(.fixBtn):after {
+    content: "";
+    border-bottom: 1px dotted var(--sixth);
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: all 0.3s linear;
+  }
+  .pageSection .pageRow .standartList li a:not(.fixBtn):hover:after {
+    width: 0;
+  }
 }
 
 .howToWorkList {
@@ -19093,11 +19189,16 @@ section .sectionContent,
 }
 .expertHead .headContainer .icon {
   width: 45px;
-  margin-left: 30px;
 }
 .expertHead .headContainer .icon img {
   width: 100%;
   min-width: 100%;
+  transition: all 0.3s linear;
+}
+@media screen and (min-width: 992px) {
+  .expertHead .headContainer .icon:hover img {
+    transform: scale(1.1);
+  }
 }
 .expertHead .top {
   opacity: 0;
@@ -19221,6 +19322,8 @@ section .sectionContent,
 .expertHead.fixed .expertMenu {
   gap: 10px;
   height: 50px;
+  padding-left: 72px;
+  border-bottom: none;
 }
 .expertHead.fixed .expertMenu .menu-item {
   height: 40px;
@@ -19402,6 +19505,7 @@ section .sectionContent,
 .expertPage .scrollSection {
   margin-block: 0;
   padding-block: 80px;
+  min-height: 600px;
 }
 .expertPage .scrollSection:not(:first-child) {
   border-top: 1px solid var(--gray-100);

@@ -107,6 +107,14 @@ figure {
   }
 }
 
+@for $i from 1 through 12 {
+  .border-#{$i} {
+    border: 1px solid $i;
+  }
+}
+.border-none{
+  border: none!important;
+}
 // -----------------------------
 //  VARIABLES
 // -----------------------------
@@ -524,9 +532,9 @@ $step: 4px;
   transform-origin: center calc(50% - 1px);
 }
 
-.icon-datetime{
+.icon-datetime {
   font-size: 24px;
 }
-.icon-email{
+.icon-email {
   font-size: 24px;
 }

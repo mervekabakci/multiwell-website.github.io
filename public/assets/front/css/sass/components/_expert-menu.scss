@@ -6,10 +6,17 @@
 
     .icon {
       width: 45px;
-      margin-left: 30px;
       img {
         width: 100%;
         min-width: 100%;
+        transition: all 0.3s linear;
+      }
+      @media screen and (min-width: 992px) {
+        &:hover {
+          img {
+            transform: scale(1.1);
+          }
+        }
       }
     }
   }
@@ -135,12 +142,14 @@
     .expertMenu {
       gap: 10px;
       height: 50px;
+      padding-left: 72px;
+      border-bottom: none;
       .menu-item {
         height: 40px;
         font-size: 14px;
         padding: 0 14px;
       }
-      &.opened{
+      &.opened {
         height: auto;
       }
     }

@@ -111,5 +111,40 @@
       display: flex;
       flex-wrap: wrap;
     }
+    .standartList {
+      padding-top: 30px;
+      li {
+        font-family: "GilroyMedium";
+        font-size: 16px;
+        color: var(--black-800);
+        padding: 10px 0;
+        a {
+          &:not(.fixBtn) {
+            position: relative;
+            font-family: "GilroySemibold";
+            color: var(--sixth);
+            @media screen and (max-width: 991.98px) {
+              border-bottom: 1px dotted var(--sixth);
+            }
+            @media screen and (min-width: 992px) {
+              &:after {
+                content: "";
+                border-bottom: 1px dotted var(--sixth);
+                width: 100%;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                transition: all 0.3s linear;
+              }
+              &:hover {
+                &:after {
+                  width: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
