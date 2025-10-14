@@ -1,7 +1,8 @@
 $(window).on("scroll", function () {
     const $wrapper = $(".twiceWrapperRevert");
     const $content = $(".twiceLeftContent");
-
+    
+    if (window.innerWidth < 992) return;
     if ($wrapper.length === 0 || $content.length === 0) return;
 
     const wrapperTop = $wrapper.offset().top;
@@ -34,3 +35,9 @@ $(window).on("scroll", function () {
         });
     }
 });
+
+if(window.innerWidth < 992){
+    document.querySelector(".expertFilterWrapper").addEventListener("click", function(){
+        this.parentElement.classList.toggle("opened");
+    });
+}

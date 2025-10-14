@@ -7,12 +7,22 @@
   .expertAbout {
     display: flex;
     align-items: flex-start;
+    @media screen and (max-width: 991.98px) {
+      flex-direction: column;
+      gap: 20px;
+    }
     figure {
       max-width: 420px;
       width: 100%;
       border-radius: 10px;
       overflow: hidden;
       aspect-ratio: 1/1;
+      @media screen and (max-width: 1600px) {
+        max-width: 340px;
+      }
+      @media screen and (max-width: 1124px) {
+        max-width: 260px;
+      }
       img {
         width: 100%;
         min-width: 100%;
@@ -25,13 +35,36 @@
       display: flex;
       align-items: flex-start;
       flex: 1;
+      @media screen and (max-width: 1124px) {
+        flex-direction: column;
+        padding-left: 50px;
+      }
+      @media screen and (max-width: 991.98px) {
+        padding-left: 0;
+      }
       .items {
         width: 33.3%;
+        @media screen and (max-width: 1124px) {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          gap: 45px;
+        }
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
         &:not(:first-child) {
           padding-left: 30px;
+          @media screen and (max-width: 1124px) {
+            padding-left: 0;
+          }
         }
         .item {
           padding-bottom: 45px;
+          @media screen and (max-width: 768px) {
+            padding-bottom: 15px;
+          }
           .title {
             font-family: "GilroyBold";
             color: var(--black);
@@ -44,9 +77,9 @@
             color: var(--black);
             font-family: "GilroyRegular";
 
-            ul{
-              li{
-                padding:5px 0;
+            ul {
+              li {
+                padding: 5px 0;
               }
             }
           }
@@ -60,6 +93,14 @@
       font-size: 18px;
       line-height: 35px;
       color: var(--black-800);
+      @media screen and (max-width: 1600px) {
+        font-size: 16px;
+        line-height: 27px;
+      }
+      @media screen and (max-width: 1280px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
 
       a {
         &:not(.fixBtn) {
@@ -96,6 +137,10 @@
       align-items: center;
       font-family: "GilroyMedium";
       transition: all 0.3s linear;
+      @media screen and (max-width: 1600px) {
+        font-size: 14px;
+        line-height: 27px;
+      }
       @media screen and (min-width: 992px) {
         &:hover {
           color: var(--sixth);
@@ -110,6 +155,10 @@
         font-size: 16px;
         color: var(--black-800);
         padding: 10px 0;
+        @media screen and (max-width: 1600px) {
+          font-size: 14px;
+          line-height: 27px;
+        }
         a {
           &:not(.fixBtn) {
             position: relative;
@@ -146,6 +195,10 @@
       font-size: 18px;
       line-height: 25px;
       color: var(--black-800);
+      @media screen and (max-width: 1600px) {
+        font-size: 16px;
+        line-height: 27px;
+      }
     }
     .adressLocation {
       font-family: "GilroyMedium";
@@ -153,6 +206,10 @@
       line-height: 30px;
       color: var(--black-800);
       margin-top: 5px;
+      @media screen and (max-width: 1600px) {
+        font-size: 16px;
+        line-height: 27px;
+      }
     }
   }
   .info {
@@ -167,7 +224,19 @@
   .scrollSection {
     margin-block: 0;
     padding-block: 80px;
-    min-height: 600px;
+    min-height: 70vh;
+    @media screen and (max-width: 1600px) {
+      padding-block: 50px;
+    }
+    @media screen and (max-width: 991.98px) {
+      padding-block: 30px;
+      min-height: initial;
+    }
+    &:first-child {
+      @media screen and (max-width: 991.98px) {
+        padding-top: 0;
+      }
+    }
     &:not(:first-child) {
       border-top: 1px solid var(--gray-100);
     }
@@ -183,10 +252,16 @@
 
     .pageRowHead {
       padding-bottom: 30px;
+      @media screen and (max-width: 1600px) {
+        padding-bottom: 10px;
+      }
       .pageRowTitle {
         font-size: 30px;
         font-family: "GilroyBold";
         color: var(--black-800);
+        @media screen and (max-width: 1600px) {
+          font-size: 25px;
+        }
       }
     }
   }

@@ -17371,6 +17371,11 @@ section .sectionContent,
   padding: 30px;
   border-radius: 0;
 }
+@media screen and (max-width: 1440px) {
+  .commentsWrapper .cards.cardList .card {
+    padding: 20px 0;
+  }
+}
 .commentsWrapper .cards.cardList .card:not(:first-child) {
   border-top: 1px solid var(--gray-100);
 }
@@ -17548,22 +17553,73 @@ section .sectionContent,
     padding: 0;
   }
 }
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert {
+    flex-direction: column;
+  }
+}
 .twiceWrapperRevert .twiceLeftContent {
   width: 400px;
 }
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceLeftContent {
+    width: 100%;
+  }
+}
 .twiceWrapperRevert .twiceLeftContent.fixed {
   position: fixed;
-  width: 400px; /* kendi genişliğini ayarla */
+  width: 400px;
+}
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceLeftContent.fixed {
+    width: 100%;
+  }
 }
 .twiceWrapperRevert .twiceLeftContent.absolute {
   position: absolute;
-  width: 400px; /* aynı genişlik burada da gerekli */
+  width: 400px;
   bottom: 0;
+}
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceLeftContent.absolute {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceLeftContent .expertFilterWrapper {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+  }
+  .twiceWrapperRevert .twiceLeftContent .expertFilterWrapper:after {
+    content: "\e941";
+    font-family: "customFont";
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceLeftContent.opened .expertFilterWrapper {
+    height: auto;
+  }
+  .twiceWrapperRevert .twiceLeftContent.opened .expertFilterWrapper:after {
+    transform: rotate(180deg);
+  }
 }
 .twiceWrapperRevert .twiceRightContent {
   width: calc(100% - 400px);
   padding-left: 5vw;
   margin-left: auto;
+}
+@media screen and (max-width: 991.98px) {
+  .twiceWrapperRevert .twiceRightContent {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 20px;
+  }
 }
 .twiceWrapperRevert .twiceRightContent .textFeatures {
   margin-block: 25px;
@@ -17833,7 +17889,7 @@ section .sectionContent,
   color: var(--white);
   line-height: 60px;
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1680px) {
   .expertWrapper .sectionHead .sectionTitle {
     font-size: 40px;
     line-height: 50px;
@@ -17961,11 +18017,22 @@ section .sectionContent,
 .pageSection .pageRow .standartList {
   padding-top: 30px;
 }
+@media screen and (max-width: 1600px) {
+  .pageSection .pageRow .standartList {
+    padding-top: 15px;
+  }
+}
 .pageSection .pageRow .standartList li {
   font-family: "GilroyMedium";
   font-size: 16px;
   color: var(--black-800);
   padding: 10px 0;
+}
+@media screen and (max-width: 1600px) {
+  .pageSection .pageRow .standartList li {
+    font-size: 14px;
+    line-height: 27px;
+  }
 }
 .pageSection .pageRow .standartList li a:not(.fixBtn) {
   position: relative;
@@ -18074,7 +18141,8 @@ section .sectionContent,
 @media screen and (max-width: 991.98px) {
   .subBanner {
     padding: 20px 16px;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
   }
 }
 .subBanner .title,
@@ -18159,6 +18227,7 @@ section .sectionContent,
     gap: 0;
     align-items: flex-start;
     font-size: 14px;
+    padding-top: 20px;
   }
 }
 .subBanner .bottom a {
@@ -18187,8 +18256,20 @@ section .sectionContent,
     margin-left: auto;
   }
 }
+@media screen and (max-width: 991.98px) {
+  .subBanner .bottom .socialShareWrapper {
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+}
 .subBanner .buttons {
   margin-top: auto;
+}
+@media screen and (max-width: 991.98px) {
+  .subBanner .buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 .subBanner .buttons .textLink:first-child {
   padding-left: 0;
@@ -18200,6 +18281,7 @@ section .sectionContent,
 @media screen and (max-width: 991.98px) {
   .subBanner .textLink {
     font-size: 14px;
+    padding-left: 0;
   }
 }
 
@@ -19186,6 +19268,7 @@ section .sectionContent,
 .expertHead .headContainer {
   max-width: 1750px;
   margin: 0 auto;
+  width: 100%;
 }
 .expertHead .headContainer .icon {
   width: 45px;
@@ -19214,6 +19297,12 @@ section .sectionContent,
   font-size: 24px;
   line-height: 32px;
   color: var(--primary);
+}
+@media screen and (max-width: 1680px) {
+  .expertHead .top .title {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }
 .expertHead .top .category {
   font-family: "GilroyRegular";
@@ -19311,6 +19400,12 @@ section .sectionContent,
   z-index: 99;
   border-bottom: none;
   padding-bottom: 0;
+  padding: 0 50px;
+}
+@media screen and (max-width: 1280px) {
+  .expertHead.fixed {
+    padding: 0;
+  }
 }
 .expertHead.fixed .top {
   height: auto;
@@ -19318,12 +19413,14 @@ section .sectionContent,
   visibility: visible;
   overflow: visible;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 .expertHead.fixed .expertMenu {
   gap: 10px;
   height: 50px;
   padding-left: 72px;
   border-bottom: none;
+  padding-bottom: 10px;
 }
 .expertHead.fixed .expertMenu .menu-item {
   height: 40px;
@@ -19359,12 +19456,28 @@ section .sectionContent,
   display: flex;
   align-items: flex-start;
 }
+@media screen and (max-width: 991.98px) {
+  .expertPage .expertAbout {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .expertPage .expertAbout figure {
   max-width: 420px;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
   aspect-ratio: 1/1;
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .expertAbout figure {
+    max-width: 340px;
+  }
+}
+@media screen and (max-width: 1124px) {
+  .expertPage .expertAbout figure {
+    max-width: 260px;
+  }
 }
 .expertPage .expertAbout figure img {
   width: 100%;
@@ -19379,14 +19492,49 @@ section .sectionContent,
   align-items: flex-start;
   flex: 1;
 }
+@media screen and (max-width: 1124px) {
+  .expertPage .expertAbout .expertInfo {
+    flex-direction: column;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .expertPage .expertAbout .expertInfo {
+    padding-left: 0;
+  }
+}
 .expertPage .expertAbout .expertInfo .items {
   width: 33.3%;
+}
+@media screen and (max-width: 1124px) {
+  .expertPage .expertAbout .expertInfo .items {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 45px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .expertPage .expertAbout .expertInfo .items {
+    display: block;
+  }
 }
 .expertPage .expertAbout .expertInfo .items:not(:first-child) {
   padding-left: 30px;
 }
+@media screen and (max-width: 1124px) {
+  .expertPage .expertAbout .expertInfo .items:not(:first-child) {
+    padding-left: 0;
+  }
+}
 .expertPage .expertAbout .expertInfo .items .item {
   padding-bottom: 45px;
+}
+@media screen and (max-width: 768px) {
+  .expertPage .expertAbout .expertInfo .items .item {
+    padding-bottom: 15px;
+  }
 }
 .expertPage .expertAbout .expertInfo .items .item .title {
   font-family: "GilroyBold";
@@ -19408,6 +19556,18 @@ section .sectionContent,
   font-size: 18px;
   line-height: 35px;
   color: var(--black-800);
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .aboutDesc .paragraph {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .expertPage .aboutDesc .paragraph {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 .expertPage .aboutDesc .paragraph a:not(.fixBtn) {
   position: relative;
@@ -19442,6 +19602,12 @@ section .sectionContent,
   font-family: "GilroyMedium";
   transition: all 0.3s linear;
 }
+@media screen and (max-width: 1600px) {
+  .expertPage .aboutDesc .moreAbout {
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
 @media screen and (min-width: 992px) {
   .expertPage .aboutDesc .moreAbout:hover {
     color: var(--sixth);
@@ -19452,6 +19618,12 @@ section .sectionContent,
   font-size: 16px;
   color: var(--black-800);
   padding: 10px 0;
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .paragraph .standartList li {
+    font-size: 14px;
+    line-height: 27px;
+  }
 }
 .expertPage .paragraph .standartList li a:not(.fixBtn) {
   position: relative;
@@ -19486,12 +19658,24 @@ section .sectionContent,
   line-height: 25px;
   color: var(--black-800);
 }
+@media screen and (max-width: 1600px) {
+  .expertPage .adressInfo .adressName {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
 .expertPage .adressInfo .adressLocation {
   font-family: "GilroyMedium";
   font-size: 18px;
   line-height: 30px;
   color: var(--black-800);
   margin-top: 5px;
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .adressInfo .adressLocation {
+    font-size: 16px;
+    line-height: 27px;
+  }
 }
 .expertPage .info {
   display: flex;
@@ -19505,7 +19689,23 @@ section .sectionContent,
 .expertPage .scrollSection {
   margin-block: 0;
   padding-block: 80px;
-  min-height: 600px;
+  min-height: 70vh;
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .scrollSection {
+    padding-block: 50px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .expertPage .scrollSection {
+    padding-block: 30px;
+    min-height: initial;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .expertPage .scrollSection:first-child {
+    padding-top: 0;
+  }
 }
 .expertPage .scrollSection:not(:first-child) {
   border-top: 1px solid var(--gray-100);
@@ -19513,10 +19713,20 @@ section .sectionContent,
 .expertPage .scrollSection .pageRowHead {
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1600px) {
+  .expertPage .scrollSection .pageRowHead {
+    padding-bottom: 10px;
+  }
+}
 .expertPage .scrollSection .pageRowHead .pageRowTitle {
   font-size: 30px;
   font-family: "GilroyBold";
   color: var(--black-800);
+}
+@media screen and (max-width: 1600px) {
+  .expertPage .scrollSection .pageRowHead .pageRowTitle {
+    font-size: 25px;
+  }
 }
 
 .dropdown .dropdown-button {

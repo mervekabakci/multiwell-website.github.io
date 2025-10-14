@@ -21,6 +21,8 @@ anchorLinks.forEach((anchorLink) => {
   anchorLink.addEventListener("click", (event) => {
     event.preventDefault();
 
+    if (window.innerWidth < 992) return;
+
     anchorLinks.forEach((link) => link.classList.remove("active"));
     anchorLink.classList.add("active");
 
@@ -35,11 +37,12 @@ anchorLinks.forEach((anchorLink) => {
       const expertMenuHeight = expertMenu ? expertMenu.offsetHeight : 0;
       const totalOffset = expertHeadHeight + expertMenuHeight;
 
-      const targetPosition =
-        targetElem.getBoundingClientRect().top + window.scrollY - totalOffset;
+      const targetPosition = targetElem.getBoundingClientRect().top + window.scrollY - totalOffset;
 
+      const scrollOffset = window.innerWidth < 1680 ? 80 : 100;
+      
       window.scrollTo({
-        top: targetPosition + 100,
+        top: targetPosition + scrollOffset,
         behavior: "smooth",
       });
     }

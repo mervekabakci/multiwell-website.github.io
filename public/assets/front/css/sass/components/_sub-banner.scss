@@ -6,7 +6,8 @@
   height: 250px;
   @media screen and (max-width: 991.98px) {
     padding: 20px 16px;
-    height: 200px;
+    min-height: 200px;
+    height: auto;
   }
   .title,
   h1 {
@@ -76,6 +77,7 @@
       gap: 0;
       align-items: flex-start;
       font-size: 14px;
+      padding-top: 20px;
     }
     a {
       display: flex;
@@ -102,9 +104,20 @@
     // span {
     //   color: var(--white);
     // }
+
+    .socialShareWrapper{
+      @media screen and (max-width:991.98px) {
+        margin-left: 0!important;
+        margin-top: 15px;
+      }
+    }
   }
   .buttons {
     margin-top: auto;
+    @media screen and (max-width:991.98px) {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
     .textLink {
       &:first-child {
         padding-left: 0;
@@ -116,6 +129,7 @@
     padding-left: 33px;
     @media screen and (max-width: 991.98px) {
       font-size: 14px;
+      padding-left: 0;
     }
   }
 }
