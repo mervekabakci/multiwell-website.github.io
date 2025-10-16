@@ -517,25 +517,27 @@
         line-height: 35px;
         max-width: 680px;
         a {
-          color: currentColor;
-          font-family: "GilroyMedium";
-          position: relative;
-          @media screen and (max-width: 991.98px) {
-            border-bottom: 1px solid currentColor;
-          }
-          @media screen and (min-width: 992px) {
-            &:after {
-              content: "";
-              width: 100%;
+          &:not(.textLink) {
+            color: currentColor;
+            font-family: "GilroyMedium";
+            position: relative;
+            @media screen and (max-width: 991.98px) {
               border-bottom: 1px solid currentColor;
-              position: absolute;
-              bottom: -1px;
-              left: 0;
-              transition: all 0.3s linear;
             }
-            &:hover {
+            @media screen and (min-width: 992px) {
               &:after {
-                width: 0;
+                content: "";
+                width: 100%;
+                border-bottom: 1px solid currentColor;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                transition: all 0.3s linear;
+              }
+              &:hover {
+                &:after {
+                  width: 0;
+                }
               }
             }
           }

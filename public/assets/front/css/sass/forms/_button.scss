@@ -23,6 +23,9 @@
   .icon-arrow-long-right {
     font-size: 22px;
   }
+  &.type2{
+    font-size: 16px;
+  }
   @media screen and (min-width: 992px) {
     &:not(.notHover):hover {
       color: var(--fifth);

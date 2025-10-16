@@ -16853,18 +16853,18 @@ section .sectionContent,
   line-height: 35px;
   max-width: 680px;
 }
-.infoCardList .infoCard .infoCardBody .paragraph a {
+.infoCardList .infoCard .infoCardBody .paragraph a:not(.textLink) {
   color: currentColor;
   font-family: "GilroyMedium";
   position: relative;
 }
 @media screen and (max-width: 991.98px) {
-  .infoCardList .infoCard .infoCardBody .paragraph a {
+  .infoCardList .infoCard .infoCardBody .paragraph a:not(.textLink) {
     border-bottom: 1px solid currentColor;
   }
 }
 @media screen and (min-width: 992px) {
-  .infoCardList .infoCard .infoCardBody .paragraph a:after {
+  .infoCardList .infoCard .infoCardBody .paragraph a:not(.textLink):after {
     content: "";
     width: 100%;
     border-bottom: 1px solid currentColor;
@@ -16873,7 +16873,7 @@ section .sectionContent,
     left: 0;
     transition: all 0.3s linear;
   }
-  .infoCardList .infoCard .infoCardBody .paragraph a:hover:after {
+  .infoCardList .infoCard .infoCardBody .paragraph a:not(.textLink):hover:after {
     width: 0;
   }
 }
@@ -18403,24 +18403,30 @@ section .sectionContent,
     padding-top: 10px;
   }
 }
-.paragraph .longText a:not(.fixBtn),
+.paragraph .longText a:not(.fixBtn), .paragraph .longText a:not(.textLink),
 .paragraph .shortDesc a:not(.fixBtn),
-.paragraph .shorText a:not(.fixBtn) {
+.paragraph .shortDesc a:not(.textLink),
+.paragraph .shorText a:not(.fixBtn),
+.paragraph .shorText a:not(.textLink) {
   position: relative;
   font-family: "GilroySemibold";
   color: var(--fifth);
 }
 @media screen and (max-width: 991.98px) {
-  .paragraph .longText a:not(.fixBtn),
+  .paragraph .longText a:not(.fixBtn), .paragraph .longText a:not(.textLink),
   .paragraph .shortDesc a:not(.fixBtn),
-  .paragraph .shorText a:not(.fixBtn) {
+  .paragraph .shortDesc a:not(.textLink),
+  .paragraph .shorText a:not(.fixBtn),
+  .paragraph .shorText a:not(.textLink) {
     border-bottom: 1px solid var(--fifth);
   }
 }
 @media screen and (min-width: 992px) {
-  .paragraph .longText a:not(.fixBtn):after,
+  .paragraph .longText a:not(.fixBtn):after, .paragraph .longText a:not(.textLink):after,
   .paragraph .shortDesc a:not(.fixBtn):after,
-  .paragraph .shorText a:not(.fixBtn):after {
+  .paragraph .shortDesc a:not(.textLink):after,
+  .paragraph .shorText a:not(.fixBtn):after,
+  .paragraph .shorText a:not(.textLink):after {
     content: "";
     border-bottom: 1px solid var(--fifth);
     width: 100%;
@@ -18429,9 +18435,11 @@ section .sectionContent,
     left: 0;
     transition: all 0.3s linear;
   }
-  .paragraph .longText a:not(.fixBtn):hover:after,
+  .paragraph .longText a:not(.fixBtn):hover:after, .paragraph .longText a:not(.textLink):hover:after,
   .paragraph .shortDesc a:not(.fixBtn):hover:after,
-  .paragraph .shorText a:not(.fixBtn):hover:after {
+  .paragraph .shortDesc a:not(.textLink):hover:after,
+  .paragraph .shorText a:not(.fixBtn):hover:after,
+  .paragraph .shorText a:not(.textLink):hover:after {
     width: 0;
   }
 }
@@ -18453,6 +18461,7 @@ section .sectionContent,
   font-family: "GilroySemibold";
   margin-bottom: 20px;
   margin-top: 40px;
+  display: block;
 }
 @media screen and (max-width: 991.98px) {
   .paragraph .longText h2,
@@ -20032,6 +20041,9 @@ section .sectionContent,
 }
 .textLink .icon-arrow-long-right {
   font-size: 22px;
+}
+.textLink.type2 {
+  font-size: 16px;
 }
 @media screen and (min-width: 992px) {
   .textLink:not(.notHover):hover {

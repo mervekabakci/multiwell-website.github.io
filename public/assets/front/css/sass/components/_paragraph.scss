@@ -81,7 +81,8 @@
   .shortDesc,
   .shorText {
     a {
-      &:not(.fixBtn) {
+      &:not(.fixBtn),
+      &:not(.textLink) {
         position: relative;
         font-family: "GilroySemibold";
         color: var(--fifth);
@@ -118,6 +119,7 @@
       font-family: "GilroySemibold";
       margin-bottom: 20px;
       margin-top: 40px;
+      display: block;
       @media screen and (max-width: 991.98px) {
         font-size: 18px;
         margin-top: 15px;
