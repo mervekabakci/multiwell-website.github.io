@@ -117,13 +117,22 @@
           top: 20px;
         }
       }
+      .title {
+        font-size: 18px;
+        color: var(--primary);
+        font-weight: 700;
+        height: 44px;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 4px;
+      }
     }
-    
+
     &.opened {
       .expertFilterWrapper {
         @media screen and (max-width: 991.98px) {
           height: auto;
-          &:after{
+          &:after {
             transform: rotate(180deg);
           }
         }
@@ -148,6 +157,9 @@
     gap: 0;
     .searchInputWrapper {
       height: 50px;
+      @media screen and (max-width: 991.98px) {
+        height: 45px;
+      }
       &:before {
         left: 19px;
         top: 13px;
@@ -163,6 +175,9 @@
         height: 50px;
         padding-left: 45px;
         font-size: 14px;
+        @media screen and (max-width: 991.98px) {
+          height: 45px;
+        }
         &:focus {
           height: initial;
         }
