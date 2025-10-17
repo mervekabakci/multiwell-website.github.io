@@ -13570,6 +13570,14 @@ figure {
   font-size: 24px;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-sbold {
+  font-weight: 600;
+}
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -16493,7 +16501,7 @@ section .sectionContent,
 }
 @media screen and (min-width: 992px) {
   .cards.expertsSlider a.card:hover {
-    background-color: var(--secondary);
+    background-color: var(--soft-light-blue);
   }
   .cards.expertsSlider a.card:hover .card-body {
     background-color: rgba(0, 0, 0, 0);
@@ -17446,6 +17454,15 @@ section .sectionContent,
 @media screen and (max-width: 991.98x) {
   .portalWrapper .portalList {
     flex-wrap: wrap;
+  }
+}
+.portalWrapper .portalList .button-soft-light-blue {
+  color: var(--primary) !important;
+}
+@media screen and (min-width: 992px) {
+  .portalWrapper .portalList .button-soft-light-blue:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
   }
 }
 
@@ -18810,7 +18827,7 @@ section .sectionContent,
   padding-bottom: 10px;
 }
 .boxWrapper .boxes .box .cards.cardList .cardItem .card-body {
-  min-height: 60px;
+  min-height: 50px;
   display: inline-flex;
   width: 100%;
   align-items: center;
@@ -18936,6 +18953,9 @@ section .sectionContent,
     margin-bottom: 20px;
   }
 }
+.videoWrapper .inlineVideoContainer iframe {
+  aspect-ratio: 8/4.5;
+}
 .videoWrapper .inlineVideoContainer video {
   width: 100%;
 }
@@ -18969,6 +18989,7 @@ section .sectionContent,
   width: 24px;
   height: 24px;
   border-radius: 100%;
+  overflow: hidden;
   border: 1px solid var(--gray-400);
   color: var(--gray-400);
   display: flex;
